@@ -11,7 +11,7 @@ import {
 import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Interactive Comparison & Decision Tools | CompareForge",
+  title: "Interactive Comparison & Decision Tools",
   description:
     "19 free comparison, calculator, matching and decision tools. Compare products, calculate price differences, check compatibility and decide with sourced data.",
   alternates: {
@@ -23,6 +23,16 @@ export const metadata: Metadata = {
       "Free interactive tools to compare products, calculate differences, check fit and decide with confidence.",
     url: "https://compareforge.online/tools",
     type: "website",
+    siteName: "CompareForge",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "CompareForge — Comparison & Decision Tools",
+      },
+    ],
   },
 };
 

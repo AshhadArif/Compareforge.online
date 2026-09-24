@@ -151,7 +151,7 @@ export default function DimensionComparison() {
         <div>
           {/* Scale drawing */}
           <div className="p-4 bg-bg-secondary rounded-lg mb-5">
-            <h3 className="text-sm font-semibold text-text mb-3">Relative size (to scale)</h3>
+            <h2 className="text-sm font-semibold text-text mb-3">Relative size (to scale)</h2>
             <div className="flex items-end gap-6 flex-wrap" role="img" aria-label={`Scale drawing: ${nameOf(sideA)} vs ${nameOf(sideB)}`}>
               {[
                 { name: nameOf(sideA), dims: dimsA, color: "border-primary bg-primary/20" },

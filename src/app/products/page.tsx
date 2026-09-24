@@ -17,6 +17,16 @@ export const metadata: Metadata = {
       "Browse our database of smartphones with verified specifications.",
     url: "https://compareforge.online/products",
     type: "website",
+    siteName: "CompareForge",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "CompareForge — Comparison & Decision Tools",
+      },
+    ],
   },
 };
 

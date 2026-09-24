@@ -42,6 +42,8 @@ export default function UseCaseComparison() {
 
       <p className="text-sm text-text-secondary mb-4">{active.question}</p>
 
+      <h2 className="text-sm font-semibold text-text mb-3">Ranked matches</h2>
+
       <ol className="space-y-3">
         {rows.map((row, index) => (
           <li key={row.product.id} className="border border-border rounded-lg p-4 bg-bg-secondary">

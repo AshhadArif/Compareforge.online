@@ -38,6 +38,16 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
       description: comparison.metaDescription,
       url: `https://compareforge.online/compare/${slug}`,
       type: "article",
+      siteName: "CompareForge",
+      locale: "en_US",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "CompareForge — Comparison & Decision Tools",
+        },
+      ],
     },
     robots: { index: true, follow: true },
   };

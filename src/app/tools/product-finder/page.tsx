@@ -6,7 +6,7 @@ import { getToolById } from "@/lib/tools";
 import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Product Finder — Find the Right Phone for Your Needs | CompareForge",
+  title: "Product Finder — Find the Right Phone for Your Needs",
   description:
     "Answer a few questions about your budget and priorities and get a shortlist of smartphones that fit — with reasons and a one-click side-by-side comparison.",
   alternates: {
@@ -18,6 +18,16 @@ export const metadata: Metadata = {
       "Not sure which phone to compare? Answer a few questions and get a shortlist with reasons.",
     url: "https://compareforge.online/tools/product-finder",
     type: "website",
+    siteName: "CompareForge",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "CompareForge — Comparison & Decision Tools",
+      },
+    ],
   },
 };
 

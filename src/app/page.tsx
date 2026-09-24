@@ -12,6 +12,7 @@ import {
   TOOL_TYPE_LABELS,
   TOOL_TYPE_DESCRIPTIONS,
 } from "@/lib/tools";
+import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -19,12 +20,71 @@ export const metadata: Metadata = {
 
 const TYPE_ORDER = ["compare", "calculate", "match", "decide"] as const;
 
+const HOME_FAQ = [
+  {
+    question: "What tools does CompareForge offer?",
+    answer:
+      "19 tools across four families: compare products side by side, calculate price/percentage/cost differences, check fit and compatibility, and decide with transparent weighted rankings. They are all free and run in your browser.",
+  },
+  {
+    question: "How does CompareForge get its information?",
+    answer:
+      "Specifications are sourced from manufacturer official pages and cross-referenced with independent sources. All sources are documented on each product and comparison page.",
+  },
+  {
+    question: "Does CompareForge test products?",
+    answer:
+      "We do not run lab tests and do not assign review scores. Comparisons are built from verified specifications, and calculators compute from numbers you enter — each with its formula published.",
+  },
+  {
+    question: "How often is content updated?",
+    answer:
+      "We update comparisons when new information becomes available, specifications are corrected, or products are discontinued. Each page shows when it was last updated.",
+  },
+  {
+    question: "Can I report an error?",
+    answer:
+      "Yes. If you find an inaccuracy, please visit our Report an Error page. We review corrections promptly.",
+  },
+];
+
 export default function HomePage() {
   const featuredComparisons = comparisons.slice(0, 4);
   const featuredGuides = guides.slice(0, 4);
   const popularProducts = getPopularProducts(6);
   const builtTools = getBuiltTools();
   const featuredTools = getFeaturedTools().slice(0, 3);
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "CompareForge",
+    url: "https://compareforge.online",
+    description:
+      "Interactive comparison and decision tools with sourced data and plain-language explanations.",
+    publisher: {
+      "@type": "Organization",
+      name: "CompareForge",
+      url: "https://compareforge.online",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://compareforge.online/og-image.png",
+      },
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://compareforge.online/tools?q={search_term_string}",
+      },
+    },
+  };
+  const faqSchema = generateFAQSchema(HOME_FAQ);
+  const faqItems = HOME_FAQ.map((item, i) =>
+    i === 0
+      ? { ...item, answer: item.answer.replace("19 tools", `${builtTools.length} tools`) }
+      : item
+  );
 
   return (
     <>
@@ -266,60 +326,36 @@ export default function HomePage() {
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
-            <div>
-              <h3 className="font-semibold text-text">
-                What tools does CompareForge offer?
-              </h3>
-              <p className="mt-2 text-sm text-text-secondary">
-                {builtTools.length} tools across four families: compare products side by
-                side, calculate price/percentage/cost differences, check fit and
-                compatibility, and decide with transparent weighted rankings. They are all
-                free and run in your browser.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-text">
-                How does CompareForge get its information?
-              </h3>
-              <p className="mt-2 text-sm text-text-secondary">
-                Specifications are sourced from manufacturer official pages and
-                cross-referenced with independent sources. All sources are documented
-                on each product and comparison page.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-text">
-                Does CompareForge test products?
-              </h3>
-              <p className="mt-2 text-sm text-text-secondary">
-                We do not run lab tests and do not assign review scores. Comparisons are
-                built from verified specifications, and calculators compute from numbers
-                you enter — each with its formula published.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-text">
-                How often is content updated?
-              </h3>
-              <p className="mt-2 text-sm text-text-secondary">
-                We update comparisons when new information becomes available,
-                specifications are corrected, or products are discontinued. Each page
-                shows when it was last updated.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-text">Can I report an error?</h3>
-              <p className="mt-2 text-sm text-text-secondary">
-                Yes. If you find an inaccuracy, please visit our{" "}
-                <Link href="/report-an-error" className="text-primary hover:underline">
-                  Report an Error
-                </Link>{" "}
-                page. We review corrections promptly.
-              </p>
-            </div>
+            {faqItems.map((item) => (
+              <div key={item.question}>
+                <h3 className="font-semibold text-text">{item.question}</h3>
+                <p className="mt-2 text-sm text-text-secondary">
+                  {item.question === "Can I report an error?" ? (
+                    <>
+                      Yes. If you find an inaccuracy, please visit our{" "}
+                      <Link href="/report-an-error" className="text-primary hover:underline">
+                        Report an Error
+                      </Link>{" "}
+                      page. We review corrections promptly.
+                    </>
+                  ) : (
+                    item.answer
+                  )}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     </>
   );
 }

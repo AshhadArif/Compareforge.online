@@ -18,6 +18,16 @@ export const metadata: Metadata = {
       "Browse product comparison categories on CompareForge. Find comparisons organized by product type.",
     url: "https://compareforge.online/categories",
     type: "website",
+    siteName: "CompareForge",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "CompareForge — Comparison & Decision Tools",
+      },
+    ],
   },
 };
 

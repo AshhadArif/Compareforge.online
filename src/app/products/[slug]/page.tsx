@@ -26,10 +26,20 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     description: seo.metaDescription,
     alternates: { canonical: seo.canonical },
     openGraph: {
-      title: seo.title,
+      title: `${seo.title} | CompareForge`,
       description: seo.metaDescription,
       url: `https://compareforge.online${seo.canonical}`,
       type: "website",
+      siteName: "CompareForge",
+      locale: "en_US",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: `${product.fullName} — specs on CompareForge`,
+        },
+      ],
     },
   };
 }

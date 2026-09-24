@@ -14,6 +14,16 @@ export function toolPageMetadata(toolId: string): Metadata {
       description: tool.seoDescription,
       url: `https://compareforge.online${canonical}`,
       type: "website",
+      siteName: "CompareForge",
+      locale: "en_US",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "CompareForge — Comparison & Decision Tools",
+        },
+      ],
     },
   };
 }

@@ -4,6 +4,8 @@ import { guides } from "@/lib/guides";
 import { products } from "@/lib/products";
 import { getBuiltToolRoutes } from "@/lib/tools";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://compareforge.online";
 

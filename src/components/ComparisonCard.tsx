@@ -22,11 +22,11 @@ export default function ComparisonCard({ comparison }: ComparisonCardProps) {
           </span>
         )}
       </div>
-      <h3 className="text-lg font-semibold text-text mb-2">
+      <h2 className="text-lg font-semibold text-text mb-2">
         <Link href={`/compare/${comparison.slug}`} className="hover:text-primary transition-colors">
           {comparison.title}
         </Link>
-      </h3>
+      </h2>
       <p className="text-sm text-text-secondary mb-4 line-clamp-2">
         {comparison.metaDescription}
       </p>

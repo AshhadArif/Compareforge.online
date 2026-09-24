@@ -12,11 +12,11 @@ export default function GuideCard({ title, slug, description }: GuideCardProps) 
       <span className="text-xs font-medium text-accent bg-accent-light px-2 py-1 rounded-full">
         Guide
       </span>
-      <h3 className="text-lg font-semibold text-text mt-3 mb-2">
+      <h2 className="text-lg font-semibold text-text mt-3 mb-2">
         <Link href={`/guides/${slug}`} className="hover:text-primary transition-colors">
           {title}
         </Link>
-      </h3>
+      </h2>
       <p className="text-sm text-text-secondary line-clamp-2">
         {description}
       </p>

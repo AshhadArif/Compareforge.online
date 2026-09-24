@@ -8,10 +8,13 @@ export interface ProductSEO {
 }
 
 export function generateProductSEO(product: Smartphone): ProductSEO {
-  const price = product.pricing.msrp ? ` — From $${product.pricing.msrp.toLocaleString()}` : "";
+  const msrp = product.pricing.msrp;
+  const titlePrice = msrp ? ` — $${msrp.toLocaleString()}` : "";
+  const descPrice = msrp ? ` from $${msrp.toLocaleString()}` : "";
   return {
-    title: `${product.fullName}${price} — Specs & Features | CompareForge`,
-    metaDescription: `${product.fullName} full specifications${price}. Display, camera, battery, performance, and software details with sources.`,
+    // No "| CompareForge" suffix — the root layout title template appends it.
+    title: `${product.fullName}${titlePrice} — Specs & Features`,
+    metaDescription: `${product.fullName} full specifications${descPrice}. Display, camera, battery, performance, and software details with sources.`,
     h1: product.fullName,
     canonical: `/products/${product.slug}`,
   };

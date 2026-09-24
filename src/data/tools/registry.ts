@@ -50,7 +50,7 @@ export const tools: ToolRegistryEntry[] = [
     logic: "Normalize values → compute per-attribute deltas → classify significance → explain",
     seoTitle: "Product Comparison Tool — Compare Phones Side by Side",
     seoDescription:
-      "Free product comparison tool. Pick two smartphones and see a structured side-by-side comparison of display, camera, battery, performance and software — differences highlighted and explained.",
+      "Free product comparison tool. Pick two smartphones and see a side-by-side comparison of display, camera, battery, performance and software.",
     searchKeywords: [
       "phone comparison tool",
       "compare phones side by side",
@@ -81,9 +81,9 @@ export const tools: ToolRegistryEntry[] = [
     route: "/tools/use-case-comparison/",
     dataRequirements: ["entities", "attributes", "scoring-rules"],
     logic: "Filter by use case → score each entity on documented attributes → rank → explain",
-    seoTitle: "Use-Case Phone Comparison — Best Phone for Camera, Battery, Gaming",
+    seoTitle: "Phone Use-Case Comparison — Camera, Battery, Gaming",
     seoDescription:
-      "Rank smartphones by the job you need them to do. Interactive use-case comparison scores phones for camera, battery, gaming, travel, value and more using published specifications.",
+      "Rank smartphones by the job you need them to do: camera, battery, gaming, travel or value — scored from published specifications.",
     searchKeywords: [
       "best phone for camera",
       "best phone for battery life",
@@ -116,7 +116,7 @@ export const tools: ToolRegistryEntry[] = [
     logic: "Score entities against answers using verifiable attributes → rank → explain",
     seoTitle: "Product Finder — Find the Right Phone for Your Needs",
     seoDescription:
-      "Not sure which phone to compare? Answer three short questions about your needs and budget and get a shortlist of matching smartphones with reasons and a one-click comparison.",
+      "Answer three short questions about your needs and budget to get a shortlist of matching phones with reasons and a one-click comparison.",
     searchKeywords: [
       "what phone should i buy",
       "phone finder quiz",
@@ -171,7 +171,7 @@ export const tools: ToolRegistryEntry[] = [
     domain: "phones",
     category: "smartphones",
     description:
-      "Check whether a phone supports what you need — wireless charging, eSIM, 5G, NFC, Bluetooth headsets, USB-C, microSD, satellite — from its documented specifications.",
+      "Check whether a phone supports what you need — wireless charging, eSIM, 5G, NFC, USB-C, microSD, satellite — from its specifications.",
     problem: "Will this phone work with the accessory, network, or feature I need?",
     inputs: ["Phone", "Requirement (accessory or feature)"],
     outputs: ["Yes / No / Not documented verdict", "Reason from spec sheet", "Source note"],
@@ -182,7 +182,7 @@ export const tools: ToolRegistryEntry[] = [
     logic: "Look up required attribute on selected entity → verdict + reason + confidence",
     seoTitle: "Phone Compatibility Checker — Does It Work With…?",
     seoDescription:
-      "Free compatibility checker: pick a phone and a requirement — wireless charging, eSIM, 5G, NFC, USB-C, Bluetooth, microSD — and see a documented yes/no verdict with the spec it came from.",
+      "Free compatibility checker: pick a phone and a requirement — wireless charging, eSIM, 5G, NFC, USB-C, microSD — and see a documented verdict.",
     searchKeywords: [
       "compatibility checker",
       "is compatible with",
@@ -281,9 +281,9 @@ export const tools: ToolRegistryEntry[] = [
     route: "/tools/price-difference-calculator/",
     dataRequirements: ["calculation-definition"],
     logic: "Difference = |A − B|; % gap vs cheaper price; optional × quantity",
-    seoTitle: "Price Difference Calculator — Compare Two Prices ($ and %)",
+    seoTitle: "Price Difference Calculator — Compare Two Prices",
     seoDescription:
-      "Free price difference calculator. Enter two prices to see the dollar difference, which option is cheaper, the percentage gap and savings when buying multiple units.",
+      "Free price difference calculator. Enter two prices to see the dollar gap, which option is cheaper and the percentage difference.",
     searchKeywords: [
       "price difference calculator",
       "difference between two prices",
@@ -380,9 +380,9 @@ export const tools: ToolRegistryEntry[] = [
     route: "/tools/subscription-audit-calculator/",
     dataRequirements: ["calculation-definition"],
     logic: "Normalize each item to monthly & annual → sum → sort → project savings",
-    seoTitle: "Subscription Audit Calculator — Total Your Recurring Costs",
+    seoTitle: "Subscription Audit Calculator — Total Recurring Costs",
     seoDescription:
-      "Free subscription audit calculator. Add your monthly and yearly subscriptions to see monthly and annual totals, biggest line items and how much cancelling saves.",
+      "Free subscription audit calculator. Add your subscriptions to see monthly and annual totals, biggest line items and cancelling savings.",
     searchKeywords: [
       "subscription calculator",
       "how much am i paying for subscriptions",
@@ -413,7 +413,7 @@ export const tools: ToolRegistryEntry[] = [
     route: "/tools/cost-per-use-calculator/",
     dataRequirements: ["calculation-definition"],
     logic: "Total uses = uses/week × weeks × years; cost per use = price ÷ total uses",
-    seoTitle: "Cost Per Use Calculator — True Cost of Ownership per Use",
+    seoTitle: "Cost Per Use Calculator — True Cost per Use",
     seoDescription:
       "Free cost per use calculator. Enter price and how often you use something to see the real cost of each use, per year and per day.",
     searchKeywords: [
@@ -448,7 +448,7 @@ export const tools: ToolRegistryEntry[] = [
     logic: "Cost/month = (cost − salvage) ÷ months of life; compare ratios with caveats",
     seoTitle: "Repair vs Replace Calculator — Fix It or Buy New?",
     seoDescription:
-      "Free repair vs replace calculator. Enter repair cost, replacement price and expected lifespans to compare cost per month of life and see which option is better value.",
+      "Free repair vs replace calculator. Compare cost per month of life from repair cost, replacement price and expected lifespans.",
     searchKeywords: [
       "repair or replace calculator",
       "should i repair or buy new",
@@ -479,7 +479,7 @@ export const tools: ToolRegistryEntry[] = [
     route: "/tools/upgrade-vs-keep-calculator/",
     dataRequirements: ["calculation-definition", "optional-msrp-refs"],
     logic: "Net cost = upgrade price − trade-in; cost/month over ownership window vs keep baseline",
-    seoTitle: "Upgrade vs Keep Calculator — Should You Upgrade Your Phone?",
+    seoTitle: "Upgrade vs Keep Calculator — Should You Upgrade?",
     seoDescription:
       "Free upgrade vs keep calculator. Enter your device value, upgrade cost and trade-in to compare the true cost of upgrading now versus keeping your current phone.",
     searchKeywords: [
@@ -512,9 +512,9 @@ export const tools: ToolRegistryEntry[] = [
     route: "/tools/total-cost-ownership-calculator/",
     dataRequirements: ["calculation-definition"],
     logic: "Total = upfront + (recurring × periods) + (periodic × cycles) over chosen horizon",
-    seoTitle: "Total Cost of Ownership Calculator — Buy vs Subscribe vs Lease",
+    seoTitle: "Total Cost of Ownership Calculator — Buy vs Lease",
     seoDescription:
-      "Free total cost of ownership calculator. Enter upfront, recurring and periodic costs for each option and compare totals over 1, 3 or 5 years with monthly equivalents.",
+      "Free total cost of ownership calculator. Compare upfront, recurring and periodic costs over 1, 3 or 5 years with monthly equivalents.",
     searchKeywords: [
       "total cost of ownership calculator",
       "buy vs subscribe",
@@ -580,7 +580,7 @@ export const tools: ToolRegistryEntry[] = [
     route: "/tools/plan-comparison/",
     dataRequirements: ["calculation-definition", "user-input"],
     logic: "Normalize to monthly & annual cost → diff allowances → feature matrix → explain",
-    seoTitle: "Plan Comparison Tool — Compare Subscription Plans Side by Side",
+    seoTitle: "Plan Comparison Tool — Compare Subscription Plans",
     seoDescription:
       "Free plan comparison tool. Enter two or three plans with prices and features to see normalized monthly cost, a feature matrix and which plan is the best fit.",
     searchKeywords: [
@@ -650,9 +650,9 @@ export const tools: ToolRegistryEntry[] = [
     route: "/tools/decision-matrix/",
     dataRequirements: ["calculation-definition", "user-input"],
     logic: "Weighted score = Σ(score × weight) / Σ(weight); normalized 0–100",
-    seoTitle: "Weighted Decision Matrix — Compare Options With Your Own Criteria",
+    seoTitle: "Weighted Decision Matrix — Rank Your Own Criteria",
     seoDescription:
-      "Free weighted decision matrix. Enter your options and criteria, set weights and scores, and get a transparent ranking you can adjust — for any decision, not just products.",
+      "Free weighted decision matrix. Enter options and criteria, set weights and scores, get a transparent ranking you can adjust.",
     searchKeywords: [
       "decision matrix",
       "weighted scoring model",

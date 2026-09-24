@@ -10,9 +10,9 @@ import { getToolById } from "@/lib/tools";
 import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Product Comparison Tool — Compare Phones Side by Side | CompareForge",
+  title: "Product Comparison Tool — Compare Phones Side by Side",
   description:
-    "Use our free product comparison tool to compare any two smartphones side by side. Display, camera, battery, performance, and software differences highlighted instantly.",
+    "Use our free product comparison tool to compare any two smartphones side by side — display, camera, battery and software differences highlighted instantly.",
   alternates: {
     canonical: "/tools/product-comparison",
   },
@@ -22,6 +22,16 @@ export const metadata: Metadata = {
       "Compare any two smartphones side by side with our free interactive tool.",
     url: "https://compareforge.online/tools/product-comparison",
     type: "website",
+    siteName: "CompareForge",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "CompareForge — Comparison & Decision Tools",
+      },
+    ],
   },
 };
 

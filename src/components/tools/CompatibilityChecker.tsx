@@ -100,13 +100,13 @@ export default function CompatibilityChecker() {
             >
               {result.unknown ? "?" : result.pass ? "✓" : "✗"}
             </span>
-            <h3 className="font-semibold text-text">
+            <h2 className="font-semibold text-text">
               {result.unknown
                 ? "Not documented"
                 : result.pass
                   ? "Compatible"
                   : "Not compatible"}
-            </h3>
+            </h2>
           </div>
           <p className="text-sm text-text-secondary">
             <strong>{product.fullName}</strong> × <strong>{result.requirement.label}</strong> —{" "}
@@ -122,7 +122,7 @@ export default function CompatibilityChecker() {
       )}
 
       <div className="mt-5">
-        <h3 className="text-sm font-semibold text-text mb-2">All requirements for {product?.model ?? "the selected phone"}</h3>
+        <h2 className="text-sm font-semibold text-text mb-2">All requirements for {product?.model ?? "the selected phone"}</h2>
         <ul className="grid sm:grid-cols-2 gap-2">
           {COMPAT_REQUIREMENTS.map((r) => {
             const res = product ? checkCompatibility(product, r.id) : null;

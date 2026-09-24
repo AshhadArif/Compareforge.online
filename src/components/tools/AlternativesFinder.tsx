@@ -47,6 +47,8 @@ export default function AlternativesFinder() {
           </Link>
         </div>
       ) : (
+        <>
+        <h2 className="text-sm font-semibold text-text mb-3">Closest alternatives</h2>
         <ol className="space-y-4">
           <li className="p-4 border-2 border-primary/30 bg-primary-light rounded-lg">
             <span className="text-xs font-medium text-primary uppercase tracking-wide">Your pick</span>
@@ -111,6 +113,7 @@ export default function AlternativesFinder() {
             </li>
           ))}
         </ol>
+        </>
       )}
 
       <p className="mt-4 text-xs text-text-secondary">

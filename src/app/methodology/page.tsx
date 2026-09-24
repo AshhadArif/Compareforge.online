@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Methodology & Data Sources | CompareForge",
+  title: "Methodology & Data Sources",
   description:
     "How CompareForge sources, verifies and presents specification data — and the rules we follow so comparisons and tools never invent numbers.",
   alternates: { canonical: "/methodology" },
@@ -14,6 +14,16 @@ export const metadata: Metadata = {
       "How we source, verify and present specification data, and the rules our comparisons and tools follow.",
     url: "https://compareforge.online/methodology",
     type: "website",
+    siteName: "CompareForge",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "CompareForge — Comparison & Decision Tools",
+      },
+    ],
   },
 };
 

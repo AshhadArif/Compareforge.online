@@ -1,0 +1,49 @@
+# CompareForge.online — static-export rules (Apache / LiteSpeed / Hostinger shared)
+# Copied into out/.htaccess by `npm run build:static`.
+# Unused in SSR (Node.js Web App) mode — Next.js handles redirects/headers itself.
+
+<IfModule mod_dir.c>
+  # Export creates BOTH page.html and a page/ dir (RSC prefetch payloads).
+  # Without this, mod_dir 301s /page -> /page/ which then loops with the
+  # canonical rule below. Pages are always resolved to <page>.html instead.
+  DirectorySlash Off
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Trailing slash on real pages: /compare/ -> /compare
+  # Only fires when <page>.html exists, so no redirect loops on plain directories.
+  RewriteCond %{REQUEST_URI} ^(.+)/$
+  RewriteCond %{DOCUMENT_ROOT}%1.html -f
+  RewriteRule .* %1 [R=308,L]
+
+  # Legacy URLs — must mirror next.config.ts redirects (permanent)
+  RewriteRule ^comparisons$ /compare [R=308,L]
+  RewriteRule ^comparisons/(.*)$ /compare/$1 [R=308,L]
+  RewriteRule ^tools/phone-comparison$ /tools/product-comparison [R=308,L]
+  RewriteRule ^tools/phone-comparison/(.*)$ /tools/product-comparison/$1 [R=308,L]
+
+  # Extensionless URLs: /about -> /about.html
+  # Wins over shadowing directories (/compare has compare.html AND compare/).
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*)/?$ $1.html [L]
+
+  # Directories without an index.html must 404 instead of listing contents
+  # (runs after the extensionless rule, so /about still resolves to about.html)
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_FILENAME}/index.html !-f
+  RewriteRule ^ - [R=404,L]
+</IfModule>
+
+# Custom 404 page (out/404.html)
+ErrorDocument 404 /404.html
+
+# Security headers — mirror next.config.ts headers()
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

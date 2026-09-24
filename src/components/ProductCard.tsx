@@ -25,11 +25,11 @@ export default function ProductCard({ product }: ProductCardProps) {
           {product.status}
         </span>
       </div>
-      <h3 className="text-lg font-semibold text-text mb-1">
+      <h2 className="text-lg font-semibold text-text mb-1">
         <Link href={`/products/${product.slug}`} className="hover:text-primary transition-colors">
           {product.fullName}
         </Link>
-      </h3>
+      </h2>
       <p className="text-sm text-text-secondary mb-3 line-clamp-2">{product.summary}</p>
       <dl className="grid grid-cols-2 gap-x-4 gap-y-1.5 text-sm mb-4">
         <div>
