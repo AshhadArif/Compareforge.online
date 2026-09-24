@@ -1,0 +1,20 @@
+[
+  {
+    "id": "smartphones",
+    "name": "Smartphones",
+    "slug": "smartphones",
+    "description": "Compare smartphones side by side. Verified specs, practical analysis, and interactive tools."
+  },
+  {
+    "id": "foldable-phones",
+    "name": "Foldable Phones",
+    "slug": "foldable-phones",
+    "description": "Compare foldable phones including book-style and clamshell designs."
+  },
+  {
+    "id": "budget-phones",
+    "name": "Budget Phones",
+    "slug": "budget-phones",
+    "description": "Best value smartphones under $500 with verified specifications."
+  }
+]

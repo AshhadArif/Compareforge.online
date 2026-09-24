@@ -1,0 +1,24 @@
+{
+  "smartphones": {
+    "apple": ["apple-iphone-18-pro-max", "apple-iphone-17e", "apple-iphone-duo"],
+    "samsung": ["samsung-galaxy-s26-ultra", "samsung-galaxy-z-fold-8", "samsung-galaxy-a17-5g"],
+    "google": ["google-pixel-11-pro-xl", "google-pixel-10a"],
+    "oneplus": ["oneplus-15"],
+    "motorola": ["motorola-razr-fold", "motorola-moto-g-power-2026"],
+    "xiaomi": ["xiaomi-17-pro-max"]
+  },
+  "comparisons": [
+    "apple-iphone-18-pro-max-vs-samsung-galaxy-s26-ultra",
+    "apple-iphone-18-pro-max-vs-google-pixel-11-pro-xl",
+    "samsung-galaxy-s26-ultra-vs-google-pixel-11-pro-xl",
+    "google-pixel-10a-vs-apple-iphone-17e",
+    "apple-iphone-duo-vs-samsung-galaxy-z-fold-8",
+    "samsung-galaxy-z-fold-8-vs-motorola-razr-fold",
+    "best-phones-under-500-2026",
+    "best-foldable-phones-2026",
+    "best-flagship-phones-2026",
+    "apple-intelligence-vs-galaxy-ai-vs-gemini"
+  ],
+  "guides": ["foldable-phone-buying-guide-2026", "ai-features-explained"],
+  "lastUpdated": "2026-09-23"
+}

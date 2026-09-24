@@ -1,0 +1,113 @@
+{
+  "id": "apple-iphone-duo-vs-samsung-galaxy-z-fold-8",
+  "slug": "apple-iphone-duo-vs-samsung-galaxy-z-fold-8",
+  "productIds": ["apple-iphone-duo", "samsung-galaxy-z-fold-8"],
+  "title": "iPhone Duo vs Samsung Galaxy Z Fold 8",
+  "metaDescription": "Compare Apple iPhone Duo and Samsung Galaxy Z Fold 8 — the two leading book-style foldable phones. Display, camera, battery, and software compared.",
+  "category": "smartphones",
+  "intro": "Compare the Apple iPhone Duo and Samsung Galaxy Z Fold 8 — Apple's first foldable phone versus Samsung's refined book-style foldable.",
+  "quickVerdict": "The Galaxy Z Fold 8 is a proven, refined foldable with 7 years of updates. The iPhone Duo brings Apple's ecosystem to the foldable form factor for the first time. For most buyers, the Galaxy Z Fold 8 offers better value today. The iPhone Duo appeals to Apple loyalists willing to be early adopters.",
+  "keyDifferences": [
+    {
+      "feature": "Ecosystem",
+      "productAValue": "Apple ecosystem (Mac, iPad, Apple Watch)",
+      "productBValue": "Google/Samsung ecosystem",
+      "significance": "high",
+      "interpretation": "The iPhone Duo integrates with Apple's ecosystem. The Galaxy Z Fold 8 works with Google and Samsung services. This is the primary decision factor for most buyers."
+    },
+    {
+      "feature": "Track Record",
+      "productAValue": "First-generation foldable",
+      "productBValue": "8th generation foldable",
+      "significance": "high",
+      "interpretation": "Samsung has refined its foldable technology over 8 generations. The iPhone Duo is Apple's first foldable, which means first-generation potential issues."
+    },
+    {
+      "feature": "Inner Display Size",
+      "productAValue": "8.0 inches",
+      "productBValue": "7.6 inches",
+      "significance": "medium",
+      "interpretation": "The iPhone Duo has a 5% larger inner display. Both provide tablet-like screen space for multitasking."
+    },
+    {
+      "feature": "Battery Capacity",
+      "productAValue": "5,000 mAh (estimated)",
+      "productBValue": "4,800 mAh",
+      "significance": "low",
+      "interpretation": "The iPhone Duo may have slightly more battery capacity, but actual battery life will depend on software optimization."
+    },
+    {
+      "feature": "Software Updates",
+      "productAValue": "6 years (typical)",
+      "productBValue": "7 years OS + security",
+      "significance": "medium",
+      "interpretation": "Samsung officially promises 7 years of updates. Apple's track record suggests 6+ years."
+    },
+    {
+      "feature": "Price",
+      "productAValue": "$1,999 (estimated)",
+      "productBValue": "$1,899",
+      "significance": "medium",
+      "interpretation": "The Galaxy Z Fold 8 is $100 less expensive. Final iPhone Duo pricing may vary."
+    }
+  ],
+  "practicalImplications": "The Galaxy Z Fold 8 is the safer choice with years of refinement behind it. The iPhone Duo is for Apple users who have been waiting for a foldable iPhone and are willing to accept first-generation risks for ecosystem integration.",
+  "useCaseRecommendations": [
+    {
+      "scenario": "Apple ecosystem users",
+      "recommended": "apple-iphone-duo",
+      "reason": "Only foldable that integrates with Mac, iPad, and Apple Watch"
+    },
+    {
+      "scenario": "Proven foldable technology",
+      "recommended": "samsung-galaxy-z-fold-8",
+      "reason": "8th generation refinement with proven reliability"
+    },
+    {
+      "scenario": "Longest software support",
+      "recommended": "samsung-galaxy-z-fold-8",
+      "reason": "Official 7-year update commitment"
+    },
+    {
+      "scenario": "Android preference",
+      "recommended": "samsung-galaxy-z-fold-8",
+      "reason": "Full Android with Samsung's One UI features"
+    },
+    {
+      "scenario": "Early adopter",
+      "recommended": "apple-iphone-duo",
+      "reason": "Experience Apple's first foldable design"
+    }
+  ],
+  "considerations": [
+    "First-generation products may have issues that are resolved in later versions",
+    "The iPhone Duo's pricing and availability are still being confirmed",
+    "Both foldables have water resistance but limited dust protection",
+    "Foldable phones generally have higher repair costs than slab phones"
+  ],
+  "faq": [
+    {
+      "question": "Which foldable phone should I buy?",
+      "answer": "If you're invested in Apple's ecosystem, the iPhone Duo is your only foldable option. If you prefer Android or want a proven product, the Galaxy Z Fold 8 offers years of refinement. The Galaxy Z Fold 8 is the safer choice for most buyers."
+    },
+    {
+      "question": "Is the iPhone Duo worth buying as a first-generation product?",
+      "answer": "First-generation products can have issues that are resolved in later versions. If you're an Apple loyalist who has been waiting for a foldable iPhone, it may be worth the early adopter premium. If you want proven technology, the Galaxy Z Fold 8 is the safer choice."
+    },
+    {
+      "question": "Which foldable has better durability?",
+      "answer": "The Galaxy Z Fold 8 benefits from 8 generations of refinement with proven hinge reliability. The iPhone Duo is Apple's first foldable, so long-term durability data is not yet available. Both have water resistance but limited dust protection."
+    },
+    {
+      "question": "How much do foldable phone repairs cost?",
+      "answer": "Foldable phone repairs are generally more expensive than slab phones due to the complex hinge mechanism and flexible display. Inner screen replacements can cost $400-$600. Check warranty coverage and repair options before purchasing."
+    }
+  ],
+  "relatedComparisonSlugs": [
+    "best-foldable-phones-2026",
+    "samsung-galaxy-z-fold-8-vs-motorola-razr-fold"
+  ],
+  "relatedGuideSlugs": ["foldable-phone-buying-guide-2026"],
+  "isRoundup": false,
+  "lastUpdated": "2026-09-23"
+}

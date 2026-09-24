@@ -1,0 +1,105 @@
+{
+  "id": "apple-iphone-17e",
+  "brand": "Apple",
+  "model": "iPhone 17e",
+  "fullName": "Apple iPhone 17e",
+  "slug": "apple-iphone-17e",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2026-03-15",
+  "pricing": {
+    "msrp": 599,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "8GB", "price": 599 },
+      { "storage": "256GB", "ram": "8GB", "price": 699 }
+    ]
+  },
+  "display": {
+    "size": 6.1,
+    "resolution": "1170 x 2532",
+    "panelType": "OLED",
+    "refreshRate": 60,
+    "peakBrightness": 1200,
+    "hdr": true,
+    "protection": "Ceramic Shield"
+  },
+  "performance": {
+    "chipset": "Apple A19",
+    "fabrication": "3nm",
+    "cpuCores": 6,
+    "gpuModel": "Apple 5-core GPU",
+    "ram": 8,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 48,
+      "aperture": "f/1.6",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": null,
+    "telephoto": null,
+    "front": {
+      "mp": 12,
+      "aperture": "f/1.9",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": ["Cinematic Mode"]
+    },
+    "features": ["Night Mode", "Deep Fusion"]
+  },
+  "battery": {
+    "capacity": 3450,
+    "type": "Li-Po",
+    "wiredCharging": 20,
+    "wirelessCharging": 15,
+    "reverseWireless": false
+  },
+  "design": {
+    "dimensions": { "height": 146.7, "width": 71.5, "depth": 7.8 },
+    "weight": 174,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Black", "White", "Blue", "Coral"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB"],
+    "expandable": false,
+    "type": "NVMe"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 6E",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 2.0",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "iOS 19",
+    "osSkin": null,
+    "updateCommitment": 6,
+    "securityCommitment": 6,
+    "aiFeatures": ["Apple Intelligence", "Writing Tools"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.apple.com/iphone-17e/specs/", "siteName": "Apple", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.apple.com/shop/buy-iphone", "siteName": "Apple", "dateAccessed": "2026-09-20", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-23",
+  "lastVerified": "2026-09-20",
+  "summary": "Apple's most affordable iPhone with MagSafe and Apple Intelligence support."
+}

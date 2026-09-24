@@ -1,0 +1,123 @@
+{
+  "id": "samsung-galaxy-s26-ultra",
+  "brand": "Samsung",
+  "model": "Galaxy S26 Ultra",
+  "fullName": "Samsung Galaxy S26 Ultra",
+  "slug": "samsung-galaxy-s26-ultra",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2026-02-25",
+  "pricing": {
+    "msrp": 1299,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "12GB", "price": 1299 },
+      { "storage": "512GB", "ram": "12GB", "price": 1419 },
+      { "storage": "1TB", "ram": "16GB", "price": 1659 }
+    ]
+  },
+  "display": {
+    "size": 6.9,
+    "resolution": "1440 x 3120",
+    "panelType": "AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 2600,
+    "hdr": true,
+    "protection": "Gorilla Glass Armor 2"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Elite Gen 5",
+    "fabrication": "3nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 830",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 200,
+      "aperture": "f/1.4",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 50,
+      "aperture": "f/2.0",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 50,
+      "aperture": "f/2.4",
+      "ois": true,
+      "opticalZoom": 5,
+      "maxZoom": 100,
+      "features": ["periscope"]
+    },
+    "front": {
+      "mp": 12,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "8K",
+      "maxFps": 30,
+      "features": ["Night Mode Video", "AI Video Enhancer"]
+    },
+    "features": ["Nightography", "AI Photo Enhancer", "Expert RAW"]
+  },
+  "battery": {
+    "capacity": 5000,
+    "type": "Li-Po",
+    "wiredCharging": 60,
+    "wirelessCharging": 25,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 162.8, "width": 77.6, "depth": 8.2 },
+    "weight": 232,
+    "frameMaterial": "Titanium",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Titanium Black", "Titanium Blue", "Titanium Purple", "Titanium White"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB", "1TB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": true
+  },
+  "software": {
+    "osAtLaunch": "Android 16",
+    "osSkin": "One UI 8.5",
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": ["Galaxy AI", "Gemini", "Circle to Search", "Live Translate", "Generative Edit"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.samsung.com/us/smartphones/galaxy-s26-ultra/", "siteName": "Samsung", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "performance", "url": "https://www.samsung.com/us/smartphones/galaxy-s26-ultra/", "siteName": "Samsung", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.samsung.com/us/smartphones/galaxy-s26-ultra/", "siteName": "Samsung", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.samsung.com/us/smartphones/galaxy-s26-ultra/", "siteName": "Samsung", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.samsung.com/us/smartphones/galaxy-s26-ultra/", "siteName": "Samsung", "dateAccessed": "2026-09-20", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-23",
+  "lastVerified": "2026-09-20",
+  "summary": "Samsung's 2026 flagship with 200MP camera, S Pen, Snapdragon 8 Elite Gen 5, and Galaxy AI."
+}

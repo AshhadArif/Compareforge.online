@@ -1,0 +1,106 @@
+{
+  "id": "motorola-moto-g-power-2026",
+  "brand": "Motorola",
+  "model": "Moto G Power 2026",
+  "fullName": "Motorola Moto G Power 2026",
+  "slug": "motorola-moto-g-power-2026",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2026-02-10",
+  "pricing": {
+    "msrp": 299,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "8GB", "price": 299 },
+      { "storage": "256GB", "ram": "8GB", "price": 349 }
+    ]
+  },
+  "display": {
+    "size": 6.7,
+    "resolution": "1080 x 2400",
+    "panelType": "IPS LCD",
+    "refreshRate": 120,
+    "peakBrightness": 600,
+    "hdr": false,
+    "protection": "Panda Glass"
+  },
+  "performance": {
+    "chipset": "MediaTek Dimensity 6300",
+    "fabrication": "6nm",
+    "cpuCores": 8,
+    "gpuModel": "Mali-G57 MC2",
+    "ram": 8,
+    "ramType": "LPDDR4X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.8",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": null,
+    "telephoto": null,
+    "front": {
+      "mp": 32,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "1080p",
+      "maxFps": 30,
+      "features": []
+    },
+    "features": []
+  },
+  "battery": {
+    "capacity": 6000,
+    "type": "Li-Po",
+    "wiredCharging": 30,
+    "wirelessCharging": 10,
+    "reverseWireless": false
+  },
+  "design": {
+    "dimensions": { "height": 167.0, "width": 76.5, "depth": 9.4 },
+    "weight": 205,
+    "frameMaterial": "Plastic",
+    "backMaterial": "Plastic",
+    "waterResistance": "IP52",
+    "colors": ["Black", "Blue"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB"],
+    "expandable": true,
+    "type": "eMMC 5.1"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 5",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 2.0",
+    "simType": "Nano-SIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 15",
+    "osSkin": "Hello UI",
+    "updateCommitment": 2,
+    "securityCommitment": 3,
+    "aiFeatures": []
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.motorola.com/us/smartphones-moto-g-power/p", "siteName": "Motorola", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.motorola.com/us/smartphones-moto-g-power/p", "siteName": "Motorola", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.motorola.com/us/smartphones-moto-g-power/p", "siteName": "Motorola", "dateAccessed": "2026-09-20", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-23",
+  "lastVerified": "2026-09-20",
+  "summary": "Budget phone with massive 6000mAh battery, wireless charging, and 5G at under $300."
+}

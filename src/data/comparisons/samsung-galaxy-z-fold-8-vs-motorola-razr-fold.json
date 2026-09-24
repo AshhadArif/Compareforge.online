@@ -1,0 +1,113 @@
+{
+  "id": "samsung-galaxy-z-fold-8-vs-motorola-razr-fold",
+  "slug": "samsung-galaxy-z-fold-8-vs-motorola-razr-fold",
+  "productIds": ["samsung-galaxy-z-fold-8", "motorola-razr-fold"],
+  "title": "Samsung Galaxy Z Fold 8 vs Motorola Razr Fold",
+  "metaDescription": "Compare Samsung Galaxy Z Fold 8 and Motorola Razr Fold — two Android book-style foldables. Display, battery, camera, and software compared.",
+  "category": "smartphones",
+  "intro": "Compare the Samsung Galaxy Z Fold 8 and Motorola Razr Fold — two book-style Android foldables with different approaches to design and features.",
+  "quickVerdict": "The Galaxy Z Fold 8 is lighter and more refined with 7 years of updates. The Razr Fold offers better battery life, superior cameras, and stylus support at the same price. For most users, the Razr Fold provides better hardware value. The Galaxy Z Fold 8 wins on software support and refinement.",
+  "keyDifferences": [
+    {
+      "feature": "Battery Capacity",
+      "productAValue": "4,800 mAh",
+      "productBValue": "6,000 mAh",
+      "significance": "high",
+      "interpretation": "The Razr Fold has 25% more battery capacity, which translates to significantly longer battery life — potentially two days for some users."
+    },
+    {
+      "feature": "Camera System",
+      "productAValue": "50MP main, 12MP ultrawide, no telephoto",
+      "productBValue": "Triple 50MP (main, ultrawide, telephoto)",
+      "significance": "high",
+      "interpretation": "The Razr Fold has a more versatile camera system with a dedicated telephoto lens. The Galaxy Z Fold 8 lacks a telephoto lens."
+    },
+    {
+      "feature": "Weight",
+      "productAValue": "201 g",
+      "productBValue": "243 g",
+      "significance": "high",
+      "interpretation": "The Galaxy Z Fold 8 is 42g lighter — a noticeable difference that affects daily comfort, especially for extended use."
+    },
+    {
+      "feature": "Stylus Support",
+      "productAValue": "No stylus support",
+      "productBValue": "Yes, stylus supported",
+      "significance": "medium",
+      "interpretation": "The Razr Fold supports a stylus for note-taking and drawing. The Galaxy Z Fold 8 does not support the S Pen."
+    },
+    {
+      "feature": "Software Updates",
+      "productAValue": "7 years OS + security",
+      "productBValue": "5 years OS + security",
+      "significance": "high",
+      "interpretation": "Samsung officially promises 7 years of updates. Motorola promises 5 years. Samsung has a stronger track record for delivering on update promises."
+    },
+    {
+      "feature": "Inner Display",
+      "productAValue": "7.6 inches",
+      "productBValue": "8.09 inches",
+      "significance": "medium",
+      "interpretation": "The Razr Fold has a 6% larger inner display, providing more screen space for multitasking."
+    }
+  ],
+  "practicalImplications": "The Razr Fold offers better hardware value with larger battery, better cameras, and stylus support. The Galaxy Z Fold 8 wins on software support and lighter weight. Both are excellent foldables — the choice depends on whether you prioritize hardware features or software longevity.",
+  "useCaseRecommendations": [
+    {
+      "scenario": "Battery life priority",
+      "recommended": "motorola-razr-fold",
+      "reason": "25% larger battery for significantly longer use"
+    },
+    {
+      "scenario": "Camera quality priority",
+      "recommended": "motorola-razr-fold",
+      "reason": "More versatile triple camera system with telephoto"
+    },
+    {
+      "scenario": "Longest software support",
+      "recommended": "samsung-galaxy-z-fold-8",
+      "reason": "7 years of updates with stronger track record"
+    },
+    {
+      "scenario": "Lightweight preference",
+      "recommended": "samsung-galaxy-z-fold-8",
+      "reason": "42g lighter for more comfortable daily use"
+    },
+    {
+      "scenario": "Stylus users",
+      "recommended": "motorola-razr-fold",
+      "reason": "Supports stylus for note-taking and drawing"
+    }
+  ],
+  "considerations": [
+    "The Razr Fold is significantly heavier at 243g",
+    "Motorola's update track record is shorter than Samsung's",
+    "Both foldables have water resistance but limited dust protection",
+    "Samsung's One UI offers more features than Motorola's Hello UI"
+  ],
+  "faq": [
+    {
+      "question": "Which foldable has better battery life?",
+      "answer": "The Motorola Razr Fold has a 25% larger 6,000mAh battery compared to the Galaxy Z Fold 8's 4,800mAh. In practice, the Razr Fold should last significantly longer on a single charge."
+    },
+    {
+      "question": "Which foldable has better cameras?",
+      "answer": "The Razr Fold has a more versatile camera system with triple 50MP sensors including a dedicated telephoto lens. The Galaxy Z Fold 8 has a simpler dual-camera setup without a telephoto lens. The Razr Fold is the better choice for camera versatility."
+    },
+    {
+      "question": "Which foldable will get updates longer?",
+      "answer": "Samsung officially promises 7 years of OS and security updates for the Galaxy Z Fold 8. Motorola promises 5 years for the Razr Fold. Samsung also has a stronger track record for delivering on its update commitments."
+    },
+    {
+      "question": "Is the Razr Fold worth it over the Galaxy Z Fold 8?",
+      "answer": "If you prioritize battery life, cameras, and stylus support, the Razr Fold offers better hardware value at the same price. If you prefer lighter weight and longer software support, the Galaxy Z Fold 8 is the better choice."
+    }
+  ],
+  "relatedComparisonSlugs": [
+    "apple-iphone-duo-vs-samsung-galaxy-z-fold-8",
+    "best-foldable-phones-2026"
+  ],
+  "relatedGuideSlugs": ["foldable-phone-buying-guide-2026"],
+  "isRoundup": false,
+  "lastUpdated": "2026-09-23"
+}

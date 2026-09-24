@@ -1,0 +1,120 @@
+{
+  "id": "oneplus-15",
+  "brand": "OnePlus",
+  "model": "15",
+  "fullName": "OnePlus 15",
+  "slug": "oneplus-15",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2025-11-01",
+  "pricing": {
+    "msrp": 899,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "12GB", "price": 899 },
+      { "storage": "512GB", "ram": "16GB", "price": 999 }
+    ]
+  },
+  "display": {
+    "size": 6.78,
+    "resolution": "1440 x 3168",
+    "panelType": "AMOLED",
+    "refreshRate": 165,
+    "peakBrightness": 4500,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 3"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Elite",
+    "fabrication": "3nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 830",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.6",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 50,
+      "aperture": "f/2.0",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 50,
+      "aperture": "f/2.6",
+      "ois": true,
+      "opticalZoom": 3,
+      "maxZoom": 120,
+      "features": []
+    },
+    "front": {
+      "mp": 32,
+      "aperture": "f/2.4",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "8K",
+      "maxFps": 30,
+      "features": ["Dolby Vision"]
+    },
+    "features": ["Hasselblad Mode", "Pro Mode"]
+  },
+  "battery": {
+    "capacity": 7300,
+    "type": "Silicon-Carbon",
+    "wiredCharging": 120,
+    "wirelessCharging": 50,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 163.0, "width": 76.5, "depth": 8.1 },
+    "weight": 211,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP69",
+    "colors": ["Black", "White", "Green"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 15",
+    "osSkin": "OxygenOS 15",
+    "updateCommitment": 4,
+    "securityCommitment": 5,
+    "aiFeatures": ["AI Eraser", "AI Writer"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.oneplus.com/15", "siteName": "OnePlus", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.oneplus.com/15", "siteName": "OnePlus", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.oneplus.com/15", "siteName": "OnePlus", "dateAccessed": "2026-09-20", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-23",
+  "lastVerified": "2026-09-20",
+  "summary": "OnePlus flagship with 7300mAh silicon-carbon battery, 165Hz display, and 120W charging."
+}

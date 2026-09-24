@@ -1,0 +1,110 @@
+{
+  "id": "best-foldable-phones-2026",
+  "slug": "best-foldable-phones-2026",
+  "productIds": ["apple-iphone-duo", "samsung-galaxy-z-fold-8", "motorola-razr-fold"],
+  "title": "Best Foldable Phones in 2026",
+  "metaDescription": "Compare the best foldable phones in 2026. iPhone Duo, Galaxy Z Fold 8, and Motorola Razr Fold with verified specs and analysis.",
+  "category": "smartphones",
+  "intro": "Compare the best book-style foldable phones in 2026 — Apple's first foldable, Samsung's refined flagship, and Motorola's value contender.",
+  "quickVerdict": "The Galaxy Z Fold 8 is the most refined foldable with 7 years of updates. The Razr Fold offers better battery and cameras at the same price. The iPhone Duo brings Apple's ecosystem to foldables for the first time. Your choice depends on ecosystem preference and priorities.",
+  "keyDifferences": [
+    {
+      "feature": "Ecosystem",
+      "productAValue": "iPhone Duo (Apple)",
+      "productBValue": "Galaxy Z Fold 8 (Google/Samsung)",
+      "significance": "high",
+      "interpretation": "The iPhone Duo integrates with Apple's ecosystem. The Galaxy Z Fold 8 and Razr Fold work with Google and Samsung services."
+    },
+    {
+      "feature": "Battery Capacity",
+      "productAValue": "Razr Fold (6,000mAh)",
+      "productBValue": "Galaxy Z Fold 8 (4,800mAh)",
+      "significance": "high",
+      "interpretation": "The Razr Fold has 25% more battery than the Galaxy Z Fold 8, providing significantly longer battery life."
+    },
+    {
+      "feature": "Track Record",
+      "productAValue": "Galaxy Z Fold 8 (8th generation)",
+      "productBValue": "iPhone Duo (1st generation)",
+      "significance": "high",
+      "interpretation": "Samsung has 8 generations of foldable refinement. The iPhone Duo is Apple's first foldable."
+    },
+    {
+      "feature": "Software Updates",
+      "productAValue": "Galaxy Z Fold 8 (7 years)",
+      "productBValue": "Razr Fold (5 years)",
+      "significance": "medium",
+      "interpretation": "Samsung offers the longest official update commitment at 7 years."
+    },
+    {
+      "feature": "Camera Versatility",
+      "productAValue": "Razr Fold (triple 50MP)",
+      "productBValue": "Galaxy Z Fold 8 (dual camera)",
+      "significance": "medium",
+      "interpretation": "The Razr Fold has the most versatile camera system with a dedicated telephoto lens."
+    }
+  ],
+  "practicalImplications": "All three are excellent foldables with different strengths. The Galaxy Z Fold 8 is the safest choice with proven technology. The Razr Fold offers better hardware value. The iPhone Duo is for Apple loyalists who have been waiting for a foldable iPhone.",
+  "useCaseRecommendations": [
+    {
+      "scenario": "Apple ecosystem users",
+      "recommended": "apple-iphone-duo",
+      "reason": "Only foldable that integrates with Apple's ecosystem"
+    },
+    {
+      "scenario": "Safest choice",
+      "recommended": "samsung-galaxy-z-fold-8",
+      "reason": "8 generations of refinement with 7 years of updates"
+    },
+    {
+      "scenario": "Best hardware value",
+      "recommended": "motorola-razr-fold",
+      "reason": "Better battery and cameras at the same price"
+    },
+    {
+      "scenario": "Longest software support",
+      "recommended": "samsung-galaxy-z-fold-8",
+      "reason": "Official 7-year update commitment"
+    },
+    {
+      "scenario": "Battery life priority",
+      "recommended": "motorola-razr-fold",
+      "reason": "6,000mAh battery — largest in this comparison"
+    }
+  ],
+  "considerations": [
+    "All foldables are expensive ($1,899-$1,999)",
+    "Foldable repairs are more expensive than slab phones",
+    "Water resistance varies — check IP ratings",
+    "First-generation products may have unforeseen issues"
+  ],
+  "faq": [
+    {
+      "question": "What is the best foldable phone in 2026?",
+      "answer": "The Samsung Galaxy Z Fold 8 is the most refined foldable with 7 years of updates and 8 generations of refinement. The Motorola Razr Fold offers better hardware value with larger battery and better cameras. The iPhone Duo is the best choice for Apple ecosystem users."
+    },
+    {
+      "question": "Are foldable phones worth it in 2026?",
+      "answer": "Foldable phones are worth it if you value the larger inner display for multitasking, reading, and productivity. They are less compelling if you primarily use your phone for social media, messaging, and quick tasks. The form factor has matured significantly but still comes at a premium price."
+    },
+    {
+      "question": "Which foldable has the best battery life?",
+      "answer": "The Motorola Razr Fold has the largest 6,000mAh battery, providing the best battery life in this comparison. The Galaxy Z Fold 8 has a 4,800mAh battery, while the iPhone Duo is estimated at 5,000mAh."
+    },
+    {
+      "question": "Is the iPhone Duo worth buying?",
+      "answer": "The iPhone Duo is worth buying if you're invested in Apple's ecosystem and have been waiting for a foldable iPhone. As a first-generation product, it may have issues that are resolved in later versions. If you want proven technology, the Galaxy Z Fold 8 is the safer choice."
+    },
+    {
+      "question": "How much do foldable phones cost?",
+      "answer": "Book-style foldables in 2026 cost between $1,899 (Galaxy Z Fold 8) and $1,999 (iPhone Duo). The Motorola Razr Fold also costs $1,899. These are premium devices with premium pricing."
+    }
+  ],
+  "relatedComparisonSlugs": [
+    "apple-iphone-duo-vs-samsung-galaxy-z-fold-8",
+    "samsung-galaxy-z-fold-8-vs-motorola-razr-fold"
+  ],
+  "relatedGuideSlugs": ["foldable-phone-buying-guide-2026"],
+  "isRoundup": true,
+  "lastUpdated": "2026-09-23"
+}

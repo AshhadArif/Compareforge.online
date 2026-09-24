@@ -1,0 +1,109 @@
+{
+  "id": "best-phones-under-500-2026",
+  "slug": "best-phones-under-500-2026",
+  "productIds": ["google-pixel-10a", "apple-iphone-17e", "samsung-galaxy-a17-5g", "motorola-moto-g-power-2026"],
+  "title": "Best Phones Under $500 in 2026",
+  "metaDescription": "Compare the best smartphones under $500 in 2026. Pixel 10a, iPhone 17e, Galaxy A17, and Moto G Power with verified specs and analysis.",
+  "category": "smartphones",
+  "intro": "Compare the best smartphones under $500 in 2026 — four phones that deliver excellent value across different ecosystems and price points.",
+  "quickVerdict": "The Pixel 10a at $499 offers the best overall value with excellent cameras and 7 years of updates. The iPhone 17e at $599 is over budget but worth considering for iOS users. The Galaxy A17 at $199 is the best ultra-budget option. The Moto G Power at $299 excels in battery life.",
+  "keyDifferences": [
+    {
+      "feature": "Price Range",
+      "productAValue": "$199 - $499",
+      "productBValue": "Four phones across $199-$599",
+      "significance": "high",
+      "interpretation": "This comparison covers phones from $199 to $599, showing what's available at each budget level."
+    },
+    {
+      "feature": "Best Camera System",
+      "productAValue": "Pixel 10a (dual camera, computational photography)",
+      "productBValue": "iPhone 17e (single camera, iOS)",
+      "significance": "high",
+      "interpretation": "The Pixel 10a has the best camera system in this price range with dual lenses and Google's computational photography."
+    },
+    {
+      "feature": "Best Battery Life",
+      "productAValue": "Moto G Power (6,000mAh)",
+      "productBValue": "Pixel 10a (5,100mAh)",
+      "significance": "high",
+      "interpretation": "The Moto G Power has the largest battery at 6,000mAh, followed by the Pixel 10a at 5,100mAh."
+    },
+    {
+      "feature": "Longest Software Support",
+      "productAValue": "Pixel 10a (7 years)",
+      "productBValue": "Galaxy A17 (6 years security)",
+      "significance": "medium",
+      "interpretation": "The Pixel 10a offers 7 years of OS and security updates — the longest in this comparison."
+    },
+    {
+      "feature": "Best Display",
+      "productAValue": "Pixel 10a (120Hz OLED)",
+      "productBValue": "Galaxy A17 (90Hz AMOLED)",
+      "significance": "medium",
+      "interpretation": "The Pixel 10a has the smoothest display with 120Hz refresh rate on an OLED panel."
+    }
+  ],
+  "practicalImplications": "For most users, the Pixel 10a at $499 is the best overall package. If you're on a tight budget, the Galaxy A17 at $199 offers incredible value. If battery life is your priority, the Moto G Power at $299 is hard to beat. iOS users should consider the iPhone 17e despite its higher price.",
+  "useCaseRecommendations": [
+    {
+      "scenario": "Best overall value",
+      "recommended": "google-pixel-10a",
+      "reason": "Excellent cameras, 120Hz display, 7 years of updates"
+    },
+    {
+      "scenario": "Tightest budget",
+      "recommended": "samsung-galaxy-a17-5g",
+      "reason": "Best phone under $200 with 6 years of security updates"
+    },
+    {
+      "scenario": "Battery life priority",
+      "recommended": "motorola-moto-g-power-2026",
+      "reason": "Massive 6,000mAh battery with wireless charging"
+    },
+    {
+      "scenario": "iOS preference",
+      "recommended": "apple-iphone-17e",
+      "reason": "Most affordable iPhone with Apple Intelligence"
+    },
+    {
+      "scenario": "Camera on a budget",
+      "recommended": "google-pixel-10a",
+      "reason": "Best camera system under $500"
+    }
+  ],
+  "considerations": [
+    "The iPhone 17e at $599 is over the $500 budget but included for reference",
+    "All phones support 5G for future-proofing",
+    "Budget phones may have slower charging than flagships",
+    "Storage options vary — consider your storage needs"
+  ],
+  "faq": [
+    {
+      "question": "What is the best phone under $500?",
+      "answer": "The Google Pixel 10a at $499 is the best phone under $500 in 2026. It offers excellent cameras with dual-lens system, a smooth 120Hz OLED display, 5,100mAh battery, and 7 years of software updates."
+    },
+    {
+      "question": "What is the best cheap phone under $200?",
+      "answer": "The Samsung Galaxy A17 5G at $199 is the best phone under $200. It offers an AMOLED display, 5G connectivity, and 6 years of security updates — exceptional value at this price."
+    },
+    {
+      "question": "Is the iPhone 17e worth it over the Pixel 10a?",
+      "answer": "Only if you specifically want iOS. The Pixel 10a offers better hardware (cameras, battery, display) at $100 less. The iPhone 17e's main advantage is access to iOS and Apple's ecosystem."
+    },
+    {
+      "question": "Which budget phone has the best battery life?",
+      "answer": "The Motorola Moto G Power 2026 has the largest 6,000mAh battery in this comparison, providing the longest battery life. It also supports wireless charging, which is rare at this price point."
+    },
+    {
+      "question": "How long do budget phones last?",
+      "answer": "The Pixel 10a offers 7 years of software updates, matching flagship phones. The Galaxy A17 offers 6 years of security updates. The Moto G Power offers 2 years of OS updates and 3 years of security updates. Software support duration is a key factor in long-term value."
+    }
+  ],
+  "relatedComparisonSlugs": [
+    "google-pixel-10a-vs-apple-iphone-17e"
+  ],
+  "relatedGuideSlugs": [],
+  "isRoundup": true,
+  "lastUpdated": "2026-09-23"
+}

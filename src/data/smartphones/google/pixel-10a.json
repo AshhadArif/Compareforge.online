@@ -1,0 +1,115 @@
+{
+  "id": "google-pixel-10a",
+  "brand": "Google",
+  "model": "Pixel 10a",
+  "fullName": "Google Pixel 10a",
+  "slug": "google-pixel-10a",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2026-03-15",
+  "pricing": {
+    "msrp": 499,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "8GB", "price": 499 },
+      { "storage": "256GB", "ram": "8GB", "price": 559 }
+    ]
+  },
+  "display": {
+    "size": 6.3,
+    "resolution": "1080 x 2424",
+    "panelType": "OLED",
+    "refreshRate": 120,
+    "peakBrightness": 1400,
+    "hdr": true,
+    "protection": "Gorilla Glass 7i"
+  },
+  "performance": {
+    "chipset": "Google Tensor G4",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Mali-G715",
+    "ram": 8,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 48,
+      "aperture": "f/1.7",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 13,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": null,
+    "front": {
+      "mp": 13,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": ["Night Sight Video"]
+    },
+    "features": ["Magic Eraser", "Photo Unblur", "Best Take"]
+  },
+  "battery": {
+    "capacity": 5100,
+    "type": "Li-Po",
+    "wiredCharging": 23,
+    "wirelessCharging": 7.5,
+    "reverseWireless": false
+  },
+  "design": {
+    "dimensions": { "height": 152.0, "width": 72.0, "depth": 8.6 },
+    "weight": 186,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Composite",
+    "waterResistance": "IP68",
+    "colors": ["Obsidian", "Porcelain", "Aloe", "Peony"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB"],
+    "expandable": false,
+    "type": "UFS 3.1"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 6E",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 2.0",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 16",
+    "osSkin": "Pixel UI",
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": ["Gemini Nano", "Magic Eraser", "Photo Unblur", "Call Screen"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://store.google.com/product/pixel_10a", "siteName": "Google", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "performance", "url": "https://store.google.com/product/pixel_10a", "siteName": "Google", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "camera", "url": "https://store.google.com/product/pixel_10a", "siteName": "Google", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "battery", "url": "https://store.google.com/product/pixel_10a", "siteName": "Google", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "pricing", "url": "https://store.google.com/product/pixel_10a", "siteName": "Google", "dateAccessed": "2026-09-20", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-23",
+  "lastVerified": "2026-09-20",
+  "summary": "Google's best budget phone with Tensor G4, excellent cameras, and 7 years of updates."
+}

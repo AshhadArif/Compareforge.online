@@ -1,0 +1,124 @@
+{
+  "id": "apple-iphone-18-pro-max",
+  "brand": "Apple",
+  "model": "iPhone 18 Pro Max",
+  "fullName": "Apple iPhone 18 Pro Max",
+  "slug": "apple-iphone-18-pro-max",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2026-09-09",
+  "pricing": {
+    "msrp": 1299,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "8GB", "price": 1299 },
+      { "storage": "512GB", "ram": "8GB", "price": 1499 },
+      { "storage": "1TB", "ram": "8GB", "price": 1699 },
+      { "storage": "2TB", "ram": "8GB", "price": 1999 }
+    ]
+  },
+  "display": {
+    "size": 6.9,
+    "resolution": "1320 x 2868",
+    "panelType": "OLED",
+    "refreshRate": 120,
+    "peakBrightness": 2800,
+    "hdr": true,
+    "protection": "Ceramic Shield"
+  },
+  "performance": {
+    "chipset": "Apple A20 Pro",
+    "fabrication": "2nm",
+    "cpuCores": 6,
+    "gpuModel": "Apple 7-core GPU",
+    "ram": 8,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 48,
+      "aperture": "f/1.48-f/4.0",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": ["variable aperture"]
+    },
+    "ultrawide": {
+      "mp": 48,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 48,
+      "aperture": "f/2.8",
+      "ois": true,
+      "opticalZoom": 4,
+      "maxZoom": 25,
+      "features": []
+    },
+    "front": {
+      "mp": 18,
+      "aperture": "f/1.9",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": ["autofocus"]
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 120,
+      "features": ["Cinematic Mode", "ProRes", "Action Mode"]
+    },
+    "features": ["Photonic Engine", "Night Mode", "Deep Fusion"]
+  },
+  "battery": {
+    "capacity": 4685,
+    "type": "Li-Po",
+    "wiredCharging": 60,
+    "wirelessCharging": 25,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 163.0, "width": 77.6, "depth": 8.3 },
+    "weight": 227,
+    "frameMaterial": "Titanium",
+    "backMaterial": "Textured Matte Glass",
+    "waterResistance": "IP68",
+    "colors": ["Black", "Burgundy", "Silver", "Glacier"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB", "1TB", "2TB"],
+    "expandable": false,
+    "type": "NVMe"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": true
+  },
+  "software": {
+    "osAtLaunch": "iOS 27",
+    "osSkin": null,
+    "updateCommitment": 6,
+    "securityCommitment": 6,
+    "aiFeatures": ["Apple Intelligence", "Siri AI", "Visual Intelligence", "Writing Tools", "Clean Up"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.apple.com/iphone-18-pro/specs/", "siteName": "Apple", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "performance", "url": "https://www.apple.com/iphone-18-pro/specs/", "siteName": "Apple", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.apple.com/iphone-18-pro/specs/", "siteName": "Apple", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.apple.com/iphone-18-pro/specs/", "siteName": "Apple", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.apple.com/shop/buy-iphone", "siteName": "Apple", "dateAccessed": "2026-09-20", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-23",
+  "lastVerified": "2026-09-20",
+  "summary": "Apple's 2026 flagship with A20 Pro chip, variable aperture camera, and Apple Intelligence."
+}

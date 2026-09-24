@@ -1,0 +1,113 @@
+{
+  "id": "samsung-galaxy-z-fold-8",
+  "brand": "Samsung",
+  "model": "Galaxy Z Fold 8",
+  "fullName": "Samsung Galaxy Z Fold 8",
+  "slug": "samsung-galaxy-z-fold-8",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2026-07-22",
+  "pricing": {
+    "msrp": 1899,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "12GB", "price": 1899 },
+      { "storage": "512GB", "ram": "12GB", "price": 2019 },
+      { "storage": "1TB", "ram": "16GB", "price": 2259 }
+    ]
+  },
+  "display": {
+    "size": 7.6,
+    "resolution": "2160 x 1856",
+    "panelType": "AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 2600,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 3"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Elite Gen 5",
+    "fabrication": "3nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 830",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.7",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 12,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": null,
+    "front": {
+      "mp": 10,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": ["Night Mode Video"]
+    },
+    "features": ["Nightography"]
+  },
+  "battery": {
+    "capacity": 4800,
+    "type": "Li-Po",
+    "wiredCharging": 45,
+    "wirelessCharging": 15,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 158.4, "width": 67.1, "depth": 12.1 },
+    "weight": 201,
+    "frameMaterial": "Armor Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP48",
+    "colors": ["Black", "Silver", "Blue"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB", "1TB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 16",
+    "osSkin": "One UI 8.5",
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": ["Galaxy AI", "Gemini", "Circle to Search", "Multi-window AI"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.samsung.com/us/smartphones/galaxy-z-fold8/", "siteName": "Samsung", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.samsung.com/us/smartphones/galaxy-z-fold8/", "siteName": "Samsung", "dateAccessed": "2026-09-20", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-23",
+  "lastVerified": "2026-09-20",
+  "summary": "Samsung's thinnest book-style foldable with 7.6-inch inner display and Snapdragon 8 Elite Gen 5."
+}

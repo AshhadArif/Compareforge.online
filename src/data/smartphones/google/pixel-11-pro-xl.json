@@ -1,0 +1,122 @@
+{
+  "id": "google-pixel-11-pro-xl",
+  "brand": "Google",
+  "model": "Pixel 11 Pro XL",
+  "fullName": "Google Pixel 11 Pro XL",
+  "slug": "google-pixel-11-pro-xl",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2026-08-15",
+  "pricing": {
+    "msrp": 1199,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "16GB", "price": 1199 },
+      { "storage": "512GB", "ram": "16GB", "price": 1399 }
+    ]
+  },
+  "display": {
+    "size": 6.8,
+    "resolution": "1344 x 2992",
+    "panelType": "OLED",
+    "refreshRate": 120,
+    "peakBrightness": 3600,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 3"
+  },
+  "performance": {
+    "chipset": "Google Tensor G6",
+    "fabrication": "3nm",
+    "cpuCores": 7,
+    "gpuModel": "Mali-G715",
+    "ram": 16,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.68",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 48,
+      "aperture": "f/1.9",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 48,
+      "aperture": "f/2.8",
+      "ois": true,
+      "opticalZoom": 5,
+      "maxZoom": 120,
+      "features": ["periscope"]
+    },
+    "front": {
+      "mp": 42,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": ["autofocus"]
+    },
+    "video": {
+      "maxResolution": "8K",
+      "maxFps": 30,
+      "features": ["Night Sight Video", "Cinematic Blur"]
+    },
+    "features": ["Magic Eraser", "Magic Editor", "Best Take", "Photo Unblur"]
+  },
+  "battery": {
+    "capacity": 5115,
+    "type": "Li-Po",
+    "wiredCharging": 45,
+    "wirelessCharging": 25,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 162.7, "width": 76.5, "depth": 8.5 },
+    "weight": 225,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Obsidian", "Porcelain", "Canyon", "Olive"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": true
+  },
+  "software": {
+    "osAtLaunch": "Android 17",
+    "osSkin": "Pixel UI",
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": ["Gemini", "Magic Eraser", "Magic Editor", "Best Take", "Call Screen", "Live Translate"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://store.google.com/product/pixel_11_pro_xl", "siteName": "Google", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "performance", "url": "https://store.google.com/product/pixel_11_pro_xl", "siteName": "Google", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "camera", "url": "https://store.google.com/product/pixel_11_pro_xl", "siteName": "Google", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "battery", "url": "https://store.google.com/product/pixel_11_pro_xl", "siteName": "Google", "dateAccessed": "2026-09-20", "confidence": "verified" },
+    { "field": "pricing", "url": "https://store.google.com/product/pixel_11_pro_xl", "siteName": "Google", "dateAccessed": "2026-09-20", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-23",
+  "lastVerified": "2026-09-20",
+  "summary": "Google's 2026 flagship with Tensor G6, Gemini AI, 3600 nits display, and 7 years of updates."
+}

@@ -1,0 +1,8 @@
+[
+  { "id": "apple", "name": "Apple", "slug": "apple", "website": "https://www.apple.com" },
+  { "id": "samsung", "name": "Samsung", "slug": "samsung", "website": "https://www.samsung.com" },
+  { "id": "google", "name": "Google", "slug": "google", "website": "https://store.google.com" },
+  { "id": "oneplus", "name": "OnePlus", "slug": "oneplus", "website": "https://www.oneplus.com" },
+  { "id": "motorola", "name": "Motorola", "slug": "motorola", "website": "https://www.motorola.com" },
+  { "id": "xiaomi", "name": "Xiaomi", "slug": "xiaomi", "website": "https://www.mi.com" }
+]
