@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 
 const res = spawnSync(
   process.execPath,
-  ["node_modules/next/dist/bin/next", "build"],
+  ["node_modules/next/dist/bin/next", "build", "--webpack"],
   { stdio: "inherit", env: { ...process.env, NEXT_OUTPUT: "export" } }
 );
 

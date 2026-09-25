@@ -18,7 +18,7 @@
   RewriteCond %{DOCUMENT_ROOT}%1.html -f
   RewriteRule .* %1 [R=308,L]
 
-  # Legacy URLs — must mirror next.config.ts redirects (permanent)
+  # Legacy URLs — must mirror next.config.mjs redirects (permanent)
   RewriteRule ^comparisons$ /compare [R=308,L]
   RewriteRule ^comparisons/(.*)$ /compare/$1 [R=308,L]
   RewriteRule ^tools/phone-comparison$ /tools/product-comparison [R=308,L]
@@ -39,7 +39,7 @@
 # Custom 404 page (out/404.html)
 ErrorDocument 404 /404.html
 
-# Security headers — mirror next.config.ts headers()
+# Security headers — mirror next.config.mjs headers()
 <IfModule mod_headers.c>
   Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
   Header always set X-Content-Type-Options "nosniff"

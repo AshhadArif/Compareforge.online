@@ -1,14 +1,22 @@
-import type { NextConfig } from "next";
-
+/**
+ * @type {import('next').NextConfig}
+ *
+ * Plain JavaScript on purpose: loading a TypeScript config requires the
+ * native SWC compiler, which cannot run on hosts with glibc < 2.29
+ * (e.g. Hostinger's build servers). An .mjs config loads without it.
+ *
+ * Set NEXT_OUTPUT=export to build a fully static site (scripts/build-static.mjs);
+ * otherwise SSR redirects + security headers apply.
+ */
 const isStaticExport = process.env.NEXT_OUTPUT === "export";
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 60 * 60 * 24 * 365,
   },
   ...(isStaticExport
-    ? { output: "export" as const }
+    ? { output: "export" }
     : {
         async redirects() {
           return [
