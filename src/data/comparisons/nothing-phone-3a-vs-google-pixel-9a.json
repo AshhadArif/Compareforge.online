@@ -1,0 +1,140 @@
+{
+  "id": "nothing-phone-3a-vs-google-pixel-9a",
+  "slug": "nothing-phone-3a-vs-google-pixel-9a",
+  "productIds": ["nothing-phone-3a", "google-pixel-9a"],
+  "title": "Nothing Phone (3a) vs Pixel 9a",
+  "metaDescription": "Nothing Phone (3a) vs Pixel 9a — $379 vs $499, 12GB vs 8GB RAM, 50W vs 23W charging and 3 years vs 7 years of updates compared.",
+  "category": "budget-phones",
+  "intro": "Compare the Nothing Phone (3a) and Google Pixel 9a — two 2025 mid-rangers that trade on price, camera hardware and software support in very different ways.",
+  "quickVerdict": "The Phone (3a) is listed at $379 and brings 12GB of RAM, a 6.77-inch 3,000-nit display, a 50MP 2x telephoto and 50W wired charging. The Pixel 9a costs $499 but lists a 7-year update commitment, a 5,100 mAh battery with 7.5W wireless charging, an IP68 rating and Google's Tensor G4 with Gemini features. Shoppers who want the longest support window and wireless charging should take the Pixel; those who want more hardware for less money should look at the Nothing.",
+  "keyDifferences": [
+    {
+      "feature": "Price and Configuration",
+      "productAValue": "$379 for 256GB with 12GB RAM",
+      "productBValue": "$499 for 128GB with 8GB RAM",
+      "significance": "high",
+      "interpretation": "The Nothing costs $120 less while listing double the storage and 4GB more RAM in its priced configuration. The Phone (3a)'s 128GB and 8GB variants are listed without prices, so only the 256GB / 12GB figure can be compared directly."
+    },
+    {
+      "feature": "Display",
+      "productAValue": "6.77-inch AMOLED, 1080 x 2392, 120Hz, 3,000 nits",
+      "productBValue": "6.3-inch pOLED, 1080 x 2424, 120Hz, 2,700 nits",
+      "significance": "medium",
+      "interpretation": "Both screens refresh at 120Hz, but the Phone (3a) is 0.47 inches larger and lists 300 more nits of peak brightness. The smaller Pixel panel fits slightly more pixels (1080 x 2424 versus 1080 x 2392), so its image is marginally denser."
+    },
+    {
+      "feature": "Chipset",
+      "productAValue": "Snapdragon 7s Gen 3, 4nm",
+      "productBValue": "Google Tensor G4, 4nm",
+      "significance": "medium",
+      "interpretation": "Both are 8-core 4nm chips, but they come from different vendors and carry different software features. Google lists Gemini Nano, Circle to Search and Best Take for the Pixel, while Nothing lists Essential Space for the Phone (3a)."
+    },
+    {
+      "feature": "RAM",
+      "productAValue": "12GB LPDDR4X",
+      "productBValue": "8GB LPDDR5X",
+      "significance": "medium",
+      "interpretation": "The Phone (3a) has 50% more RAM, which helps when keeping many apps open at once. The Pixel uses the newer LPDDR5X memory type against LPDDR4X on the Nothing, so capacity and speed point in opposite directions."
+    },
+    {
+      "feature": "Camera System",
+      "productAValue": "50MP f/1.88 main (OIS) + 8MP f/2.2 ultrawide + 50MP f/2.0 2x telephoto; 32MP front",
+      "productBValue": "48MP f/1.7 main (OIS) + 13MP f/2.2 ultrawide, no telephoto; 13MP front",
+      "significance": "high",
+      "interpretation": "The Phone (3a) adds a dedicated 50MP telephoto with 2x optical zoom that the Pixel does not list, plus a higher-resolution 32MP front camera. The Pixel answers with a wider f/1.7 main aperture and a higher-resolution 13MP ultrawide versus 8MP on the Nothing."
+    },
+    {
+      "feature": "Video Recording",
+      "productAValue": "4K at 30fps",
+      "productBValue": "4K at 60fps",
+      "significance": "medium",
+      "interpretation": "Both phones record 4K, but the Pixel 9a lists 60fps at that resolution while the Phone (3a) stops at 30fps. The Pixel also lists Audio Magic Eraser, while Nothing lists TrueLens Engine 3.0 and Ultra XDR."
+    },
+    {
+      "feature": "Battery and Charging",
+      "productAValue": "5,000 mAh, 50W wired, no wireless",
+      "productBValue": "5,100 mAh, 23W wired, 7.5W wireless",
+      "significance": "high",
+      "interpretation": "Capacities are within 100 mAh of each other, so the split is in charging: the Phone (3a) lists 50W wired against 23W on the Pixel, while only the Pixel lists wireless charging at 7.5W."
+    },
+    {
+      "feature": "Software Updates",
+      "productAValue": "3 years OS + 6 years security",
+      "productBValue": "7 years OS + 7 years security",
+      "significance": "high",
+      "interpretation": "Google's 7-year OS commitment is more than double Nothing's 3 years, and security support is closer at 7 years versus 6. Both phones launched on Android 15."
+    },
+    {
+      "feature": "Water Resistance",
+      "productAValue": "IP64",
+      "productBValue": "IP68",
+      "significance": "high",
+      "interpretation": "Both ratings carry a 6 for dust, but the water digit differs: 4 for splash exposure on the Phone (3a) and 8 for submersion on the Pixel 9a. That is the clearest hardware gap between the two on durability."
+    }
+  ],
+  "practicalImplications": "On paper the Phone (3a) delivers more hardware per dollar — more RAM, a larger and brighter screen, a telephoto lens, 50W charging and a $120 lower price — while the Pixel 9a concentrates its budget on longevity and resilience: 7 years of updates, IP68 water resistance, wireless charging, a 5,100 mAh battery and Google's Tensor G4 with its AI feature set. Storage tells a similar story, with UFS 2.2 on the Nothing against UFS 3.1 on the Pixel, and software support tells the sharpest one: three years of OS updates versus seven. Buyers should decide whether they value more spec sheet today or a longer support runway.",
+  "useCaseRecommendations": [
+    {
+      "scenario": "Lowest price with the most memory and storage",
+      "recommended": "nothing-phone-3a",
+      "reason": "$379 for 256GB and 12GB RAM versus $499 for 128GB and 8GB RAM"
+    },
+    {
+      "scenario": "Longest software support",
+      "recommended": "google-pixel-9a",
+      "reason": "7 years of OS and 7 years of security updates versus 3 years and 6 years"
+    },
+    {
+      "scenario": "Zoom photography on a budget",
+      "recommended": "nothing-phone-3a",
+      "reason": "50MP telephoto with 2x optical zoom that the Pixel 9a does not list"
+    },
+    {
+      "scenario": "Wireless charging and water resistance",
+      "recommended": "google-pixel-9a",
+      "reason": "7.5W wireless charging and an IP68 rating versus no wireless charging and IP64"
+    },
+    {
+      "scenario": "Fastest wired top-up",
+      "recommended": "nothing-phone-3a",
+      "reason": "50W wired charging versus 23W on the Pixel 9a"
+    }
+  ],
+  "considerations": [
+    "The $379 Nothing price is for the 256GB / 12GB variant — its 128GB and 8GB variants are listed without prices",
+    "Storage is UFS 2.2 on the Phone (3a) versus UFS 3.1 on the Pixel 9a, and neither supports expansion",
+    "The Phone (3a) is listed as available while the Pixel 9a is listed as discontinued",
+    "Screen protection differs: Panda Glass on the Phone (3a) versus Gorilla Glass 3 on the Pixel 9a",
+    "AI feature lists differ — Essential Space on the Nothing versus Gemini Nano, Circle to Search and Best Take on the Pixel",
+    "The Phone (3a) uses USB-C 2.0 and Wi-Fi 6, while the Pixel 9a lists USB-C 3.2 and WiFi 6E"
+  ],
+  "faq": [
+    {
+      "question": "Which phone is cheaper?",
+      "answer": "The Nothing Phone (3a) is listed at $379 for its 256GB / 12GB configuration, while the Google Pixel 9a is listed at $499 for 128GB / 8GB and $599 for 256GB / 8GB. That makes the Nothing $120 cheaper with double the storage in the priced configuration."
+    },
+    {
+      "question": "Which phone has a better camera?",
+      "answer": "Both use a stabilised main camera — 50MP f/1.88 on the Phone (3a) and 48MP f/1.7 on the Pixel 9a. The Nothing adds a 50MP telephoto with 2x optical zoom and a 32MP front camera, while the Pixel offers a higher-resolution 13MP ultrawide versus 8MP and records 4K video at 60fps rather than 30fps."
+    },
+    {
+      "question": "Which phone has better battery life?",
+      "answer": "Battery capacities are close — 5,000 mAh in the Phone (3a) and 5,100 mAh in the Pixel 9a. Charging differs much more: 50W wired on the Nothing against 23W on the Pixel, while the Pixel is the only one of the two that lists wireless charging, at 7.5W."
+    },
+    {
+      "question": "How long will these phones receive updates?",
+      "answer": "The Pixel 9a lists 7 years of OS updates and 7 years of security updates. The Nothing Phone (3a) lists 3 years of OS updates and 6 years of security updates, so Google's commitment runs four years longer on major Android versions."
+    },
+    {
+      "question": "Which phone is more water resistant?",
+      "answer": "The Pixel 9a carries an IP68 rating, which lists dust tightness and submersion. The Phone (3a) carries IP64, which lists the same dust figure but only splash resistance for water."
+    }
+  ],
+  "relatedComparisonSlugs": [
+    "best-phones-under-500-2026",
+    "google-pixel-10a-vs-apple-iphone-17e"
+  ],
+  "relatedGuideSlugs": ["ai-features-explained", "choosing-a-phone-by-use-case"],
+  "isRoundup": false,
+  "lastUpdated": "2026-09-25"
+}

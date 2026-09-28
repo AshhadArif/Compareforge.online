@@ -1,0 +1,167 @@
+{
+  "id": "samsung-galaxy-s25",
+  "brand": "Samsung",
+  "model": "Galaxy S25",
+  "fullName": "Samsung Galaxy S25",
+  "slug": "samsung-galaxy-s25",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2025-02-07",
+  "pricing": {
+    "msrp": 799,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "12GB", "price": 799 },
+      { "storage": "256GB", "ram": "12GB", "price": 859 },
+      { "storage": "512GB", "ram": "12GB", "price": null }
+    ]
+  },
+  "display": {
+    "size": 6.2,
+    "resolution": "1080 x 2340",
+    "panelType": "AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 2600,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 2"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Elite for Galaxy",
+    "fabrication": "3nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 830",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.8",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 12,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 10,
+      "aperture": "f/2.4",
+      "ois": true,
+      "opticalZoom": 3,
+      "maxZoom": 30,
+      "features": []
+    },
+    "front": {
+      "mp": 12,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "8K",
+      "maxFps": 30,
+      "features": ["HDR10+"]
+    },
+    "features": ["Nightography", "ProVisual Engine"]
+  },
+  "battery": {
+    "capacity": 4000,
+    "type": "Li-Ion",
+    "wiredCharging": 25,
+    "wirelessCharging": 15,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 146.9, "width": 70.5, "depth": 7.2 },
+    "weight": 162,
+    "frameMaterial": "Armor Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Navy", "Icyblue", "Silver Shadow", "Mint"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB", "512GB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": true
+  },
+  "software": {
+    "osAtLaunch": "Android 15",
+    "osSkin": "One UI 7",
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": [
+      "Galaxy AI",
+      "Gemini",
+      "Circle to Search",
+      "Now Brief",
+      "Live Translate",
+      "Note Assist"
+    ]
+  },
+  "sources": [
+    {
+      "field": "display",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s25-13610.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "performance",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s25-13610.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "camera",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s25-13610.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "pricing",
+      "url": "https://www.samsung.com/us/smartphones/galaxy-s25/buy/",
+      "siteName": "Samsung",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "connectivity",
+      "url": "https://www.skylo.tech/newsroom/skylo-certifies-the-samsung-galaxy-s25-series-on-verizon",
+      "siteName": "Skylo",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "software",
+      "url": "https://en.wikipedia.org/wiki/One_UI",
+      "siteName": "Wikipedia",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Samsung's compact 2025 flagship with a 120Hz AMOLED, Snapdragon 8 Elite, and Galaxy AI."
+}

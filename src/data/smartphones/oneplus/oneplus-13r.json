@@ -1,0 +1,122 @@
+{
+  "id": "oneplus-13r",
+  "brand": "OnePlus",
+  "model": "13R",
+  "fullName": "OnePlus 13R",
+  "slug": "oneplus-13r",
+  "category": "smartphones",
+  "status": "discontinued",
+  "releaseDate": "2025-01-14",
+  "pricing": {
+    "msrp": 599,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "12GB", "price": 599 },
+      { "storage": "512GB", "ram": "16GB", "price": null }
+    ]
+  },
+  "display": {
+    "size": 6.78,
+    "resolution": "1264 x 2780",
+    "panelType": "LTPO AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 4500,
+    "hdr": true,
+    "protection": "Gorilla Glass 7i"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Gen 3",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 750",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.8",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 8,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 50,
+      "aperture": "f/2.0",
+      "ois": false,
+      "opticalZoom": 2,
+      "maxZoom": null,
+      "features": []
+    },
+    "front": {
+      "mp": 16,
+      "aperture": "f/2.4",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": []
+    },
+    "features": []
+  },
+  "battery": {
+    "capacity": 6000,
+    "type": "Li-Ion",
+    "wiredCharging": 55,
+    "wirelessCharging": null,
+    "reverseWireless": null
+  },
+  "design": {
+    "dimensions": { "height": 161.7, "width": 75.8, "depth": 8.0 },
+    "weight": 206,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP65",
+    "colors": ["Astral Trail", "Nebula Noir"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB-C 2.0",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 15",
+    "osSkin": "OxygenOS 15",
+    "updateCommitment": 4,
+    "securityCommitment": 6,
+    "aiFeatures": []
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.oneplus.com/us/13r/specs", "siteName": "OnePlus", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "performance", "url": "https://www.gsmarena.com/oneplus_13r-13548.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.gsmarena.com/oneplus_13r-13548.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.pcmag.com/reviews/oneplus-13r", "siteName": "PCMag", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "status", "url": "https://techcrunch.com/2026/07/16/phone-maker-oneplus-reportedly-plans-to-wind-down-us-and-europe-operations/", "siteName": "TechCrunch", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "OnePlus's value flagship with a 6000mAh battery, 4500-nit 120Hz display, and 55W wired charging."
+}

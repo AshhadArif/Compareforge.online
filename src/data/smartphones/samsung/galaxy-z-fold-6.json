@@ -1,0 +1,160 @@
+{
+  "id": "samsung-galaxy-z-fold-6",
+  "brand": "Samsung",
+  "model": "Galaxy Z Fold6",
+  "fullName": "Samsung Galaxy Z Fold6",
+  "slug": "samsung-galaxy-z-fold-6",
+  "category": "foldable-phones",
+  "status": "discontinued",
+  "releaseDate": "2024-07-24",
+  "pricing": {
+    "msrp": 1899,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "12GB", "price": 1899 },
+      { "storage": "512GB", "ram": "12GB", "price": 2019 },
+      { "storage": "1TB", "ram": "12GB", "price": 2259 }
+    ]
+  },
+  "display": {
+    "size": 7.6,
+    "resolution": "1856 x 2160",
+    "panelType": "AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 2600,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 2"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Gen 3 for Galaxy",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 750",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.8",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 12,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 10,
+      "aperture": "f/2.4",
+      "ois": true,
+      "opticalZoom": 3,
+      "maxZoom": 30,
+      "features": []
+    },
+    "front": {
+      "mp": 10,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "8K",
+      "maxFps": 30,
+      "features": ["HDR10+"]
+    },
+    "features": ["Nightography"]
+  },
+  "battery": {
+    "capacity": 4400,
+    "type": "Li-Po",
+    "wiredCharging": 25,
+    "wirelessCharging": 15,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 153.5, "width": 68.1, "depth": 12.1 },
+    "weight": 239,
+    "frameMaterial": "Armor Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP48",
+    "colors": ["Navy", "Silver Shadow", "Pink"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB", "1TB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 6E",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": "One UI 6.1.1",
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": ["Galaxy AI", "Circle to Search", "Interpreter", "Note Assist", "Sketch to Image", "Live Translate"]
+  },
+  "sources": [
+    {
+      "field": "display",
+      "url": "https://www.gsmarena.com/samsung_galaxy_z_fold6-13147.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "performance",
+      "url": "https://www.gsmarena.com/samsung_galaxy_z_fold6-13147.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "camera",
+      "url": "https://www.gsmarena.com/samsung_galaxy_z_fold6-13147.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "pricing",
+      "url": "https://www.smartprix.com/bytes/breaking-samsung-galaxy-z-fold6-us-pricing-variants-revealed/",
+      "siteName": "Smartprix",
+      "dateAccessed": "2026-09-25",
+      "confidence": "estimated"
+    },
+    {
+      "field": "pricing",
+      "url": "https://www.cellcom.com/shop/devices/phones/samsung/galaxy-z-fold6-512gb-silver-shadow",
+      "siteName": "Cellcom",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "design",
+      "url": "https://news.samsung.com/global/samsung-galaxy-z-fold6-sets-a-new-standard-for-productivity-with-ai-powered-performance-and-portability",
+      "siteName": "Samsung Newsroom",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Samsung's book-style foldable with a 7.6-inch inner display, S Pen support, and Galaxy AI."
+}

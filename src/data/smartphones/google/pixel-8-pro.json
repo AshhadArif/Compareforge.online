@@ -1,0 +1,125 @@
+{
+  "id": "google-pixel-8-pro",
+  "brand": "Google",
+  "model": "Pixel 8 Pro",
+  "fullName": "Google Pixel 8 Pro",
+  "slug": "google-pixel-8-pro",
+  "category": "smartphones",
+  "status": "discontinued",
+  "releaseDate": "2023-10-12",
+  "pricing": {
+    "msrp": 999,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "12GB", "price": 999 },
+      { "storage": "256GB", "ram": "12GB", "price": 1059 },
+      { "storage": "512GB", "ram": "12GB", "price": 1179 },
+      { "storage": "1TB", "ram": "12GB", "price": 1399 }
+    ]
+  },
+  "display": {
+    "size": 6.7,
+    "resolution": "1344 x 2992",
+    "panelType": "LTPO OLED",
+    "refreshRate": 120,
+    "peakBrightness": 2400,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 2"
+  },
+  "performance": {
+    "chipset": "Google Tensor G3",
+    "fabrication": "4nm",
+    "cpuCores": 9,
+    "gpuModel": "Immortalis-G715s MC10",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.68",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 48,
+      "aperture": "f/2.0",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 48,
+      "aperture": "f/2.8",
+      "ois": true,
+      "opticalZoom": 5,
+      "maxZoom": null,
+      "features": []
+    },
+    "front": {
+      "mp": 10.5,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": ["Night Sight Video"]
+    },
+    "features": ["Best Take", "Magic Editor", "Video Boost"]
+  },
+  "battery": {
+    "capacity": 5050,
+    "type": "Li-Ion",
+    "wiredCharging": 30,
+    "wirelessCharging": 23,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 162.6, "width": 76.5, "depth": 8.8 },
+    "weight": 213,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Bay", "Obsidian", "Porcelain", "Mint"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB", "512GB", "1TB"],
+    "expandable": false,
+    "type": "UFS 3.1"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": null,
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": ["Gemini Nano", "Magic Editor", "Best Take", "Video Boost"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.o2.co.uk/help/phones-and-devices/google/google-pixel-8-pro/guide", "siteName": "O2", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "performance", "url": "https://www.gsmarena.com/google_pixel_8_pro-review-2709.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.gsmarena.com/google_pixel_8_pro-review-2709.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.phonearena.com/google-pixel-8-guide", "siteName": "PhoneArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://blog.google/products-and-platforms/devices/pixel/google-pixel-8-pro/", "siteName": "Google Blog", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "status", "url": "https://en.wikipedia.org/wiki/Google_Pixel_8", "siteName": "Wikipedia", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Google's 2023 flagship with a 6.7-inch LTPO OLED, 5x telephoto, temperature sensor, and seven years of updates."
+}

@@ -10,7 +10,6 @@ import { getProductById } from "@/lib/products";
 import { getGuideBySlug } from "@/lib/guides";
 import { Smartphone } from "@/data/types";
 import {
-  generateBreadcrumbSchema,
   generateFAQSchema,
   generateArticleSchema,
 } from "@/lib/schema";
@@ -71,11 +70,6 @@ export default async function ComparePage({ params }: ComparePageProps) {
     .filter((g): g is NonNullable<typeof g> => Boolean(g))
     .slice(0, 2);
 
-  const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "/" },
-    { name: "Comparisons", url: "/compare" },
-    { name: comparison.title },
-  ]);
   const faqSchema = generateFAQSchema(comparison.faq);
   const articleSchema = generateArticleSchema({
     title: comparison.title,
@@ -291,10 +285,6 @@ export default async function ComparePage({ params }: ComparePageProps) {
       )}
 
       {/* Structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

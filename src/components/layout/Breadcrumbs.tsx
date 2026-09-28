@@ -6,12 +6,21 @@ interface BreadcrumbItem {
 }
 
 export default function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
+  const base = "https://compareforge.online";
+
+  // Google requires each entry in itemListElement to be an explicit ListItem;
+  // `item` may be omitted on the final crumb (Google then uses the page URL).
   const itemListElement = [
-    { position: 1, name: "Home", item: "https://compareforge.online/" },
+    { "@type": "ListItem" as const, position: 1, name: "Home", item: `${base}/` },
     ...items.map((item, i) => ({
+      "@type": "ListItem" as const,
       position: i + 2,
       name: item.label,
-      item: item.href ? `https://compareforge.online${item.href}` : undefined,
+      ...(item.href
+        ? { item: `${base}${item.href}` }
+        : i === items.length - 1
+          ? {}
+          : { item: `${base}/` }),
     })),
   ];
 
@@ -36,16 +45,18 @@ export default function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
           </li>
         ))}
       </ol>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement,
-          }),
-        }}
-      />
+      {itemListElement.length >= 2 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement,
+            }),
+          }}
+        />
+      )}
     </nav>
   );
 }

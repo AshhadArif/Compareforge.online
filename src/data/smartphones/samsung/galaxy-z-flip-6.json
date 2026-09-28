@@ -1,0 +1,152 @@
+{
+  "id": "samsung-galaxy-z-flip-6",
+  "brand": "Samsung",
+  "model": "Galaxy Z Flip6",
+  "fullName": "Samsung Galaxy Z Flip6",
+  "slug": "samsung-galaxy-z-flip-6",
+  "category": "foldable-phones",
+  "status": "discontinued",
+  "releaseDate": "2024-07-24",
+  "pricing": {
+    "msrp": 1099,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "12GB", "price": 1099 },
+      { "storage": "512GB", "ram": "12GB", "price": 1219 }
+    ]
+  },
+  "display": {
+    "size": 6.7,
+    "resolution": "1080 x 2640",
+    "panelType": "AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 2600,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 2"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Gen 3 for Galaxy",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 750",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.8",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": 10,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 12,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": null,
+    "front": {
+      "mp": 10,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": ["HDR10+"]
+    },
+    "features": ["Nightography", "Auto Zoom"]
+  },
+  "battery": {
+    "capacity": 4000,
+    "type": null,
+    "wiredCharging": 25,
+    "wirelessCharging": 15,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 85.1, "width": 71.9, "depth": 14.9 },
+    "weight": 187,
+    "frameMaterial": "Armor Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP48",
+    "colors": ["Blue", "Mint", "Silver Shadow", "Yellow"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 6E",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": "One UI 6.1.1",
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": ["Galaxy AI", "Circle to Search", "Interpreter", "Note Assist", "Sketch to Image"]
+  },
+  "sources": [
+    {
+      "field": "display",
+      "url": "https://www.gsmarena.com/samsung_galaxy_z_flip6-13192.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "performance",
+      "url": "https://www.gsmarena.com/samsung_galaxy_z_flip6-13192.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "camera",
+      "url": "https://www.gsmarena.com/samsung_galaxy_z_flip6-13192.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "pricing",
+      "url": "https://www.notebookcheck.net/Samsung-Galaxy-Z-Flip6-prices-leak-hours-before-Samsung-Unpacked-event.847209.0.html",
+      "siteName": "Notebookcheck",
+      "dateAccessed": "2026-09-25",
+      "confidence": "estimated"
+    },
+    {
+      "field": "pricing",
+      "url": "https://www.woot.com/offers/samsung-galaxy-z-flip6-5g-wireless",
+      "siteName": "Woot",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "design",
+      "url": "https://news.samsung.com/global/samsung-galaxy-z-flip6-sets-the-stage-for-true-mobile-ai-experiences-with-pro-level-camera-and-all-day-battery",
+      "siteName": "Samsung Newsroom",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Samsung's clamshell foldable with a 6.7-inch display, 50MP camera, and Flex Window cover screen."
+}

@@ -6,7 +6,7 @@ import ComparisonCard from "@/components/ComparisonCard";
 import { products, getProductBySlug } from "@/lib/products";
 import { comparisons } from "@/lib/comparisons";
 import { generateProductSEO, formatReleaseDate } from "@/lib/seo";
-import { generateProductSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { generateProductSchema } from "@/lib/schema";
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
@@ -71,11 +71,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
     .slice(0, 4);
 
   const productSchema = generateProductSchema(product);
-  const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "/" },
-    { name: "Products", url: "/products" },
-    { name: product.fullName },
-  ]);
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -305,10 +300,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
     </div>
   );

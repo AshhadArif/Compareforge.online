@@ -667,4 +667,46 @@ export const tools: ToolRegistryEntry[] = [
     version: "1.0.0",
     lastUpdated: "2026-09-24",
   },
+  {
+    tool_id: "spec-comparison",
+    name: "Specification Comparison Tool",
+    type: "compare",
+    domain: "universal",
+    category: "product-specs",
+    description:
+      "Compare the specifications of any two products side by side - laptops, tablets, monitors, cameras, headphones or phones - with a category template you can edit.",
+    problem: "I have two spec sheets and I want the differences laid out for me.",
+    inputs: ["Category", "Product A name", "Product B name", "Specification values"],
+    outputs: [
+      "Side-by-side specification table",
+      "Per-row difference labels",
+      "Differences-only view",
+      "Custom specification rows",
+    ],
+    purpose:
+      "Let users compare any two products on their own verified numbers when we do not publish a product record for that category yet.",
+    route: "/tools/spec-comparison/",
+    dataRequirements: ["user-input", "attribute-templates"],
+    logic:
+      "Load category template -> compare entered values per row -> label same/higher/lower/different/missing",
+    seoTitle: "Specification Comparison Tool - Compare Any Two Products",
+    seoDescription:
+      "Free specification comparison tool. Enter the specs of any two products - laptop, tablet, monitor, camera or headphone - and see a side-by-side table with differences highlighted.",
+    searchKeywords: [
+      "spec comparison",
+      "compare specifications",
+      "specification comparison",
+      "product specs comparison",
+      "compare features",
+      "feature comparison",
+      "compare laptop specs",
+      "compare two products",
+      "product comparison chart",
+    ],
+    relatedTools: ["product-comparison", "dimension-comparison", "decision-matrix"],
+    relatedGuideSlugs: ["how-to-compare-product-specifications", "specs-explained"],
+    status: "built",
+    version: "1.0.0",
+    lastUpdated: "2026-09-29",
+  },
 ];

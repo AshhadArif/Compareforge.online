@@ -1,15 +1,29 @@
 import Link from "next/link";
+import { getBuiltTools } from "@/lib/tools";
 
 const footerSections = [
+  {
+    title: "Compare",
+    links: [
+      { href: "/compare", label: "Product Comparison" },
+      { href: "/compare/phones", label: "Phone Comparison" },
+      { href: "/compare/phone-size-comparison", label: "Phone Size Comparison" },
+      { href: "/compare/laptops", label: "Laptop Comparison" },
+      { href: "/compare/tablets", label: "Tablet Comparison" },
+      { href: "/compare/monitors", label: "Monitor Comparison" },
+      { href: "/compare/cameras", label: "Camera Comparison" },
+      { href: "/compare/headphones", label: "Headphone Comparison" },
+    ],
+  },
   {
     title: "Tools",
     links: [
       { href: "/tools", label: "All Tools" },
       { href: "/tools/product-comparison", label: "Compare Products" },
+      { href: "/tools/spec-comparison", label: "Specification Comparison" },
       { href: "/tools/product-finder", label: "Product Finder" },
       { href: "/tools/decision-matrix", label: "Decision Matrix" },
       { href: "/tools/percentage-difference-calculator", label: "Percentage Calculator" },
-      { href: "/tools/subscription-audit-calculator", label: "Subscription Audit" },
       { href: "/tools/compatibility-checker", label: "Compatibility Checker" },
     ],
   },
@@ -17,7 +31,9 @@ const footerSections = [
     title: "Explore",
     links: [
       { href: "/categories", label: "Categories" },
-      { href: "/compare", label: "Comparisons" },
+      { href: "/best-phones", label: "Best Phones" },
+      { href: "/compare/iphone-vs-samsung", label: "iPhone vs Samsung" },
+      { href: "/compare/pixel-vs-iphone", label: "Pixel vs iPhone" },
       { href: "/products", label: "Phone Database" },
       { href: "/guides", label: "Guides" },
       { href: "/methodology", label: "Methodology" },
@@ -52,8 +68,8 @@ export default function Footer() {
               CompareForge
             </Link>
             <p className="mt-2 text-sm text-text-secondary">
-              19 free comparison, calculator and decision tools — with sourced data and
-              published formulas.
+              {getBuiltTools().length} free comparison, calculator and decision tools — with
+              sourced data and published formulas.
             </p>
           </div>
           {footerSections.map((section) => (

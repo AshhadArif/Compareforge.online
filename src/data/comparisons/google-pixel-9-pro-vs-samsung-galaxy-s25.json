@@ -1,0 +1,141 @@
+{
+  "id": "google-pixel-9-pro-vs-samsung-galaxy-s25",
+  "slug": "google-pixel-9-pro-vs-samsung-galaxy-s25",
+  "productIds": ["google-pixel-9-pro", "samsung-galaxy-s25"],
+  "title": "Pixel 9 Pro vs Galaxy S25",
+  "metaDescription": "Compare the Google Pixel 9 Pro and Samsung Galaxy S25 side by side. Display, camera, battery, performance and update specs with analysis.",
+  "category": "smartphones",
+  "intro": "Compare the Google Pixel 9 Pro and Samsung Galaxy S25 — a $200 price gap between a larger, brighter Pixel with a longer telephoto and Samsung's lighter, cheaper compact flagship.",
+  "quickVerdict": "The Pixel 9 Pro costs $999 and brings a brighter 3,000-nit 6.3-inch display, 16GB of RAM, a 48MP 5x telephoto, a 42MP front camera, a 4,700 mAh battery, and 7 years of updates. The Galaxy S25 starts at $799 with a lighter 162 g body, a 3nm Snapdragon 8 Elite for Galaxy chip, a 50MP main camera with 3x optical zoom, and the same 7-year update commitment in a smaller 6.2-inch frame. Shoppers who want the lower price and a truly compact phone should pick the Galaxy S25; buyers who want more zoom reach, a sharper display, and a bigger battery should pay up for the Pixel 9 Pro.",
+  "keyDifferences": [
+    {
+      "feature": "Starting Price",
+      "productAValue": "$999 (128GB)",
+      "productBValue": "$799 (128GB)",
+      "significance": "high",
+      "interpretation": "Both phones start at 128GB, so the comparison is like-for-like: the Pixel 9 Pro is $200 (25%) more expensive. Samsung's next tiers are $859 for 256GB, while Google asks $1,099 for the same capacity."
+    },
+    {
+      "feature": "Display",
+      "productAValue": "6.3-inch LTPO OLED, 1280 x 2856, 3000 nits",
+      "productBValue": "6.2-inch AMOLED, 1080 x 2340, 2600 nits",
+      "significance": "high",
+      "interpretation": "The Pixel is only 0.1 inches larger but carries a much higher resolution (1280 x 2856 versus 1080 x 2340) and 400 nits more peak brightness. Both panels run at 120Hz with HDR, so text and image sharpness should favor the Pixel."
+    },
+    {
+      "feature": "Chipset",
+      "productAValue": "Google Tensor G4, 4nm",
+      "productBValue": "Snapdragon 8 Elite for Galaxy, 3nm",
+      "significance": "high",
+      "interpretation": "The Galaxy uses a 3nm Snapdragon 8 Elite for Galaxy with an Adreno 830 GPU, while the Pixel uses Google's 4nm Tensor G4 with a Mali-G715 MC7 GPU. Both are 8-core parts, and this page does not publish benchmark scores, so speed differences should be judged from testing rather than node size alone."
+    },
+    {
+      "feature": "RAM",
+      "productAValue": "16 GB",
+      "productBValue": "12 GB",
+      "significance": "medium",
+      "interpretation": "The Pixel has 4 GB (33%) more RAM, which can help with background apps and on-device AI processing. Both phones use LPDDR5X, and Android handles memory management similarly on each, so the gap shows up mainly in heavier multitasking."
+    },
+    {
+      "feature": "Telephoto Camera",
+      "productAValue": "48 MP, f/2.8, 5x optical, up to 30x",
+      "productBValue": "10 MP, f/2.4, 3x optical, up to 30x",
+      "significance": "high",
+      "interpretation": "Both list a 30x maximum zoom, but the Pixel reaches 5x optically with a 48MP sensor while the Galaxy reaches 3x with a 10MP sensor. At medium-to-long range the Pixel retains noticeably more detail per shot."
+    },
+    {
+      "feature": "Ultrawide Camera",
+      "productAValue": "48 MP, f/1.7",
+      "productBValue": "12 MP, f/2.2",
+      "significance": "medium",
+      "interpretation": "The Pixel's 48MP ultrawide out-resolves the Galaxy's 12MP unit by a wide margin and opens wider at f/1.7 versus f/2.2. For group shots, interiors, and close-up wide frames, the Pixel has more detail available to work with."
+    },
+    {
+      "feature": "Video Recording",
+      "productAValue": "4K at 60fps, 10-bit HDR, 8K cloud upscaling",
+      "productBValue": "8K at 30fps, HDR10+",
+      "significance": "medium",
+      "interpretation": "The Galaxy records in 8K at 30fps, while the Pixel tops out at 4K 60fps with 10-bit HDR and offers 8K cloud upscaling as a software path. Which matters more depends on whether you shoot native 8K or prefer a higher frame rate at 4K."
+    },
+    {
+      "feature": "Battery and Charging",
+      "productAValue": "4,700 mAh, 27W wired, 21W wireless",
+      "productBValue": "4,000 mAh, 25W wired, 15W wireless",
+      "significance": "high",
+      "interpretation": "The Pixel's battery is 700 mAh (17.5%) larger and it charges slightly faster on both wired (27W versus 25W) and wireless (21W versus 15W) paths. Capacity this much larger in a phone that is also larger physically points to longer typical endurance, all else being equal."
+    },
+    {
+      "feature": "Weight and Dimensions",
+      "productAValue": "199 g, 152.8 x 72 x 8.5 mm",
+      "productBValue": "162 g, 146.9 x 70.5 x 7.2 mm",
+      "significance": "medium",
+      "interpretation": "The Galaxy S25 is 37 g lighter, 5.9 mm shorter, and 1.3 mm thinner than the Pixel 9 Pro. That is a visible difference in one-hand use and pocketability, and it is the main reason to prefer the Galaxy if size is your top constraint."
+    }
+  ],
+  "practicalImplications": "Both phones launched in 2024-2025 and both list identical 7-year OS and security update commitments, so software longevity is a wash — the decision comes down to size, price, and camera priorities. The Pixel 9 Pro spends its $200 premium on a sharper, brighter 6.3-inch panel, 16GB of RAM, a far stronger secondary camera set (48MP 5x telephoto and 48MP ultrawide versus 10MP 3x and 12MP), a 42MP selfie camera, and a 4,700 mAh battery. The Galaxy S25 answers with a $799 entry price, a much lighter 162 g build at 7.2 mm thin, faster UFS 4.0 storage versus UFS 3.1 on the Pixel, and Samsung's Galaxy AI suite alongside Gemini on Android 15.",
+  "useCaseRecommendations": [
+    {
+      "scenario": "Buyers who want the lightest, most compact phone",
+      "recommended": "samsung-galaxy-s25",
+      "reason": "162 g and 146.9 x 70.5 x 7.2 mm versus 199 g and 152.8 x 72 x 8.5 mm on the Pixel"
+    },
+    {
+      "scenario": "Zoom and wide-angle photography",
+      "recommended": "google-pixel-9-pro",
+      "reason": "48MP 5x telephoto and 48MP ultrawide versus 10MP 3x and 12MP ultrawide on the Galaxy"
+    },
+    {
+      "scenario": "Shoppers with a tighter flagship budget",
+      "recommended": "samsung-galaxy-s25",
+      "reason": "$799 for 128GB at the same tier where the Pixel 9 Pro costs $999"
+    },
+    {
+      "scenario": "Heavy users who want the largest battery",
+      "recommended": "google-pixel-9-pro",
+      "reason": "4,700 mAh with 27W wired and 21W wireless charging, versus 4,000 mAh with 25W and 15W"
+    },
+    {
+      "scenario": "Selfie-focused users and video callers",
+      "recommended": "google-pixel-9-pro",
+      "reason": "42MP f/2.2 front camera versus 12MP f/2.2 on the Galaxy S25"
+    }
+  ],
+  "considerations": [
+    "Both phones list the same 7 years of OS and security updates, so support length is not a deciding factor",
+    "Storage speed differs — UFS 4.0 on the Galaxy S25 versus UFS 3.1 on the Pixel 9 Pro — while both start at 128GB with no expansion",
+    "Our data lists the Pixel 9 Pro as discontinued and the Galaxy S25 as available, which affects new-stock pricing",
+    "The Pixel uses an aluminum frame while the Galaxy uses Armor Aluminum; both are IP68 rated",
+    "Both phones support satellite connectivity, WiFi 7, Nano-SIM plus eSIM, and NFC",
+    "The Pixel 9 Pro launched on Android 14 with Gemini, while the Galaxy S25 launched on Android 15 with One UI 7 and Galaxy AI"
+  ],
+  "faq": [
+    {
+      "question": "Which phone has the better camera?",
+      "answer": "The Pixel 9 Pro has the stronger camera hardware on paper: a 50MP f/1.7 main sensor, a 48MP f/1.7 ultrawide, a 48MP f/2.8 telephoto with 5x optical zoom, and a 42MP front camera. The Galaxy S25 uses a 50MP f/1.8 main sensor, a 12MP f/2.2 ultrawide, a 10MP f/2.4 telephoto with 3x optical zoom, and a 12MP front camera. Both list a 30x maximum zoom and both record video with HDR support — the Pixel at 4K 60fps and the Galaxy at 8K 30fps."
+    },
+    {
+      "question": "Which phone is cheaper?",
+      "answer": "The Samsung Galaxy S25 starts at $799 for 128GB, while the Google Pixel 9 Pro starts at $999 for the same capacity — a $200 difference. The 256GB tiers are $859 for the Galaxy and $1,099 for the Pixel, and the Pixel adds a $1,219 512GB and $1,449 1TB option."
+    },
+    {
+      "question": "Which phone is more compact and lighter?",
+      "answer": "The Galaxy S25 is the smaller device: 146.9 x 70.5 x 7.2 mm and 162 g, against 152.8 x 72 x 8.5 mm and 199 g for the Pixel 9 Pro. The Pixel is 37 g heavier and nearly 6 mm taller, while both have screens within 0.1 inches of each other (6.2 versus 6.3 inches)."
+    },
+    {
+      "question": "Do both phones get the same amount of software support?",
+      "answer": "Yes. Both the Pixel 9 Pro and the Galaxy S25 are listed with 7 years of OS updates and 7 years of security updates. The difference is the starting point: the Pixel launched on Android 14 and the Galaxy launched on Android 15 with One UI 7."
+    },
+    {
+      "question": "Which phone has better battery life?",
+      "answer": "The Pixel 9 Pro lists a 4,700 mAh battery compared with 4,000 mAh on the Galaxy S25 — 17.5% more capacity — and it charges at 27W wired and 21W wireless versus 25W and 15W on the Galaxy. Both support reverse wireless charging. Measured runtime depends on screen size, brightness, and usage patterns, so these figures cover capacity and charging rates rather than tested endurance."
+    }
+  ],
+  "relatedComparisonSlugs": [
+    "best-flagship-phones-2026",
+    "samsung-galaxy-s26-ultra-vs-google-pixel-11-pro-xl",
+    "apple-intelligence-vs-galaxy-ai-vs-gemini"
+  ],
+  "relatedGuideSlugs": ["choosing-a-phone-by-use-case", "specs-explained"],
+  "isRoundup": false,
+  "lastUpdated": "2026-09-25"
+}

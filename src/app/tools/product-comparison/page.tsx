@@ -12,7 +12,7 @@ import { generateFAQSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Product Comparison Tool — Compare Phones Side by Side",
   description:
-    "Use our free product comparison tool to compare any two smartphones side by side — display, camera, battery and software differences highlighted instantly.",
+    "Free phone comparison tool. Compare any two smartphones side by side — display, camera, battery, performance and software differences highlighted instantly.",
   alternates: {
     canonical: "/tools/product-comparison",
   },
@@ -152,7 +152,12 @@ export default function ProductComparisonToolPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-text mb-4">Popular Phones</h2>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xl font-bold text-text">Popular Phones</h2>
+          <Link href="/compare/phones" className="text-sm font-medium text-primary hover:underline">
+            Phone comparison hub →
+          </Link>
+        </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {popularProducts.map((product) => (
             <Link

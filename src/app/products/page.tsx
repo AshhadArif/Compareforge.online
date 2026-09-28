@@ -72,6 +72,32 @@ export default function ProductsPage() {
       </div>
 
       <div className="mt-12 p-6 bg-bg-secondary rounded-xl">
+        <h2 className="text-xl font-bold text-text mb-3">Compare These Phones</h2>
+        <p className="text-sm text-text-secondary mb-4 max-w-3xl">
+          Every product page links into the comparison tool, so you can put any two records
+          side by side across display, performance, camera, battery, design, storage,
+          connectivity and software.
+        </p>
+        <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium">
+          <Link href="/compare/phones" className="text-primary hover:underline">
+            Phone comparison →
+          </Link>
+          <Link href="/compare/phone-size-comparison" className="text-primary hover:underline">
+            Phone size comparison →
+          </Link>
+          <Link href="/compare/iphone-vs-samsung" className="text-primary hover:underline">
+            iPhone vs Samsung →
+          </Link>
+          <Link href="/compare/pixel-vs-iphone" className="text-primary hover:underline">
+            Pixel vs iPhone →
+          </Link>
+          <Link href="/best-phones" className="text-primary hover:underline">
+            Best phones by specification →
+          </Link>
+        </div>
+      </div>
+
+      <div className="mt-12 p-6 bg-bg-secondary rounded-xl">
         <h2 className="font-semibold text-text mb-2">About Our Product Data</h2>
         <p className="text-sm text-text-secondary mb-3">
           Specifications are sourced from manufacturer official pages and

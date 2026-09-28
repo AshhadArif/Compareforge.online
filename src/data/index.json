@@ -1,24 +1,104 @@
 {
   "smartphones": {
-    "apple": ["apple-iphone-18-pro-max", "apple-iphone-17e", "apple-iphone-duo"],
-    "samsung": ["samsung-galaxy-s26-ultra", "samsung-galaxy-z-fold-8", "samsung-galaxy-a17-5g"],
-    "google": ["google-pixel-11-pro-xl", "google-pixel-10a"],
-    "oneplus": ["oneplus-15"],
-    "motorola": ["motorola-razr-fold", "motorola-moto-g-power-2026"],
-    "xiaomi": ["xiaomi-17-pro-max"]
+    "apple": [
+      "apple-iphone-15",
+      "apple-iphone-16-pro-max",
+      "apple-iphone-16",
+      "apple-iphone-16e",
+      "apple-iphone-17e",
+      "apple-iphone-18-pro-max",
+      "apple-iphone-duo",
+      "apple-iphone-se-3"
+    ],
+    "asus": [
+      "asus-rog-phone-8",
+      "asus-zenfone-11-ultra"
+    ],
+    "google": [
+      "google-pixel-10a",
+      "google-pixel-11-pro-xl",
+      "google-pixel-8-pro",
+      "google-pixel-8",
+      "google-pixel-8a",
+      "google-pixel-9-pro-fold",
+      "google-pixel-9-pro",
+      "google-pixel-9",
+      "google-pixel-9a"
+    ],
+    "motorola": [
+      "motorola-edge-2024",
+      "motorola-moto-g-power-2026",
+      "motorola-razr-2024",
+      "motorola-razr-plus-2024",
+      "motorola-razr-fold"
+    ],
+    "nothing": [
+      "nothing-phone-2",
+      "nothing-phone-2a",
+      "nothing-phone-3",
+      "nothing-phone-3a"
+    ],
+    "oneplus": [
+      "oneplus-12",
+      "oneplus-13",
+      "oneplus-13r",
+      "oneplus-15",
+      "oneplus-open"
+    ],
+    "samsung": [
+      "samsung-galaxy-a16-5g",
+      "samsung-galaxy-a17-5g",
+      "samsung-galaxy-a25-5g",
+      "samsung-galaxy-a36-5g",
+      "samsung-galaxy-a56-5g",
+      "samsung-galaxy-s23",
+      "samsung-galaxy-s24",
+      "samsung-galaxy-s25-ultra",
+      "samsung-galaxy-s25",
+      "samsung-galaxy-s26-ultra",
+      "samsung-galaxy-z-flip-6",
+      "samsung-galaxy-z-fold-6",
+      "samsung-galaxy-z-fold-8"
+    ],
+    "xiaomi": [
+      "xiaomi-17-pro-max"
+    ]
   },
   "comparisons": [
-    "apple-iphone-18-pro-max-vs-samsung-galaxy-s26-ultra",
+    "apple-intelligence-vs-galaxy-ai-vs-gemini",
+    "apple-iphone-16-pro-max-vs-apple-iphone-18-pro-max",
+    "apple-iphone-16e-vs-google-pixel-9a",
     "apple-iphone-18-pro-max-vs-google-pixel-11-pro-xl",
-    "samsung-galaxy-s26-ultra-vs-google-pixel-11-pro-xl",
-    "google-pixel-10a-vs-apple-iphone-17e",
+    "apple-iphone-18-pro-max-vs-samsung-galaxy-s26-ultra",
     "apple-iphone-duo-vs-samsung-galaxy-z-fold-8",
-    "samsung-galaxy-z-fold-8-vs-motorola-razr-fold",
-    "best-phones-under-500-2026",
-    "best-foldable-phones-2026",
     "best-flagship-phones-2026",
-    "apple-intelligence-vs-galaxy-ai-vs-gemini"
+    "best-foldable-phones-2026",
+    "best-phones-under-500-2026",
+    "google-pixel-10a-vs-apple-iphone-17e",
+    "google-pixel-9-pro-vs-apple-iphone-16-pro-max",
+    "google-pixel-9-pro-vs-samsung-galaxy-s25",
+    "nothing-phone-3a-vs-google-pixel-9a",
+    "oneplus-13-vs-samsung-galaxy-s25-ultra",
+    "samsung-galaxy-a56-5g-vs-google-pixel-9a",
+    "samsung-galaxy-s25-ultra-vs-apple-iphone-16-pro-max",
+    "samsung-galaxy-s26-ultra-vs-google-pixel-11-pro-xl",
+    "samsung-galaxy-z-flip-6-vs-motorola-razr-plus-2024",
+    "samsung-galaxy-z-fold-6-vs-oneplus-open",
+    "samsung-galaxy-z-fold-8-vs-motorola-razr-fold"
   ],
-  "guides": ["foldable-phone-buying-guide-2026", "ai-features-explained"],
-  "lastUpdated": "2026-09-23"
+  "guides": [
+    "ai-features-explained",
+    "building-a-decision-matrix",
+    "choosing-a-phone-by-use-case",
+    "compatibility-checking-before-you-buy",
+    "foldable-phone-buying-guide-2026",
+    "how-to-calculate-percentage-difference",
+    "how-to-compare-product-specifications",
+    "how-to-compare-subscription-plans",
+    "repair-or-replace-factors",
+    "specs-explained",
+    "understanding-product-dimensions",
+    "unit-pricing-guide"
+  ],
+  "lastUpdated": "2026-09-25"
 }

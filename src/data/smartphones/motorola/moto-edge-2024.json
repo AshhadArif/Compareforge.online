@@ -1,0 +1,115 @@
+{
+  "id": "motorola-edge-2024",
+  "brand": "Motorola",
+  "model": "Edge 2024",
+  "fullName": "Motorola Edge 2024",
+  "slug": "motorola-edge-2024",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2024-06-20",
+  "pricing": {
+    "msrp": 549,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "8GB", "price": 549 }
+    ]
+  },
+  "display": {
+    "size": 6.6,
+    "resolution": "1080 x 2400",
+    "panelType": "P-OLED",
+    "refreshRate": 144,
+    "peakBrightness": 1300,
+    "hdr": null,
+    "protection": "Gorilla Glass 3"
+  },
+  "performance": {
+    "chipset": "Snapdragon 7s Gen 2",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 710",
+    "ram": 8,
+    "ramType": "LPDDR4X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.8",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 13,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": null,
+    "front": {
+      "mp": 32,
+      "aperture": "f/2.4",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 30,
+      "features": []
+    },
+    "features": []
+  },
+  "battery": {
+    "capacity": 5000,
+    "type": null,
+    "wiredCharging": 68,
+    "wirelessCharging": 15,
+    "reverseWireless": null
+  },
+  "design": {
+    "dimensions": { "height": 159.6, "width": 72.0, "depth": 8.1 },
+    "weight": 174,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Eco leather",
+    "waterResistance": "IP68",
+    "colors": ["Midnight Blue"]
+  },
+  "storage": {
+    "options": ["256GB"],
+    "expandable": false,
+    "type": "UFS 2.2"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 6E",
+    "bluetooth": "5.2",
+    "nfc": true,
+    "usb": "USB-C 3.1",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": null,
+    "updateCommitment": 2,
+    "securityCommitment": 3,
+    "aiFeatures": []
+  },
+  "sources": [
+    { "field": "display", "url": "https://en-us.support.motorola.com/app/answers/detail/a_id/183065", "siteName": "Motorola Support", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "performance", "url": "https://www.gsmarena.com/motorola_edge_(2024)-13111.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.gsmarena.com/motorola_edge_(2024)-13111.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.pcmag.com/reviews/motorola-edge-2024", "siteName": "PCMag", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://www.zdnet.com/article/the-new-549-motorola-edge-may-secretly-be-the-best-mid-range-android-this-year", "siteName": "ZDNET", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "design", "url": "https://www.gadgets360.com/motorola-edge-2024-price-in-india-126290", "siteName": "Gadgets 360", "dateAccessed": "2026-09-25", "confidence": "estimated" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Motorola's mid-ranger with a 144Hz pOLED display, 68W TurboPower charging, and an IP68-rated design."
+}

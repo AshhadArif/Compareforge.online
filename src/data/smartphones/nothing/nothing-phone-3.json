@@ -1,0 +1,123 @@
+{
+  "id": "nothing-phone-3",
+  "brand": "Nothing",
+  "model": "Phone (3)",
+  "fullName": "Nothing Phone (3)",
+  "slug": "nothing-phone-3",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2025-07-15",
+  "pricing": {
+    "msrp": 799,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "12GB", "price": 799 },
+      { "storage": "512GB", "ram": "16GB", "price": 899 }
+    ]
+  },
+  "display": {
+    "size": 6.67,
+    "resolution": "1260 x 2800",
+    "panelType": "AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 4500,
+    "hdr": true,
+    "protection": "Gorilla Glass 7i"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8s Gen 4",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 825",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.68",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 50,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 50,
+      "aperture": "f/2.68",
+      "ois": true,
+      "opticalZoom": 3,
+      "maxZoom": 60,
+      "features": []
+    },
+    "front": {
+      "mp": 50,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": []
+    },
+    "features": ["Macro photography"]
+  },
+  "battery": {
+    "capacity": 5150,
+    "type": "Silicon-carbon",
+    "wiredCharging": 65,
+    "wirelessCharging": 15,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 160.6, "width": 75.59, "depth": 8.99 },
+    "weight": 218,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["White", "Black"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "Wi-Fi 7",
+    "bluetooth": "6.0",
+    "nfc": true,
+    "usb": "USB-C 2.0",
+    "simType": "Dual Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 15",
+    "osSkin": "Nothing OS 3.5",
+    "updateCommitment": 5,
+    "securityCommitment": 7,
+    "aiFeatures": ["Essential Space", "Essential Search"]
+  },
+  "sources": [
+    { "field": "pricing", "url": "https://www.androidauthority.com/nothing-phone-3-launch-3572890/", "siteName": "Android Authority", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "display", "url": "https://www.gsmarena.com/nothing_phone_(3)_5g-13969.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.androidauthority.com/nothing-phone-3-launch-3572890/", "siteName": "Android Authority", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.phonearena.com/nothing-phone-3-release-date-price-upgtades", "siteName": "PhoneArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://www.tomsguide.com/phones/android-phones/nothing-phone-3-review", "siteName": "Tom's Guide", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "connectivity", "url": "https://support.nothing.tech/hc/en-us/sections/36456741960465-Product-Feature", "siteName": "Nothing Support", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Nothing's first flagship — four 50MP cameras, a Glyph Matrix rear display and 65W charging."
+}

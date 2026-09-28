@@ -4,5 +4,8 @@
   { "id": "google", "name": "Google", "slug": "google", "website": "https://store.google.com" },
   { "id": "oneplus", "name": "OnePlus", "slug": "oneplus", "website": "https://www.oneplus.com" },
   { "id": "motorola", "name": "Motorola", "slug": "motorola", "website": "https://www.motorola.com" },
-  { "id": "xiaomi", "name": "Xiaomi", "slug": "xiaomi", "website": "https://www.mi.com" }
+  { "id": "xiaomi", "name": "Xiaomi", "slug": "xiaomi", "website": "https://www.mi.com" },
+  { "id": "nothing", "name": "Nothing", "slug": "nothing", "website": "https://nothing.tech" },
+  { "id": "sony", "name": "Sony", "slug": "sony", "website": "https://www.sony.com" },
+  { "id": "asus", "name": "Asus", "slug": "asus", "website": "https://www.asus.com" }
 ]

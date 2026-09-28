@@ -1,0 +1,141 @@
+{
+  "id": "apple-iphone-16e-vs-google-pixel-9a",
+  "slug": "apple-iphone-16e-vs-google-pixel-9a",
+  "productIds": ["apple-iphone-16e", "google-pixel-9a"],
+  "title": "iPhone 16e vs Pixel 9a",
+  "metaDescription": "iPhone 16e vs Pixel 9a — $599 vs $499, 60Hz vs 120Hz display, A18 vs Tensor G4, 4,005 vs 5,100 mAh and 6 vs 7 years of updates.",
+  "category": "smartphones",
+  "intro": "Compare the Apple iPhone 16e and Google Pixel 9a — a $599 iPhone against a $499 Pixel, splitting buyers between iOS and seven years of Android updates.",
+  "quickVerdict": "The Pixel 9a costs $100 less and lists stronger display hardware (120Hz and 2,700 nits versus 60Hz and 1,200 nits), a 5,100 mAh battery against 4,005 mAh, an ultrawide camera the iPhone does not have and 7 years of updates versus 6. The iPhone 16e counters with the A18 chip built on a 3nm process, a lighter 167 g body, 2x optical zoom on its main camera, satellite connectivity and iOS 18 with Apple Intelligence. Ecosystem will decide this for most buyers — the Pixel wins on specifications per dollar, the iPhone on integration with Apple devices.",
+  "keyDifferences": [
+    {
+      "feature": "Starting Price",
+      "productAValue": "$599 (128GB)",
+      "productBValue": "$499 (128GB)",
+      "significance": "medium",
+      "interpretation": "At the same 128GB capacity the iPhone 16e is $100 more expensive. Apple also lists 256GB at $699 and 512GB at $899, while the Pixel 9a lists 256GB at $599 — the same price as the entry iPhone with double the storage."
+    },
+    {
+      "feature": "Display",
+      "productAValue": "6.1-inch OLED, 2532 x 1170, 60Hz, 1,200 nits",
+      "productBValue": "6.3-inch pOLED, 1080 x 2424, 120Hz, 2,700 nits",
+      "significance": "high",
+      "interpretation": "The Pixel doubles the refresh rate to 120Hz and lists 1,500 more nits of peak brightness on a slightly larger panel. The iPhone is the smaller phone and lists a higher-resolution 2532 x 1170 panel, but it is the only one of the pair stuck at 60Hz."
+    },
+    {
+      "feature": "Chipset and Operating System",
+      "productAValue": "A18, 3nm, 6 cores, iOS 18",
+      "productBValue": "Google Tensor G4, 4nm, 8 cores, Android 15",
+      "significance": "high",
+      "interpretation": "The two phones do not share an operating system, so this row is as much about ecosystem as silicon. The A18 is listed on a 3nm process with 6 cores, while the Tensor G4 is listed on 4nm with 8 cores and carries Google's AI features — Gemini Nano, Circle to Search and Best Take."
+    },
+    {
+      "feature": "Rear Camera System",
+      "productAValue": "48MP f/1.6 main with OIS and 2x optical zoom, no ultrawide",
+      "productBValue": "48MP f/1.7 main with OIS + 13MP f/2.2 ultrawide, no telephoto",
+      "significance": "high",
+      "interpretation": "Both use a stabilised 48MP main camera, but the Pixel adds a 13MP ultrawide lens that the iPhone 16e does not list. The iPhone lists 2x optical zoom and a slightly wider f/1.6 aperture instead, and both record 4K at 60fps."
+    },
+    {
+      "feature": "Battery and Charging",
+      "productAValue": "4,005 mAh, 20W wired, 7.5W wireless",
+      "productBValue": "5,100 mAh, 23W wired, 7.5W wireless",
+      "significance": "high",
+      "interpretation": "The Pixel lists 1,095 mAh more capacity — roughly 27% larger — while wired charging is close at 23W versus 20W and both list the same 7.5W wireless charging rate. The iPhone's capacity figure is marked as estimated in our data."
+    },
+    {
+      "feature": "Software Updates",
+      "productAValue": "6 years OS + 6 years security",
+      "productBValue": "7 years OS + 7 years security",
+      "significance": "medium",
+      "interpretation": "Google lists one extra year of OS and security updates over Apple's listed commitment. Both figures cover a long support window, so the gap only becomes decisive at the very end of a phone's life."
+    },
+    {
+      "feature": "Satellite Connectivity",
+      "productAValue": "Available",
+      "productBValue": "Not available",
+      "significance": "medium",
+      "interpretation": "The iPhone 16e is the only one of the two that lists satellite connectivity. The Pixel 9a has no equivalent feature in its specifications."
+    },
+    {
+      "feature": "SIM Configuration",
+      "productAValue": "eSIM only (US)",
+      "productBValue": "Nano-SIM + eSIM",
+      "significance": "medium",
+      "interpretation": "The iPhone 16e is listed as eSIM only in the US, so buyers who want a physical SIM slot have to use the Pixel 9a or a different region's iPhone. The Pixel lists both a Nano-SIM slot and eSIM support."
+    },
+    {
+      "feature": "Weight",
+      "productAValue": "167 g",
+      "productBValue": "186 g",
+      "significance": "medium",
+      "interpretation": "The iPhone 16e is 19 g lighter, which is noticeable when the two are held side by side but small in daily use. Both are aluminium-framed phones with glass or plastic backs."
+    }
+  ],
+  "practicalImplications": "The iPhone 16e and Pixel 9a occupy the same price neighbourhood but optimise for different things. Apple's entry point spends its budget on the A18 chip, iOS 18 with Apple Intelligence, a light 167 g body and satellite connectivity, while accepting a 60Hz 1,200-nit screen, a single rear camera and a smaller 4,005 mAh cell. Google spends its $499 on a 120Hz 2,700-nit panel, a 5,100 mAh battery, an ultrawide lens, a 13MP front camera and a 7-year update promise, while accepting a 19 g heavier body and going without 2x optical zoom or satellite connectivity. Storage and SIM details round it out: NVMe with eSIM only in the US on the iPhone, UFS 3.1 with Nano-SIM and eSIM on the Pixel.",
+  "useCaseRecommendations": [
+    {
+      "scenario": "Apple ecosystem and iOS users",
+      "recommended": "apple-iphone-16e",
+      "reason": "iOS 18 with Apple Intelligence, Siri, Writing Tools and Visual Intelligence"
+    },
+    {
+      "scenario": "Longest software support",
+      "recommended": "google-pixel-9a",
+      "reason": "7 years of OS and security updates versus 6 years on the iPhone 16e"
+    },
+    {
+      "scenario": "Battery life and smooth scrolling",
+      "recommended": "google-pixel-9a",
+      "reason": "5,100 mAh battery and a 120Hz, 2,700-nit display versus 4,005 mAh and 60Hz, 1,200 nits"
+    },
+    {
+      "scenario": "Ultrawide photography on a budget",
+      "recommended": "google-pixel-9a",
+      "reason": "13MP f/2.2 ultrawide lens that the iPhone 16e does not list"
+    },
+    {
+      "scenario": "Lightest phone with satellite connectivity",
+      "recommended": "apple-iphone-16e",
+      "reason": "167 g versus 186 g, plus the only satellite connectivity listing in this pair"
+    }
+  ],
+  "considerations": [
+    "The iPhone 16e's 4,005 mAh capacity is marked estimated in our data, sourced from a third-party battery comparison",
+    "The iPhone 16e is listed as eSIM only in the US, while the Pixel 9a lists Nano-SIM + eSIM",
+    "Both phones are listed as discontinued in our data, so availability may vary",
+    "Display smoothness is the most visible difference: 60Hz and 1,200 nits on the iPhone against 120Hz and 2,700 nits on the Pixel",
+    "Storage is NVMe on the iPhone 16e and UFS 3.1 on the Pixel 9a, and neither phone supports expandable storage",
+    "Both phones start with 8GB of RAM and 128GB of storage"
+  ],
+  "faq": [
+    {
+      "question": "Which phone is cheaper?",
+      "answer": "The Google Pixel 9a starts at $499 for 128GB, while the iPhone 16e starts at $599 for 128GB. At 256GB the gap widens in Google's favour: $599 for the Pixel 9a versus $699 for the iPhone 16e."
+    },
+    {
+      "question": "Which phone has the better display?",
+      "answer": "The Pixel 9a lists a 6.3-inch pOLED panel running at 120Hz with 2,700 nits of peak brightness. The iPhone 16e lists a 6.1-inch OLED panel running at 60Hz with 1,200 nits. The iPhone has the higher listed resolution at 2532 x 1170 versus 1080 x 2424, but the Pixel is the only one of the two with a high refresh rate."
+    },
+    {
+      "question": "Which phone has the better camera?",
+      "answer": "Both use a 48MP main camera with optical image stabilisation — f/1.6 with 2x optical zoom on the iPhone 16e and f/1.7 on the Pixel 9a. The Pixel adds a 13MP ultrawide lens that the iPhone does not have, while the iPhone lists the wider aperture and Dolby Vision video alongside Audio Mix. Both record 4K at 60fps."
+    },
+    {
+      "question": "Which phone has better battery life?",
+      "answer": "The Pixel 9a lists a 5,100 mAh battery against 4,005 mAh on the iPhone 16e, a difference of 1,095 mAh. Wired charging is close at 23W versus 20W and both list 7.5W wireless charging. Battery capacity is only one factor in endurance, and the iPhone figure is marked as estimated in our data."
+    },
+    {
+      "question": "Which phone will receive updates for longer?",
+      "answer": "The Pixel 9a lists 7 years of OS updates and 7 years of security updates. The iPhone 16e lists 6 years of OS updates and 6 years of security updates, so Google's stated commitment runs one year longer on both counts."
+    }
+  ],
+  "relatedComparisonSlugs": [
+    "google-pixel-10a-vs-apple-iphone-17e",
+    "best-phones-under-500-2026",
+    "apple-iphone-18-pro-max-vs-google-pixel-11-pro-xl"
+  ],
+  "relatedGuideSlugs": ["specs-explained", "how-to-compare-product-specifications"],
+  "isRoundup": false,
+  "lastUpdated": "2026-09-25"
+}

@@ -1,0 +1,123 @@
+{
+  "id": "google-pixel-9-pro-fold",
+  "brand": "Google",
+  "model": "Pixel 9 Pro Fold",
+  "fullName": "Google Pixel 9 Pro Fold",
+  "slug": "google-pixel-9-pro-fold",
+  "category": "foldable-phones",
+  "status": "discontinued",
+  "releaseDate": "2024-09-04",
+  "pricing": {
+    "msrp": 1799,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "16GB", "price": 1799 },
+      { "storage": "512GB", "ram": "16GB", "price": 1919 }
+    ]
+  },
+  "display": {
+    "size": 8.0,
+    "resolution": "2076 x 2152",
+    "panelType": "LTPO OLED",
+    "refreshRate": 120,
+    "peakBrightness": 2700,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 2"
+  },
+  "performance": {
+    "chipset": "Google Tensor G4",
+    "fabrication": null,
+    "cpuCores": 8,
+    "gpuModel": null,
+    "ram": 16,
+    "ramType": "LPDDR5"
+  },
+  "camera": {
+    "main": {
+      "mp": 48,
+      "aperture": "f/1.7",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 10.5,
+      "aperture": "f/2.2",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 10.8,
+      "aperture": "f/3.1",
+      "ois": true,
+      "opticalZoom": 5,
+      "maxZoom": 20,
+      "features": []
+    },
+    "front": {
+      "mp": 10,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": ["Night Sight Video"]
+    },
+    "features": ["Add Me", "Made You Look", "Zoom Enhance"]
+  },
+  "battery": {
+    "capacity": 4650,
+    "type": null,
+    "wiredCharging": 30,
+    "wirelessCharging": 7.5,
+    "reverseWireless": null
+  },
+  "design": {
+    "dimensions": null,
+    "weight": 257,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IPX8",
+    "colors": ["Porcelain", "Obsidian"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB"],
+    "expandable": false,
+    "type": "UFS 3.1"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": true
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": null,
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": ["Gemini", "Gemini Live", "Pixel Studio", "Pixel Screenshots"]
+  },
+  "sources": [
+    { "field": "pricing", "url": "https://me.pcmag.com/en/mobile-phones/25623/google-pixel-9-pro-fold", "siteName": "PCMag", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "display", "url": "https://me.pcmag.com/en/mobile-phones/25623/google-pixel-9-pro-fold", "siteName": "PCMag", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://me.pcmag.com/en/mobile-phones/25623/google-pixel-9-pro-fold", "siteName": "PCMag", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://en.wikipedia.org/wiki/Google_Pixel_9_Pro_Fold", "siteName": "Wikipedia", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "status", "url": "https://en.wikipedia.org/wiki/Google_Pixel_9_Pro_Fold", "siteName": "Wikipedia", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://www.techradar.com/phones/google-pixel-phones/google-pixel-9-pro-fold-review", "siteName": "TechRadar", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Google's book-style foldable with an 8-inch 120Hz OLED, 5x telephoto, satellite SOS, and seven years of updates."
+}

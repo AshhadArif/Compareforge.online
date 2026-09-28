@@ -20,6 +20,16 @@ import cmpBestBudget from "@/data/comparisons/best-phones-under-500-2026.json";
 import cmpBestFoldable from "@/data/comparisons/best-foldable-phones-2026.json";
 import cmpBestFlagship from "@/data/comparisons/best-flagship-phones-2026.json";
 import cmpAiSystems from "@/data/comparisons/apple-intelligence-vs-galaxy-ai-vs-gemini.json";
+import cmpAppleIphone16ProMaxVsAppleIphone18ProMax from "@/data/comparisons/apple-iphone-16-pro-max-vs-apple-iphone-18-pro-max.json";
+import cmpAppleIphone16eVsGooglePixel9a from "@/data/comparisons/apple-iphone-16e-vs-google-pixel-9a.json";
+import cmpGooglePixel9ProVsAppleIphone16ProMax from "@/data/comparisons/google-pixel-9-pro-vs-apple-iphone-16-pro-max.json";
+import cmpGooglePixel9ProVsSamsungGalaxyS25 from "@/data/comparisons/google-pixel-9-pro-vs-samsung-galaxy-s25.json";
+import cmpNothingPhone3aVsGooglePixel9a from "@/data/comparisons/nothing-phone-3a-vs-google-pixel-9a.json";
+import cmpOneplus13VsSamsungGalaxyS25Ultra from "@/data/comparisons/oneplus-13-vs-samsung-galaxy-s25-ultra.json";
+import cmpSamsungGalaxyA565gVsGooglePixel9a from "@/data/comparisons/samsung-galaxy-a56-5g-vs-google-pixel-9a.json";
+import cmpSamsungGalaxyS25UltraVsAppleIphone16ProMax from "@/data/comparisons/samsung-galaxy-s25-ultra-vs-apple-iphone-16-pro-max.json";
+import cmpSamsungGalaxyZFlip6VsMotorolaMotoRazrPlus2024 from "@/data/comparisons/samsung-galaxy-z-flip-6-vs-motorola-moto-razr-plus-2024.json";
+import cmpSamsungGalaxyZFold6VsOneplusOpen from "@/data/comparisons/samsung-galaxy-z-fold-6-vs-oneplus-open.json";
 
 export const comparisons: Comparison[] = [
   cmpIphoneGalaxy as Comparison,
@@ -32,6 +42,16 @@ export const comparisons: Comparison[] = [
   cmpBestFoldable as Comparison,
   cmpBestFlagship as Comparison,
   cmpAiSystems as Comparison,
+  cmpAppleIphone16ProMaxVsAppleIphone18ProMax as Comparison,
+  cmpAppleIphone16eVsGooglePixel9a as Comparison,
+  cmpGooglePixel9ProVsAppleIphone16ProMax as Comparison,
+  cmpGooglePixel9ProVsSamsungGalaxyS25 as Comparison,
+  cmpNothingPhone3aVsGooglePixel9a as Comparison,
+  cmpOneplus13VsSamsungGalaxyS25Ultra as Comparison,
+  cmpSamsungGalaxyA565gVsGooglePixel9a as Comparison,
+  cmpSamsungGalaxyS25UltraVsAppleIphone16ProMax as Comparison,
+  cmpSamsungGalaxyZFlip6VsMotorolaMotoRazrPlus2024 as Comparison,
+  cmpSamsungGalaxyZFold6VsOneplusOpen as Comparison,
 ];
 
 export function getComparisonBySlug(slug: string): Comparison | undefined {
@@ -309,9 +329,6 @@ export function validateComparison(
 ): { valid: boolean; error?: string } {
   if (productA.id === productB.id) {
     return { valid: false, error: "Please select two different phones to compare." };
-  }
-  if (productA.category !== productB.category) {
-    return { valid: false, error: "These phones cannot be compared as they are in different categories." };
   }
   return { valid: true };
 }

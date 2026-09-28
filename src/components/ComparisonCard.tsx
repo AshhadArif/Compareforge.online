@@ -7,6 +7,11 @@ interface ComparisonCardProps {
 
 export default function ComparisonCard({ comparison }: ComparisonCardProps) {
   const isRoundup = comparison.isRoundup;
+  const categoryLabel =
+    comparison.category
+      .split("-")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(" ");
   return (
     <article className="bg-white border border-border rounded-xl p-6 hover:shadow-lg transition-shadow">
       <div className="flex items-center gap-2 mb-3">
@@ -14,7 +19,7 @@ export default function ComparisonCard({ comparison }: ComparisonCardProps) {
           href={`/categories/${comparison.category}`}
           className="text-xs font-medium text-primary bg-primary-light px-2 py-1 rounded-full hover:bg-primary hover:text-white transition-colors"
         >
-          {comparison.category === "smartphones" ? "Smartphones" : comparison.category}
+          {categoryLabel}
         </Link>
         {isRoundup && (
           <span className="text-xs font-medium text-accent bg-accent-light px-2 py-1 rounded-full">

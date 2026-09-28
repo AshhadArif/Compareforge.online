@@ -1,0 +1,123 @@
+{
+  "id": "asus-rog-phone-8",
+  "brand": "Asus",
+  "model": "ROG Phone 8",
+  "fullName": "Asus ROG Phone 8",
+  "slug": "asus-rog-phone-8",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2024-01-18",
+  "pricing": {
+    "msrp": 1099.99,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "16GB", "price": 1099.99 },
+      { "storage": "256GB", "ram": "12GB", "price": null }
+    ]
+  },
+  "display": {
+    "size": 6.78,
+    "resolution": "1080 x 2400",
+    "panelType": "AMOLED",
+    "refreshRate": 165,
+    "peakBrightness": 2500,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 2"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Gen 3",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 750",
+    "ram": 16,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.9",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": ["6-axis Hybrid Gimbal Stabilizer 3.0"]
+    },
+    "ultrawide": {
+      "mp": 13,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": ["Free-form lens"]
+    },
+    "telephoto": {
+      "mp": 32,
+      "aperture": "f/2.4",
+      "ois": true,
+      "opticalZoom": 3,
+      "maxZoom": null,
+      "features": []
+    },
+    "front": {
+      "mp": 32,
+      "aperture": null,
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "8K",
+      "maxFps": 24,
+      "features": ["Slow Motion", "HDR10+ video"]
+    },
+    "features": ["10x Hyper Clarity Zoom"]
+  },
+  "battery": {
+    "capacity": 5500,
+    "type": "Li-Po",
+    "wiredCharging": 65,
+    "wirelessCharging": 15,
+    "reverseWireless": null
+  },
+  "design": {
+    "dimensions": { "height": 163.8, "width": 76.8, "depth": 8.9 },
+    "weight": 225,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Phantom Black", "Rebel Grey"]
+  },
+  "storage": {
+    "options": ["256GB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "Wi-Fi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB Type-C with DisplayPort 1.4 (side) and USB Type-C (bottom)",
+    "simType": "Dual Nano-SIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": "ROG UI",
+    "updateCommitment": 2,
+    "securityCommitment": 4,
+    "aiFeatures": ["AI Grabber", "X Sense 2.0", "AI Noise Cancellation", "Semantic Search", "AI Wallpaper"]
+  },
+  "sources": [
+    { "field": "pricing", "url": "https://www.asus.com/us/news/u7umgllofhc4btsc/", "siteName": "ASUS USA", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "display", "url": "https://rog.asus.com/phones/rog-phone-8/spec/", "siteName": "ROG", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.asus.com/us/news/u7umgllofhc4btsc/", "siteName": "ASUS USA", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://rog.asus.com/phones/rog-phone-8/spec/", "siteName": "ROG", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://www.androidauthority.com/asus-rog-phone-8-review-3399464/", "siteName": "Android Authority", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "design", "url": "https://www.gsmarena.com/asus_rog_phone_8-12780.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Asus's gaming phone pairs a Snapdragon 8 Gen 3 and 165Hz display with a 5,500mAh battery and IP68."
+}

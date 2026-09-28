@@ -1,0 +1,124 @@
+{
+  "id": "nothing-phone-3a",
+  "brand": "Nothing",
+  "model": "Phone (3a)",
+  "fullName": "Nothing Phone (3a)",
+  "slug": "nothing-phone-3a",
+  "category": "budget-phones",
+  "status": "available",
+  "releaseDate": "2025-03-11",
+  "pricing": {
+    "msrp": 379,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "8GB", "price": null },
+      { "storage": "256GB", "ram": "8GB", "price": null },
+      { "storage": "256GB", "ram": "12GB", "price": 379 }
+    ]
+  },
+  "display": {
+    "size": 6.77,
+    "resolution": "1080 x 2392",
+    "panelType": "AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 3000,
+    "hdr": true,
+    "protection": "Panda Glass"
+  },
+  "performance": {
+    "chipset": "Snapdragon 7s Gen 3",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 810",
+    "ram": 12,
+    "ramType": "LPDDR4X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.88",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 8,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 50,
+      "aperture": "f/2.0",
+      "ois": false,
+      "opticalZoom": 2,
+      "maxZoom": 30,
+      "features": []
+    },
+    "front": {
+      "mp": 32,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 30,
+      "features": []
+    },
+    "features": ["TrueLens Engine 3.0", "Ultra XDR"]
+  },
+  "battery": {
+    "capacity": 5000,
+    "type": null,
+    "wiredCharging": 50,
+    "wirelessCharging": null,
+    "reverseWireless": false
+  },
+  "design": {
+    "dimensions": { "height": 163.52, "width": 77.5, "depth": 8.35 },
+    "weight": 201,
+    "frameMaterial": null,
+    "backMaterial": "Glass",
+    "waterResistance": "IP64",
+    "colors": ["Black", "White", "Blue"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB"],
+    "expandable": false,
+    "type": "UFS 2.2"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "Wi-Fi 6",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB-C 2.0",
+    "simType": "Dual Nano-SIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 15",
+    "osSkin": "Nothing OS 3.1",
+    "updateCommitment": 3,
+    "securityCommitment": 6,
+    "aiFeatures": ["Essential Space"]
+  },
+  "sources": [
+    { "field": "pricing", "url": "https://9to5google.com/2025/03/04/nothing-phone-3a-series-official-price-specs/", "siteName": "9to5Google", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "display", "url": "https://checkout-eu.nothing.tech/pages/phone-3a", "siteName": "Nothing Europe", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.gsmarena.com/nothing_phone_(3a)-13672.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://checkout-eu.nothing.tech/pages/phone-3a", "siteName": "Nothing Europe", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://checkout-eu.nothing.tech/pages/phone-3a", "siteName": "Nothing Europe", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "design", "url": "https://www.gsmarena.com/nothing_phone_(3a)-13672.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Nothing's 2025 mid-ranger adds a 2x telephoto, 3,000-nit display and 50W charging with Glyph lights."
+}

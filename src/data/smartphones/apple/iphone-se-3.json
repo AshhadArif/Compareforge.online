@@ -1,0 +1,146 @@
+{
+  "id": "apple-iphone-se-3",
+  "brand": "Apple",
+  "model": "iPhone SE (3rd generation)",
+  "fullName": "Apple iPhone SE (3rd Gen)",
+  "slug": "apple-iphone-se-3",
+  "category": "budget-phones",
+  "status": "discontinued",
+  "releaseDate": "2022-03-18",
+  "pricing": {
+    "msrp": 429,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "64GB", "ram": "4GB", "price": 429 },
+      { "storage": "128GB", "ram": "4GB", "price": 479 },
+      { "storage": "256GB", "ram": "4GB", "price": 579 }
+    ]
+  },
+  "display": {
+    "size": 4.7,
+    "resolution": "1334 x 750",
+    "panelType": "LCD",
+    "refreshRate": 60,
+    "peakBrightness": 625,
+    "hdr": false,
+    "protection": null
+  },
+  "performance": {
+    "chipset": "A15 Bionic",
+    "fabrication": "5nm",
+    "cpuCores": 6,
+    "gpuModel": "Apple 4-core GPU",
+    "ram": 4,
+    "ramType": null
+  },
+  "camera": {
+    "main": {
+      "mp": 12,
+      "aperture": "f/1.8",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": 5,
+      "features": []
+    },
+    "ultrawide": null,
+    "telephoto": null,
+    "front": {
+      "mp": 7,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": ["Extended Dynamic Range", "Slo-mo"]
+    },
+    "features": ["Deep Fusion", "Smart HDR 4"]
+  },
+  "battery": {
+    "capacity": 2018,
+    "type": "Li-Ion",
+    "wiredCharging": 20,
+    "wirelessCharging": 7.5,
+    "reverseWireless": false
+  },
+  "design": {
+    "dimensions": { "height": 138.4, "width": 67.3, "depth": 7.3 },
+    "weight": 144,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP67",
+    "colors": ["Midnight", "Starlight", "(PRODUCT)RED"]
+  },
+  "storage": {
+    "options": ["64GB", "128GB", "256GB"],
+    "expandable": false,
+    "type": "NVMe"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 6",
+    "bluetooth": "5.0",
+    "nfc": true,
+    "usb": "Lightning",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "iOS 15",
+    "osSkin": null,
+    "updateCommitment": 6,
+    "securityCommitment": 6,
+    "aiFeatures": []
+  },
+  "sources": [
+    {
+      "field": "display",
+      "url": "https://support.apple.com/en-us/111866",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "performance",
+      "url": "https://support.apple.com/en-us/111866",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "camera",
+      "url": "https://support.apple.com/en-us/111866",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "battery",
+      "url": "https://support.apple.com/en-us/111866",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "batteryCapacity",
+      "url": "https://9to5mac.com/2025/02/27/iphone-16e-battery-comparison/",
+      "siteName": "9to5Mac",
+      "dateAccessed": "2026-09-25",
+      "confidence": "estimated"
+    },
+    {
+      "field": "pricing",
+      "url": "https://en.wikipedia.org/wiki/IPhone_SE_(3rd_generation)",
+      "siteName": "Wikipedia",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Apple's compact home-button iPhone with 5G, A15 Bionic, and a $429 entry price."
+}

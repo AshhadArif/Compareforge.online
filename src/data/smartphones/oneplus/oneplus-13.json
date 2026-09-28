@@ -1,0 +1,123 @@
+{
+  "id": "oneplus-13",
+  "brand": "OnePlus",
+  "model": "13",
+  "fullName": "OnePlus 13",
+  "slug": "oneplus-13",
+  "category": "smartphones",
+  "status": "discontinued",
+  "releaseDate": "2025-01-07",
+  "pricing": {
+    "msrp": 899,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "12GB", "price": 899 },
+      { "storage": "512GB", "ram": "16GB", "price": 999 }
+    ]
+  },
+  "display": {
+    "size": 6.82,
+    "resolution": "1440 x 3168",
+    "panelType": "LTPO AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 4500,
+    "hdr": true,
+    "protection": "Ceramic Guard"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Elite",
+    "fabrication": "3nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 830",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.6",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 50,
+      "aperture": "f/2.0",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 50,
+      "aperture": "f/2.6",
+      "ois": true,
+      "opticalZoom": 3,
+      "maxZoom": 120,
+      "features": []
+    },
+    "front": {
+      "mp": 32,
+      "aperture": "f/2.4",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "8K",
+      "maxFps": 30,
+      "features": ["Dolby Vision"]
+    },
+    "features": ["Hasselblad Mode", "Pro Mode"]
+  },
+  "battery": {
+    "capacity": 6000,
+    "type": "Silicon-Carbon",
+    "wiredCharging": 80,
+    "wirelessCharging": 50,
+    "reverseWireless": null
+  },
+  "design": {
+    "dimensions": { "height": 162.9, "width": 76.5, "depth": 8.5 },
+    "weight": 213,
+    "frameMaterial": "Aluminum",
+    "backMaterial": null,
+    "waterResistance": "IP68 / IP69",
+    "colors": ["Midnight Ocean", "Arctic Dawn", "Black Eclipse"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 15",
+    "osSkin": "OxygenOS 15",
+    "updateCommitment": 4,
+    "securityCommitment": 6,
+    "aiFeatures": ["Google Gemini", "AI Detail Boost", "AI Unblur"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.oneplus.com/us/13/specs", "siteName": "OnePlus", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.oneplus.com/us/13/specs", "siteName": "OnePlus", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.oneplus.com/us/oneplus-13", "siteName": "OnePlus", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.techradar.com/reviews/oneplus-13", "siteName": "TechRadar", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://www.pcmag.com/reviews/oneplus-13", "siteName": "PCMag", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "status", "url": "https://techcrunch.com/2026/07/16/phone-maker-oneplus-reportedly-plans-to-wind-down-us-and-europe-operations/", "siteName": "TechCrunch", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "OnePlus flagship with 6000mAh silicon-carbon battery, 4500-nit 120Hz display, and 80W SUPERVOOC charging."
+}

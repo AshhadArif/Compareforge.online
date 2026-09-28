@@ -1,0 +1,125 @@
+{
+  "id": "google-pixel-9-pro",
+  "brand": "Google",
+  "model": "Pixel 9 Pro",
+  "fullName": "Google Pixel 9 Pro",
+  "slug": "google-pixel-9-pro",
+  "category": "smartphones",
+  "status": "discontinued",
+  "releaseDate": "2024-09-04",
+  "pricing": {
+    "msrp": 999,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "16GB", "price": 999 },
+      { "storage": "256GB", "ram": "16GB", "price": 1099 },
+      { "storage": "512GB", "ram": "16GB", "price": 1219 },
+      { "storage": "1TB", "ram": "16GB", "price": 1449 }
+    ]
+  },
+  "display": {
+    "size": 6.3,
+    "resolution": "1280 x 2856",
+    "panelType": "LTPO OLED",
+    "refreshRate": 120,
+    "peakBrightness": 3000,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 2"
+  },
+  "performance": {
+    "chipset": "Google Tensor G4",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Mali-G715 MC7",
+    "ram": 16,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.7",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 48,
+      "aperture": "f/1.7",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 48,
+      "aperture": "f/2.8",
+      "ois": true,
+      "opticalZoom": 5,
+      "maxZoom": 30,
+      "features": []
+    },
+    "front": {
+      "mp": 42,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": ["10-bit HDR", "8K cloud upscaling"]
+    },
+    "features": ["Best Take", "Pixel Shift", "Zoom Enhance"]
+  },
+  "battery": {
+    "capacity": 4700,
+    "type": "Li-Ion",
+    "wiredCharging": 27,
+    "wirelessCharging": 21,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 152.8, "width": 72, "depth": 8.5 },
+    "weight": 199,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Porcelain", "Rose Quartz", "Hazel", "Obsidian"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB", "512GB", "1TB"],
+    "expandable": false,
+    "type": "UFS 3.1"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": true
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": null,
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": ["Gemini", "Gemini Live", "Add Me"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.gsmarena.com/google_pixel_9_pro-13218.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "performance", "url": "https://www.gsmarena.com/google_pixel_9_pro-13218.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.gsmarena.com/google_pixel_9_pro-13218.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.gsmarena.com/google_pixel_9_pro-13218.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.cnet.com/tech/mobile/google-pixel-9-series-starts-at-799-pro-from-999-preorder-today/", "siteName": "CNET", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "releaseDate", "url": "https://en.wikipedia.org/wiki/Pixel_9", "siteName": "Wikipedia", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Google's 6.3-inch flagship with a 50MP triple camera, 5x telephoto zoom, Tensor G4, and seven years of OS updates."
+}

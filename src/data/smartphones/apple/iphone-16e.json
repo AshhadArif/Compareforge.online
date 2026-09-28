@@ -1,0 +1,146 @@
+{
+  "id": "apple-iphone-16e",
+  "brand": "Apple",
+  "model": "iPhone 16e",
+  "fullName": "Apple iPhone 16e",
+  "slug": "apple-iphone-16e",
+  "category": "smartphones",
+  "status": "discontinued",
+  "releaseDate": "2025-02-28",
+  "pricing": {
+    "msrp": 599,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "8GB", "price": 599 },
+      { "storage": "256GB", "ram": "8GB", "price": 699 },
+      { "storage": "512GB", "ram": "8GB", "price": 899 }
+    ]
+  },
+  "display": {
+    "size": 6.1,
+    "resolution": "2532 x 1170",
+    "panelType": "OLED",
+    "refreshRate": 60,
+    "peakBrightness": 1200,
+    "hdr": true,
+    "protection": "Ceramic Shield"
+  },
+  "performance": {
+    "chipset": "A18",
+    "fabrication": "3nm",
+    "cpuCores": 6,
+    "gpuModel": "Apple 4-core GPU",
+    "ram": 8,
+    "ramType": null
+  },
+  "camera": {
+    "main": {
+      "mp": 48,
+      "aperture": "f/1.6",
+      "ois": true,
+      "opticalZoom": 2,
+      "maxZoom": 10,
+      "features": []
+    },
+    "ultrawide": null,
+    "telephoto": null,
+    "front": {
+      "mp": 12,
+      "aperture": "f/1.9",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": ["Dolby Vision", "Audio Mix"]
+    },
+    "features": ["Photonic Engine", "Deep Fusion", "Smart HDR 5"]
+  },
+  "battery": {
+    "capacity": 4005,
+    "type": "Li-Ion",
+    "wiredCharging": 20,
+    "wirelessCharging": 7.5,
+    "reverseWireless": false
+  },
+  "design": {
+    "dimensions": { "height": 146.7, "width": 71.5, "depth": 7.8 },
+    "weight": 167,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Black", "White"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB", "512GB"],
+    "expandable": false,
+    "type": "NVMe"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 6",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 2.0",
+    "simType": "eSIM only (US)",
+    "satellite": true
+  },
+  "software": {
+    "osAtLaunch": "iOS 18",
+    "osSkin": null,
+    "updateCommitment": 6,
+    "securityCommitment": 6,
+    "aiFeatures": ["Apple Intelligence", "Siri", "Writing Tools", "Visual Intelligence"]
+  },
+  "sources": [
+    {
+      "field": "display",
+      "url": "https://support.apple.com/en-us/122208",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "performance",
+      "url": "https://support.apple.com/en-us/122208",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "camera",
+      "url": "https://support.apple.com/en-us/122208",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "battery",
+      "url": "https://support.apple.com/en-us/122208",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "batteryCapacity",
+      "url": "https://9to5mac.com/2025/02/27/iphone-16e-battery-comparison/",
+      "siteName": "9to5Mac",
+      "dateAccessed": "2026-09-25",
+      "confidence": "estimated"
+    },
+    {
+      "field": "pricing",
+      "url": "https://en.wikipedia.org/wiki/IPhone_16e",
+      "siteName": "Wikipedia",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Apple's most affordable iPhone with a 48MP camera, C1 modem, and Apple Intelligence."
+}

@@ -1,0 +1,140 @@
+{
+  "id": "samsung-galaxy-a56-5g-vs-google-pixel-9a",
+  "slug": "samsung-galaxy-a56-5g-vs-google-pixel-9a",
+  "productIds": ["samsung-galaxy-a56-5g", "google-pixel-9a"],
+  "title": "Galaxy A56 vs Pixel 9a",
+  "metaDescription": "Galaxy A56 vs Pixel 9a — both start at $499. Compare 45W vs 23W charging, IP67 vs IP68, 4K30 vs 4K60 video and 6 vs 7 years of updates.",
+  "category": "budget-phones",
+  "intro": "Compare the Samsung Galaxy A56 5G and Google Pixel 9a — two mid-rangers that start at the same $499 and trade blows on charging, cameras and software support.",
+  "quickVerdict": "Both phones start at $499 for the 128GB / 8GB configuration, so the decision sits in the details. The Galaxy A56 5G brings a larger 6.7-inch display, 45W wired charging against 23W, a 12MP ultrawide and Gorilla Glass Victus+ protection. The Pixel 9a counters with a brighter 2,700-nit panel, 4K60 video, 7.5W wireless charging, an IP68 rating, a lighter 186 g body and 7 years of updates versus 6.",
+  "keyDifferences": [
+    {
+      "feature": "Display",
+      "productAValue": "6.7-inch Super AMOLED, 1080 x 2340, 120Hz, 1,900 nits",
+      "productBValue": "6.3-inch pOLED, 1080 x 2424, 120Hz, 2,700 nits",
+      "significance": "high",
+      "interpretation": "Both panels refresh at 120Hz, but the A56 is 0.4 inches larger while the Pixel lists 800 more nits of peak brightness and a slightly higher resolution. Which matters more depends on whether you prioritise screen size or outdoor visibility."
+    },
+    {
+      "feature": "Chipset",
+      "productAValue": "Exynos 1580, 4nm",
+      "productBValue": "Google Tensor G4, 4nm",
+      "significance": "medium",
+      "interpretation": "Both are 8-core 4nm chips from different vendors — Samsung's in-house Exynos against Google's Tensor. The Pixel pairs its chip with Gemini Nano, Circle to Search and Best Take, while the A56 lists Circle to Search, Object Eraser, Best Face and Auto Trim."
+    },
+    {
+      "feature": "Camera Hardware",
+      "productAValue": "50MP f/1.8 main with OIS + 12MP f/2.2 ultrawide; 12MP front",
+      "productBValue": "48MP f/1.7 main with OIS + 13MP f/2.2 ultrawide; 13MP front",
+      "significance": "medium",
+      "interpretation": "The two camera systems are closely matched: 50MP versus 48MP on the stabilised main sensor, 12MP versus 13MP on the ultrawide and 12MP versus 13MP on the front camera. Neither phone lists a telephoto lens."
+    },
+    {
+      "feature": "Video Recording",
+      "productAValue": "4K at 30fps",
+      "productBValue": "4K at 60fps",
+      "significance": "medium",
+      "interpretation": "Both shoot 4K, but the Pixel 9a doubles the frame rate at that resolution. The Pixel also lists Audio Magic Eraser, while the A56 lists Nightography for stills and no extra video features."
+    },
+    {
+      "feature": "Battery and Charging",
+      "productAValue": "5,000 mAh, 45W wired, no wireless",
+      "productBValue": "5,100 mAh, 23W wired, 7.5W wireless",
+      "significance": "high",
+      "interpretation": "Capacities differ by only 100 mAh, but charging is split: the A56 nearly doubles the wired rate at 45W versus 23W, while only the Pixel lists wireless charging at 7.5W."
+    },
+    {
+      "feature": "Software Updates",
+      "productAValue": "6 years OS + 6 years security",
+      "productBValue": "7 years OS + 7 years security",
+      "significance": "medium",
+      "interpretation": "Google lists one extra year of OS and security updates over Samsung's commitment for this model. Both phones launched on Android 15, with One UI 7 on the A56."
+    },
+    {
+      "feature": "Water Resistance",
+      "productAValue": "IP67",
+      "productBValue": "IP68",
+      "significance": "medium",
+      "interpretation": "Both ratings list a 6 for dust, but the water digit differs: 7 on the A56 and 8 on the Pixel 9a. The gap reflects the depth of water each phone is rated to handle rather than a difference in dust protection."
+    },
+    {
+      "feature": "Connectivity",
+      "productAValue": "WiFi 6, USB-C 2.0, Bluetooth 5.3",
+      "productBValue": "WiFi 6E, USB-C 3.2, Bluetooth 5.3",
+      "significance": "medium",
+      "interpretation": "The Pixel supports the newer WiFi 6E band and lists a faster USB-C 3.2 port, while the A56 is limited to WiFi 6 and USB-C 2.0. Both list Bluetooth 5.3, NFC, 5G and Nano-SIM + eSIM."
+    },
+    {
+      "feature": "Weight",
+      "productAValue": "198 g",
+      "productBValue": "186 g",
+      "significance": "low",
+      "interpretation": "The Pixel is 12 g lighter, a small margin that most users will only notice when holding the two phones side by side. Both are aluminium-framed devices."
+    }
+  ],
+  "practicalImplications": "With identical $499 starting prices, identical 8GB / 128GB base configurations, UFS 3.1 storage, 120Hz screens and no expandable storage on either phone, the Galaxy A56 5G and Pixel 9a are separated by how each brand spends the same budget. Samsung puts it into screen size, 45W charging, a marginally higher-resolution main sensor and Gorilla Glass Victus+ protection, and backs it with 6 years of updates. Google puts it into peak brightness, 4K60 video, wireless charging, a stronger IP68 rating, a lighter body and a seventh year of support — which makes the Pixel the pick for longevity and the A56 the pick for size and charging speed.",
+  "useCaseRecommendations": [
+    {
+      "scenario": "Biggest screen and fastest wired charging",
+      "recommended": "samsung-galaxy-a56-5g",
+      "reason": "6.7-inch display and 45W wired charging versus 6.3 inches and 23W on the Pixel 9a"
+    },
+    {
+      "scenario": "Longest software support",
+      "recommended": "google-pixel-9a",
+      "reason": "7 years of OS and security updates versus 6 years on the Galaxy A56"
+    },
+    {
+      "scenario": "Water resistance and lighter weight",
+      "recommended": "google-pixel-9a",
+      "reason": "IP68 rating and 186 g versus IP67 and 198 g"
+    },
+    {
+      "scenario": "4K60 video and wireless charging",
+      "recommended": "google-pixel-9a",
+      "reason": "4K at 60fps with Audio Magic Eraser plus 7.5W wireless charging, neither of which the A56 lists"
+    },
+    {
+      "scenario": "One UI and Samsung ecosystem buyers",
+      "recommended": "samsung-galaxy-a56-5g",
+      "reason": "One UI 7 with Object Eraser, Best Face and Auto Trim alongside 6 years of updates"
+    }
+  ],
+  "considerations": [
+    "Both phones start at $499 for 128GB with 8GB RAM — the A56's 256GB variant is $549 while the Pixel 9a's is $599",
+    "Screen protection differs: Gorilla Glass Victus+ on the Galaxy A56 versus Gorilla Glass 3 on the Pixel 9a",
+    "Both phones are listed as discontinued in our data, so availability may vary",
+    "The A56 lists USB-C 2.0 and WiFi 6, while the Pixel 9a lists USB-C 3.2 and WiFi 6E",
+    "Storage is UFS 3.1 on both phones and neither supports expansion",
+    "Neither phone lists a telephoto lens, so all zoom beyond the main sensor is digital"
+  ],
+  "faq": [
+    {
+      "question": "Which phone is cheaper?",
+      "answer": "They cost the same at the entry level: both the Galaxy A56 5G and the Pixel 9a are listed at $499 for 128GB with 8GB of RAM. At 256GB Samsung is cheaper — $549 versus $599 for the Pixel 9a."
+    },
+    {
+      "question": "Which phone has better battery life?",
+      "answer": "Battery capacities are almost identical: 5,000 mAh in the Galaxy A56 5G and 5,100 mAh in the Pixel 9a. Charging is where they split — 45W wired on the Samsung against 23W on the Google phone, while only the Pixel lists wireless charging, at 7.5W."
+    },
+    {
+      "question": "Which phone has the better camera?",
+      "answer": "Both use a stabilised main camera — 50MP f/1.8 on the A56 and 48MP f/1.7 on the Pixel 9a — with 12MP and 13MP ultrawides respectively. The Pixel records 4K video at 60fps rather than 30fps and lists Audio Magic Eraser; the A56 lists Nightography. Neither phone has a telephoto lens."
+    },
+    {
+      "question": "Which phone will receive updates longer?",
+      "answer": "The Pixel 9a lists 7 years of OS updates and 7 years of security updates. The Galaxy A56 5G lists 6 years of each, and both phones launched on Android 15 — the A56 with Samsung's One UI 7 skin."
+    },
+    {
+      "question": "Which phone is more water resistant?",
+      "answer": "The Pixel 9a carries an IP68 rating while the Galaxy A56 5G carries IP67. Both list a 6 for dust protection, but the higher water digit on the Pixel indicates a greater rated depth of water exposure."
+    }
+  ],
+  "relatedComparisonSlugs": [
+    "best-phones-under-500-2026",
+    "google-pixel-10a-vs-apple-iphone-17e"
+  ],
+  "relatedGuideSlugs": ["choosing-a-phone-by-use-case", "specs-explained"],
+  "isRoundup": false,
+  "lastUpdated": "2026-09-25"
+}

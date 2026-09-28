@@ -1,0 +1,123 @@
+{
+  "id": "asus-zenfone-11-ultra",
+  "brand": "Asus",
+  "model": "Zenfone 11 Ultra",
+  "fullName": "Asus Zenfone 11 Ultra",
+  "slug": "asus-zenfone-11-ultra",
+  "category": "smartphones",
+  "status": "discontinued",
+  "releaseDate": "2024-04-14",
+  "pricing": {
+    "msrp": 899.99,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "12GB", "price": 899.99 },
+      { "storage": "512GB", "ram": "16GB", "price": null }
+    ]
+  },
+  "display": {
+    "size": 6.78,
+    "resolution": "1080 x 2400",
+    "panelType": "LTPO AMOLED",
+    "refreshRate": 144,
+    "peakBrightness": 2500,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 2"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Gen 3",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 750",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.9",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": ["6-axis Hybrid Gimbal Stabilizer 3.0"]
+    },
+    "ultrawide": {
+      "mp": 13,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": ["Free-form lens"]
+    },
+    "telephoto": {
+      "mp": 32,
+      "aperture": "f/2.4",
+      "ois": true,
+      "opticalZoom": 3,
+      "maxZoom": null,
+      "features": []
+    },
+    "front": {
+      "mp": 32,
+      "aperture": "f/2.5",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "8K",
+      "maxFps": 24,
+      "features": ["HDR10+ video", "Slow Motion"]
+    },
+    "features": ["HyperClarity", "AI Portrait Video"]
+  },
+  "battery": {
+    "capacity": 5500,
+    "type": null,
+    "wiredCharging": 65,
+    "wirelessCharging": 15,
+    "reverseWireless": false
+  },
+  "design": {
+    "dimensions": { "height": 163.8, "width": 76.8, "depth": 8.9 },
+    "weight": 225,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Verdure Green", "Desert Sand", "Misty Grey", "Eternal Black", "Skyline Blue"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "Wi-Fi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB Type-C",
+    "simType": "Dual Nano-SIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": "ZenUI",
+    "updateCommitment": 2,
+    "securityCommitment": 4,
+    "aiFeatures": ["Semantic Search", "AI Noise Cancellation", "AI Call Translator", "AI Transcript", "AI Wallpaper"]
+  },
+  "sources": [
+    { "field": "pricing", "url": "https://www.androidauthority.com/asus-zenfone-11-ultra-review-3406664/", "siteName": "Android Authority", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "display", "url": "https://www.asus.com/us/mobile-handhelds/phones/zenfone/zenfone-11-ultra/techspec/", "siteName": "ASUS USA", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.asus.com/us/mobile-handhelds/phones/zenfone/zenfone-11-ultra/techspec/", "siteName": "ASUS USA", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.asus.com/us/mobile-handhelds/phones/zenfone/zenfone-11-ultra/techspec/", "siteName": "ASUS USA", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://www.androidauthority.com/asus-zenfone-11-ultra-review-3406664/", "siteName": "Android Authority", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "design", "url": "https://www.gsmarena.com/asus_zenfone_11_ultra-review-2679.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Asus's 6.78-inch flagship combines a Snapdragon 8 Gen 3 with a gimbal-stabilized camera and 5,500mAh cell."
+}

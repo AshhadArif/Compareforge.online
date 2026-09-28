@@ -1,0 +1,115 @@
+{
+  "id": "motorola-razr-plus-2024",
+  "brand": "Motorola",
+  "model": "Razr+ 2024",
+  "fullName": "Motorola Razr+ 2024",
+  "slug": "motorola-razr-plus-2024",
+  "category": "foldable-phones",
+  "status": "available",
+  "releaseDate": "2024-07-24",
+  "pricing": {
+    "msrp": 999,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "12GB", "price": 999 }
+    ]
+  },
+  "display": {
+    "size": 6.9,
+    "resolution": "1080 x 2640",
+    "panelType": "pOLED",
+    "refreshRate": 165,
+    "peakBrightness": 3000,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8s Gen 3",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 735",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.7",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": null,
+    "telephoto": {
+      "mp": 50,
+      "aperture": "f/2.0",
+      "ois": false,
+      "opticalZoom": 2,
+      "maxZoom": null,
+      "features": []
+    },
+    "front": {
+      "mp": 32,
+      "aperture": "f/2.4",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": ["Adaptive Stabilization"]
+    },
+    "features": ["Photo Enhancement Engine", "Super Zoom", "Action Shot"]
+  },
+  "battery": {
+    "capacity": 4000,
+    "type": null,
+    "wiredCharging": 45,
+    "wirelessCharging": 15,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 171.42, "width": 73.99, "depth": 7.09 },
+    "weight": 189,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Vegan leather",
+    "waterResistance": "IPX8",
+    "colors": ["Midnight Blue", "Peach Fuzz", "Hot Pink", "Spring Green"]
+  },
+  "storage": {
+    "options": ["256GB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": null,
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": null,
+    "updateCommitment": 3,
+    "securityCommitment": 4,
+    "aiFeatures": ["Gemini", "Magic Canvas", "Style Sync"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://en-us.support.motorola.com/app/answers/detail/a_id/181473", "siteName": "Motorola Support", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "performance", "url": "https://www.motorola.com/us/en/p/phones/razr/razr-plus-gen-2/pmipmgs38mh", "siteName": "Motorola", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.motorola.com/us/en/p/phones/razr/razr-plus-gen-2/pmipmgs38mh", "siteName": "Motorola", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.gsmarena.com/motorola_razr_50_ultra-review-2715.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "estimated" },
+    { "field": "software", "url": "https://www.t-mobile.com/dialed-in/devices/motorola-razr-2025-vs-2024", "siteName": "T-Mobile", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "connectivity", "url": "https://www.phonescoop.com/phones/phone.php?p=7140", "siteName": "Phone Scoop", "dateAccessed": "2026-09-25", "confidence": "estimated" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Motorola's flagship foldable with a 165Hz pOLED display, Snapdragon 8s Gen 3 chip, and 15W wireless charging."
+}

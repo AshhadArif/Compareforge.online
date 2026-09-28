@@ -1,0 +1,116 @@
+{
+  "id": "google-pixel-9",
+  "brand": "Google",
+  "model": "Pixel 9",
+  "fullName": "Google Pixel 9",
+  "slug": "google-pixel-9",
+  "category": "smartphones",
+  "status": "discontinued",
+  "releaseDate": "2024-08-22",
+  "pricing": {
+    "msrp": 799,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "12GB", "price": 799 },
+      { "storage": "256GB", "ram": "12GB", "price": 899 }
+    ]
+  },
+  "display": {
+    "size": 6.3,
+    "resolution": "1080 x 2424",
+    "panelType": "OLED",
+    "refreshRate": 120,
+    "peakBrightness": 2700,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 2"
+  },
+  "performance": {
+    "chipset": "Google Tensor G4",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Mali-G715 MC7",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.7",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": 8,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 48,
+      "aperture": "f/1.7",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": null,
+    "front": {
+      "mp": 10.5,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 60,
+      "features": ["10-bit HDR"]
+    },
+    "features": ["Best Take", "Pixel Shift", "Ultra-HDR"]
+  },
+  "battery": {
+    "capacity": 4700,
+    "type": "Li-Ion",
+    "wiredCharging": 27,
+    "wirelessCharging": 15,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 152.8, "width": 72, "depth": 8.5 },
+    "weight": 198,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Obsidian", "Porcelain", "Wintergreen", "Peony"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB"],
+    "expandable": false,
+    "type": "UFS 3.1"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": true
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": null,
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": ["Gemini", "Gemini Live", "Add Me"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.gsmarena.com/google_pixel_9-13219.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.gsmarena.com/google_pixel_9-13219.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://www.gsmarena.com/google_pixel_9-13219.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "zoom", "url": "https://swappa.com/guide/google-pixel-9", "siteName": "Swappa", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.cnet.com/tech/mobile/google-pixel-9-series-starts-at-799-pro-from-999-preorder-today/", "siteName": "CNET", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "releaseDate", "url": "https://en.wikipedia.org/wiki/Pixel_9", "siteName": "Wikipedia", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Google's compact flagship with a 6.3-inch 120Hz OLED display, dual 50MP cameras, Tensor G4, and seven years of updates."
+}

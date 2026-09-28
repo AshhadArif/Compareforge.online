@@ -1,0 +1,133 @@
+{
+  "id": "samsung-galaxy-z-fold-6-vs-oneplus-open",
+  "slug": "samsung-galaxy-z-fold-6-vs-oneplus-open",
+  "productIds": ["samsung-galaxy-z-fold-6", "oneplus-open"],
+  "title": "Galaxy Z Fold 6 vs OnePlus Open",
+  "metaDescription": "Compare the Galaxy Z Fold6 and OnePlus Open — 7.6in vs 7.82in displays, 12GB vs 16GB RAM, 25W vs 67W charging and 7 years vs 4 years of updates.",
+  "category": "foldable-phones",
+  "intro": "Compare the Samsung Galaxy Z Fold6 and OnePlus Open — two book-style foldables separated by a year of releases and $200 in list price.",
+  "quickVerdict": "The Galaxy Z Fold6 is listed at $1,899 and brings the newer Snapdragon 8 Gen 3 for Galaxy chip, a 7-year update commitment and an IP48 rating. The OnePlus Open, listed at $1,699 with 512GB of storage, answers with a larger 7.82-inch 2440 x 2268 LTPO panel, 16GB of RAM, a 64MP 3x telephoto, 67W wired charging and a 32MP front camera. Buyers who plan to keep a foldable for years should weigh Samsung's longer support; buyers who want more screen, memory and charging speed for less money may prefer the OnePlus.",
+  "keyDifferences": [
+    {
+      "feature": "Starting Price",
+      "productAValue": "$1,899 (256GB)",
+      "productBValue": "$1,699 (512GB)",
+      "significance": "high",
+      "interpretation": "The Open costs $200 less and lists double the base storage: 512GB against 256GB on the Fold6. Samsung's 512GB variant is $2,019, which widens the gap at matched capacity."
+    },
+    {
+      "feature": "Inner Display",
+      "productAValue": "7.6-inch AMOLED, 1856 x 2160, 120Hz, 2,600 nits",
+      "productBValue": "7.82-inch LTPO AMOLED, 2440 x 2268, 120Hz, 2,800 nits",
+      "significance": "high",
+      "interpretation": "The Open's inner panel is 0.22 inches larger, lists a higher resolution in both directions and 200 more nits of peak brightness. Both refresh at 120Hz, but only the Open lists LTPO panel technology."
+    },
+    {
+      "feature": "Chipset",
+      "productAValue": "Snapdragon 8 Gen 3 for Galaxy, 4nm",
+      "productBValue": "Snapdragon 8 Gen 2, 4nm",
+      "significance": "high",
+      "interpretation": "Samsung's foldable lists a full generation newer chip than the OnePlus, which launched in October 2023 against July 2024 for the Fold6. Both are 8-core 4nm parts."
+    },
+    {
+      "feature": "RAM",
+      "productAValue": "12GB LPDDR5X",
+      "productBValue": "16GB LPDDR5X",
+      "significance": "medium",
+      "interpretation": "The Open carries 4GB more RAM — a third more capacity using the same LPDDR5X memory type. That matters most for split-screen and multi-window use, which is the main strength of a book-style foldable."
+    },
+    {
+      "feature": "Camera System",
+      "productAValue": "50MP f/1.8 main + 12MP f/2.2 ultrawide + 10MP f/2.4 3x telephoto; 10MP front",
+      "productBValue": "48MP f/1.7 main + 48MP f/2.2 ultrawide + 64MP f/2.6 3x telephoto; 32MP front",
+      "significance": "high",
+      "interpretation": "Both phones carry a 3x optical telephoto with stabilisation, but the Open uses much higher-resolution secondary sensors — a 48MP ultrawide and 64MP telephoto versus 12MP and 10MP on the Fold6 — plus a 32MP front camera against 10MP. The Fold6 counters with a slightly higher-resolution 50MP main sensor and 8K video, while the Open tops out at 4K60."
+    },
+    {
+      "feature": "Battery and Charging",
+      "productAValue": "4,400 mAh, 25W wired, 15W wireless",
+      "productBValue": "4,805 mAh, 67W wired, no wireless listed",
+      "significance": "high",
+      "interpretation": "The Open has 405 mAh more capacity and charges at 67W wired versus 25W — more than double the rated speed. The trade-off is wireless: the Fold6 lists 15W wireless and reverse wireless charging, while the OnePlus lists neither."
+    },
+    {
+      "feature": "Software Updates",
+      "productAValue": "7 years OS + 7 years security",
+      "productBValue": "4 years OS + 5 years security",
+      "significance": "high",
+      "interpretation": "Samsung's published commitment runs three years longer on OS updates and two years longer on security patches. The Fold6 also launched later, on Android 14 with One UI 6.1.1, against Android 13 with OxygenOS 13.2 for the Open."
+    },
+    {
+      "feature": "Water Resistance",
+      "productAValue": "IP48",
+      "productBValue": "IPX4",
+      "significance": "medium",
+      "interpretation": "The Fold6 lists an 8 for water and a 4 for dust, while the Open lists a 4 for water and no dust rating (X). Both numbers point to a meaningful gap in how much exposure each phone is rated to handle."
+    }
+  ],
+  "practicalImplications": "These two foldables converge on the basics — 8-core 4nm chips, 120Hz folding screens, 3x telephoto cameras, UFS 4.0 storage, Nano-SIM + eSIM and identical 239 g weights — and diverge on where the money goes. Samsung spends its $200 premium on a newer chip, a 7-year update promise, 15W wireless charging and a stronger water and dust rating. OnePlus spends its on screen size, 16GB of RAM, higher-resolution secondary cameras, 67W wired charging and double the base storage, which is why the Open reads as the value pick on specifications while the Fold6 reads as the longer-term ownership pick.",
+  "useCaseRecommendations": [
+    {
+      "scenario": "Keeping a foldable for as many years as possible",
+      "recommended": "samsung-galaxy-z-fold-6",
+      "reason": "7 years of OS and security updates versus 4 years of OS and 5 years of security updates on the OnePlus Open"
+    },
+    {
+      "scenario": "Fastest wired charging",
+      "recommended": "oneplus-open",
+      "reason": "67W wired charging versus 25W on the Fold6"
+    },
+    {
+      "scenario": "Heavy split-screen multitasking",
+      "recommended": "oneplus-open",
+      "reason": "16GB of LPDDR5X RAM versus 12GB, alongside the Open Canvas multitasking layout"
+    },
+    {
+      "scenario": "More storage for less money",
+      "recommended": "oneplus-open",
+      "reason": "512GB listed at $1,699 versus 256GB at $1,899 for the Fold6"
+    },
+    {
+      "scenario": "Rated water and dust protection",
+      "recommended": "samsung-galaxy-z-fold-6",
+      "reason": "IP48 rating with dust and water figures, versus IPX4 with no dust rating on the OnePlus Open"
+    }
+  ],
+  "considerations": [
+    "Both phones are listed at exactly 239 g, so neither is the lighter device",
+    "Both are listed as discontinued, and the OnePlus Open's status entry cites reporting about OnePlus winding down US and Europe operations",
+    "The OnePlus Open does not list wireless or reverse wireless charging; the Fold6 lists 15W wireless",
+    "Storage starts at 256GB on the Fold6 and 512GB on the Open, and neither phone supports expandable storage",
+    "Both run Android with 8-core 4nm chips, but the Fold6 launched on Android 14 with One UI 6.1.1 and the Open on Android 13 with OxygenOS 13.2"
+  ],
+  "faq": [
+    {
+      "question": "Which phone has the bigger inner display?",
+      "answer": "The OnePlus Open lists a 7.82-inch LTPO AMOLED panel at 2440 x 2268 with 2,800 nits of peak brightness. The Galaxy Z Fold6 lists a 7.6-inch AMOLED panel at 1856 x 2160 with 2,600 nits. Both refresh at 120Hz."
+    },
+    {
+      "question": "Which phone charges faster?",
+      "answer": "The OnePlus Open supports 67W wired charging against 25W on the Galaxy Z Fold6, and it also lists a larger 4,805 mAh battery versus 4,400 mAh. Wireless charging goes the other way: the Fold6 lists 15W wireless and reverse wireless charging, while the Open lists none."
+    },
+    {
+      "question": "Which phone will receive updates for longer?",
+      "answer": "The Galaxy Z Fold6 is listed with 7 years of OS updates and 7 years of security updates. The OnePlus Open is listed with 4 years of OS updates and 5 years of security updates, and it launched earlier — October 2023 versus July 2024."
+    },
+    {
+      "question": "Which camera system is more versatile?",
+      "answer": "Both phones include a 3x optical telephoto, but the OnePlus Open pairs it with a 48MP ultrawide and a 64MP telephoto sensor, against 12MP and 10MP on the Galaxy Z Fold6, plus a 32MP front camera versus 10MP. The Fold6 responds with a 50MP main sensor versus 48MP and 8K video recording at 30fps, which the Open does not list."
+    },
+    {
+      "question": "Is the OnePlus Open cheaper than the Galaxy Z Fold6?",
+      "answer": "Yes. The OnePlus Open is listed at $1,699 for 512GB, while the Galaxy Z Fold6 is listed at $1,899 for 256GB, $2,019 for 512GB and $2,259 for 1TB. At the same 512GB capacity the Open is $320 cheaper."
+    }
+  ],
+  "relatedComparisonSlugs": [
+    "best-foldable-phones-2026",
+    "samsung-galaxy-z-fold-8-vs-motorola-razr-fold",
+    "apple-iphone-duo-vs-samsung-galaxy-z-fold-8"
+  ],
+  "relatedGuideSlugs": ["foldable-phone-buying-guide-2026", "specs-explained"],
+  "isRoundup": false,
+  "lastUpdated": "2026-09-25"
+}

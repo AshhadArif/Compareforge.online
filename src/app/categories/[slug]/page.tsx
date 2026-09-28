@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ComparisonCard from "@/components/ComparisonCard";
+import CompareHubLinks from "@/components/CompareHubLinks";
 import GuideCard from "@/components/GuideCard";
 import ProductCard from "@/components/ProductCard";
 import { getComparisonsByCategory } from "@/lib/comparisons";
@@ -49,15 +50,10 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const buyingGuide = categoryBuyingGuides[slug] ?? category.description;
 
   const isBudget = slug === "budget-phones";
-  const isFoldable = slug === "foldable-phones";
 
   const filteredProducts = isBudget
     ? categoryProducts.filter((p) => (p.pricing.msrp ?? 0) <= 500)
-    : isFoldable
-      ? categoryProducts.filter(
-          (p) => p.id.includes("fold") || p.id.includes("duo") || p.id.includes("razr")
-        )
-      : categoryProducts;
+    : categoryProducts;
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -79,6 +75,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         </h2>
         <p className="text-sm text-text-secondary">{buyingGuide}</p>
       </div>
+
+      <CompareHubLinks highlight="/compare/phones" />
 
       {/* Products */}
       {filteredProducts.length > 0 && (

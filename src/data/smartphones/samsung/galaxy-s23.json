@@ -1,0 +1,123 @@
+{
+  "id": "samsung-galaxy-s23",
+  "brand": "Samsung",
+  "model": "Galaxy S23",
+  "fullName": "Samsung Galaxy S23",
+  "slug": "samsung-galaxy-s23",
+  "category": "smartphones",
+  "status": "discontinued",
+  "releaseDate": "2023-02-17",
+  "pricing": {
+    "msrp": 799,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "8GB", "price": 799 },
+      { "storage": "256GB", "ram": "8GB", "price": 859 },
+      { "storage": "512GB", "ram": "8GB", "price": null }
+    ]
+  },
+  "display": {
+    "size": 6.1,
+    "resolution": "1080 x 2340",
+    "panelType": "Dynamic AMOLED 2X",
+    "refreshRate": 120,
+    "peakBrightness": 1750,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus 2"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Gen 2 for Galaxy",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 740",
+    "ram": 8,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.8",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 12,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": ["Super Steady video"]
+    },
+    "telephoto": {
+      "mp": 10,
+      "aperture": "f/2.4",
+      "ois": true,
+      "opticalZoom": 3,
+      "maxZoom": null,
+      "features": []
+    },
+    "front": {
+      "mp": 12,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "8K",
+      "maxFps": 30,
+      "features": ["HDR10+"]
+    },
+    "features": ["Nightography"]
+  },
+  "battery": {
+    "capacity": 3900,
+    "type": "Li-Ion",
+    "wiredCharging": 25,
+    "wirelessCharging": 15,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 146.3, "width": 70.9, "depth": 7.6 },
+    "weight": 168,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Phantom Black", "Cream", "Green", "Lavender"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB", "512GB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 6E",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 13",
+    "osSkin": "One UI 5.1",
+    "updateCommitment": 4,
+    "securityCommitment": 5,
+    "aiFeatures": ["Circle to Search", "Live Translate", "Chat Assist", "Note Assist", "Generative Edit"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.gsmarena.com/samsung_galaxy_s23-12082.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.gsmarena.com/samsung_galaxy_s23-12082.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.gsmarena.com/samsung_galaxy_s23-12082.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "pricing", "url": "https://news.samsung.com/us/samsung-new-galaxy-s23-series-take-passions-further-designed-premium-experience-today-beyond-unpacked-2023/", "siteName": "Samsung Newsroom", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S23", "siteName": "Wikipedia", "dateAccessed": "2026-09-25", "confidence": "estimated" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Samsung's 2023 flagship with Snapdragon 8 Gen 2, 8K video, and a compact 6.1-inch AMOLED display."
+}

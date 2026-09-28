@@ -1,0 +1,114 @@
+{
+  "id": "motorola-razr-2024",
+  "brand": "Motorola",
+  "model": "Razr 2024",
+  "fullName": "Motorola Razr 2024",
+  "slug": "motorola-razr-2024",
+  "category": "foldable-phones",
+  "status": "available",
+  "releaseDate": "2024-07-24",
+  "pricing": {
+    "msrp": 699,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "8GB", "price": 699 }
+    ]
+  },
+  "display": {
+    "size": 6.9,
+    "resolution": "1080 x 2640",
+    "panelType": "pOLED",
+    "refreshRate": 120,
+    "peakBrightness": 3000,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus"
+  },
+  "performance": {
+    "chipset": "Dimensity 7300X",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Mali-G615 MC2",
+    "ram": 8,
+    "ramType": "LPDDR4X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.7",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 13,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": null,
+    "front": {
+      "mp": 32,
+      "aperture": "f/2.4",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 30,
+      "features": []
+    },
+    "features": ["Night Vision", "Photo Booth"]
+  },
+  "battery": {
+    "capacity": 4200,
+    "type": null,
+    "wiredCharging": 30,
+    "wirelessCharging": 15,
+    "reverseWireless": false
+  },
+  "design": {
+    "dimensions": { "height": 171.3, "width": 74.0, "depth": 7.3 },
+    "weight": 188,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Vegan leather",
+    "waterResistance": "IPX8",
+    "colors": ["Koala Grey", "Beach Sand", "Spritz Orange"]
+  },
+  "storage": {
+    "options": ["256GB"],
+    "expandable": false,
+    "type": "UFS 2.2"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 6E",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB-C 2.0",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": null,
+    "updateCommitment": 3,
+    "securityCommitment": 4,
+    "aiFeatures": ["Gemini", "Magic Canvas", "Style Sync"]
+  },
+  "sources": [
+    { "field": "performance", "url": "https://www.gsmarena.com/compare.php3?idPhone1=13214", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "display", "url": "https://www.androidheadlines.com/motorola-razr-2024-specifications", "siteName": "Android Headlines", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://www.digitaltrends.com/phones/does-the-motorola-razr-2024-have-wireless-charging", "siteName": "Digital Trends", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://en-us.support.motorola.com/app/answers/detail/a_id/181495", "siteName": "Motorola Support", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.t-mobile.com/dialed-in/devices/motorola-razr-2025-vs-2024", "siteName": "T-Mobile", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Motorola's affordable clamshell foldable with a 6.9-inch 120Hz pOLED display, 4200mAh battery, and 15W wireless charging."
+}

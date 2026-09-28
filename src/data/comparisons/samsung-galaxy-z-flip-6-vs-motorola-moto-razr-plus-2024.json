@@ -1,0 +1,140 @@
+{
+  "id": "samsung-galaxy-z-flip-6-vs-motorola-razr-plus-2024",
+  "slug": "samsung-galaxy-z-flip-6-vs-motorola-razr-plus-2024",
+  "productIds": ["samsung-galaxy-z-flip-6", "motorola-razr-plus-2024"],
+  "title": "Galaxy Z Flip 6 vs Razr+ 2024",
+  "metaDescription": "Compare the Galaxy Z Flip6 and Razr+ 2024 — 120Hz vs 165Hz displays, 25W vs 45W charging, and 7 years vs 3 years of software updates.",
+  "category": "foldable-phones",
+  "intro": "Compare the Samsung Galaxy Z Flip6 and Motorola Razr+ 2024 — two clamshell foldables released on the same day in July 2024 with identical 4,000 mAh batteries but very different feature priorities.",
+  "quickVerdict": "The Razr+ 2024 starts $100 cheaper and brings a larger 6.9-inch 165Hz display, 45W wired charging and a 50MP 2x telephoto camera. The Galaxy Z Flip6 answers with a 12MP ultrawide lens, the Snapdragon 8 Gen 3 for Galaxy chip and a 7-year update commitment that doubles Motorola's. Buyers who keep phones for years should favour the Flip6; buyers who want more screen and faster charging for less money should look at the Razr+.",
+  "keyDifferences": [
+    {
+      "feature": "Starting Price",
+      "productAValue": "$1,099 (256GB)",
+      "productBValue": "$999 (256GB)",
+      "significance": "medium",
+      "interpretation": "The Razr+ 2024 undercuts the Flip6 by $100 at the same 256GB capacity. Samsung also lists a 512GB Flip6 at $1,219, while Motorola lists only a 256GB Razr+."
+    },
+    {
+      "feature": "Display",
+      "productAValue": "6.7-inch AMOLED, 1080 x 2640, 120Hz, 2,600 nits",
+      "productBValue": "6.9-inch pOLED, 1080 x 2640, 165Hz, 3,000 nits",
+      "significance": "high",
+      "interpretation": "Both panels share the same 1080 x 2640 resolution, but the Razr+ is 0.2 inches larger, refreshes 45Hz faster and lists 400 more nits of peak brightness. The smaller Flip6 panel packs the same pixel count into less area, so its sharpness per inch is slightly higher."
+    },
+    {
+      "feature": "Chipset",
+      "productAValue": "Snapdragon 8 Gen 3 for Galaxy, 4nm",
+      "productBValue": "Snapdragon 8s Gen 3, 4nm",
+      "significance": "medium",
+      "interpretation": "Both are 8-core 4nm chips from the Snapdragon 8 Gen 3 family, but they are not the same part — Samsung lists the for Galaxy variant while Motorola lists the 8s tier of the same generation."
+    },
+    {
+      "feature": "Rear Camera System",
+      "productAValue": "50MP f/1.8 main + 12MP f/2.2 ultrawide, no telephoto",
+      "productBValue": "50MP f/1.7 main + 50MP f/2.0 telephoto with 2x optical zoom, no ultrawide",
+      "significance": "high",
+      "interpretation": "The two phones pick different second lenses: Samsung includes an ultrawide and no telephoto, while Motorola includes a 2x telephoto and no ultrawide. Which layout is more useful depends on whether you shoot wide interiors and groups or distant subjects."
+    },
+    {
+      "feature": "Front Camera",
+      "productAValue": "10MP f/2.2",
+      "productBValue": "32MP f/2.4",
+      "significance": "medium",
+      "interpretation": "The Razr+ lists a 32MP selfie sensor against 10MP on the Flip6, giving Motorola the higher-resolution front camera on paper. Both phones list 4K at 60fps video recording."
+    },
+    {
+      "feature": "Wired Charging",
+      "productAValue": "25W",
+      "productBValue": "45W",
+      "significance": "high",
+      "interpretation": "Both phones carry a 4,000 mAh battery and list 15W wireless charging with reverse wireless support, so wired speed is the main charging difference. The Razr+'s 45W rating is 80% higher than the Flip6's 25W."
+    },
+    {
+      "feature": "Software Updates",
+      "productAValue": "7 years OS + 7 years security",
+      "productBValue": "3 years OS + 4 years security",
+      "significance": "high",
+      "interpretation": "Samsung lists 7 years of OS updates and 7 years of security updates; Motorola lists 3 years of OS updates and 4 years of security updates. The gap matters most if you plan to keep the phone beyond its third year."
+    },
+    {
+      "feature": "Weight",
+      "productAValue": "187 g",
+      "productBValue": "189 g",
+      "significance": "low",
+      "interpretation": "Two grams separate the phones, a difference too small to notice in a pocket or hand. Both are light for foldables."
+    },
+    {
+      "feature": "Water Resistance",
+      "productAValue": "IP48",
+      "productBValue": "IPX8",
+      "significance": "medium",
+      "interpretation": "Both ratings share the same 8 for water, but the Flip6 also lists a 4 for dust protection while the Razr+ carries no dust figure (X). If dust ingress is a concern, only Samsung lists a number for it."
+    }
+  ],
+  "practicalImplications": "Both phones run Android 14 with 12GB of LPDDR5X RAM, a 4,000 mAh battery, 15W wireless charging and UFS 4.0 storage, so the decision rests on three concrete gaps: display size and speed, wired charging rate, and update years. The Razr+ 2024 gives you the bigger, brighter, faster panel and 45W charging at a lower price, while the Flip6 trades those for an ultrawide camera, the higher-tier Snapdragon 8 Gen 3 for Galaxy chip and software support that runs four years longer on OS updates. Storage is a quieter difference too — Samsung lists 256GB and 512GB options, whereas Motorola lists only 256GB.",
+  "useCaseRecommendations": [
+    {
+      "scenario": "Keeping the phone for as long as possible",
+      "recommended": "samsung-galaxy-z-flip-6",
+      "reason": "7 years of OS and 7 years of security updates versus 3 years and 4 years on the Razr+"
+    },
+    {
+      "scenario": "Ultrawide and group photography",
+      "recommended": "samsung-galaxy-z-flip-6",
+      "reason": "12MP f/2.2 ultrawide lens that the Razr+ does not list"
+    },
+    {
+      "scenario": "Telephoto shots and faster top-ups",
+      "recommended": "motorola-razr-plus-2024",
+      "reason": "50MP 2x telephoto camera plus 45W wired charging versus 25W"
+    },
+    {
+      "scenario": "Biggest, fastest screen for the lowest price",
+      "recommended": "motorola-razr-plus-2024",
+      "reason": "6.9-inch 165Hz 3,000-nit panel at $999 versus a 6.7-inch 120Hz 2,600-nit panel at $1,099"
+    },
+    {
+      "scenario": "Higher-resolution selfies",
+      "recommended": "motorola-razr-plus-2024",
+      "reason": "32MP f/2.4 front camera versus 10MP f/2.2 on the Flip6"
+    }
+  ],
+  "considerations": [
+    "Both list 4,000 mAh batteries, so the 165Hz Razr+ panel and the 120Hz Flip6 panel are the main hardware difference in everyday use",
+    "The Galaxy Z Flip6 is listed as discontinued while the Razr+ 2024 is listed as available",
+    "Only the Flip6 lists a 512GB option at $1,219 — the Razr+ is listed with 256GB only",
+    "Water ratings cover different things: IP48 on the Flip6 and IPX8 on the Razr+",
+    "The Flip6 lists WiFi 6E and USB-C 3.2, while the Razr+ lists WiFi 7 and does not list a USB standard",
+    "Neither phone lists expandable storage, and both use UFS 4.0"
+  ],
+  "faq": [
+    {
+      "question": "Which phone has a better display?",
+      "answer": "The Razr+ 2024 lists the larger and faster panel: 6.9 inches at 165Hz and 3,000 nits of peak brightness, against 6.7 inches at 120Hz and 2,600 nits on the Galaxy Z Flip6. Both use a 1080 x 2640 resolution, so image sharpness per inch is slightly higher on the smaller Samsung screen."
+    },
+    {
+      "question": "Which phone has a better camera?",
+      "answer": "Both use a 50MP main camera with optical image stabilisation — f/1.8 on the Flip6 and f/1.7 on the Razr+. The Flip6 adds a 12MP f/2.2 ultrawide that Motorola does not list, while the Razr+ adds a 50MP f/2.0 telephoto with 2x optical zoom that Samsung does not list. The Razr+ also has the higher-resolution front camera at 32MP versus 10MP."
+    },
+    {
+      "question": "Which phone charges faster?",
+      "answer": "The Razr+ 2024 supports 45W wired charging compared with 25W on the Galaxy Z Flip6, and both phones list the same 4,000 mAh battery capacity and the same 15W wireless charging with reverse wireless support."
+    },
+    {
+      "question": "How long will these phones receive updates?",
+      "answer": "Samsung lists 7 years of OS updates and 7 years of security updates for the Galaxy Z Flip6. Motorola lists 3 years of OS updates and 4 years of security updates for the Razr+ 2024."
+    },
+    {
+      "question": "Is the Razr+ 2024 cheaper than the Galaxy Z Flip6?",
+      "answer": "Yes. The Razr+ 2024 is listed at $999 for its 256GB configuration, while the Galaxy Z Flip6 starts at $1,099 for 256GB and $1,219 for 512GB — a $100 gap at the same storage capacity."
+    }
+  ],
+  "relatedComparisonSlugs": [
+    "best-foldable-phones-2026",
+    "samsung-galaxy-z-fold-8-vs-motorola-razr-fold"
+  ],
+  "relatedGuideSlugs": ["foldable-phone-buying-guide-2026", "choosing-a-phone-by-use-case"],
+  "isRoundup": false,
+  "lastUpdated": "2026-09-25"
+}

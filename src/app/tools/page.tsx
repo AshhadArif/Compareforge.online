@@ -10,10 +10,12 @@ import {
 } from "@/lib/tools";
 import { generateFAQSchema } from "@/lib/schema";
 
+const builtToolCount = getBuiltTools().length;
+
 export const metadata: Metadata = {
   title: "Interactive Comparison & Decision Tools",
   description:
-    "19 free comparison, calculator, matching and decision tools. Compare products, calculate price differences, check compatibility and decide with sourced data.",
+    `${builtToolCount} free comparison, calculator, matching and decision tools. Compare products, calculate price differences, check compatibility and decide with sourced data.`,
   alternates: {
     canonical: "/tools",
   },
@@ -42,7 +44,7 @@ const faq = [
   {
     question: "What tools does CompareForge offer?",
     answer:
-      "Nineteen free tools across four families: Compare (side-by-side products, use cases, plans and dimensions), Calculate (percentage, price, unit cost, subscription and repair-or-replace calculators), Match (compatibility, fit and clearance checks) and Decide (alternatives finder, product finder and weighted decision matrix).",
+      `${builtToolCount} free tools across four families: Compare (side-by-side products, specifications, use cases, plans and dimensions), Calculate (percentage, price, unit cost, subscription and repair-or-replace calculators), Match (compatibility, fit and clearance checks) and Decide (alternatives finder, product finder and weighted decision matrix).`,
   },
   {
     question: "Are the tools free to use?",
@@ -77,9 +79,9 @@ export default function ToolsHubPage() {
       <div className="text-center mb-10">
         <h1 className="text-3xl sm:text-4xl font-bold text-text">Comparison &amp; Decision Tools</h1>
         <p className="mt-3 text-text-secondary max-w-2xl mx-auto">
-          Nineteen free tools to compare options, calculate real differences, check fit and
-          compatibility, and decide with clarity — backed by sourced data and plain-language
-          explanations.
+          {builtToolCount} free tools to compare options, calculate real differences, check
+          fit and compatibility, and decide with clarity — backed by sourced data and
+          plain-language explanations.
         </p>
       </div>
 

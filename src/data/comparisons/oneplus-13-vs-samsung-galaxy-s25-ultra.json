@@ -1,0 +1,141 @@
+{
+  "id": "oneplus-13-vs-samsung-galaxy-s25-ultra",
+  "slug": "oneplus-13-vs-samsung-galaxy-s25-ultra",
+  "productIds": ["oneplus-13", "samsung-galaxy-s25-ultra"],
+  "title": "OnePlus 13 vs Galaxy S25 Ultra",
+  "metaDescription": "Compare the OnePlus 13 and Samsung Galaxy S25 Ultra side by side. Display, camera, battery, charging and update specs with analysis.",
+  "category": "smartphones",
+  "intro": "Compare the OnePlus 13 and Samsung Galaxy S25 Ultra — two Snapdragon flagships where a $400 price gap trades camera versatility and longer support against battery capacity and charging speed.",
+  "quickVerdict": "The OnePlus 13 costs $899 versus $1,299 and brings a 6,000 mAh silicon-carbon battery, 80W wired charging, 50W wireless charging, and a 4,500-nit 6.82-inch display. The Galaxy S25 Ultra answers with a 200MP main camera, a 5x periscope with 100x maximum zoom, a titanium frame, satellite connectivity, and a 7-year update commitment versus 4 years of OS updates on the OnePlus. Battery priority and price point to the OnePlus 13; camera reach, build materials, and long-term software support point to the Galaxy S25 Ultra.",
+  "keyDifferences": [
+    {
+      "feature": "Starting Price",
+      "productAValue": "$899 (256GB)",
+      "productBValue": "$1,299 (256GB)",
+      "significance": "high",
+      "interpretation": "The OnePlus 13 undercuts the Galaxy S25 Ultra by $400 at the 256GB tier with the same 12GB of RAM in the base configuration. That is roughly a 31% lower price for a phone with the same storage capacity."
+    },
+    {
+      "feature": "Battery and Charging",
+      "productAValue": "6,000 mAh, 80W wired, 50W wireless",
+      "productBValue": "5,000 mAh, 45W wired, 15W wireless",
+      "significance": "high",
+      "interpretation": "The OnePlus has 1,000 mAh (20%) more capacity in a silicon-carbon cell, charges wired at nearly twice the rate (80W versus 45W), and lists over three times the wireless speed (50W versus 15W). The Galaxy keeps reverse wireless charging support, which the OnePlus entry does not list."
+    },
+    {
+      "feature": "Main Camera",
+      "productAValue": "50 MP, f/1.6",
+      "productBValue": "200 MP, f/1.7",
+      "significance": "high",
+      "interpretation": "Samsung's 200MP sensor captures far more pixels than the OnePlus's 50MP sensor, giving more cropping room in good light. The OnePlus opens slightly wider at f/1.6 versus f/1.7, which affects light intake but does not offset the resolution gap on its own."
+    },
+    {
+      "feature": "Telephoto Camera",
+      "productAValue": "50 MP, f/2.6, 3x optical, up to 120x",
+      "productBValue": "50 MP, f/3.4, 5x optical, up to 100x (periscope)",
+      "significance": "high",
+      "interpretation": "Both telephotos are 50MP with optical image stabilization, but the Galaxy uses a periscope design with 5x optical zoom against 3x on the OnePlus. The OnePlus lists a higher 120x maximum zoom, though optical reach — the uncontested part of the range — favors the Galaxy."
+    },
+    {
+      "feature": "Display Brightness",
+      "productAValue": "6.82-inch LTPO AMOLED, 1440 x 3168, 4500 nits",
+      "productBValue": "6.9-inch AMOLED, 1440 x 3120, 2600 nits",
+      "significance": "medium",
+      "interpretation": "Both are 120Hz QHD-class panels of nearly identical size, but the OnePlus is rated 1,900 nits brighter at peak (4,500 versus 2,600). Peak brightness differences matter most in direct sunlight and in HDR highlights rather than in typical indoor use."
+    },
+    {
+      "feature": "Update Commitment",
+      "productAValue": "4 years OS, 6 years security",
+      "productBValue": "7 years OS, 7 years security",
+      "significance": "high",
+      "interpretation": "Samsung lists 7 years of both OS and security updates, while OnePlus lists 4 years of OS updates and 6 years of security updates. Over a five-year ownership period, the Galaxy keeps receiving full OS upgrades for longer."
+    },
+    {
+      "feature": "Build Materials and Weight",
+      "productAValue": "Aluminum frame, 213 g",
+      "productBValue": "Titanium frame, 218 g",
+      "significance": "medium",
+      "interpretation": "The Galaxy uses a titanium frame while the OnePlus uses aluminum, and the two are within 5 g of each other at 213 g and 218 g. Titanium is the more premium frame material; the weight difference is too small to notice in daily use."
+    },
+    {
+      "feature": "Satellite Connectivity",
+      "productAValue": "Not available",
+      "productBValue": "Available",
+      "significance": "medium",
+      "interpretation": "The Galaxy S25 Ultra lists satellite connectivity while the OnePlus 13 does not. For travelers or anyone regularly outside cellular coverage, that is a capability the OnePlus simply lacks rather than a difference in degree."
+    },
+    {
+      "feature": "Water Resistance",
+      "productAValue": "IP68 / IP69",
+      "productBValue": "IP68",
+      "significance": "low",
+      "interpretation": "Both phones carry an IP68 rating, and the OnePlus adds an IP69 rating for high-pressure, high-temperature water jets. In everyday rain and submersion scenarios, the practical protection is the same IP68 floor."
+    }
+  ],
+  "practicalImplications": "These phones share the same foundation — a 3nm Snapdragon 8 Elite-class chip (the Galaxy uses the for Galaxy variant), an Adreno 830 GPU, 12GB of base RAM, UFS 4.0 storage, 120Hz QHD-class displays, 8K 30fps video, IP-rated water resistance, and WiFi 7 — so the decision rests on where each spends its budget. The OnePlus 13 directs savings into a 6,000 mAh battery with 80W and 50W charging plus a brighter 4,500-nit panel, but lists a shorter 4-year OS update window and no satellite connectivity. The Galaxy S25 Ultra spends more on camera hardware (200MP main, 5x periscope, 100x max zoom), a titanium frame, 7 years of updates, and the S Pen noted in its summary, which suits buyers who keep phones for years and want the widest feature set.",
+  "useCaseRecommendations": [
+    {
+      "scenario": "Buyers who prioritize battery capacity and charging speed",
+      "recommended": "oneplus-13",
+      "reason": "6,000 mAh with 80W wired and 50W wireless charging, versus 5,000 mAh with 45W and 15W on the Galaxy"
+    },
+    {
+      "scenario": "Zoom and long-range photography",
+      "recommended": "samsung-galaxy-s25-ultra",
+      "reason": "5x periscope telephoto versus 3x on the OnePlus, backed by a 200MP main sensor"
+    },
+    {
+      "scenario": "Shoppers who want the strongest value on paper",
+      "recommended": "oneplus-13",
+      "reason": "$899 for 256GB against $1,299 for the same storage on the Galaxy S25 Ultra"
+    },
+    {
+      "scenario": "Users who keep their phone for five years or more",
+      "recommended": "samsung-galaxy-s25-ultra",
+      "reason": "7 years of OS and security updates versus 4 years of OS and 6 years of security updates"
+    },
+    {
+      "scenario": "Travelers who need connectivity beyond cell towers",
+      "recommended": "samsung-galaxy-s25-ultra",
+      "reason": "Satellite connectivity is listed on the Galaxy and not available on the OnePlus 13"
+    }
+  ],
+  "considerations": [
+    "Our data lists the OnePlus 13 as discontinued while the Galaxy S25 Ultra is listed as available",
+    "Both use a 3nm Snapdragon 8 Elite-class chip with an Adreno 830 GPU and 12GB base RAM — performance class is closely matched",
+    "Storage ceilings differ: the OnePlus tops out at 512GB (with 16GB RAM), while the Galaxy offers 256GB, 512GB, and 1TB",
+    "Both phones record 8K at 30fps, though the Galaxy adds 10-bit HDR and HDR10+ while the OnePlus lists Dolby Vision",
+    "The Galaxy is 5 g heavier (218 g versus 213 g) but uses titanium instead of aluminum",
+    "The OnePlus adds a 32MP f/2.4 front camera versus 12MP f/2.2 on the Galaxy, which matters for selfies and video calls"
+  ],
+  "faq": [
+    {
+      "question": "Which phone has the better camera?",
+      "answer": "The Galaxy S25 Ultra has the higher-resolution hardware: a 200MP f/1.7 main sensor, a 50MP f/1.9 ultrawide, and a 50MP f/3.4 periscope with 5x optical zoom and up to 100x maximum zoom. The OnePlus 13 uses a 50MP f/1.6 main sensor, a 50MP f/2.0 ultrawide, and a 50MP f/2.6 telephoto with 3x optical zoom and a listed 120x maximum zoom. Both record 8K at 30fps, and the OnePlus carries a 32MP front camera versus 12MP on the Galaxy."
+    },
+    {
+      "question": "Which phone has better battery life?",
+      "answer": "The OnePlus 13 lists a 6,000 mAh silicon-carbon battery against 5,000 mAh on the Galaxy S25 Ultra — 20% more capacity. It also charges faster at 80W wired versus 45W, and 50W wireless versus 15W. Battery life in practice also depends on display size, brightness, and software optimization; these figures are capacities and charging rates from the spec sheets rather than measured runtime."
+    },
+    {
+      "question": "Which phone is cheaper?",
+      "answer": "The OnePlus 13 starts at $899 for 256GB with 12GB of RAM, and its 512GB (16GB RAM) tier is $999. The Galaxy S25 Ultra starts at $1,299 for 256GB, with 512GB at $1,419 and 1TB at $1,659. The base-tier gap is $400."
+    },
+    {
+      "question": "How long will these phones receive updates?",
+      "answer": "Samsung lists 7 years of OS updates and 7 years of security updates for the Galaxy S25 Ultra. The OnePlus 13 is listed with 4 years of OS updates and 6 years of security updates. Both launched on Android 15 — One UI 7 on the Galaxy, OxygenOS 15 on the OnePlus."
+    },
+    {
+      "question": "Which phone is more durable?",
+      "answer": "Both are IP68 rated with glass backs, and the OnePlus 13 adds an IP69 rating for high-pressure water jets. The Galaxy S25 Ultra uses a titanium frame compared with aluminum on the OnePlus, and it lists Gorilla Glass Armor 2 display protection versus Ceramic Guard on the OnePlus. The two weigh 218 g and 213 g respectively."
+    }
+  ],
+  "relatedComparisonSlugs": [
+    "best-flagship-phones-2026",
+    "samsung-galaxy-s26-ultra-vs-google-pixel-11-pro-xl",
+    "apple-iphone-18-pro-max-vs-samsung-galaxy-s26-ultra"
+  ],
+  "relatedGuideSlugs": ["unit-pricing-guide", "specs-explained"],
+  "isRoundup": false,
+  "lastUpdated": "2026-09-25"
+}

@@ -3,12 +3,14 @@ import Link from "next/link";
 import { comparisons } from "@/lib/comparisons";
 import { guides } from "@/lib/guides";
 import { categories, products } from "@/lib/products";
+import { getBuiltTools } from "@/lib/tools";
+import { COMPARE_HUBS } from "@/components/CompareHubLinks";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Categories",
+  title: "Product Comparison Categories — Browse by Product Type",
   description:
-    "Browse product comparison categories on CompareForge. Find comparisons organized by product type.",
+    "Browse product comparison categories on CompareForge: phones, laptops, tablets, monitors, cameras and headphones, plus smartphone categories.",
   alternates: {
     canonical: "/categories",
   },
@@ -78,14 +80,34 @@ export default function CategoriesPage() {
         </p>
         <div className="flex flex-wrap gap-3 text-sm font-medium">
           <Link href="/tools" className="text-primary hover:underline">
-            Browse all 19 tools →
+            Browse all {getBuiltTools().length} tools →
           </Link>
           <Link href="/compare" className="text-primary hover:underline">
-            All comparisons →
+            Product comparison →
           </Link>
           <Link href="/guides" className="text-primary hover:underline">
             Buying guides →
           </Link>
+        </div>
+      </div>
+
+      <div className="mt-12">
+        <h2 className="text-xl font-bold text-text mb-4">Compare by Product Type</h2>
+        <p className="text-sm text-text-secondary mb-4 max-w-3xl">
+          Every comparison hub runs on the same principle: a working tool first, then the
+          specification context that makes the result readable.
+        </p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {COMPARE_HUBS.map((hub) => (
+            <Link
+              key={hub.href}
+              href={hub.href}
+              className="block p-5 bg-white border border-border rounded-xl hover:shadow-md transition-shadow"
+            >
+              <span className="font-semibold text-text">{hub.label}</span>
+              <span className="block text-sm text-text-secondary mt-1">{hub.blurb}</span>
+            </Link>
+          ))}
         </div>
       </div>
 

@@ -1,0 +1,172 @@
+{
+  "id": "samsung-galaxy-s25-ultra",
+  "brand": "Samsung",
+  "model": "Galaxy S25 Ultra",
+  "fullName": "Samsung Galaxy S25 Ultra",
+  "slug": "samsung-galaxy-s25-ultra",
+  "category": "smartphones",
+  "status": "available",
+  "releaseDate": "2025-02-07",
+  "pricing": {
+    "msrp": 1299,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "12GB", "price": 1299 },
+      { "storage": "512GB", "ram": "12GB", "price": 1419 },
+      { "storage": "1TB", "ram": "12GB", "price": 1659 }
+    ]
+  },
+  "display": {
+    "size": 6.9,
+    "resolution": "1440 x 3120",
+    "panelType": "AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 2600,
+    "hdr": true,
+    "protection": "Gorilla Glass Armor 2"
+  },
+  "performance": {
+    "chipset": "Snapdragon 8 Elite for Galaxy",
+    "fabrication": "3nm",
+    "cpuCores": 8,
+    "gpuModel": "Adreno 830",
+    "ram": 12,
+    "ramType": "LPDDR5X"
+  },
+  "camera": {
+    "main": {
+      "mp": 200,
+      "aperture": "f/1.7",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 50,
+      "aperture": "f/1.9",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 50,
+      "aperture": "f/3.4",
+      "ois": true,
+      "opticalZoom": 5,
+      "maxZoom": 100,
+      "features": ["periscope"]
+    },
+    "front": {
+      "mp": 12,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "8K",
+      "maxFps": 30,
+      "features": ["10-bit HDR", "HDR10+"]
+    },
+    "features": ["Nightography", "Space Zoom", "Laser AF"]
+  },
+  "battery": {
+    "capacity": 5000,
+    "type": "Li-Ion",
+    "wiredCharging": 45,
+    "wirelessCharging": 15,
+    "reverseWireless": true
+  },
+  "design": {
+    "dimensions": { "height": 162.8, "width": 77.6, "depth": 8.2 },
+    "weight": 218,
+    "frameMaterial": "Titanium",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": [
+      "Titanium Silver Blue",
+      "Titanium Black",
+      "Titanium White Silver",
+      "Titanium Gray"
+    ]
+  },
+  "storage": {
+    "options": ["256GB", "512GB", "1TB"],
+    "expandable": false,
+    "type": "UFS 4.0"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.4",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": true
+  },
+  "software": {
+    "osAtLaunch": "Android 15",
+    "osSkin": "One UI 7",
+    "updateCommitment": 7,
+    "securityCommitment": 7,
+    "aiFeatures": [
+      "Galaxy AI",
+      "Gemini",
+      "Circle to Search",
+      "Now Brief",
+      "Live Translate",
+      "Note Assist"
+    ]
+  },
+  "sources": [
+    {
+      "field": "display",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s25_ultra-13322.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "performance",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s25_ultra-13322.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "camera",
+      "url": "https://www.gsmarena.com/samsung_galaxy_s25_ultra-13322.php",
+      "siteName": "GSMArena",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "pricing",
+      "url": "https://www.samsung.com/us/smartphones/galaxy-s25-ultra/buy/",
+      "siteName": "Samsung",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "connectivity",
+      "url": "https://www.skylo.tech/newsroom/skylo-certifies-the-samsung-galaxy-s25-series-on-verizon",
+      "siteName": "Skylo",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "software",
+      "url": "https://en.wikipedia.org/wiki/One_UI",
+      "siteName": "Wikipedia",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Samsung's 2025 Ultra flagship with a 200MP camera, S Pen, Snapdragon 8 Elite, and Galaxy AI."
+}

@@ -8,7 +8,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import ProductCard from "@/components/ProductCard";
 import Link from "next/link";
 
-function ComparisonResult() {
+function ComparisonResult({ basePath }: { basePath: string }) {
   const searchParams = useSearchParams();
   const aId = searchParams.get("a");
   const bId = searchParams.get("b");
@@ -58,7 +58,7 @@ function ComparisonResult() {
           {productB.fullName} details →
         </Link>
         <Link
-          href="/tools/product-comparison"
+          href={basePath}
           className="text-sm font-medium text-primary hover:underline"
         >
           Compare different phones →
@@ -68,10 +68,14 @@ function ComparisonResult() {
   );
 }
 
-export default function InteractiveComparison() {
+export default function InteractiveComparison({
+  basePath = "/tools/product-comparison",
+}: {
+  basePath?: string;
+}) {
   return (
     <Suspense fallback={null}>
-      <ComparisonResult />
+      <ComparisonResult basePath={basePath} />
     </Suspense>
   );
 }

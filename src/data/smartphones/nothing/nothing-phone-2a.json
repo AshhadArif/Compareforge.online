@@ -1,0 +1,117 @@
+{
+  "id": "nothing-phone-2a",
+  "brand": "Nothing",
+  "model": "Phone (2a)",
+  "fullName": "Nothing Phone (2a)",
+  "slug": "nothing-phone-2a",
+  "category": "budget-phones",
+  "status": "available",
+  "releaseDate": "2024-03-12",
+  "pricing": {
+    "msrp": 349,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "8GB", "price": null },
+      { "storage": "256GB", "ram": "8GB", "price": null },
+      { "storage": "256GB", "ram": "12GB", "price": 349 }
+    ]
+  },
+  "display": {
+    "size": 6.7,
+    "resolution": "1084 x 2412",
+    "panelType": "Flexible AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 1300,
+    "hdr": true,
+    "protection": "Gorilla Glass 5"
+  },
+  "performance": {
+    "chipset": "MediaTek Dimensity 7200 Pro",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Mali-G610 MC4",
+    "ram": 12,
+    "ramType": "LPDDR4X"
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.88",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 50,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": null,
+    "front": {
+      "mp": 32,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 30,
+      "features": []
+    },
+    "features": ["TrueLens Engine", "Ultra XDR", "Night Mode"]
+  },
+  "battery": {
+    "capacity": 5000,
+    "type": null,
+    "wiredCharging": 45,
+    "wirelessCharging": null,
+    "reverseWireless": false
+  },
+  "design": {
+    "dimensions": { "height": 161.74, "width": 76.32, "depth": 8.55 },
+    "weight": 190,
+    "frameMaterial": "Plastic",
+    "backMaterial": "Plastic",
+    "waterResistance": "IP54",
+    "colors": ["Black", "White", "Milk", "Blue"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB"],
+    "expandable": false,
+    "type": "UFS 2.2"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "Wi-Fi 6",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 2.0",
+    "simType": "Dual Nano-SIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 14",
+    "osSkin": "Nothing OS 2.5",
+    "updateCommitment": 3,
+    "securityCommitment": 4,
+    "aiFeatures": ["ChatGPT integration"]
+  },
+  "sources": [
+    { "field": "pricing", "url": "https://www.prnewswire.com/news-releases/nothing-introduces-phone-2a-302079844.html", "siteName": "PR Newswire", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "display", "url": "https://checkout-eu.nothing.tech/pages/phone-2a", "siteName": "Nothing Europe", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.gsmarena.com/nothing_phone_(2a)-12760.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "battery", "url": "https://checkout-eu.nothing.tech/pages/phone-2a", "siteName": "Nothing Europe", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://checkout-eu.nothing.tech/pages/phone-2a", "siteName": "Nothing Europe", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "storage", "url": "https://www.devicespecifications.com/en/news/a9371641", "siteName": "DeviceSpecifications", "dateAccessed": "2026-09-25", "confidence": "estimated" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Nothing's first budget phone — a Dimensity 7200 Pro handset with dual 50MP cameras and Glyph lights."
+}

@@ -1,0 +1,166 @@
+{
+  "id": "apple-iphone-16-pro-max",
+  "brand": "Apple",
+  "model": "iPhone 16 Pro Max",
+  "fullName": "Apple iPhone 16 Pro Max",
+  "slug": "apple-iphone-16-pro-max",
+  "category": "smartphones",
+  "status": "discontinued",
+  "releaseDate": "2024-09-20",
+  "pricing": {
+    "msrp": 1199,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "256GB", "ram": "8GB", "price": 1199 },
+      { "storage": "512GB", "ram": "8GB", "price": 1399 },
+      { "storage": "1TB", "ram": "8GB", "price": 1599 }
+    ]
+  },
+  "display": {
+    "size": 6.9,
+    "resolution": "2868 x 1320",
+    "panelType": "OLED",
+    "refreshRate": 120,
+    "peakBrightness": 2000,
+    "hdr": true,
+    "protection": "Ceramic Shield"
+  },
+  "performance": {
+    "chipset": "A18 Pro",
+    "fabrication": "3nm",
+    "cpuCores": 6,
+    "gpuModel": "Apple 6-core GPU",
+    "ram": 8,
+    "ramType": null
+  },
+  "camera": {
+    "main": {
+      "mp": 48,
+      "aperture": "f/1.78",
+      "ois": true,
+      "opticalZoom": 2,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 48,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": {
+      "mp": 12,
+      "aperture": "f/2.8",
+      "ois": true,
+      "opticalZoom": 5,
+      "maxZoom": 25,
+      "features": ["tetraprism"]
+    },
+    "front": {
+      "mp": 12,
+      "aperture": "f/1.9",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 120,
+      "features": ["Dolby Vision", "ProRes", "Log video", "Cinematic Mode"]
+    },
+    "features": ["Photonic Engine", "Deep Fusion", "Smart HDR 5", "Camera Control"]
+  },
+  "battery": {
+    "capacity": 4685,
+    "type": "Li-Ion",
+    "wiredCharging": 20,
+    "wirelessCharging": 25,
+    "reverseWireless": false
+  },
+  "design": {
+    "dimensions": { "height": 163, "width": 77.6, "depth": 8.25 },
+    "weight": 227,
+    "frameMaterial": "Titanium",
+    "backMaterial": "Glass",
+    "waterResistance": "IP68",
+    "colors": ["Black Titanium", "White Titanium", "Natural Titanium", "Desert Titanium"]
+  },
+  "storage": {
+    "options": ["256GB", "512GB", "1TB"],
+    "expandable": false,
+    "type": "NVMe"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 7",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 3.2",
+    "simType": "eSIM only (US)",
+    "satellite": true
+  },
+  "software": {
+    "osAtLaunch": "iOS 18",
+    "osSkin": null,
+    "updateCommitment": 6,
+    "securityCommitment": 6,
+    "aiFeatures": [
+      "Apple Intelligence",
+      "Siri",
+      "Writing Tools",
+      "Image Playground",
+      "Visual Intelligence"
+    ]
+  },
+  "sources": [
+    {
+      "field": "display",
+      "url": "https://support.apple.com/en-us/121032",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "performance",
+      "url": "https://support.apple.com/en-us/121032",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "camera",
+      "url": "https://support.apple.com/en-us/121032",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "battery",
+      "url": "https://support.apple.com/en-us/121032",
+      "siteName": "Apple",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    },
+    {
+      "field": "batteryCapacity",
+      "url": "https://9to5mac.com/2025/02/27/iphone-16e-battery-comparison/",
+      "siteName": "9to5Mac",
+      "dateAccessed": "2026-09-25",
+      "confidence": "estimated"
+    },
+    {
+      "field": "pricing",
+      "url": "https://en.wikipedia.org/wiki/IPhone_16_Pro",
+      "siteName": "Wikipedia",
+      "dateAccessed": "2026-09-25",
+      "confidence": "verified"
+    }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Apple's 2024 flagship with a 6.9-inch display, 5x tetraprism camera, A18 Pro, and Apple Intelligence."
+}

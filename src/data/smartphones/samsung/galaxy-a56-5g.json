@@ -1,0 +1,115 @@
+{
+  "id": "samsung-galaxy-a56-5g",
+  "brand": "Samsung",
+  "model": "Galaxy A56 5G",
+  "fullName": "Samsung Galaxy A56 5G",
+  "slug": "samsung-galaxy-a56-5g",
+  "category": "budget-phones",
+  "status": "discontinued",
+  "releaseDate": "2025-07-18",
+  "pricing": {
+    "msrp": 499,
+    "currency": "USD",
+    "region": "US",
+    "variants": [
+      { "storage": "128GB", "ram": "8GB", "price": 499 },
+      { "storage": "256GB", "ram": "8GB", "price": 549 }
+    ]
+  },
+  "display": {
+    "size": 6.7,
+    "resolution": "1080 x 2340",
+    "panelType": "Super AMOLED",
+    "refreshRate": 120,
+    "peakBrightness": 1900,
+    "hdr": true,
+    "protection": "Gorilla Glass Victus+"
+  },
+  "performance": {
+    "chipset": "Exynos 1580",
+    "fabrication": "4nm",
+    "cpuCores": 8,
+    "gpuModel": "Xclipse 540",
+    "ram": 8,
+    "ramType": null
+  },
+  "camera": {
+    "main": {
+      "mp": 50,
+      "aperture": "f/1.8",
+      "ois": true,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "ultrawide": {
+      "mp": 12,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "telephoto": null,
+    "front": {
+      "mp": 12,
+      "aperture": "f/2.2",
+      "ois": false,
+      "opticalZoom": null,
+      "maxZoom": null,
+      "features": []
+    },
+    "video": {
+      "maxResolution": "4K",
+      "maxFps": 30,
+      "features": []
+    },
+    "features": ["Nightography"]
+  },
+  "battery": {
+    "capacity": 5000,
+    "type": null,
+    "wiredCharging": 45,
+    "wirelessCharging": null,
+    "reverseWireless": false
+  },
+  "design": {
+    "dimensions": { "height": 162.2, "width": 77.5, "depth": 7.4 },
+    "weight": 198,
+    "frameMaterial": "Aluminum",
+    "backMaterial": "Glass",
+    "waterResistance": "IP67",
+    "colors": ["Awesome Graphite", "Awesome Lightgray", "Awesome Olive"]
+  },
+  "storage": {
+    "options": ["128GB", "256GB"],
+    "expandable": false,
+    "type": "UFS 3.1"
+  },
+  "connectivity": {
+    "fiveG": true,
+    "wifi": "WiFi 6",
+    "bluetooth": "5.3",
+    "nfc": true,
+    "usb": "USB-C 2.0",
+    "simType": "Nano-SIM + eSIM",
+    "satellite": false
+  },
+  "software": {
+    "osAtLaunch": "Android 15",
+    "osSkin": "One UI 7",
+    "updateCommitment": 6,
+    "securityCommitment": 6,
+    "aiFeatures": ["Circle to Search", "Object Eraser", "Best Face", "Auto Trim"]
+  },
+  "sources": [
+    { "field": "display", "url": "https://www.gsmarena.com/samsung_galaxy_a56-13603.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "camera", "url": "https://www.gsmarena.com/samsung_galaxy_a56-13603.php", "siteName": "GSMArena", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "pricing", "url": "https://www.samsung.com/us/smartphones/galaxy-a/galaxy-a56-5g/buy/", "siteName": "Samsung", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "releaseDate", "url": "https://www.androidcentral.com/smartphones/samsung-galaxy-a56-review", "siteName": "Android Central", "dateAccessed": "2026-09-25", "confidence": "verified" },
+    { "field": "software", "url": "https://news.samsung.com/global/samsung-galaxy-a56-5g-a36-5g-and-a26-5g-ai-powered-for-everyone", "siteName": "Samsung Newsroom", "dateAccessed": "2026-09-25", "confidence": "verified" }
+  ],
+  "lastUpdated": "2026-09-25",
+  "lastVerified": "2026-09-25",
+  "summary": "Samsung's 2025 mid-ranger with Exynos 1580, 120Hz AMOLED, 45W charging, and 6 years of updates."
+}

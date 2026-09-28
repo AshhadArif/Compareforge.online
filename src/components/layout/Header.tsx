@@ -5,9 +5,7 @@ import Link from "next/link";
 import SearchBar from "./SearchBar";
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/categories", label: "Categories" },
-  { href: "/compare", label: "Comparisons" },
   { href: "/guides", label: "Guides" },
   { href: "/about", label: "About" },
 ];
@@ -42,20 +40,54 @@ const toolGroups = [
   },
 ];
 
+const compareGroups = [
+  {
+    label: "By category",
+    links: [
+      { href: "/compare/phones", label: "Phone Comparison" },
+      { href: "/compare/laptops", label: "Laptop Comparison" },
+      { href: "/compare/tablets", label: "Tablet Comparison" },
+      { href: "/compare/monitors", label: "Monitor Comparison" },
+      { href: "/compare/cameras", label: "Camera Comparison" },
+      { href: "/compare/headphones", label: "Headphone Comparison" },
+    ],
+  },
+  {
+    label: "By attribute",
+    links: [
+      { href: "/compare/phone-size-comparison", label: "Phone Size Comparison" },
+      { href: "/tools/spec-comparison", label: "Specification Comparison" },
+      { href: "/tools/dimension-comparison", label: "Dimension Comparison" },
+      { href: "/tools/percentage-difference-calculator", label: "Percentage Difference" },
+    ],
+  },
+  {
+    label: "Popular",
+    links: [
+      { href: "/compare", label: "Product Comparison" },
+      { href: "/compare/iphone-vs-samsung", label: "iPhone vs Samsung" },
+      { href: "/compare/pixel-vs-iphone", label: "Pixel vs iPhone" },
+      { href: "/best-phones", label: "Best Phones" },
+    ],
+  },
+];
+
+type Menu = "tools" | "compare" | null;
+
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [toolsOpen, setToolsOpen] = useState(false);
-  const toolsRef = useRef<HTMLDivElement>(null);
+  const [openMenu, setOpenMenu] = useState<Menu>(null);
+  const navRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!toolsOpen) return;
+    if (!openMenu) return;
     function onClick(e: MouseEvent) {
-      if (toolsRef.current && !toolsRef.current.contains(e.target as Node)) {
-        setToolsOpen(false);
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        setOpenMenu(null);
       }
     }
     function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setToolsOpen(false);
+      if (e.key === "Escape") setOpenMenu(null);
     }
     document.addEventListener("mousedown", onClick);
     document.addEventListener("keydown", onKey);
@@ -63,7 +95,11 @@ export default function Header() {
       document.removeEventListener("mousedown", onClick);
       document.removeEventListener("keydown", onKey);
     };
-  }, [toolsOpen]);
+  }, [openMenu]);
+
+  function closeMenu() {
+    setOpenMenu(null);
+  }
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border">
@@ -75,30 +111,74 @@ export default function Header() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6" aria-label="Main navigation">
-            <div className="relative" ref={toolsRef}>
-              <button
-                type="button"
-                className={`text-sm font-medium transition-colors inline-flex items-center gap-1 ${
-                  toolsOpen ? "text-primary" : "text-text-secondary hover:text-primary"
-                }`}
-                onClick={() => setToolsOpen((o) => !o)}
-                aria-expanded={toolsOpen}
-                aria-haspopup="true"
-              >
-                Tools
-                <svg
-                  className={`w-3.5 h-3.5 transition-transform ${toolsOpen ? "rotate-180" : ""}`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  aria-hidden
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
+            <div className="relative" ref={navRef}>
+              <div className="flex items-center gap-5">
+                {(
+                  [
+                    { id: "compare" as Menu, label: "Compare", groups: compareGroups, wide: false },
+                    { id: "tools" as Menu, label: "Tools", groups: toolGroups, wide: true },
+                  ]
+                ).map((menu) => (
+                  <button
+                    key={menu.label}
+                    type="button"
+                    className={`text-sm font-medium transition-colors inline-flex items-center gap-1 ${
+                      openMenu === menu.id ? "text-primary" : "text-text-secondary hover:text-primary"
+                    }`}
+                    onClick={() => setOpenMenu(openMenu === menu.id ? null : menu.id)}
+                    aria-expanded={openMenu === menu.id}
+                    aria-haspopup="true"
+                  >
+                    {menu.label}
+                    <svg
+                      className={`w-3.5 h-3.5 transition-transform ${openMenu === menu.id ? "rotate-180" : ""}`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      aria-hidden
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                ))}
+              </div>
 
-              {toolsOpen && (
+              {openMenu === "compare" && (
+                <div className="absolute left-0 top-full mt-2 w-[34rem] bg-white border border-border rounded-xl shadow-lg p-5 grid grid-cols-3 gap-5">
+                  {compareGroups.map((group) => (
+                    <div key={group.label}>
+                      <p className="text-xs font-semibold uppercase tracking-wide text-text-light mb-2">
+                        {group.label}
+                      </p>
+                      <ul className="space-y-1.5">
+                        {group.links.map((l) => (
+                          <li key={l.href}>
+                            <Link
+                              href={l.href}
+                              className="text-sm text-text-secondary hover:text-primary"
+                              onClick={closeMenu}
+                            >
+                              {l.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                  <div className="col-span-3 pt-3 border-t border-border">
+                    <Link
+                      href="/compare"
+                      className="text-sm font-medium text-primary hover:underline"
+                      onClick={closeMenu}
+                    >
+                      All comparisons and the product comparison tool →
+                    </Link>
+                  </div>
+                </div>
+              )}
+
+              {openMenu === "tools" && (
                 <div className="absolute left-0 top-full mt-2 w-[34rem] bg-white border border-border rounded-xl shadow-lg p-5 grid grid-cols-3 gap-5">
                   {toolGroups.map((group) => (
                     <div key={group.label}>
@@ -111,7 +191,7 @@ export default function Header() {
                             <Link
                               href={l.href}
                               className="text-sm text-text-secondary hover:text-primary"
-                              onClick={() => setToolsOpen(false)}
+                              onClick={closeMenu}
                             >
                               {l.label}
                             </Link>
@@ -124,7 +204,7 @@ export default function Header() {
                     <Link
                       href="/tools"
                       className="text-sm font-medium text-primary hover:underline"
-                      onClick={() => setToolsOpen(false)}
+                      onClick={closeMenu}
                     >
                       All tools with search →
                     </Link>
@@ -132,6 +212,13 @@ export default function Header() {
                 </div>
               )}
             </div>
+
+            <Link
+              href="/compare"
+              className="text-sm font-medium text-text-secondary hover:text-primary transition-colors"
+            >
+              Comparisons
+            </Link>
 
             {navLinks.map((link) => (
               <Link
@@ -147,7 +234,7 @@ export default function Header() {
           {/* Desktop actions */}
           <div className="hidden md:flex items-center gap-3">
             <Link
-              href="/tools/product-comparison"
+              href="/compare/phones"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary-hover transition-colors"
             >
               Compare Phones
@@ -201,6 +288,27 @@ export default function Header() {
               )),
             )}
             <div className="pt-2 border-t border-border mt-2">
+              <Link
+                href="/compare"
+                className="block px-3 py-2.5 text-base font-semibold text-primary hover:bg-bg-secondary rounded-lg transition-colors"
+                onClick={() => setMobileOpen(false)}
+              >
+                Compare Products
+              </Link>
+              {compareGroups.flatMap((g) =>
+                g.links.map((l) => (
+                  <Link
+                    key={l.href}
+                    href={l.href}
+                    className="block px-3 py-2 pl-6 text-sm text-text-secondary hover:text-primary hover:bg-bg-secondary rounded-lg transition-colors"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {l.label}
+                  </Link>
+                )),
+              )}
+            </div>
+            <div className="pt-2 border-t border-border mt-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -214,7 +322,7 @@ export default function Header() {
             </div>
             <div className="pt-3 border-t border-border">
               <Link
-                href="/tools/product-comparison"
+                href="/compare/phones"
                 className="block text-center px-4 py-2.5 text-sm font-medium text-white bg-primary rounded-lg hover:bg-primary-hover transition-colors"
                 onClick={() => setMobileOpen(false)}
               >

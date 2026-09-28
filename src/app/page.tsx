@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ComparisonCard from "@/components/ComparisonCard";
 import GuideCard from "@/components/GuideCard";
+import CompareHubLinks from "@/components/CompareHubLinks";
 import { comparisons } from "@/lib/comparisons";
 import { guides } from "@/lib/guides";
 import { getPopularProducts } from "@/lib/products";
@@ -15,7 +16,27 @@ import {
 import { generateFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
+  title: "CompareForge — Compare Products, Phones & Specs Side by Side",
+  description:
+    "Free comparison tools for phones, laptops, tablets, monitors, cameras and headphones. Compare specifications side by side, calculate price and percentage differences, and decide with sourced data.",
   alternates: { canonical: "/" },
+  openGraph: {
+    title: "CompareForge — Compare Products, Phones & Specs Side by Side",
+    description:
+      "Free side-by-side comparison tools for phones, laptops, tablets, monitors, cameras and headphones, with sourced specifications and published formulas.",
+    url: "https://compareforge.online",
+    type: "website",
+    siteName: "CompareForge",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "CompareForge — Comparison & Decision Tools",
+      },
+    ],
+  },
 };
 
 const TYPE_ORDER = ["compare", "calculate", "match", "decide"] as const;
@@ -24,7 +45,7 @@ const HOME_FAQ = [
   {
     question: "What tools does CompareForge offer?",
     answer:
-      "19 tools across four families: compare products side by side, calculate price/percentage/cost differences, check fit and compatibility, and decide with transparent weighted rankings. They are all free and run in your browser.",
+      `${getBuiltTools().length} tools across four families: compare products side by side, calculate price/percentage/cost differences, check fit and compatibility, and decide with transparent weighted rankings. They are all free and run in your browser.`,
   },
   {
     question: "How does CompareForge get its information?",
@@ -80,11 +101,7 @@ export default function HomePage() {
     },
   };
   const faqSchema = generateFAQSchema(HOME_FAQ);
-  const faqItems = HOME_FAQ.map((item, i) =>
-    i === 0
-      ? { ...item, answer: item.answer.replace("19 tools", `${builtTools.length} tools`) }
-      : item
-  );
+  const faqItems = HOME_FAQ;
 
   return (
     <>
@@ -181,6 +198,13 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Compare by category */}
+      <section className="pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <CompareHubLinks title="Compare Products by Category" />
+        </div>
+      </section>
+
       {/* Popular Products */}
       <section className="py-16 bg-bg-secondary">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -204,6 +228,20 @@ export default function HomePage() {
                 </span>
               </Link>
             ))}
+          </div>
+          <div className="mt-6 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm font-medium">
+            <Link href="/compare/phones" className="text-primary hover:underline">
+              Phone comparison tool
+            </Link>
+            <Link href="/compare/phone-size-comparison" className="text-primary hover:underline">
+              Phone size comparison
+            </Link>
+            <Link href="/best-phones" className="text-primary hover:underline">
+              Best phones by specification
+            </Link>
+            <Link href="/products" className="text-primary hover:underline">
+              Full phone database
+            </Link>
           </div>
         </div>
       </section>

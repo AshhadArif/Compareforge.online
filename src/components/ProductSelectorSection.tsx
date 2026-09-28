@@ -6,7 +6,15 @@ import ProductSelector from "./ProductSelector";
 import { Smartphone } from "@/data/types";
 import { validateComparison } from "@/lib/comparisons";
 
-export default function ProductSelectorSection() {
+export default function ProductSelectorSection({
+  basePath = "/tools/product-comparison",
+  labelA = "Phone A",
+  labelB = "Phone B",
+}: {
+  basePath?: string;
+  labelA?: string;
+  labelB?: string;
+}) {
   const router = useRouter();
   const [productA, setProductA] = useState<Smartphone | null>(null);
   const [productB, setProductB] = useState<Smartphone | null>(null);
@@ -23,21 +31,21 @@ export default function ProductSelectorSection() {
       setError(validation.error ?? "Invalid selection.");
       return;
     }
-    router.push(`/tools/product-comparison?a=${productA.id}&b=${productB.id}`);
+    router.push(`${basePath}?a=${productA.id}&b=${productB.id}`);
   }
 
   return (
     <div className="p-5 bg-white border border-border rounded-xl shadow-sm">
       <div className="grid sm:grid-cols-2 gap-4">
         <ProductSelector
-          label="Phone A"
+          label={labelA}
           selectedId={productA?.id ?? null}
           onSelect={(p) => setProductA(p)}
           excludeIds={productB ? [productB.id] : []}
           placeholder="e.g. iPhone 18 Pro Max"
         />
         <ProductSelector
-          label="Phone B"
+          label={labelB}
           selectedId={productB?.id ?? null}
           onSelect={(p) => setProductB(p)}
           excludeIds={productA ? [productA.id] : []}
