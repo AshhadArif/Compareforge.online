@@ -86,6 +86,49 @@ export default function CategoryHubPage({ hub }: { hub: CategoryHubConfig }) {
         </section>
       )}
 
+      {hub.sections && hub.sections.length > 0 && (
+        <>
+          {hub.sections.map((section) => (
+            <section key={section.heading} className="mb-12 max-w-3xl">
+              <h2 className="text-xl font-bold text-text mb-3">{section.heading}</h2>
+              {section.paragraphs?.map((paragraph, i) => (
+                <p key={i} className="text-text-secondary leading-relaxed mb-3">
+                  {paragraph}
+                </p>
+              ))}
+              {section.steps && (
+                <ol className="space-y-2 mb-3">
+                  {section.steps.map((step, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-3 text-sm text-text-secondary"
+                    >
+                      <span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">
+                        {i + 1}
+                      </span>
+                      <span>{step}</span>
+                    </li>
+                  ))}
+                </ol>
+              )}
+              {section.items && (
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {section.items.map((item) => (
+                    <div
+                      key={item.title}
+                      className="bg-white border border-border rounded-xl p-5"
+                    >
+                      <h3 className="font-semibold text-text">{item.title}</h3>
+                      <p className="text-sm text-text-secondary mt-1">{item.body}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </section>
+          ))}
+        </>
+      )}
+
       <section className="mb-12 p-6 bg-primary-light border border-primary/20 rounded-xl max-w-3xl">
         <h2 className="text-lg font-bold text-text mb-2">About product data on this page</h2>
         <p className="text-sm text-text-secondary">{DATA_NOTE}</p>

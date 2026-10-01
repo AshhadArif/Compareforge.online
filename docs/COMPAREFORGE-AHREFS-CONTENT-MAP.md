@@ -191,7 +191,69 @@ rank for many sibling queries:
 
 ---
 
-## 8. Related documentation
+## 8. Master keyword → page mapping
+
+One row per keyword in the Ahrefs export. `N/A` is used wherever the export does not carry
+the value. "Primary" = the URL that is meant to rank for the query; "Supporting" = a URL
+that reinforces the primary page without competing for the headline term.
+
+| Keyword | Volume | KD | Traffic Potential | Parent Topic | Intent | Target Page | Primary/Supporting | Action |
+| --- | ---: | ---: | ---: | --- | --- | --- | --- | --- |
+| phone comparison | 23,000 | 37 | 6,700 | compare phones | Informational, Commercial | `/compare/phones` | Primary | Built |
+| iphone vs samsung | 8,200 | 1 | 400 | iphone vs samsung comparison | Informational, Commercial, Branded | `/compare/iphone-vs-samsung` | Primary | Built |
+| compare phones | 6,000 | 37 | 4,500 | compare phones | Informational, Commercial | `/compare/phones` | Primary | Built |
+| tablet comparison | 4,100 | 0 | 59,000 | ipad generations | Informational, Commercial | `/compare/tablets` | Primary | Built |
+| phone size comparison | 3,000 | 46 | 1,800 | compare phone sizes | Informational, Commercial | `/compare/phone-size-comparison` | Primary | Built |
+| best products | 2,500 | 0 | 1,800 | best products | Informational, Commercial | `/best-phones` | Supporting | Built |
+| best phones | 2,400 | 0 | 81,000 | best smartphones | Informational, Commercial | `/best-phones` | Primary | Built |
+| laptop comparison | 2,200 | 8 | 2,700 | laptop comparison | Informational, Commercial | `/compare/laptops` | Primary | Built |
+| samsung vs iphone | 2,000 | 0 | 2,200 | samsung vs iphone | Informational, Commercial, Branded | `/compare/iphone-vs-samsung` | Supporting | Consolidated into one URL |
+| compare laptops | 1,800 | 0 | 2,500 | compare laptops | Informational, Commercial | `/compare/laptops` | Primary | Built |
+| camera comparison | 1,400 | 54 | 1,800 | camera comparison | Informational, Commercial | `/compare/cameras` | Primary | Built |
+| pixel vs iphone | 1,000 | 0 | 2,100 | google pixel vs iphone | Informational, Commercial, Branded | `/compare/pixel-vs-iphone` | Primary | Built |
+| monitor comparison | 800 | 45 | 900 | monitor comparison | Informational, Commercial | `/compare/monitors` | Primary | Built |
+| product comparison | 700 | 8 | 2,800 | compare products | Informational, Commercial | `/compare` | Primary | Reworked |
+| phone comparison tool | 600 | 0 | 5,400 | phonearena compare | Informational, Commercial | `/tools/product-comparison` | Primary | Metadata updated |
+| which laptop should i buy | 600 | 54 | 800 | what laptop should i buy | Informational, Commercial | `/compare/laptops` | Supporting | Decision-framework section added |
+| compare products | 500 | 8 | 2,800 | compare products | Informational, Commercial | `/compare` | Primary | Reworked |
+| laptop comparison tool | 500 | 13 | 3,300 | laptop comparison | Informational, Commercial | `/compare/laptops` | Supporting | Built |
+| compare monitors | 500 | 0 | 1,000 | monitor comparison | Informational, Commercial | `/compare/monitors` | Supporting | Built |
+| compare cameras | 450 | 56 | 2,200 | camera comparison | Informational, Commercial | `/compare/cameras` | Supporting | Built |
+| compare tablets | 400 | 2 | 1,100 | tablet comparison | Informational, Commercial | `/compare/tablets` | Supporting | Built |
+| headphone comparison | 400 | 14 | 450 | compare headphones | Informational, Commercial | `/compare/headphones` | Primary | Built |
+| compare headphones | 400 | 14 | 450 | compare headphones | Informational, Commercial | `/compare/headphones` | Supporting | Built |
+| smartphone comparison | 350 | 37 | 6,900 | compare phones | Informational, Commercial | `/compare/phones` | Supporting | Built |
+| compare laptop specs | 300 | 15 | 3,200 | laptop comparison | Informational, Commercial | `/compare/laptops` | Supporting | Built |
+| product comparison chart | 300 | 8 | 2,700 | comparison chart | Informational, Commercial | `/compare` | Supporting | "How to Read a Product Comparison Chart" section |
+| iphone 17 vs galaxy s26 | 250 | N/A | N/A | N/A | Informational, Commercial, Branded | — | — | Not built: iPhone 17 absent from database |
+| compare features | 150 | 24 | 80 | feature compare | Informational | `/tools/spec-comparison` | Supporting | Built |
+| mobile comparison | 150 | 35 | 500 | compare mobile | Informational, Commercial | `/compare/phones` | Supporting | Served by canonical phone page |
+| product comparison tool | 100 | 8 | 150 | compare products | Informational, Commercial | `/tools/product-comparison` | Supporting | Metadata updated |
+| feature comparison | 100 | 2 | 500 | product comparison matrix | Informational | `/tools/spec-comparison` | Supporting | Built |
+| phone specs comparison | 100 | 7 | 11,000 | phone comparison | Informational, Commercial | `/compare/phones` | Supporting | "Phone Specs Comparison" section |
+| iphone 17 pro vs galaxy s26 ultra | 90 | N/A | N/A | N/A | N/A | — | — | Not built: iPhone 17 Pro absent from database |
+| spec comparison | 90 | 50 | 8,100 | pc part comparison | Informational, Commercial | `/tools/spec-comparison` | Primary | Built |
+| compare two products | 70 | 1 | 2,500 | compare products | Informational, Commercial | `/compare` | Supporting | Reworked |
+| compare products side by side | 40 | N/A | N/A | N/A | Informational, Commercial | `/compare` | Supporting | Reworked |
+| compare two phones | 40 | 51 | 13,000 | phone comparison | Informational, Commercial | `/compare/phones` | Supporting | Built |
+| phone battery comparison | 30 | 21 | 300 | battery life tests | Informational, Commercial | `/compare/phones` | Supporting | "Battery and charging" spec group |
+| which phone has better camera | 10 | N/A | N/A | N/A | N/A | — | — | Not built: would require camera test data |
+| compare specifications | 10 | N/A | 40 | N/A | Informational | `/tools/spec-comparison` | Supporting | Built |
+| specification comparison | 10 | N/A | 40 | N/A | Informational | `/tools/spec-comparison` | Supporting | Built |
+| compare phone specifications | N/A | N/A | 20 | N/A | Informational, Commercial | `/compare/phones` | Supporting | "Phone Specs Comparison" section |
+| phone feature comparison | N/A | N/A | 10 | N/A | Informational | `/compare/phones` | Supporting | "Compare Phone Features" section |
+| laptop comparison for gaming | N/A | N/A | N/A | N/A | N/A | `/compare/laptops` | Supporting | Use-case section; zero volume |
+| laptop comparison for students | N/A | N/A | N/A | N/A | N/A | `/compare/laptops` | Supporting | Use-case section; zero volume |
+| phone comparison by specs | N/A | N/A | N/A | N/A | N/A | `/compare/phones` | Supporting | Covered by "Phone Specs Comparison" |
+| compare mobile | N/A | N/A | N/A | compare mobile | Informational, Commercial | `/compare/phones` | Supporting | Served by canonical phone page |
+
+**Routes deliberately not created** (would have been thin, duplicate or unfabricatable):
+`/phone-comparison`, `/laptop-comparison`, `/tablet-comparison`, `/product-comparison`,
+`/samsung-vs-iphone`, `/compare/iphone-17-vs-galaxy-s26`. See §6.
+
+---
+
+## 9. Related documentation
 
 - `KEYWORD-RESEARCH.md` — original keyword research for the phone vertical
 - `INTERNAL-LINKING-PLAN.md` — link architecture

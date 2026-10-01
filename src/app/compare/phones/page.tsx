@@ -251,10 +251,12 @@ export default function PhoneComparisonPage() {
 
       {/* By specs */}
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-text mb-3">Phone Comparison by Specs</h2>
+        <h2 className="text-xl font-bold text-text mb-3">Phone Specs Comparison</h2>
         <p className="text-text-secondary leading-relaxed mb-3 max-w-3xl">
-          Comparing by specification means deciding which attributes matter to you first,
-          then reading only those rows. A few practical starting points:
+          Comparing phone specifications means deciding which attributes matter to you first,
+          then reading only those rows — the same method as a phone comparison by specs, but
+          with the attributes chosen for how you actually use a phone rather than for how
+          complete a specification sheet looks. A few practical starting points:
         </p>
         <ul className="space-y-2 max-w-3xl">
           <li className="text-sm text-text-secondary flex items-start gap-2">
@@ -278,6 +280,14 @@ export default function PhoneComparisonPage() {
             directly — one of the few specs where higher is unambiguously better.
           </li>
         </ul>
+        <p className="text-sm text-text-secondary mt-4 max-w-3xl">
+          When you compare phone specifications in this table, every value comes from the
+          product record it sits on, and each record carries its own sources and verification
+          date. Where a manufacturer has not published a figure, the row shows a data gap
+          instead of an estimate — a specification comparison is only useful if the missing
+          entries are visible as missing. To compare phone features rather than numbers, add
+          them as text rows: identical values match, everything else is marked different.
+        </p>
       </section>
 
       {/* How to use */}
@@ -396,6 +406,54 @@ export default function PhoneComparisonPage() {
           <Link href="/categories/smartphones" className="text-primary hover:underline">
             Smartphone category
           </Link>
+        </div>
+      </section>
+
+      {/* Related tools */}
+      <section className="mb-12">
+        <h2 className="text-xl font-bold text-text mb-4">Related Tools and Comparisons</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            {
+              href: "#phone-specifications",
+              label: "Phone Specs Comparison",
+              blurb: "The specification groups on this page, explained field by field.",
+            },
+            {
+              href: "/compare/phone-size-comparison",
+              label: "Phone Size Comparison",
+              blurb: "Height, width, thickness and weight drawn to scale.",
+            },
+            {
+              href: "/tools/product-comparison",
+              label: "Phone Comparison Tool",
+              blurb: "The same database comparison, as a standalone tool.",
+            },
+            {
+              href: "/compare",
+              label: "Product Comparison",
+              blurb: "The general-purpose comparison hub for every category.",
+            },
+            {
+              href: "/compare/laptops",
+              label: "Laptop Comparison",
+              blurb: "The same method applied to laptops and their specifications.",
+            },
+            {
+              href: "/compare/tablets",
+              label: "Tablet Comparison",
+              blurb: "Compare tablets when a phone screen is not enough.",
+            },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="block p-5 bg-white border border-border rounded-xl hover:shadow-md transition-shadow"
+            >
+              <span className="font-semibold text-text">{item.label}</span>
+              <span className="block text-sm text-text-secondary mt-1">{item.blurb}</span>
+            </Link>
+          ))}
         </div>
       </section>
 

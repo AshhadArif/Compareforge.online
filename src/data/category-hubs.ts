@@ -18,6 +18,12 @@ export interface CategoryHubConfig {
   useCaseHeading?: string;
   useCaseIntro?: string;
   useCases?: { title: string; criteria: string[] }[];
+  sections?: {
+    heading: string;
+    paragraphs?: string[];
+    steps?: string[];
+    items?: { title: string; body: string }[];
+  }[];
   faq: { question: string; answer: string }[];
   related: { href: string; label: string; blurb: string }[];
 }
@@ -141,6 +147,34 @@ export const categoryHubs: CategoryHubConfig[] = [
         ],
       },
     ],
+    sections: [
+      {
+        heading: "What Is a Laptop Comparison Tool?",
+        paragraphs: [
+          "A laptop comparison tool takes the specification sheets of two or more machines and puts them in the same rows, in the same units, so the differences are visible at a glance. That is the whole job: manufacturers publish the same categories in different orders, different units and different levels of detail, which makes side-by-side reading slow and error-prone.",
+          "The tool on this page does exactly that and nothing more. It does not score laptops, does not weight the rows for you and does not have a database of machines behind it — you bring the values from each manufacturer's specification page, and the tool computes the differences between them. Rows you leave empty are shown as unavailable rather than filled with a typical figure.",
+        ],
+      },
+      {
+        heading: "How to Compare Laptops",
+        steps: [
+          "Set your constraints first: budget ceiling, operating system, and whether the laptop travels every day.",
+          "Open both specification pages and enter the same fields into the same rows — the template loads processor, memory, storage, display, graphics, battery, weight, ports and operating system.",
+          "Read memory and storage before the processor. Both are usually soldered, so what you buy is what the machine has for its whole life.",
+          "Read the display rows next: size, resolution, panel type and refresh rate together, because they jointly decide sharpness and comfort.",
+          "Check ports against the peripherals you actually use — this is where thin-and-light machines most often need adapters.",
+          "Use the differences column to drop the rows that are identical, then add your own rows for anything the manufacturer publishes that we have not listed.",
+        ],
+      },
+      {
+        heading: "Which Laptop Should I Buy?",
+        paragraphs: [
+          "We do not know your answer, and a page that pretends otherwise would be guessing. What we can give you is the framework most laptop decisions resolve into — work through it, then use the table above to see which of your candidates satisfies it.",
+          "Decide in this order: first the budget, because it removes machines immediately. Then the operating system, because it removes software. Then whether the laptop leaves the house, which sets a weight ceiling. Then the display, because you look at it for every minute of use. Then memory, because it is usually permanent. Then storage capacity and whether it can be expanded. Then processor and graphics, which matter only after the previous rows are settled. Then battery capacity in watt-hours and the charger wattage. Then ports, wireless versions and any expansion you need.",
+          "Enter the two or three machines still standing into the tool, apply your own weights, and let the differences decide it. If a specification is missing from either manufacturer's page, it will appear as unavailable — which is itself useful information about how completely a machine is documented.",
+        ],
+      },
+    ],
     faq: [
       {
         question: "How do I compare laptop specifications?",
@@ -174,6 +208,9 @@ export const categoryHubs: CategoryHubConfig[] = [
       },
     ],
     related: [
+      { href: "/compare", label: "Product Comparison", blurb: "The hub that links every comparison category." },
+      { href: "/compare/tablets", label: "Tablet Comparison", blurb: "Compare the lighter alternative for the same work." },
+      { href: "/compare/monitors", label: "Monitor Comparison", blurb: "Compare the display the laptop drives." },
       { href: "/tools/spec-comparison", label: "Specification Comparison Tool", blurb: "The tool on this page, for any category." },
       { href: "/tools/decision-matrix", label: "Weighted Decision Matrix", blurb: "Score both laptops against your own weighted criteria." },
       { href: "/tools/percentage-difference-calculator", label: "Percentage Difference", blurb: "Quantify any two figures from the spec sheets." },
@@ -219,7 +256,7 @@ export const categoryHubs: CategoryHubConfig[] = [
         body: "Capacity and whether it is expandable. Tablet storage is often fixed at purchase, so buy for the larger end of what you will need; check whether a card slot exists before assuming you can grow it later.",
       },
       {
-        title: "Size comparison",
+        title: "Dimensions and weight",
         body: "Height, width, depth and weight. A tablet is held in one hand for long periods, so weight and the width across the back matter more than the screen size alone suggests.",
       },
       {
@@ -250,6 +287,58 @@ export const categoryHubs: CategoryHubConfig[] = [
       {
         title: "Accessories are part of the cost",
         body: "If you need a stylus or a keyboard, check whether they are included, whether they attach magnetically or by Bluetooth, and what they cost separately before comparing prices.",
+      },
+    ],
+    sections: [
+      {
+        heading: "How to Use the Tablet Comparison Tool",
+        steps: [
+          "Open both manufacturers' specification pages in separate tabs.",
+          "Enter the same field for each tablet in the same row — the template above already loads display, chipset, memory, storage, battery, camera, weight, dimensions, operating system and price.",
+          "Delete any row you do not care about, and add rows for stylus support, keyboard attachment or cellular connectivity if they matter to your use.",
+          "Read the differences column first: identical rows can be skipped, and a row with no value is a data gap rather than a difference.",
+          "If two candidates are still close, add the rows that decide it for you — accessories, update commitment, charger — and let the table show the trade-off.",
+        ],
+      },
+      {
+        heading: "Tablet Size Comparison",
+        paragraphs: [
+          "Size on a tablet is three separate numbers, and they pull in different directions. Diagonal screen size decides how much you can see; the width across the back decides whether the tablet is comfortable to hold in one hand; depth decides which case and keyboard cover fit.",
+          "Weight matters more here than on almost any other device, because a tablet is held rather than rested. Two tablets with similar screens can differ enough in weight that one is a reading device and the other is a desk device. Compare weight together with screen size rather than separately, and treat the width figure as the one-handed usability test.",
+          "Where a manufacturer has not published dimensions or weight, the row is shown as unavailable rather than estimated — a size comparison built on guesses would be worse than no size comparison at all.",
+        ],
+      },
+      {
+        heading: "Tablet Display Comparison",
+        paragraphs: [
+          "Start with screen size and resolution together, because their ratio is what produces pixel density. Density is what you actually perceive when reading: at the same distance, a 10-inch 1200p panel and an 11-inch 1600p panel do not feel like a one-inch difference, they feel like a different generation of sharpness.",
+          "Refresh rate is the second display decision. 60 Hz is adequate for reading, video and office work; higher rates make scrolling and system animation visibly smoother and matter most if you draw with a stylus or play games on the device. Where a manufacturer does not publish the rate, we show it as unavailable rather than assuming 60 Hz.",
+          "Brightness and panel type are worth reading where they are published. Brightness decides whether the screen stays usable opposite a window, and panel type governs viewing angles and contrast — both are listed when the manufacturer states them and left blank when they do not.",
+        ],
+      },
+      {
+        heading: "Tablet Performance Comparison",
+        paragraphs: [
+          "Compare the chipset model first. It is the single row that determines the generation of the device, and it is the only performance specification that is comparable across manufacturers without a benchmark — core counts and clock speeds are not comparable between different architectures, which is why we do not rank tablets by them.",
+          "Memory capacity is the second performance row, and it is usually the more permanent one: on most tablets memory and storage are soldered, so the capacity at purchase is the capacity for the life of the device. Compare it against how many applications you keep open rather than against a number that sounds large.",
+          "We publish no benchmark scores, no frame-rate figures and no speed rankings. If a specification is not on the manufacturer's specification page, it does not appear in this comparison.",
+        ],
+      },
+      {
+        heading: "Tablet Storage Comparison",
+        paragraphs: [
+          "Capacity is the headline, but the two rows that matter around it are whether storage expands and what the operating system reserves for itself. A fixed 128 GB tablet and a fixed 256 GB tablet are different purchases for someone who keeps offline video or large art files.",
+          "Check for a card slot before assuming you can grow storage later. Where expansion is supported, note the maximum supported capacity and the card format, because those vary between manufacturers and are easy to discover too late.",
+          "Where a manufacturer publishes the available capacity after system software, we show it; where they do not, the row is left as a data gap rather than filled with a typical figure.",
+        ],
+      },
+      {
+        heading: "Tablet Connectivity",
+        paragraphs: [
+          "Wi-Fi standard and Bluetooth version are the rows to compare for any tablet used at home or in an office: they determine sustained throughput, how many accessories can be attached at once, and how the tablet behaves with a keyboard, stylus and headphones all connected together.",
+          "Cellular connectivity is a separate purchase decision. If you need mobile data, compare the supported bands and whether the device takes a physical SIM or uses an eSIM — and remember the tablet costs more in both purchase price and an ongoing data plan.",
+          "Physical connections vary more than the specification sheet suggests: USB-C generation, whether the port supports display output and charging power, a headphone jack, and any card slot. If you plan to attach a keyboard, mouse, external display or storage, check these rows before comparing anything else.",
+        ],
       },
     ],
     faq: [
@@ -285,12 +374,14 @@ export const categoryHubs: CategoryHubConfig[] = [
       },
     ],
     related: [
+      { href: "/compare", label: "Product Comparison", blurb: "The hub that links every comparison category." },
+      { href: "/compare/phones", label: "Phone Comparison", blurb: "The same approach, running on our verified database." },
       { href: "/tools/spec-comparison", label: "Specification Comparison Tool", blurb: "The tablet comparison tool, for any category." },
       { href: "/compare/phone-size-comparison", label: "Phone Size Comparison", blurb: "The same to-scale size method, on our database." },
       { href: "/tools/dimension-comparison", label: "Dimension Comparison", blurb: "Draw any two objects to scale, including tablets." },
       { href: "/guides/how-to-compare-product-specifications", label: "How to compare specifications", blurb: "A method that works for any product." },
-      { href: "/guides/understanding-product-dimensions", label: "Understanding product dimensions", blurb: "How to read size and weight figures." },
       { href: "/compare/laptops", label: "Laptop Comparison", blurb: "The tablet's closest competitor for the same job." },
+      { href: "/guides/understanding-product-dimensions", label: "Understanding product dimensions", blurb: "How to read size and weight figures." },
     ],
   },
   {

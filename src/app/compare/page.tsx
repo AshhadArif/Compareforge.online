@@ -115,6 +115,26 @@ export default function CompareHubPage() {
         </p>
       </div>
 
+      <section className="mb-12 max-w-3xl">
+        <h2 className="text-xl font-bold text-text mb-3">
+          What Is a Product Comparison Tool?
+        </h2>
+        <p className="text-text-secondary leading-relaxed mb-3">
+          A product comparison tool takes two products and puts their attributes into the
+          same rows, in the same units, so that differences become visible without you having
+          to keep two specification pages in your head at once. That is the entire job. It
+          does not decide which product is better, because that depends on what you need the
+          product for.
+        </p>
+        <p className="text-text-secondary leading-relaxed">
+          The tool on this page is general-purpose: choose the category that matches your
+          products and the relevant rows load for you. It covers phones, laptops, tablets,
+          monitors, cameras and headphones, and it accepts any values you type — so you can
+          also compare two products we hold no records for. Values you enter are calculated in
+          your browser and are never stored.
+        </p>
+      </section>
+
       <section className="mb-12">
         <h2 className="text-xl font-bold text-text mb-3">Compare Products Side by Side</h2>
         <p className="text-text-secondary leading-relaxed mb-4 max-w-3xl">
@@ -125,9 +145,7 @@ export default function CompareHubPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-text mb-3">
-          How the Product Comparison Tool Works
-        </h2>
+        <h2 className="text-xl font-bold text-text mb-3">How to Compare Two Products</h2>
         <ol className="grid sm:grid-cols-3 gap-4 text-sm max-w-4xl">
           <li className="flex items-start gap-3 bg-bg-secondary rounded-xl p-4">
             <span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0">
@@ -190,14 +208,48 @@ export default function CompareHubPage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-xl font-bold text-text mb-3">Compare Features</h2>
+        <h2 className="text-xl font-bold text-text mb-3">How to Read a Product Comparison Chart</h2>
+        <p className="text-text-secondary leading-relaxed mb-3 max-w-3xl">
+          The chart has three columns per product and one column of differences. Read the
+          difference column first — it is the only column that changes — and use it to decide
+          which rows deserve a second look.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {[
+            ["Identical", "Both products state the same value in the same unit. Safe to skip; it is not a tie in your favour, it is simply no difference."],
+            ["Higher / lower", "A numeric row where both values exist and can be ordered. Higher is not automatically better — a lower weight and a lower price both favour the other side."],
+            ["Different", "A text row where the values do not match. This is where reading the actual words matters: two different chipset names are a real difference, two different packaging descriptions may not be."],
+            ["Missing / incomplete", "Only one side states a value. This is a data gap, not a difference, and it is worth noticing — a product with fewer published specifications is harder to compare, not better or worse."],
+          ].map(([title, body]) => (
+            <div key={title} className="bg-white border border-border rounded-xl p-5">
+              <h3 className="font-semibold text-text">{title}</h3>
+              <p className="text-sm text-text-secondary mt-1">{body}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-sm text-text-secondary mt-4 max-w-3xl">
+          Units are compared only when both sides use the same one. Where a manufacturer
+          publishes a figure in a different unit, convert it before entering it — the tool
+          will not convert for you, because a silent conversion is an assumption.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-xl font-bold text-text mb-3">Product Specifications vs Features</h2>
         <p className="text-text-secondary leading-relaxed max-w-3xl">
-          Not every difference is a number. Feature comparison treats values as text and
-          marks them identical only when they match, so a feature present on one product and
-          absent on the other shows up as a one-sided row rather than a tie. Enter features
-          as their own rows — a list of capabilities, a supported standard, a warranty
-          length — and add as many as the decision needs. For subscription-style features
-          where price matters more than presence, the{" "}
+          A specification is a measured or stated quantity — 6.7 inches, 12 GB, 5,000 mAh —
+          and it can be ordered: one number is higher than the other. A feature is a
+          capability — NFC, a headphone jack, an included keyboard — and it can only be
+          present or absent, or present in a different form. Confusing the two is the most
+          common reason a comparison ends up arguing about nothing.
+        </p>
+        <p className="text-text-secondary leading-relaxed max-w-3xl mt-3">
+          Compare specifications numerically and features as text. Feature comparison treats
+          values as text and marks them identical only when they match, so a capability
+          present on one product and absent on the other shows up as a one-sided row rather
+          than a tie. Enter features as their own rows — a list of capabilities, a supported
+          standard, a warranty length — and add as many as the decision needs. For
+          subscription-style features where price matters more than presence, the{" "}
           <Link href="/tools/plan-comparison" className="text-primary hover:underline">
             plan comparison
           </Link>{" "}

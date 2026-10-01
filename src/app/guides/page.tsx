@@ -45,6 +45,8 @@ export default function GuidesPage() {
         </p>
       </div>
 
+      <h2 className="text-xl font-bold text-text mb-4">All Research Guides</h2>
+
       <div className="grid sm:grid-cols-2 gap-6">
         {guides.map((guide) => (
           <GuideCard
