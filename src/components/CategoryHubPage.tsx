@@ -1,12 +1,20 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import SpecComparison from "@/components/tools/SpecComparison";
+import CategoryComparisonTool from "@/components/tools/CategoryComparisonTool";
 import CompareHubLinks from "@/components/CompareHubLinks";
-import { CategoryHubConfig, DATA_NOTE } from "@/data/category-hubs";
+import { CategoryHubConfig, DATA_NOTE, hubPath } from "@/data/category-hubs";
+import { categoryDatasets, datasetNote } from "@/data/category-datasets";
+import { phoneCameraDataset } from "@/lib/phone-camera-dataset";
 import { generateFAQSchema } from "@/lib/schema";
+
+const DATASET_LOOKUP: Record<string, (typeof categoryDatasets)[number]> = Object.fromEntries(
+  [...categoryDatasets, phoneCameraDataset].map((d) => [d.id, d])
+);
 
 export default function CategoryHubPage({ hub }: { hub: CategoryHubConfig }) {
   const faqSchema = generateFAQSchema(hub.faq);
+  const dataset = hub.datasetId ? DATASET_LOOKUP[hub.datasetId] : undefined;
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -24,7 +32,11 @@ export default function CategoryHubPage({ hub }: { hub: CategoryHubConfig }) {
         <p className="text-text-secondary leading-relaxed mb-4 max-w-3xl">
           {hub.toolIntro}
         </p>
-        <SpecComparison defaultCategory={hub.specCategory} />
+        {dataset ? (
+          <CategoryComparisonTool dataset={dataset} />
+        ) : (
+          <SpecComparison defaultCategory={hub.specCategory ?? "laptops"} />
+        )}
       </section>
 
       <section className="mb-12">
@@ -131,7 +143,9 @@ export default function CategoryHubPage({ hub }: { hub: CategoryHubConfig }) {
 
       <section className="mb-12 p-6 bg-primary-light border border-primary/20 rounded-xl max-w-3xl">
         <h2 className="text-lg font-bold text-text mb-2">About product data on this page</h2>
-        <p className="text-sm text-text-secondary">{DATA_NOTE}</p>
+        <p className="text-sm text-text-secondary">
+          {dataset ? datasetNote(dataset) : DATA_NOTE}
+        </p>
         <p className="text-sm text-text-secondary mt-3">
           What a database-driven comparison looks like:{" "}
           <Link href="/compare/phones" className="text-primary hover:underline">
@@ -165,7 +179,7 @@ export default function CategoryHubPage({ hub }: { hub: CategoryHubConfig }) {
         </div>
       </section>
 
-      <CompareHubLinks highlight={`/compare/${hub.slug}`} />
+      <CompareHubLinks highlight={hubPath(hub)} />
 
       <section className="mb-12">
         <h2 className="text-xl font-bold text-text mb-4">Frequently Asked Questions</h2>
@@ -182,11 +196,9 @@ export default function CategoryHubPage({ hub }: { hub: CategoryHubConfig }) {
       <section className="p-5 bg-bg-secondary rounded-xl max-w-3xl">
         <h2 className="text-lg font-semibold text-text mb-2">Methodology</h2>
         <p className="text-sm text-text-secondary">
-          Specification values in the tool above are entered by you and are not stored.
-          Where CompareForge publishes a product record, every field carries a source and a
-          verification date, and unverified fields are left empty rather than estimated. We
-          do not run lab tests, do not assign scores, and do not publish rankings without a
-          stated method.{" "}
+          {dataset
+            ? `Every value in the table above was transcribed from the page linked under each column and carries that page's access date. Fields the source did not publish are left as "Not verified" rather than estimated. CompareForge runs no lab tests, publishes no benchmark scores, no prices and no rankings without a stated method.`
+            : `Specification values in the tool above are entered by you and are not stored. Where CompareForge publishes a product record, every field carries a source and a verification date, and unverified fields are left empty rather than estimated. We do not run lab tests, do not assign scores, and do not publish rankings without a stated method.`}{" "}
           <Link href="/methodology" className="text-primary hover:underline">
             Read the full methodology →
           </Link>

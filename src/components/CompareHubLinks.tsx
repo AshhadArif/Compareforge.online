@@ -35,6 +35,46 @@ export const COMPARE_HUBS: {
     label: "Headphone Comparison",
     blurb: "Compare driver, connectivity, ANC and battery life.",
   },
+  {
+    href: "/cpu-comparison",
+    label: "CPU Comparison",
+    blurb: "Compare cores, clocks, cache, socket and power.",
+  },
+  {
+    href: "/gpu-comparison",
+    label: "GPU Comparison",
+    blurb: "Compare memory, bandwidth, board power and fit.",
+  },
+  {
+    href: "/tv-comparison",
+    label: "TV Comparison",
+    blurb: "Compare panel, HDR, inputs and screen size.",
+  },
+  {
+    href: "/smartwatch-comparison",
+    label: "Smartwatch Comparison",
+    blurb: "Compare case, battery claims, radios and sensors.",
+  },
+  {
+    href: "/projector-comparison",
+    label: "Projector Comparison",
+    blurb: "Compare brightness, throw ratio and light source.",
+  },
+  {
+    href: "/printer-comparison",
+    label: "Printer Comparison",
+    blurb: "Compare speed, paper handling and consumables.",
+  },
+  {
+    href: "/gaming-monitor-comparison",
+    label: "Gaming Monitor Comparison",
+    blurb: "Compare refresh rate, response time and adaptive sync.",
+  },
+  {
+    href: "/phone-camera-comparison",
+    label: "Phone Camera Comparison",
+    blurb: "Compare camera hardware across our phone records.",
+  },
 ];
 
 export default function CompareHubLinks({
@@ -47,7 +87,7 @@ export default function CompareHubLinks({
   return (
     <section className="mb-12">
       <h2 className="text-xl font-bold text-text mb-4">{title}</h2>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {COMPARE_HUBS.map((hub) => {
           const active = hub.href === highlight;
           return (

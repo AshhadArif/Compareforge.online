@@ -12,7 +12,7 @@ const sections = [
   {
     heading: "How the Specification Comparison Tool Works",
     paragraphs: [
-      "Choose a category — laptop, tablet, monitor, camera, headphone, phone or custom — and the table loads that category's standard specification rows: the attributes that actually distinguish products in that class.",
+      "Choose a category — laptop, tablet, monitor, camera, headphone, phone, processor, graphics card, television, smartwatch, projector, printer, gaming monitor or custom — and the table loads that category's standard specification rows: the attributes that actually distinguish products in that class.",
       "Type each product's values into the two columns. The tool labels every row as identical, higher, lower, different or missing, and the Differences Only switch collapses the rows that match so only the decision-relevant gaps remain.",
       "Nothing you enter leaves your browser. The table is computed locally and is not saved, tracked or sent to a server.",
     ],
@@ -22,7 +22,7 @@ const sections = [
     paragraphs: [
       "CompareForge publishes verified product records with sources for every specification we claim. For categories where we have not yet published a record, we would rather you transcribe two numbers from the manufacturer's own page than have us guess.",
       "Every value in this tool is user-entered. We do not prefill, estimate or infer specifications, and the tool never presents a value you did not type.",
-      "If you want a comparison built entirely from our sourced database instead, use the phone comparison tool, which runs on CompareForge's verified records.",
+      "If you want a comparison built entirely from our sourced records instead, use the phone comparison tool or one of the record-backed category pages — they read verified values with a link to the page each one came from.",
     ],
   },
   {
@@ -59,7 +59,7 @@ const faq = [
   {
     question: "Which product categories are supported?",
     answer:
-      "Laptops, tablets, monitors, cameras, headphones and phones each have a preset specification template, plus a custom option with an empty table. You can add or remove rows in any of them.",
+      "Laptops, tablets, monitors, cameras, headphones, phones, processors, graphics cards, televisions, smartwatches, projectors, printers and gaming monitors each have a preset specification template, plus a custom option with an empty table. You can add or remove rows in any of them.",
   },
   {
     question: "Does the tool store my comparison?",

@@ -87,7 +87,7 @@ export default function CompareHubPage() {
         </p>
         <p className="mt-3 text-text-secondary">
           Use the tool below for any category, or go straight to a category that has
-          verified product records:{" "}
+          published records:{" "}
           <Link href="/compare/phones" className="text-primary hover:underline">
             phones
           </Link>
@@ -106,10 +106,34 @@ export default function CompareHubPage() {
           ,{" "}
           <Link href="/compare/cameras" className="text-primary hover:underline">
             cameras
-          </Link>{" "}
-          or{" "}
+          </Link>
+          ,{" "}
           <Link href="/compare/headphones" className="text-primary hover:underline">
             headphones
+          </Link>
+          ,{" "}
+          <Link href="/cpu-comparison" className="text-primary hover:underline">
+            CPUs
+          </Link>
+          ,{" "}
+          <Link href="/gpu-comparison" className="text-primary hover:underline">
+            GPUs
+          </Link>
+          ,{" "}
+          <Link href="/tv-comparison" className="text-primary hover:underline">
+            TVs
+          </Link>
+          ,{" "}
+          <Link href="/smartwatch-comparison" className="text-primary hover:underline">
+            smartwatches
+          </Link>
+          ,{" "}
+          <Link href="/projector-comparison" className="text-primary hover:underline">
+            projectors
+          </Link>
+          {" or "}
+          <Link href="/printer-comparison" className="text-primary hover:underline">
+            printers
           </Link>
           .
         </p>
@@ -129,9 +153,10 @@ export default function CompareHubPage() {
         <p className="text-text-secondary leading-relaxed">
           The tool on this page is general-purpose: choose the category that matches your
           products and the relevant rows load for you. It covers phones, laptops, tablets,
-          monitors, cameras and headphones, and it accepts any values you type — so you can
-          also compare two products we hold no records for. Values you enter are calculated in
-          your browser and are never stored.
+          monitors, cameras, headphones, processors, graphics cards, televisions,
+          smartwatches, projectors, printers and gaming monitors, and it accepts any values
+          you type — so you can also compare two products we hold no records for. Values you
+          enter are calculated in your browser and are never stored.
         </p>
       </section>
 

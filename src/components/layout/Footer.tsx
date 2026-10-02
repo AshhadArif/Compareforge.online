@@ -16,6 +16,19 @@ const footerSections = [
     ],
   },
   {
+    title: "Compare more",
+    links: [
+      { href: "/cpu-comparison", label: "CPU Comparison" },
+      { href: "/gpu-comparison", label: "GPU Comparison" },
+      { href: "/tv-comparison", label: "TV Comparison" },
+      { href: "/smartwatch-comparison", label: "Smartwatch Comparison" },
+      { href: "/projector-comparison", label: "Projector Comparison" },
+      { href: "/printer-comparison", label: "Printer Comparison" },
+      { href: "/gaming-monitor-comparison", label: "Gaming Monitor Comparison" },
+      { href: "/phone-camera-comparison", label: "Phone Camera Comparison" },
+    ],
+  },
+  {
     title: "Tools",
     links: [
       { href: "/tools", label: "All Tools" },

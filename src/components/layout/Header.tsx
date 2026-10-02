@@ -53,9 +53,34 @@ const compareGroups = [
     ],
   },
   {
-    label: "By attribute",
+    label: "Computers",
+    links: [
+      { href: "/cpu-comparison", label: "CPU Comparison" },
+      { href: "/gpu-comparison", label: "GPU Comparison" },
+      { href: "/gaming-monitor-comparison", label: "Gaming Monitor" },
+    ],
+  },
+  {
+    label: "Home and devices",
+    links: [
+      { href: "/tv-comparison", label: "TV Comparison" },
+      { href: "/smartwatch-comparison", label: "Smartwatch Comparison" },
+      { href: "/projector-comparison", label: "Projector Comparison" },
+      { href: "/printer-comparison", label: "Printer Comparison" },
+    ],
+  },
+  {
+    label: "Phone comparisons",
     links: [
       { href: "/compare/phone-size-comparison", label: "Phone Size Comparison" },
+      { href: "/phone-camera-comparison", label: "Phone Camera Comparison" },
+      { href: "/compare/iphone-vs-samsung", label: "iPhone vs Samsung" },
+      { href: "/compare/pixel-vs-iphone", label: "Pixel vs iPhone" },
+    ],
+  },
+  {
+    label: "By attribute",
+    links: [
       { href: "/tools/spec-comparison", label: "Specification Comparison" },
       { href: "/tools/dimension-comparison", label: "Dimension Comparison" },
       { href: "/tools/percentage-difference-calculator", label: "Percentage Difference" },
@@ -65,8 +90,6 @@ const compareGroups = [
     label: "Popular",
     links: [
       { href: "/compare", label: "Product Comparison" },
-      { href: "/compare/iphone-vs-samsung", label: "iPhone vs Samsung" },
-      { href: "/compare/pixel-vs-iphone", label: "Pixel vs iPhone" },
       { href: "/best-phones", label: "Best Phones" },
     ],
   },
@@ -145,7 +168,7 @@ export default function Header() {
               </div>
 
               {openMenu === "compare" && (
-                <div className="absolute left-0 top-full mt-2 w-[34rem] bg-white border border-border rounded-xl shadow-lg p-5 grid grid-cols-3 gap-5">
+                <div className="absolute left-0 top-full mt-2 w-[46rem] bg-white border border-border rounded-xl shadow-lg p-5 grid grid-cols-3 gap-x-5 gap-y-5">
                   {compareGroups.map((group) => (
                     <div key={group.label}>
                       <p className="text-xs font-semibold uppercase tracking-wide text-text-light mb-2">

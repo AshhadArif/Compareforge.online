@@ -10,7 +10,7 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 export const metadata: Metadata = {
   title: "Product Comparison Categories — Browse by Product Type",
   description:
-    "Browse product comparison categories on CompareForge: phones, laptops, tablets, monitors, cameras and headphones, plus smartphone categories.",
+    "Browse product comparison categories on CompareForge: phones, laptops, tablets, monitors, cameras, headphones, CPUs, GPUs, TVs, smartwatches, projectors and printers, plus smartphone categories.",
   alternates: {
     canonical: "/categories",
   },
@@ -97,7 +97,7 @@ export default function CategoriesPage() {
           Every comparison hub runs on the same principle: a working tool first, then the
           specification context that makes the result readable.
         </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {COMPARE_HUBS.map((hub) => (
             <Link
               key={hub.href}
