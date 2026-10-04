@@ -32,8 +32,8 @@ const sections = [
   {
     heading: "Important Considerations",
     paragraphs: [
-      "Only currently listed phones are ranked; discontinued models are excluded unless they are the only fit.",
-      "Scores are relative within this database of 12 phones — not a universal score across the whole market. A phone absent from our database cannot appear.",
+      "Only currently listed phones are ranked — discontinued models are excluded from the pool entirely, never shown as a fallback.",
+      "Scores are relative within the 22 currently listed phones in our database (47 records in total) — not a universal score across the whole market. A phone absent from our database cannot appear.",
       "Software quality, camera processing and real-world battery life are not modeled because they require testing we have not performed. Spec-sheet hardware is the limit of what we claim.",
     ],
   },

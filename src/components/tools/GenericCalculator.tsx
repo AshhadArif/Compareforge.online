@@ -22,10 +22,14 @@ function FieldInput({
   field,
   value,
   onChange,
+  invalid,
+  describedBy,
 }: {
   field: CalcField;
   value: number | string;
   onChange: (v: number | string) => void;
+  invalid?: boolean;
+  describedBy?: string;
 }) {
   const inputClass =
     "w-full px-3 py-2.5 bg-white border border-border rounded-lg text-text placeholder:text-text-light focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-colors";
@@ -38,7 +42,9 @@ function FieldInput({
         className={inputClass}
         value={String(value ?? "")}
         onChange={(e) => onChange(e.target.value)}
-        aria-describedby={field.help ? `${field.id}-help` : undefined}
+        aria-describedby={describedBy}
+        aria-invalid={invalid || undefined}
+        required={field.required}
       >
         {(field.options ?? []).map((opt) => (
           <option key={opt.value} value={opt.value}>
@@ -65,14 +71,16 @@ function FieldInput({
         name={field.id}
         type={isNumeric ? "number" : "text"}
         inputMode={isNumeric ? "decimal" : undefined}
-        className={`${inputClass} ${prefix ? "pl-7" : ""} ${suffix ? "pr-14" : ""}`}
+        className={`${inputClass} ${prefix ? "pl-7" : ""} ${suffix ? "pr-14" : ""} ${invalid ? "border-warning" : ""}`}
         value={String(value ?? "")}
         placeholder={field.placeholder}
         min={field.min}
         max={field.max}
         step={field.step ?? (field.type === "number" ? "any" : undefined)}
         onChange={(e) => onChange(isNumeric ? (e.target.value === "" ? "" : parseFloat(e.target.value)) : e.target.value)}
-        aria-describedby={field.help ? `${field.id}-help` : undefined}
+        aria-describedby={describedBy}
+        aria-invalid={invalid || undefined}
+        required={field.required}
       />
       {suffix ? (
         <span className="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-text-secondary pointer-events-none">
@@ -94,7 +102,14 @@ export default function GenericCalculator({ definitionId }: Props) {
     if (definition.shareable) {
       for (const f of definition.fields) {
         const param = searchParams.get(f.id);
-        if (param != null) base[f.id] = f.type === "text" || f.type === "select" ? param : parseFloat(param) || "";
+        if (param != null) {
+          if (f.type === "text" || f.type === "select") base[f.id] = param;
+          else {
+            const parsed = parseFloat(param);
+            // Keep legitimate zeros: Number("0") is falsy, "" || drops it.
+            base[f.id] = Number.isFinite(parsed) ? parsed : "";
+          }
+        }
       }
     }
     return base;
@@ -146,19 +161,39 @@ export default function GenericCalculator({ definitionId }: Props) {
         <div className="p-5 sm:p-6 border-b md:border-b-0 md:border-r border-border">
           <h2 className="text-lg font-semibold text-text mb-4">Enter your values</h2>
           <div className="space-y-4">
-            {definition.fields.map((f) => (
-              <div key={f.id}>
-                <label htmlFor={f.id} className="block text-sm font-medium text-text mb-1.5">
-                  {f.label}
-                </label>
-                <FieldInput field={f} value={values[f.id] ?? ""} onChange={(v) => update(f.id, v)} />
-                {f.help ? (
-                  <p id={`${f.id}-help`} className="mt-1 text-xs text-text-secondary">
-                    {f.help}
-                  </p>
-                ) : null}
-              </div>
-            ))}
+            {definition.fields.map((f) => {
+              const raw = values[f.id];
+              const empty = raw === "" || raw == null || (typeof raw === "number" && !Number.isFinite(raw));
+              const invalid = Boolean(touched && !result.ok && f.required && empty);
+              const errorId = `${f.id}-error`;
+              const describedBy =
+                [f.help ? `${f.id}-help` : null, invalid ? errorId : null].filter(Boolean).join(" ") || undefined;
+              return (
+                <div key={f.id}>
+                  <label htmlFor={f.id} className="block text-sm font-medium text-text mb-1.5">
+                    {f.label}
+                    {f.required ? <span className="text-primary ml-0.5">*</span> : null}
+                  </label>
+                  <FieldInput
+                    field={f}
+                    value={raw ?? ""}
+                    onChange={(v) => update(f.id, v)}
+                    invalid={invalid}
+                    describedBy={describedBy}
+                  />
+                  {f.help ? (
+                    <p id={`${f.id}-help`} className="mt-1 text-xs text-text-secondary">
+                      {f.help}
+                    </p>
+                  ) : null}
+                  {invalid ? (
+                    <p id={errorId} role="alert" className="mt-1 text-xs font-medium text-warning">
+                      Enter a value for this field.
+                    </p>
+                  ) : null}
+                </div>
+              );
+            })}
           </div>
           <button
             type="button"

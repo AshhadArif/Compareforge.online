@@ -29,8 +29,8 @@ const sections = [
   {
     heading: "Example",
     paragraphs: [
-      "A 500 ml bottle costs $4.50; a 1,000 ml bottle costs $8.00. Per 100 ml, option A costs $0.90 and option B costs $0.80 — the larger bottle is 11.1% cheaper per 100 ml even though its sticker price is higher.",
-      "Storage edition: 100 GB at $1.99/month versus 2 TB at $9.99/month. Per GB that is $0.0199 versus $0.005 — the bigger tier is about 75% cheaper per GB, but only worth it if you actually use the space. Unit price measures the deal, not your needs.",
+      "A 500 ml bottle costs $4.50; a 1,000 ml bottle costs $8.00. Entered as 500 and 1,000 ml, the tool returns $0.009 versus $0.008 per millilitre — the larger bottle is 11.1% cheaper per millilitre even though its sticker price is higher. Set the unit to “100 ml” and enter 5 and 10 instead, and you get $0.90 versus $0.80 per 100 ml: the percentage gap is identical either way, only the scale changes.",
+      "Storage edition: 100 GB at $5.00/month versus 500 GB at $15.00/month. Per GB that is $0.05 versus $0.03 — the bigger tier is 40% cheaper per GB, but only worth it if you actually use the space. Unit price measures the deal, not your needs.",
     ],
   },
   {

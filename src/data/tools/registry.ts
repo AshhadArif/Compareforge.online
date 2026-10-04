@@ -48,9 +48,9 @@ export const tools: ToolRegistryEntry[] = [
     route: "/tools/product-comparison/",
     dataRequirements: ["entities", "attributes", "sources", "significance-thresholds"],
     logic: "Normalize values → compute per-attribute deltas → classify significance → explain",
-    seoTitle: "Product Comparison Tool — Compare Phones Side by Side",
+    seoTitle: "Compare Two Phones - Free Specification Tool",
     seoDescription:
-      "Free product comparison tool. Pick two smartphones and see a side-by-side comparison of display, camera, battery, performance and software.",
+      "Free phone comparison tool. Pick two smartphones and see display, camera, battery, performance and software differences side by side, with significance ratings.",
     searchKeywords: [
       "phone comparison tool",
       "compare phones side by side",
@@ -341,7 +341,7 @@ export const tools: ToolRegistryEntry[] = [
       "See how much you save paying yearly instead of monthly — cash saving, percentage saved, and true monthly cost of the annual plan.",
     problem: "Is switching to annual billing actually worth it for me?",
     inputs: ["Monthly price", "Annual price"],
-    outputs: ["Cash saving", "% saved", "Effective monthly cost", "Break-even point"],
+    outputs: ["Cash saving", "% saved", "Effective monthly cost", "Step-by-step working"],
     purpose:
       "Answer the common billing-frequency question with explicit numbers rather than marketing ‘save 20%’ claims.",
     route: "/tools/monthly-vs-annual-calculator/",
@@ -440,7 +440,7 @@ export const tools: ToolRegistryEntry[] = [
       "Compare the cost of repairing your current item against replacing it, using cost per remaining month of life to see which option stretches further.",
     problem: "Is it worth repairing, or should I just buy a new one?",
     inputs: ["Repair cost", "Replacement price", "Expected life after repair", "Expected life of new item", "Current item value"],
-    outputs: ["Cost per month (repair)", "Cost per month (replace)", "Better-value option", "Break-even horizon"],
+    outputs: ["Cost per month (repair)", "Cost per month (replace)", "Better-value option", "Step-by-step working"],
     purpose:
       "Support the repair-or-replace decision with normalized cost per month of remaining life — actions, not product specs.",
     route: "/tools/repair-vs-replace-calculator/",
@@ -511,7 +511,7 @@ export const tools: ToolRegistryEntry[] = [
       "Totalize ownership modes over a time horizon — distinct from plan-vs-plan comparison (same mode, different tiers).",
     route: "/tools/total-cost-ownership-calculator/",
     dataRequirements: ["calculation-definition"],
-    logic: "Total = upfront + (recurring × periods) + (periodic × cycles) over chosen horizon",
+    logic: "Total = upfront + (monthly × months) + (annual × years) over the chosen horizon",
     seoTitle: "Total Cost of Ownership Calculator — Buy vs Lease",
     seoDescription:
       "Free total cost of ownership calculator. Compare upfront, recurring and periodic costs over 1, 3 or 5 years with monthly equivalents.",
@@ -541,7 +541,7 @@ export const tools: ToolRegistryEntry[] = [
       "Compare the size of two objects — pick phones from our database or enter your own width, height and depth — and see percentage differences plus a scale drawing.",
     problem: "How much bigger is A than B, really — and will I notice?",
     inputs: ["Two objects: phones from database or custom dimensions"],
-    outputs: ["Scale visualization", "Percentage size differences", "Face/side area comparison", "Diagonal comparison"],
+    outputs: ["Scale visualization", "Percentage size differences", "Face/side area comparison", "Depth comparison"],
     purpose:
       "Serve ‘size comparison’ and ‘dimensions vs’ intent with proportional visuals, not just numbers.",
     route: "/tools/dimension-comparison/",
@@ -609,7 +609,7 @@ export const tools: ToolRegistryEntry[] = [
       "Enter the dimensions of an item and the space it needs to fit — shelf, doorway, wall, rack — and get a clear fit verdict with clearance on every side.",
     problem: "Will this physically fit in the space I have?",
     inputs: ["Item width, height, depth", "Space width, height, depth", "Optional clearance"],
-    outputs: ["Fit verdict", "Clearance per side", "Diagonal check", "No-fit reasons"],
+    outputs: ["Fit verdict", "Clearance per side", "Depth check", "No-fit reasons"],
     purpose:
       "Answer ‘will it fit’ purchase-safety questions with explicit clearance math instead of guesswork.",
     route: "/tools/fit-clearance-checker/",

@@ -206,7 +206,7 @@ export default function DecisionMatrix() {
         <h3 className="text-sm font-semibold text-text mb-3">Weighted ranking (out of 100)</h3>
         <ol className="space-y-2">
           {results.map((r, i) => (
-            <li key={r.option}>
+            <li key={`${i}-${r.option}`}>
               <div className="flex items-center justify-between text-sm mb-1">
                 <span className="font-medium text-text">
                   {i === 0 ? "🏆 " : ""}

@@ -29,6 +29,12 @@ export default function ProductSelector({
     ? products.find((p) => p.id === selectedId) ?? null
     : null;
 
+  // HTML ids must not contain whitespace ("Phone A" would produce an invalid id
+  // and an unparseable aria-controls token).
+  const idSlug = label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  const inputId = `selector-${idSlug}`;
+  const listboxId = `listbox-${idSlug}`;
+
   const suggestions = query.length >= 2
     ? searchProducts(query, excludeIds)
     : getPopularProducts(6).filter((p) => !excludeIds.includes(p.id));
@@ -90,7 +96,7 @@ export default function ProductSelector({
   if (selected) {
     return (
       <div className="w-full">
-        <label className="block text-sm font-medium text-text mb-1.5">{label}</label>
+        <span className="block text-sm font-medium text-text mb-1.5">{label}</span>
         <div className="flex items-center justify-between w-full px-4 py-3 bg-bg-secondary border border-border rounded-lg">
           <div>
             <span className="font-medium text-text">{selected.fullName}</span>
@@ -117,11 +123,11 @@ export default function ProductSelector({
 
   return (
     <div className="w-full relative" ref={containerRef}>
-      <label htmlFor={`selector-${label}`} className="block text-sm font-medium text-text mb-1.5">
+      <label htmlFor={inputId} className="block text-sm font-medium text-text mb-1.5">
         {label}
       </label>
       <input
-        id={`selector-${label}`}
+        id={inputId}
         ref={inputRef}
         type="text"
         value={query}
@@ -135,14 +141,14 @@ export default function ProductSelector({
         placeholder={placeholder}
         role="combobox"
         aria-expanded={isOpen}
-        aria-controls={`listbox-${label}`}
+        aria-controls={listboxId}
         aria-autocomplete="list"
         className="w-full px-4 py-3 bg-white border border-border rounded-lg text-text placeholder:text-text-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
       />
 
       {isOpen && suggestions.length > 0 && (
         <ul
-          id={`listbox-${label}`}
+          id={listboxId}
           role="listbox"
           className="absolute z-20 mt-1 w-full bg-white border border-border rounded-lg shadow-lg max-h-72 overflow-y-auto"
         >

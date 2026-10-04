@@ -9,8 +9,10 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: "/",
         disallow: [
-          // Any tool URL with a query string (shareable result states) — also noindexed client-side
-          "/tools/*?",
+          // Any URL carrying a query string — shareable tool/comparison result states are
+          // also marked noindex client-side, so parameterised variants never compete with
+          // the clean canonical URL in the index.
+          "/*?",
           "/api/",
           "/admin/",
         ],

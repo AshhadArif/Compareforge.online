@@ -19,6 +19,11 @@ export default function ComparisonTable({ productA, productB }: ComparisonTableP
     [productA, productB, differencesOnly]
   );
 
+  const fullResult: ComparisonResult = useMemo(
+    () => generateComparisonResult(productA, productB, { showDifferencesOnly: false }),
+    [productA, productB]
+  );
+
   function toggleGroup(groupId: string) {
     setExpandedGroups((prev) => {
       const next = new Set(prev);
@@ -45,61 +50,73 @@ export default function ComparisonTable({ productA, productB }: ComparisonTableP
     return null;
   };
 
+  const toggle = (
+    <button
+      type="button"
+      role="switch"
+      aria-checked={differencesOnly}
+      aria-label="Show differences only"
+      onClick={() => setDifferencesOnly(!differencesOnly)}
+      className={`relative inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+        differencesOnly
+          ? "bg-primary text-white"
+          : "bg-bg-secondary text-text-secondary border border-border hover:border-primary"
+      }`}
+    >
+      <span
+        className={`inline-block w-8 h-4 rounded-full transition-colors ${
+          differencesOnly ? "bg-white/30" : "bg-border"
+        }`}
+      >
+        <span
+          className={`block w-3 h-3 rounded-full bg-white shadow transition-transform mt-0.5 ${
+            differencesOnly ? "translate-x-4" : "translate-x-0.5"
+          }`}
+        />
+      </span>
+      Differences only
+    </button>
+  );
+
+  const header = (
+    <div className="flex items-center justify-between mb-4">
+      <h2 className="text-xl font-bold text-text">Specifications</h2>
+      {toggle}
+    </div>
+  );
+
   if (result.groups.length === 0) {
     return (
-      <div className="text-center py-8 text-text-secondary">
-        No differences found between these products.
+      <div>
+        {header}
+        <div className="text-center py-8 text-text-secondary">
+          {fullResult.groups.length === 0
+            ? "No specifications are available for these products yet."
+            : "These two products match on every specification we track. Turn off “Differences only” to see the full table."}
+        </div>
       </div>
     );
   }
 
   return (
     <div>
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-bold text-text">Specifications</h2>
-        <button
-          type="button"
-          role="switch"
-          aria-checked={differencesOnly}
-          aria-label="Show differences only"
-          onClick={() => setDifferencesOnly(!differencesOnly)}
-          className={`relative inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
-            differencesOnly
-              ? "bg-primary text-white"
-              : "bg-bg-secondary text-text-secondary border border-border hover:border-primary"
-          }`}
-        >
-          <span
-            className={`inline-block w-8 h-4 rounded-full transition-colors ${
-              differencesOnly ? "bg-white/30" : "bg-border"
-            }`}
-          >
-            <span
-              className={`block w-3 h-3 rounded-full bg-white shadow transition-transform mt-0.5 ${
-                differencesOnly ? "translate-x-4" : "translate-x-0.5"
-              }`}
-            />
-          </span>
-          Differences only
-        </button>
-      </div>
+      {header}
 
       {/* Desktop table */}
       <div className="hidden md:block overflow-x-auto border border-border rounded-xl">
         <table
           className="w-full text-sm"
-          role="table"
           aria-label={`Comparison of ${productA.fullName} and ${productB.fullName}`}
         >
           <thead>
             <tr className="border-b border-border bg-bg-secondary">
-              <th className="text-left py-3 px-4 font-semibold text-text w-1/4 sticky left-0 bg-bg-secondary">
+              <th scope="col" className="text-left py-3 px-4 font-semibold text-text w-1/4 sticky left-0 bg-bg-secondary">
                 Specification
               </th>
-              <th className="text-left py-3 px-4 font-semibold text-text w-[37.5%]">
+              <th scope="col" className="text-left py-3 px-4 font-semibold text-text w-[37.5%]">
                 {productA.fullName}
               </th>
-              <th className="text-left py-3 px-4 font-semibold text-text w-[37.5%]">
+              <th scope="col" className="text-left py-3 px-4 font-semibold text-text w-[37.5%]">
                 {productB.fullName}
               </th>
             </tr>

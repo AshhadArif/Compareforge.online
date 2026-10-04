@@ -41,8 +41,9 @@ export default function DimensionComparison() {
       ? products.find((p) => p.id === side.productId)?.fullName ?? "Not selected"
       : side.label.trim() || "Custom item";
 
-  const maxW = Math.max(dimsA.w ?? 0, dimsB.w ?? 0, 1);
-  const maxH = Math.max(dimsA.h ?? 0, dimsB.h ?? 0, 1);
+  // One shared scale for both axes so the drawing is genuinely to scale.
+  const maxDim = Math.max(dimsA.w ?? 0, dimsA.h ?? 0, dimsB.w ?? 0, dimsB.h ?? 0, 1);
+  const pxPerMm = 180 / maxDim;
 
   const valid = dimsA.w != null && dimsA.h != null && dimsB.w != null && dimsB.h != null;
 
@@ -161,8 +162,8 @@ export default function DimensionComparison() {
                   <div
                     className={`${item.color} border-2 rounded-md transition-all`}
                     style={{
-                      width: `${Math.max(24, ((item.dims.w ?? 0) / maxW) * 180)}px`,
-                      height: `${Math.max(24, ((item.dims.h ?? 0) / maxH) * 180)}px`,
+                      width: `${Math.max(1, (item.dims.w ?? 0) * pxPerMm)}px`,
+                      height: `${Math.max(1, (item.dims.h ?? 0) * pxPerMm)}px`,
                     }}
                   />
                   <p className="text-xs text-text-secondary mt-2 max-w-[140px] break-words">{item.name}</p>
@@ -198,13 +199,15 @@ export default function DimensionComparison() {
           </dl>
 
           <p className="mt-4 text-sm text-text-secondary">
-            {nameOf(sideB)} is{" "}
-            <strong>
-              {widthDiff && parseFloat(widthDiff) > 0 ? `${widthDiff.replace("-", "")} wider` : ""}
-              {widthDiff && parseFloat(widthDiff) < 0 ? `${widthDiff} narrower` : ""}
-            </strong>{" "}
-            than {nameOf(sideA)} on width. Percentages use the symmetric difference formula (divided
-            by the average of both values).
+            {widthDiff == null
+              ? ""
+              : parseFloat(widthDiff) > 0
+                ? `${nameOf(sideB)} is ${widthDiff.replace("-", "")} wider than ${nameOf(sideA)} on width.`
+                : parseFloat(widthDiff) < 0
+                  ? `${nameOf(sideB)} is ${widthDiff} narrower than ${nameOf(sideA)} on width.`
+                  : `${nameOf(sideB)} and ${nameOf(sideA)} are the same width.`}{" "}
+            Percentages use the symmetric difference formula (divided by the average of both
+            values).
           </p>
         </div>
       )}

@@ -77,7 +77,7 @@ export default function AlternativesFinder() {
                           ? `$${row.priceDiff.toLocaleString()} more`
                           : "Same listed price"}
                   </p>
-                  <div className="mt-2 flex flex-wrap gap-1.5">
+                  <ul className="mt-2 flex flex-wrap gap-1.5">
                     {row.gains.map((g) => (
                       <li key={g} className="text-xs px-2 py-0.5 bg-accent-light text-accent rounded-full">
                         {g}
@@ -88,7 +88,7 @@ export default function AlternativesFinder() {
                         {t}
                       </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
                 <div className="text-right flex-shrink-0 space-y-1">
                   {row.product.pricing.msrp != null && (

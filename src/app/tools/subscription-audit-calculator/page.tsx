@@ -70,7 +70,7 @@ const faq = [
   {
     question: "Is my data stored anywhere?",
     answer:
-      "No. Everything runs in your browser tab. Closing or refreshing the page clears it unless you share a URL with query parameters (which are marked noindex).",
+      "No. Everything runs in your browser tab and is cleared when you close or refresh the page. This tool does not write your entries into the URL, and nothing you type is stored or transmitted.",
   },
 ];
 

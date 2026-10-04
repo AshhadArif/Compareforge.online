@@ -21,9 +21,11 @@ export default function SearchBar() {
   return (
     <div className="relative">
       <button
+        type="button"
         onClick={() => setOpen(!open)}
         className="md:hidden p-2 text-text-secondary hover:text-primary"
-        aria-label="Search"
+        aria-label="Search comparisons"
+        aria-expanded={open}
       >
         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -39,6 +41,7 @@ export default function SearchBar() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search comparisons..."
+                aria-label="Search comparisons"
                 className="w-full pl-10 pr-4 py-2.5 border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                 autoFocus
               />

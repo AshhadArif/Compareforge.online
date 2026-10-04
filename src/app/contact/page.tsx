@@ -67,6 +67,44 @@ export default function ContactPage() {
             are reviewed as quickly as possible.
           </p>
         </div>
+
+        <div>
+          <h2 className="text-xl font-bold text-text mb-4">Contact Questions</h2>
+          <dl className="space-y-4">
+            <div>
+              <dt className="font-semibold text-text">Do you have a contact form?</dt>
+              <dd className="text-sm text-text-secondary mt-1">
+                No. CompareForge has no form and no account system — email is the only channel, so
+                nothing you write is stored by a third-party form service.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-text">
+                How do I report a wrong specification or a broken tool?
+              </dt>
+              <dd className="text-sm text-text-secondary mt-1">
+                Send the page URL and what looks wrong. Error reports that reproduce on the page
+                URL are the fastest to fix, because the source record and the test for it can be
+                located directly.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-text">Do you publish guest posts or paid links?</dt>
+              <dd className="text-sm text-text-secondary mt-1">
+                No. CompareForge does not accept guest posts, sponsored articles, paid placements,
+                link exchanges, or pre-written content from third parties.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-text">Can you add a product or a tool I need?</dt>
+              <dd className="text-sm text-text-secondary mt-1">
+                Suggestions are welcome. Requests are only added when the specification data can be
+                sourced and verified — an added record always arrives with its sources and a last
+                verification date.
+              </dd>
+            </div>
+          </dl>
+        </div>
       </div>
     </div>
   );

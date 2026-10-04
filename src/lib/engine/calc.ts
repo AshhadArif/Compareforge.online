@@ -83,9 +83,13 @@ export function formatNumber(n: number, maxDecimals = 2): string {
 
 export function formatMoney(n: number, currency = "$"): string {
   if (!Number.isFinite(n)) return "—";
-  const decimals = Math.abs(n) >= 100 ? 0 : 2;
-  return `${n < 0 ? "−" : ""}${currency}${Math.abs(n).toLocaleString("en-US", {
-    minimumFractionDigits: decimals,
+  const abs = Math.abs(n);
+  // Magnitude-aware precision: dollars show cents; genuinely sub-cent results
+  // (unit prices per ml / per GB) keep enough decimals to stay comparable
+  // instead of collapsing to $0.00 on both sides of a comparison.
+  const decimals = abs >= 100 ? 0 : abs >= 0.01 ? 2 : 6;
+  return `${n < 0 ? "−" : ""}${currency}${abs.toLocaleString("en-US", {
+    minimumFractionDigits: Math.min(2, decimals),
     maximumFractionDigits: decimals,
   })}`;
 }

@@ -464,6 +464,42 @@ export const categoryHubs: CategoryHubConfig[] = [
         body: "Height adjustment, tilt and VESA compatibility affect daily comfort and are not usually upgradeable. A slightly slower panel with a good stand often serves better over years of use.",
       },
     ],
+    sections: [
+      {
+        heading: "How to Use the Monitor Comparison Tool",
+        steps: [
+          "Open both specification pages and enter the same row for each monitor — the template already loads size, resolution, refresh rate, panel type, aspect ratio, response time, brightness, ports, HDR, dimensions and price.",
+          "Read size and resolution together rather than separately: pixels per inch comes from both, and that ratio is what you actually see.",
+          "Delete the rows you will not weigh. A colour-coverage row belongs in the table only if you work with colour and only if both manufacturers publish a figure.",
+          "Treat response time as a vendor claim measured under that vendor's conditions, and compare it only alongside panel type and refresh rate.",
+          "Finish with ports: confirm your computer can drive the resolution and refresh rate you have chosen before comparing anything else.",
+        ],
+      },
+      {
+        heading: "Matching a Monitor to the Machine Driving It",
+        paragraphs: [
+          "The fastest panel specification is irrelevant if the cable and port cannot carry it. Check what your computer outputs — HDMI 2.1 versus 2.0, DisplayPort generation, USB-C with display support — and match it against the monitor's input list before you compare refresh rates.",
+          "This is where resolution and refresh rate meet reality. A 4K 144 Hz claim needs an input that carries that combination, and the same port often drops to a lower refresh rate as resolution rises. The table shows what each monitor claims; what your hardware delivers is a separate check you make before buying.",
+          "Where a manufacturer does not state the maximum refresh rate over a given input, that row stays exactly as you entered it. We do not assume the headline figure applies to every port.",
+        ],
+      },
+      {
+        heading: "Brightness, HDR and the Claims Around Them",
+        paragraphs: [
+          "Peak brightness is published in nits under conditions each manufacturer chooses, so read it as a bracket rather than a precise verdict: a panel rated well above typical room lighting holds up opposite a window, one rated near it does not.",
+          "HDR support is a tier rather than a switch. Compare the tier the panel claims together with its peak brightness, because a display cannot deliver a high tier at a low brightness no matter what the feature list says.",
+          "Contrast and colour coverage are the two figures most often left off the specification page. Where they are absent they stay absent in the comparison — we do not infer them from the panel type.",
+        ],
+      },
+      {
+        heading: "Stand, Dimensions and Desk Reality",
+        paragraphs: [
+          "Width, height and depth with the stand attached decide whether the monitor fits the desk you own, and ultrawide formats need desk depth that the panel size alone does not suggest.",
+          "Treat the stand as part of the product: height adjustment, tilt and VESA mounting affect daily comfort and are rarely upgradeable later. Where VESA compatibility is published, note it; where it is not, treat it as unknown rather than absent.",
+          "Weight does two jobs — the load on a gas-spring arm and the stability of the desk foot. Both are read off the same row, which is why a heavier monitor with a wide base behaves differently from a lighter one on a narrow stand.",
+        ],
+      },
+    ],
     faq: [
       {
         question: "How do I compare monitors?",
@@ -573,6 +609,42 @@ export const categoryHubs: CategoryHubConfig[] = [
       {
         title: "Expandable storage and ports",
         body: "Card slot count and type, microphone and headphone jacks, and whether the ports are full-size. On video-focused bodies these decide whether you can work without adapters.",
+      },
+    ],
+    sections: [
+      {
+        heading: "How to Use the Camera Comparison Tool",
+        steps: [
+          "Open both bodies' specification pages and enter the same row for each — the template loads type, sensor format, megapixels, lens mount, maximum video, stabilization, ISO range, burst rate, weight, battery life and price.",
+          "Put the lens mount row first in your own reading order. It is the decision with the longest time horizon, because it determines which lenses you can use for the next decade.",
+          "Compare sensor format against total system weight together. A larger sensor usually arrives with larger lenses, so body weight alone understates what you carry.",
+          "Add rows for weather sealing, card slots or viewfinder specifications only where both manufacturers publish them — a row with one value is a data gap, not a difference.",
+          "Where the tool shows a missing value, read the manufacturer's own page before assuming the feature is absent.",
+        ],
+      },
+      {
+        heading: "Sensor Format, Resolution and What They Trade",
+        paragraphs: [
+          "Sensor format sets the depth of field and low-light envelope; megapixels set how far you can crop. At a given price and body size they trade against each other, which is why neither row works as a ranking on its own.",
+          "Resolution is only comparable at the same format. Twenty-four megapixels on a smaller sensor and twenty-four on a larger one produce different files, different cropping behaviour and different lens requirements — the number alone tells you very little.",
+          "Where a manufacturer publishes the sensor format and resolution but not the underlying details, we compare the published fields and leave the rest alone. We do not infer dynamic range, colour depth or high-ISO performance from the specification sheet, because we do not run those tests.",
+        ],
+      },
+      {
+        heading: "Video Rows Against Stills Rows",
+        paragraphs: [
+          "Video pulls the comparison toward maximum resolution and frame rate, recording limits, crop factors in video mode, stabilization and the microphone and headphone jacks. Stills pull toward burst rate, autofocus coverage and viewfinder specifications. If you shoot both, the interesting rows are the compromises each body makes.",
+          "Recording limits are easy to miss and expensive to discover: a body that records 4K for a fixed number of minutes before stopping is a different tool from one without a limit, even when the resolution and frame rate match.",
+          "Crop in video mode changes the effective field of view, so the same lens frames differently between modes. Where a manufacturer publishes the crop, enter it as its own row; where they do not, leave it blank rather than estimating.",
+        ],
+      },
+      {
+        heading: "Carrying and Power in Practice",
+        paragraphs: [
+          "Body weight with and without a battery, plus the weight of the lenses you actually need, is the honest portability figure. A body plus two lenses is a different proposition from a pocketable compact, whatever the sensor size says.",
+          "Battery life is a shot count under each manufacturer's standard test. It compares consistently enough between bodies, but real-world figures are always lower — use it to rank candidates, not to plan a day.",
+          "Card slot count and type decide how much you can shoot before offloading and whether you can record redundancy at once. On video-focused bodies, the full-size versus mini port question decides whether you work with adapters.",
+        ],
       },
     ],
     faq: [
@@ -688,6 +760,42 @@ export const categoryHubs: CategoryHubConfig[] = [
       {
         title: "Battery and charging behaviour",
         body: "Hours per charge with noise cancelling on, plus quick-charge minutes. A pair that gives two hours from a ten-minute charge behaves differently in practice from one that needs a full cycle.",
+      },
+    ],
+    sections: [
+      {
+        heading: "How to Use the Headphone Comparison Tool",
+        steps: [
+          "Open both specification pages and enter the same row for each pair — the template loads form factor, driver, connectivity, noise cancelling, battery, weight, codecs, microphone, impedance and price.",
+          "Start with form factor, because it determines comfort and isolation before any electronic feature gets involved.",
+          "Compare battery life only between wireless pairs, and only against the figure measured with noise cancelling on if that is how you will use them.",
+          "Check codec support against the device you already own. A codec neither end supports is a row that changes nothing in practice.",
+          "Ignore rows that do not apply to either pair — a wired model with no battery should show as not applicable rather than as a shorter battery life.",
+        ],
+      },
+      {
+        heading: "Form Factor, Weight and Long Sessions",
+        paragraphs: [
+          "Over-ear, on-ear, in-ear and open-back each rule out different situations. Open-back models leak sound and admit background noise; in-ear models isolate by seal; over-ear models distribute pressure across a larger area. The specification names the category, and the name does most of the work.",
+          "Comfort over a multi-hour session tracks weight closely, and it is one of the few headphone specifications where lower is unambiguously easier to live with. Compare grams alongside clamp force and pad material where the manufacturer publishes them.",
+          "Isolation has two sources: the passive seal from the fit, and active cancellation on top of it. A heavy noise-cancelling over-ear pair and a well-sealed in-ear pair can reach similar outcomes by completely different routes, so compare the mechanism as well as the claim.",
+        ],
+      },
+      {
+        heading: "Wireless, Codecs and What Actually Reaches Your Ears",
+        paragraphs: [
+          "Bluetooth version affects range, efficiency and connection stability, while codec support decides how much data crosses the link. SBC is the baseline every device supports; AAC, aptX variants and LDAC each need matching support on the source side to do anything at all.",
+          "Compare codec rows against your phone or laptop rather than in isolation. The most capable codec in the table is irrelevant if the device you use never negotiates it.",
+          "Wired operation removes battery anxiety and latency entirely, which matters for video editing and competitive gaming. Where a pair supports both, check whether it can run wired with power off — a pair that needs charge for its wired path has not removed the battery from the equation.",
+        ],
+      },
+      {
+        heading: "Noise Cancelling, Battery and Charging",
+        paragraphs: [
+          "Cancellation claims are measured under each company's own conditions, so compare the presence, the type and any published decibel figure as a bracket rather than as a precise ranking between two nearby numbers.",
+          "Battery figures are the same story: hours per charge vary with the test settings, and the number matters most when it is measured with cancellation on. Treat playback figures as a bracket and check the quick-charge claim for the days you forget to plug in.",
+          "Charging behaviour changes the daily routine more than an extra two hours of capacity does. A pair that returns a usable session from a short charge behaves differently from one that needs a full cycle, even when the headline totals are close.",
+        ],
       },
     ],
     faq: [

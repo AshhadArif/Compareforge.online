@@ -112,6 +112,10 @@ export default function MethodologyPage() {
           documents exactly how CompareForge sources, verifies, computes and presents data —
           and the rules that keep our tools honest.
         </p>
+        <p className="mt-3 text-text-secondary">
+          CompareForge is published and edited by Fahad, who reviews each source and signs off
+          on every record and tool page published on this site.
+        </p>
       </div>
 
       <div className="space-y-8 mb-10">

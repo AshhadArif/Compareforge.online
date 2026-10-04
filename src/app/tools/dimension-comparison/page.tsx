@@ -48,9 +48,9 @@ const methodology = [
 
 const faq = [
   {
-    question: "How do I compare the size of two phones?",
+    question: "How does the tool draw the two objects?",
     answer:
-      "Select both phones (or enter dimensions manually). The tool draws them to scale and gives percentage differences for width, height, depth and face area.",
+      "Both sides share one pixels-per-millimetre scale, so an object that is 3 mm taller is visibly taller in the drawing. Percentage differences for width, height, depth and face area are reported beside the drawings.",
   },
   {
     question: "How much bigger is A than B in percent?",

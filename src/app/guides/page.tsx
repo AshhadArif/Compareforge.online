@@ -38,10 +38,11 @@ export default function GuidesPage() {
           Understand features, specifications, and what matters when choosing a product.
         </p>
         <p className="mt-2 text-sm text-text-secondary max-w-3xl">
-          Our guides explain technical concepts in plain language, help you understand
-          what specifications actually mean, and provide practical advice for making
-          informed purchasing decisions. Each guide links to relevant comparisons so
-          you can see how these concepts apply to real products.
+          {guides.length} research guides explain technical concepts in plain language, cover what
+          specifications actually mean and how to read them, and give practical advice for making
+          informed buying decisions. Every guide ends with a direct link to the comparison or tool
+          that applies the idea to real products — so you can move from “what does this spec mean?”
+          to “which of these two is the better buy” without leaving the site.
         </p>
       </div>
 

@@ -1,4 +1,5 @@
-import { CalcDefinition, CalcValues, fail, formatMoney, num, ok } from "@/lib/engine/calc";
+import type { CalcDefinition, CalcValues } from "@/lib/engine/calc";
+import { fail, formatMoney, num, ok } from "@/lib/engine/calc";
 import {
   percentageDifferenceCompute,
   percentageChangeCompute,
@@ -58,10 +59,10 @@ function totalCostOwnershipCompute(values: CalcValues) {
   return ok({
     title: `Total cost over ${horizonYears} year${horizonYears === 1 ? "" : "s"} (${months} months)`,
     lines: [
-      ...results.map((r, i) => ({
+      ...results.map((r) => ({
         label: r.name,
         value: formatMoney(r.total),
-        emphasis: i === 0 ? ("primary" as const) : undefined,
+        emphasis: r === cheapest ? ("primary" as const) : undefined,
         hint: `≈ ${formatMoney(r.perMonth)}/month · upfront ${formatMoney(r.upfront)} + recurring ${formatMoney(r.recurring)}${r.extras > 0 ? ` + extras ${formatMoney(r.extras)}` : ""}`,
       })),
       { label: "Spread between cheapest and priciest", value: formatMoney(gap) },
@@ -151,7 +152,7 @@ export const CALCULATOR_DEFINITIONS: Record<string, CalcDefinition> = {
     shareable: true,
     fields: [
       { id: "upgradePrice", label: "Price of the upgrade / new device", type: "money", placeholder: "e.g. 999", required: true },
-      { id: "currentValue", label: "Value of your current device today", type: "money", placeholder: "e.g. 350", help: "What it is worth now (trade-in or resale estimate)." },
+      { id: "currentValue", label: "Value of your current device today", type: "money", placeholder: "e.g. 350", required: true, help: "What it is worth now (trade-in or resale estimate). Enter 0 if it has no resale value." },
       { id: "tradeIn", label: "Expected trade-in credit (optional)", type: "money", placeholder: "e.g. 300", help: "Reduces the net upgrade cost." },
       { id: "monthsToKeep", label: "Months you would keep the new device", type: "number", placeholder: "e.g. 36", min: 1, required: true },
     ],

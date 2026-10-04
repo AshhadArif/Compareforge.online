@@ -53,9 +53,9 @@ const faq = [
       "Select it as the anchor here. The tool ranks other phones in our database by specification similarity and price, showing exactly how many dollars and percent you would save and what differs.",
   },
   {
-    question: "Are the prices current?",
+    question: "How is the dollar saving calculated?",
     answer:
-      "They are manufacturer suggested retail prices from our records, each with a verification date on its product page. Retail prices change — treat MSRP as a reference and check live listings before buying.",
+      "Savings are the anchor phone's MSRP minus the alternative's MSRP, and the percentage is that gap divided by the anchor price. Both prices are manufacturer suggested retail prices from our records, each with a verification date on its product page — retail prices move, so treat MSRP as a reference and check live listings before buying.",
   },
   {
     question: "Why isn’t a specific phone in the results?",

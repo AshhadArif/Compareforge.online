@@ -77,7 +77,9 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
-            <Link href="/" className="text-lg font-bold text-primary">
+            <Link href="/" className="inline-flex items-center gap-2 text-lg font-bold text-primary">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo.svg" alt="" width={24} height={24} className="h-6 w-6 shrink-0" />
               CompareForge
             </Link>
             <p className="mt-2 text-sm text-text-secondary">

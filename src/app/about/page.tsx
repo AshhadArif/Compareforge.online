@@ -34,6 +34,29 @@ export default function AboutPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-semibold text-text mb-3">Who Runs CompareForge</h2>
+          <p>
+            CompareForge is published and maintained by <strong className="text-text">Fahad</strong>.
+            He owns the site, edits every comparison, guide and tool page, and is responsible for the
+            accuracy of what is published here.
+          </p>
+          <p className="mt-2">
+            There is no editorial team behind CompareForge and no sponsored or guest content: one
+            person decides what gets published, checks the source behind each specification value,
+            and corrects it when something turns out to be wrong. Every product record carries the
+            page it came from and the date it was last verified — the full process is documented on
+            the Methodology page.
+          </p>
+          <p className="mt-2">
+            Corrections, data suggestions and questions go to{" "}
+            <a href="/contact" className="text-primary hover:underline">
+              contact@compareforge.online
+            </a>
+            .
+          </p>
+        </div>
+
+        <div>
           <h2 className="text-xl font-semibold text-text mb-3">How We Create Comparisons</h2>
           <p>
             Every comparison on CompareForge follows a consistent process:
@@ -96,6 +119,30 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            name: "About CompareForge",
+            url: "https://compareforge.online/about",
+            about: {
+              "@type": "Organization",
+              name: "CompareForge",
+              url: "https://compareforge.online",
+              email: "contact@compareforge.online",
+              member: {
+                "@type": "Person",
+                name: "Fahad",
+                role: "Founder, editor and publisher",
+                url: "https://compareforge.online/about",
+              },
+            },
+          }),
+        }}
+      />
     </div>
   );
 }

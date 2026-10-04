@@ -38,9 +38,11 @@ export default function ProductsPage() {
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-text">Smartphone Database</h1>
         <p className="mt-2 text-text-secondary max-w-3xl">
-          Browse our database of smartphones with verified specifications sourced from
-          manufacturers. Every product page includes display, camera, battery, and
-          performance details with source attribution.
+          Browse {products.length} smartphone records across {brands.length} brands with
+          specifications sourced from manufacturer spec pages and cross-checked against independent
+          sources. Every record lists its sources and the date it was last verified, and every
+          product page links into the comparison and calculation tools so a spec turns into a
+          decision.
         </p>
       </div>
 

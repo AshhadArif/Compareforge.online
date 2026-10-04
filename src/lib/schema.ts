@@ -32,7 +32,9 @@ export function generateProductSchema(product: Smartphone): ProductSchema {
       availability:
         product.status === "available"
           ? "https://schema.org/InStock"
-          : "https://schema.org/PreOrder",
+          : product.status === "announced"
+            ? "https://schema.org/PreOrder"
+            : "https://schema.org/OutOfStock",
     };
   }
   return schema;

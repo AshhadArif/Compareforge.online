@@ -52,9 +52,9 @@ const methodology = [
 
 const faq = [
   {
-    question: "What does a product comparison tool compare?",
+    question: "Does the tool fill in any values for me?",
     answer:
-      "It lays two products' attributes out in a single table so you can see where they match and where they differ. For products we publish records for, the tool reads our sourced data; for everything else, this tool compares the specification values you enter yourself.",
+      "No. Category templates give attribute names only — nothing is prefilled. You type both sides' values yourself, and the tool labels each row higher, lower, identical, different or missing, then computes the numeric gap where both values parse as numbers.",
   },
   {
     question: "Which product categories are supported?",

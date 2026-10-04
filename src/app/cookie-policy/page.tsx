@@ -31,30 +31,33 @@ export default function CookiePolicyPage() {
         <div>
           <h2 className="text-lg font-semibold text-text mb-2">Cookies We Use</h2>
           <p>
-            CompareForge currently uses only essential cookies required for the
-            website to function. These may include:
+            CompareForge sets no cookies — no session cookie, no preference cookie, no analytics
+            cookie and no advertising cookie. The site is static, there is no login and there is no
+            saved state, so there is nothing for a cookie to carry.
           </p>
-          <ul className="list-disc list-inside mt-2 space-y-1">
-            <li>Session cookies for website functionality</li>
-            <li>Preference cookies to remember your settings</li>
-          </ul>
+          <p className="mt-2">
+            The tools do not use browser local storage or session storage either. Some calculators
+            and comparisons can put your entered values into the page URL so you can share or revisit
+            a result; those values travel inside the link itself and are not written to your browser.
+          </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-text mb-2">Third-Party Cookies</h2>
           <p>
-            Currently, CompareForge does not use third-party cookies. If analytics
-            or advertising services are added in the future, this policy will be
-            updated to disclose their cookie usage.
+            Currently, CompareForge does not use third-party cookies and loads no third-party
+            analytics, social widgets or advertising. If analytics or advertising services are added
+            in the future, this policy will be updated to disclose their cookie usage before they go
+            live.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-text mb-2">Managing Cookies</h2>
           <p>
-            You can control and manage cookies through your browser settings. Most
-            browsers allow you to block or delete cookies. Note that disabling
-            cookies may affect website functionality.
+            You can control and manage cookies through your browser settings, and most browsers let
+            you block or delete them site by site. Because CompareForge sets none, blocking cookies
+            does not change how this site works — the tools keep functioning exactly the same way.
           </p>
         </div>
 

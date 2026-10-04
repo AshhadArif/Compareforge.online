@@ -30,7 +30,7 @@ const sections = [
     heading: "Example",
     paragraphs: [
       "Your current phone is worth $350. A new one costs $999 with a $300 trade-in, and you would keep it 36 months. Net upgrade cost is $699 → $19.42 per month. Keeping spreads the $350 current value over 36 months → $9.72 per month.",
-      "Upgrading costs $9.70 more per month on this horizon. That is the price of the new device’s improvements — you decide whether they are worth about $10 a month.",
+      "Upgrading costs $9.69 more per month on this horizon. That is the price of the new device’s improvements — you decide whether they are worth about $10 a month.",
     ],
   },
   {

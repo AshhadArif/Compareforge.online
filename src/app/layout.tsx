@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   description:
     "CompareForge is an interactive comparison and decision-tools platform. Compare products side by side and decide with sourced data and clear explanations.",
   metadataBase: new URL("https://compareforge.online"),
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+  },
   // No default canonical here — a layout-level "/" would leak onto every page
   // that does not set its own (e.g. /about). Pages declare alternates.canonical;
   // the homepage sets its own in page.tsx.

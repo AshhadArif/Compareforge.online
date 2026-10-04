@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import DynamicNoIndex from "@/components/tools/DynamicNoIndex";
 import SpecComparison from "@/components/tools/SpecComparison";
 import CategoryComparisonTool from "@/components/tools/CategoryComparisonTool";
 import CompareHubLinks from "@/components/CompareHubLinks";
@@ -18,6 +19,7 @@ export default function CategoryHubPage({ hub }: { hub: CategoryHubConfig }) {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <DynamicNoIndex />
       <Breadcrumbs
         items={[{ label: "Comparisons", href: "/compare" }, { label: hub.h1 }]}
       />

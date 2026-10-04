@@ -1,13 +1,5 @@
-import {
-  CalcValues,
-  fail,
-  formatMoney,
-  formatNumber,
-  formatPercent,
-  num,
-  ok,
-  str,
-} from "./calc";
+import type { CalcValues } from "./calc";
+import { fail, formatMoney, formatNumber, formatPercent, num, ok, str } from "./calc";
 
 function requireFinite(values: CalcValues, ids: string[]): number[] | null {
   const out: number[] = [];
@@ -39,7 +31,7 @@ export function percentageDifferenceCompute(values: CalcValues) {
     steps: [
       { label: "Step 1 — absolute difference", expression: `|${formatNumber(a)} − ${formatNumber(b)}|`, result: formatNumber(absDiff) },
       { label: "Step 2 — average", expression: `(${formatNumber(a)} + ${formatNumber(b)}) ÷ 2`, result: formatNumber(average) },
-      { label: "Step 3 — percentage difference", expression: `${formatNumber(absDiff)} ÷ ${formatNumber(average)} × 100`, result: formatPercent(pct) },
+      { label: "Step 3 — percentage difference", expression: `${formatNumber(absDiff)} ÷ |${formatNumber(average)}| × 100`, result: formatPercent(pct) },
     ],
     interpretation: `${formatNumber(a)} and ${formatNumber(b)} differ by ${formatPercent(pct)} when measured against their average. This formula treats both values equally — neither is the baseline.`,
   });
@@ -55,10 +47,10 @@ export function percentageChangeCompute(values: CalcValues) {
   const pct = (change / Math.abs(original)) * 100;
   const direction = change === 0 ? "unchanged" : change > 0 ? "increased" : "decreased";
   return ok({
-    title: pct >= 0 ? "Percentage increase" : "Percentage decrease",
+    title: change === 0 ? "No change" : pct > 0 ? "Percentage increase" : "Percentage decrease",
     lines: [
       {
-        label: change >= 0 ? "Percentage increase" : "Percentage decrease",
+        label: change === 0 ? "Change" : change > 0 ? "Percentage increase" : "Percentage decrease",
         value: formatPercent(Math.abs(pct)),
         emphasis: "primary",
       },
@@ -69,7 +61,9 @@ export function percentageChangeCompute(values: CalcValues) {
       { label: "Step 1 — change", expression: `${formatNumber(newValue)} − ${formatNumber(original)}`, result: formatNumber(change) },
       { label: "Step 2 — percentage change", expression: `${formatNumber(change)} ÷ ${formatNumber(Math.abs(original))} × 100`, result: formatPercent(pct) },
     ],
-    interpretation: `The value ${direction} by ${formatPercent(Math.abs(pct))} from ${formatNumber(original)} to ${formatNumber(newValue)}.`,
+    interpretation: change === 0
+      ? `The new value is the same as the original — no change from ${formatNumber(original)}.`
+      : `The value ${direction} by ${formatPercent(Math.abs(pct))} from ${formatNumber(original)} to ${formatNumber(newValue)}.`,
   });
 }
 
@@ -118,7 +112,9 @@ export function priceDifferenceCompute(values: CalcValues) {
     interpretation:
       priceA === priceB
         ? `Both options cost ${formatMoney(priceA)}.`
-        : `${higher} is ${formatMoney(diff)} more expensive — ${pctVsCheaper != null ? `${formatPercent(pctVsCheaper)} above` : ""} the cheaper option (${formatMoney(cheaper)}).`,
+        : pctVsCheaper != null
+          ? `${higher} is ${formatMoney(diff)} more expensive — ${formatPercent(pctVsCheaper)} above the cheaper option (${formatMoney(cheaper)}).`
+          : `${higher} is ${formatMoney(diff)} more expensive than the cheaper option (${formatMoney(cheaper)}).`,
   });
 }
 
@@ -255,7 +251,7 @@ export function repairVsReplaceCompute(values: CalcValues) {
       { label: "Replacement cost per month", expression: `${formatMoney(replacementPrice)} ÷ ${formatNumber(newLifeMonths, 0)} months`, result: formatMoney(replacePerMonth) },
     ],
     interpretation: repairWins
-      ? `Repairing costs ${formatMoney(repairPerMonth)} per month of life versus ${formatMoney(replacePerMonth)} for a new one — about ${formatPercent((1 - ratio) * 100)} less per month.`
+      ? `Repairing costs ${formatMoney(repairPerMonth)} per month of life versus ${formatMoney(replacePerMonth)} for a new one${Number.isFinite(ratio) ? ` — about ${formatPercent((1 - ratio) * 100)} less per month` : ""}.`
       : `Replacing costs ${formatMoney(replacePerMonth)} per month of life versus ${formatMoney(repairPerMonth)} for the repair — the new item stretches further per dollar.`,
     warnings: [
       "Estimates only — lifespans you enter drive the result. Emotion, downtime, and warranty are not included.",
@@ -271,7 +267,8 @@ export function upgradeVsKeepCompute(values: CalcValues) {
   if (upgradePrice < 0) return fail("Upgrade price cannot be negative.");
   if (monthsToKeep <= 0) return fail("Months to keep must be greater than 0.");
   const currentValueRaw = num(values, "currentValue");
-  const currentValue = Number.isFinite(currentValueRaw) && currentValueRaw > 0 ? currentValueRaw : 0;
+  if (!Number.isFinite(currentValueRaw)) return fail("Enter what your current device is worth today — 0 if it has no resale value.");
+  const currentValue = Math.max(currentValueRaw, 0);
   const tradeInRaw = num(values, "tradeIn");
   const tradeIn = Number.isFinite(tradeInRaw) && tradeInRaw > 0 ? tradeInRaw : 0;
   const netCost = Math.max(upgradePrice - tradeIn, 0);
@@ -309,72 +306,8 @@ export function upgradeVsKeepCompute(values: CalcValues) {
 }
 
 // ---------- Total cost of ownership ----------
-interface TcoOptionInput {
-  name: string;
-  upfront: number;
-  recurring: number;
-  recurringPeriod: "month" | "year";
-  periodic: number;
-  periodicPer: number;
-}
-
-export function totalCostOwnershipCompute(values: CalcValues) {
-  const horizonRaw = num(values, "horizonYears");
-  const horizonYears = Number.isFinite(horizonRaw) && horizonRaw > 0 ? horizonRaw : 1;
-  const options: TcoOptionInput[] = [];
-  for (const key of ["a", "b", "c"] as const) {
-    const name = str(values, `name_${key}`).trim() || `Option ${key.toUpperCase()}`;
-    const upfront = num(values, `upfront_${key}`);
-    const recurring = num(values, `recurring_${key}`);
-    const periodic = num(values, `periodic_${key}`);
-    const periodicPer = num(values, `periodicPer_${key}`);
-    const hasAny =
-      (Number.isFinite(upfront) && upfront !== 0) ||
-      (Number.isFinite(recurring) && recurring !== 0) ||
-      (Number.isFinite(periodic) && periodic !== 0);
-    if (!hasAny && key === "c" && !str(values, "name_c").trim()) continue;
-    options.push({
-      name,
-      upfront: Number.isFinite(upfront) ? Math.max(upfront, 0) : 0,
-      recurring: Number.isFinite(recurring) ? Math.max(recurring, 0) : 0,
-      recurringPeriod: str(values, `recurringPeriod_${key}`) === "year" ? "year" : "month",
-      periodic: Number.isFinite(periodic) ? Math.max(periodic, 0) : 0,
-      periodicPer: Number.isFinite(periodicPer) && periodicPer > 0 ? periodicPer : 12,
-    });
-  }
-  if (options.length < 2) return fail("Enter costs for at least two options.");
-
-  const months = horizonYears * 12;
-  const results = options.map((o) => {
-    const recurringTotal =
-      o.recurringPeriod === "month" ? o.recurring * months : o.recurring * horizonYears;
-    const cycles = months / o.periodicPer;
-    const periodicTotal = o.periodic * cycles;
-    const total = o.upfront + recurringTotal + periodicTotal;
-    return { ...o, recurringTotal, periodicTotal, total, perMonth: total / months };
-  });
-  const ranked = [...results].sort((x, y) => x.total - y.total);
-  const cheapest = ranked[0];
-  const priciest = ranked[ranked.length - 1];
-  const gap = priciest.total - cheapest.total;
-  return ok({
-    title: `Total cost over ${formatNumber(horizonYears, 1)} year(s)`,
-    lines: results.map((r, i) => ({
-      label: r.name,
-      value: formatMoney(r.total),
-      emphasis: i === 0 ? undefined : undefined,
-      hint: `≈ ${formatMoney(r.perMonth)}/month`,
-    })),
-    steps: [
-      { label: "Time horizon", expression: `${formatNumber(horizonYears, 1)} year(s)`, result: `${formatNumber(months, 0)} months` },
-      { label: "Cheapest option", expression: ranked.map((r) => r.name).join(" vs "), result: `${cheapest.name} — ${formatMoney(cheapest.total)}` },
-    ],
-    interpretation: `${cheapest.name} is cheapest over the horizon at ${formatMoney(cheapest.total)}; ${priciest.name} costs ${formatMoney(gap)} more.`,
-    warnings: [
-      "Assumes costs stay constant over the horizon — price rises, discounts and switching costs are not modeled.",
-    ],
-  });
-}
+// Implemented in definitions.ts (CALCULATOR_DEFINITIONS) so the field list and the
+// compute logic live side by side. This module intentionally has no TCO compute.
 
 // ---------- Fit & clearance ----------
 export function fitClearanceCompute(values: CalcValues) {

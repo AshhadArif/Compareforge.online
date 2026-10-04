@@ -128,7 +128,9 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold text-primary">
+          <Link href="/" className="inline-flex items-center gap-2 text-xl font-bold text-primary">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.svg" alt="" width={26} height={26} className="h-[26px] w-[26px] shrink-0" />
             CompareForge
           </Link>
 

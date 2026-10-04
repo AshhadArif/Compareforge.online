@@ -72,7 +72,7 @@ const sections = [
     heading: "How the Shortlist Is Built",
     paragraphs: [
       "Each answer maps to weights on documented specification fields. Choosing “camera” raises the weight on camera hardware attributes; a budget answer constrains the pool to phones whose MSRP falls in your band (or flags the closest ones when nothing fits exactly).",
-      "Scoring happens in your browser against the phones in our database — currently 12 models across Apple, Samsung, Google, Motorola, OnePlus and Xiaomi. The result is ordered by fit for your answers, with the reasons each phone ranked where it did.",
+      "Scoring happens in your browser against the phones in our database — currently 22 listed models across eight brands (Apple, Asus, Google, Motorola, Nothing, OnePlus, Samsung and Xiaomi). The result is ordered by fit for your answers, with the reasons each phone ranked where it did.",
       "Missing attributes contribute neutrally: a phone with an unpublished charging speed is not penalized for it, and we do not substitute a guess to fill the gap.",
     ],
   },

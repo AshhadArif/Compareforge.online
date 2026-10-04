@@ -22,51 +22,59 @@ export default function PrivacyPolicyPage() {
         <div>
           <h2 className="text-lg font-semibold text-text mb-2">Information We Collect</h2>
           <p>
-            CompareForge is a content-based website. We do not require user accounts
-            or collect personal information for basic browsing.
+            CompareForge is a content-based website. We do not require user accounts and we do not
+            collect personal information while you browse.
           </p>
           <p className="mt-2">
-            When you contact us via our contact form, we collect the information you
-            provide (name, email, and message) solely to respond to your inquiry.
+            The site has no contact form and no account system. If you email us at
+            contact@compareforge.online, we receive whatever you choose to put in that email —
+            typically your email address and message — and we use it only to reply.
+          </p>
+          <p className="mt-2">
+            Every tool on this site (calculators, comparisons, checkers and matrices) runs entirely
+            in your browser. The numbers you enter are not sent to our servers, are not stored, and
+            are cleared when you close or refresh the page. Some tools can encode your inputs into
+            the page URL so you can share a result; those values travel inside the link you share.
           </p>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-text mb-2">Cookies</h2>
+          <h2 className="text-lg font-semibold text-text mb-2">Cookies and Local Storage</h2>
           <p>
-            CompareForge uses only essential cookies required for the website to
-            function. We do not use tracking cookies or advertising cookies at this
-            time.
+            CompareForge itself does not set cookies and does not write to browser local storage or
+            session storage. Your web host may record standard server logs (IP address, requested
+            URL, time, user agent) for security and reliability purposes.
           </p>
           <p className="mt-2">
-            If third-party services (such as analytics or advertising) are added in
-            the future, this policy will be updated to reflect their cookie usage.
+            If analytics or advertising services are added in the future, this policy will be
+            updated before they go live to describe exactly what they set and how you can control it.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-text mb-2">Third-Party Services</h2>
           <p>
-            Currently, CompareForge does not use third-party analytics or advertising
-            services. If such services are added, this policy will be updated
-            accordingly.
+            CompareForge does not currently embed third-party analytics, advertising, social
+            widgets, or external trackers. Fonts are self-hosted at build time, so loading a page
+            does not contact a third-party font provider. If that changes, this policy will be
+            updated accordingly.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-text mb-2">How We Use Information</h2>
           <p>
-            Information collected through contact forms is used solely to respond to
-            your inquiry. We do not sell, trade, or share personal information with
-            third parties.
+            Information you email us is used solely to respond to your message. We do not sell,
+            trade, or share personal information with third parties.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-text mb-2">Data Retention</h2>
           <p>
-            Contact form submissions are retained only as long as necessary to
-            respond to your inquiry and maintain a record of correspondence.
+            Emails you send us are kept only as long as needed to respond and to maintain a record
+            of the correspondence. Because the tools store nothing, there is no tool input data to
+            retain or delete.
           </p>
         </div>
 
