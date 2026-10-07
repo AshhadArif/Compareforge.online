@@ -20,6 +20,21 @@ const nextConfig = {
     : {
         async redirects() {
           return [
+            // Canonical host: www -> apex (mirrors .htaccess for static export).
+            // Keeps Google from recording https://www.compareforge.online/* as a
+            // separate, redirecting or non-indexed variant in Search Console.
+            {
+              source: "/",
+              has: [{ type: "host", value: "www\\.compareforge\\.online" }],
+              destination: "https://compareforge.online/",
+              permanent: true,
+            },
+            {
+              source: "/:path*",
+              has: [{ type: "host", value: "www\\.compareforge\\.online" }],
+              destination: "https://compareforge.online/:path*",
+              permanent: true,
+            },
             {
               source: "/comparisons",
               destination: "/compare",

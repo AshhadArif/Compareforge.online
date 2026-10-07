@@ -12,6 +12,23 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # ── Canonical host: one indexable URL only ───────────────────────────────
+  # Google Search Console reported "Page with redirect" / "Blocked by
+  # robots.txt" for http://www.compareforge.online/. The server used to
+  # 301 http://www -> https://www (a live 200 duplicate of the apex site),
+  # so the variant was crawled and recorded instead of collapsed.
+  # Target:  http://www. / https://www. / http://  ->  https://compareforge.online
+  # Combined first so the common http://www case lands on the apex in ONE hop.
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
   # Trailing slash on real pages: /compare/ -> /compare
   # Only fires when <page>.html exists, so no redirect loops on plain directories.
   RewriteCond %{REQUEST_URI} ^(.+)/$
