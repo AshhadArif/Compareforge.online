@@ -27,13 +27,12 @@ const failures = [];
 
 for (const file of files) {
   const html = await readFile(file, "utf8");
-  if (html.includes(CLIENT)) {
-    // Make sure the real <script> tag exists, not just a preload link.
-    if (html.includes(`<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${CLIENT}"`)) {
-      already += 1;
-      continue;
-    }
-    failures.push(`${path.relative(process.cwd(), file)}: client id present without <script> tag`);
+  const hasScriptTag = new RegExp(
+    `<script[^>]*src="https://pagead2\\.googlesyndication\\.com/pagead/js/adsbygoogle\\.js\\?client=${CLIENT}"[^>]*>\\s*</script>`
+  ).test(html);
+
+  if (hasScriptTag) {
+    already += 1;
     continue;
   }
   if (!html.includes("</head>")) {
