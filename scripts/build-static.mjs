@@ -17,4 +17,7 @@ if (!existsSync("out/index.html")) {
 const htaccess = readFileSync(".htaccess", "utf8").replace(/\r\n/g, "\n");
 writeFileSync("out/.htaccess", htaccess);
 
+const ads = spawnSync(process.execPath, ["scripts/inject-adsense.mjs"], { stdio: "inherit" });
+if (ads.status !== 0) process.exit(ads.status ?? 1);
+
 console.log("build:static: OK — deploy the CONTENTS of out/ (incl. .htaccess) to public_html");
