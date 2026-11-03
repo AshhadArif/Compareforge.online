@@ -4,6 +4,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ComparisonCard from "@/components/ComparisonCard";
 import { products, getProductBySlug } from "@/lib/products";
+import { getProductContext } from "@/lib/product-stats";
 import { comparisons } from "@/lib/comparisons";
 import { generateProductSEO, formatReleaseDate } from "@/lib/seo";
 import { generateProductSchema } from "@/lib/schema";
@@ -141,6 +142,56 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
         </section>
       )}
+
+      {/* Where it sits in the database */}
+      {(() => {
+        const context = getProductContext(product);
+        if (context.metrics.length === 0) return null;
+        return (
+          <section className="mb-12">
+            <h2 className="text-xl font-bold text-text mb-2">
+              Where it sits in this database
+            </h2>
+            <p className="text-sm text-text-secondary mb-4">
+              CompareForge tracks {context.count} phones. The median below is the middle value of
+              those records — our own database, not a market survey — so it shows how{" "}
+              {product.fullName} sits against the phones we actually publish, not against
+              everything on sale.
+            </p>
+            <div className="overflow-x-auto border border-border rounded-xl">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border bg-bg-secondary">
+                    <th className="text-left py-3 px-4 font-semibold text-text">Measure</th>
+                    <th className="text-left py-3 px-4 font-semibold text-text">
+                      {product.fullName}
+                    </th>
+                    <th className="text-left py-3 px-4 font-semibold text-text">
+                      Median of our {context.count} phones
+                    </th>
+                    <th className="text-left py-3 px-4 font-semibold text-text">Difference</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {context.metrics.map((m) => (
+                    <tr key={m.key} className="border-b border-border-light last:border-b-0">
+                      <td className="py-3 px-4 text-text-secondary">{m.label}</td>
+                      <td className="py-3 px-4 text-text font-medium">{m.formattedValue}</td>
+                      <td className="py-3 px-4 text-text-secondary">{m.formattedMedian}</td>
+                      <td className="py-3 px-4 text-text-secondary">{m.deltaText}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-text-secondary mt-3">
+              A figure above the median is not better by definition — a heavier phone may carry a
+              larger battery — but it tells you where this model sits among the records on this
+              site before you read the specification table.
+            </p>
+          </section>
+        );
+      })()}
 
       {/* Specifications */}
       <section className="mb-12">

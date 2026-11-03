@@ -57,6 +57,28 @@ export default function AboutPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-semibold text-text mb-3">How CompareForge Is Funded</h2>
+          <p>
+            CompareForge is funded by display advertising served through Google AdSense. That is
+            the only commercial relationship the site has with anyone.
+          </p>
+          <p className="mt-2">
+            We do not accept paid placements, sponsored pages or guest posts, we run no affiliate
+            links, and no manufacturer can buy a position in a comparison, a ranking or a
+            recommendation. Advertisements are kept separate from the tools and the comparison
+            tables, and they never change a specification value, a source or a conclusion.
+          </p>
+          <p className="mt-2">
+            Because the tools run entirely in your browser, your inputs stay on your device — see
+            the{" "}
+            <a href="/privacy-policy" className="text-primary hover:underline">
+              Privacy Policy
+            </a>{" "}
+            for exactly what is and is not collected.
+          </p>
+        </div>
+
+        <div>
           <h2 className="text-xl font-semibold text-text mb-3">How We Create Comparisons</h2>
           <p>
             Every comparison on CompareForge follows a consistent process:

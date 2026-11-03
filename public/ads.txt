@@ -1,0 +1,3 @@
+# ads.txt for https://compareforge.online
+# Authorised digital sellers — Google AdSense
+google.com, pub-4580359695314991, DIRECT, f08c47fec0942fa0

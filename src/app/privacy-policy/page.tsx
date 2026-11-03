@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
       <h1 className="text-3xl font-bold text-text mb-6">Privacy Policy</h1>
 
       <div className="space-y-6 text-text-secondary text-sm">
-        <p><em>Last updated: September 2026</em></p>
+        <p><em>Last updated: October 2026</em></p>
 
         <div>
           <h2 className="text-lg font-semibold text-text mb-2">Information We Collect</h2>
@@ -41,23 +41,82 @@ export default function PrivacyPolicyPage() {
         <div>
           <h2 className="text-lg font-semibold text-text mb-2">Cookies and Local Storage</h2>
           <p>
-            CompareForge itself does not set cookies and does not write to browser local storage or
-            session storage. Your web host may record standard server logs (IP address, requested
-            URL, time, user agent) for security and reliability purposes.
+            CompareForge itself does not set first-party cookies and does not write to browser
+            local storage or session storage. Your web host may record standard server logs
+            (IP address, requested URL, time, user agent) for security and reliability purposes.
           </p>
           <p className="mt-2">
-            If analytics or advertising services are added in the future, this policy will be
-            updated before they go live to describe exactly what they set and how you can control it.
+            Advertising cookies set by our advertising partner are separate from the above and are
+            described in the next section.
           </p>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-text mb-2">Third-Party Services</h2>
+          <h2 className="text-lg font-semibold text-text mb-2">Advertising and Third-Party Services</h2>
           <p>
-            CompareForge does not currently embed third-party analytics, advertising, social
-            widgets, or external trackers. Fonts are self-hosted at build time, so loading a page
-            does not contact a third-party font provider. If that changes, this policy will be
-            updated accordingly.
+            This site uses Google AdSense to display advertising. Google, as a third-party vendor,
+            uses cookies to serve ads on this site. Google&apos;s use of advertising cookies
+            (including the DoubleClick DART cookie) enables it and its partners to serve ads based
+            on prior visits to this website or to other websites.
+          </p>
+          <p className="mt-2">
+            You may opt out of personalised advertising by visiting{" "}
+            <a
+              href="https://adssettings.google.com"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-primary hover:underline"
+            >
+              Google Ads Settings
+            </a>
+            . You may also instruct some third-party vendors to stop using cookies for personalised
+            advertising at{" "}
+            <a
+              href="https://www.aboutads.info/choices/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-primary hover:underline"
+            >
+              www.aboutads.info/choices
+            </a>{" "}
+            or{" "}
+            <a
+              href="https://www.youronlinechoices.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-primary hover:underline"
+            >
+              www.youronlinechoices.com
+            </a>
+            .
+          </p>
+          <p className="mt-2">
+            Third parties may be placing and reading cookies on your browser, or using web beacons
+            or IP addresses to collect information as a result of ad serving on this website. For
+            more detail on how Google uses data when you use our partners&apos; sites or apps, see{" "}
+            <a
+              href="https://www.google.com/policies/privacy/partners/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-primary hover:underline"
+            >
+              How Google uses data when you use our partners&apos; sites or apps
+            </a>
+            . Google&apos;s own treatment of information is described in{" "}
+            <a
+              href="https://policies.google.com/technologies/ads"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-primary hover:underline"
+            >
+              Google&apos;s Advertising Technologies &amp; Privacy Policies
+            </a>
+            .
+          </p>
+          <p className="mt-2">
+            Fonts used on this site are self-hosted at build time, so loading a page does not
+            contact a third-party font provider. CompareForge does not embed third-party analytics,
+            social widgets or trackers beyond the advertising service described above.
           </p>
         </div>
 

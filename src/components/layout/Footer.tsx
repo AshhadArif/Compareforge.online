@@ -56,6 +56,7 @@ const footerSections = [
     title: "About",
     links: [
       { href: "/about", label: "About CompareForge" },
+      { href: "/site-updates", label: "Site Updates" },
       { href: "/contact", label: "Contact" },
       { href: "/report-an-error", label: "Report an Error" },
     ],
