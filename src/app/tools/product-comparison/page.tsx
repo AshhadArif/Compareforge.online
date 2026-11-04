@@ -66,6 +66,13 @@ const sections = [
     ],
   },
   {
+    heading: "Worked Example",
+    paragraphs: [
+      "Apple iPhone 15 against Samsung Galaxy S25 - both $799. The comparison surfaces the rows that actually differ: 60Hz against 120Hz, 3,349 mAh against 4,000 mAh, 6 GB against 12 GB of RAM, and a 10MP telephoto on the Galaxy where the iPhone has none - while price, IP68 rating and 15W wireless charging come back identical.",
+      "Each difference carries a significance rating and a one-line interpretation, so the table reads as an argument rather than a wall of numbers: at identical pricing, the Galaxy's 120Hz display, larger battery, extra RAM and telephoto camera are flagged as high-significance differences. The tool stops at the differences - whether they are worth taking is the decision it hands back to you.",
+    ],
+  },
+  {
     heading: "What the Tool Does Not Claim",
     paragraphs: [
       "This is a specification comparison, not a review. It does not rate photo quality, judge build materials by hand, or predict reliability — we do not run lab tests, and we will not present numbers we did not verify.",

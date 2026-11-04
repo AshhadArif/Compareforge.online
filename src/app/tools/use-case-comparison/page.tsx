@@ -30,6 +30,13 @@ const sections = [
     ],
   },
   {
+    heading: "Worked Example",
+    paragraphs: [
+      "Two briefs against two phones. A photography brief: Google Pixel 9 (50MP f/1.7 main camera, 4,700 mAh for long shooting days, IP68) against Samsung Galaxy S25 (50MP f/1.8 plus a 10MP telephoto for real optical reach). A gaming brief: OnePlus 13 (Snapdragon 8 Elite, 6,000 mAh, 120Hz LTPO panel, IP68/IP69) against the same Galaxy S25.",
+      "Each phone is scored against the priorities of that brief rather than against one overall ranking: the photography brief weights aperture, telephoto reach and battery endurance, while the gaming brief weights chipset, refresh rate and battery capacity. The same Galaxy S25 can therefore land differently in the two tables - which is the point. Use-case fit is what this tool measures, not quality in the abstract.",
+    ],
+  },
+  {
     heading: "Important Considerations",
     paragraphs: [
       "Only currently listed phones are ranked — discontinued models are excluded from the pool entirely, never shown as a fallback.",

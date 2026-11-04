@@ -30,6 +30,13 @@ const sections = [
     ],
   },
   {
+    heading: "Worked Example",
+    paragraphs: [
+      "Anchor: Apple iPhone 15 at $799. Among the cheaper phones in our database, the Samsung Galaxy A56 5G at $499 comes back as an alternative - $300 less, about 37% cheaper - with trade-off chips that state exactly what changes: a larger 6.7-inch display, a 5,000 mAh battery against 3,349 mAh, but a heavier 198 g body and a mid-range Exynos chipset instead of the A16 Bionic.",
+      "The Google Pixel 9a, also at $499, is closer on size (6.3 inches, 186 g) with a 5,100 mAh battery, while conceding 8 GB of RAM and 7.5 W wireless charging. Neither is automatically the right answer - the tool's job is to put the deltas in front of you so the trade-off you can live with is the one you pick, then open any pair in the Product Comparison for the full row-by-row view.",
+    ],
+  },
+  {
     heading: "Important Considerations",
     paragraphs: [
       "Prices are manufacturer suggested retail prices recorded in our database and verified on the dates shown on each product page — street prices fluctuate and may be lower.",

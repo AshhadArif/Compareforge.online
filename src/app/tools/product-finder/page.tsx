@@ -84,6 +84,13 @@ const sections = [
     ],
   },
   {
+    heading: "Worked Example",
+    paragraphs: [
+      "Budget $500, priority on display smoothness and battery, no interest in gaming. The shortlist that comes back includes the Samsung Galaxy A56 5G ($499: 6.7-inch 120Hz Super AMOLED, 5,000 mAh, IP67) and the Google Pixel 9a ($499: 6.3-inch 120Hz pOLED, 5,100 mAh, IP68) - both within budget and both meeting the refresh and battery requirements.",
+      "The reasons are stated per phone rather than as a bare score: which requirement each one satisfies and where it concedes (the A56 is heavier at 198 g; the Pixel 9a caps wireless charging at 7.5 W). From there the shortlist feeds directly into a comparison, so the final choice is made on rows rather than on a ranking number.",
+    ],
+  },
+  {
     heading: "What the Finder Will Not Do",
     paragraphs: [
       "It will not declare one phone best for everyone, and it will not invent test results to break ties. Fit scores come from published specifications already documented on our product pages; there is no hands-on testing behind them and no user-satisfaction data.",

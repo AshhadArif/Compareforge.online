@@ -30,6 +30,13 @@ const sections = [
     ],
   },
   {
+    heading: "Worked Example",
+    paragraphs: [
+      "Four recurring charges: streaming at $15.99 a month, cloud storage at $2.99 a month, a gym membership at $40 a month, and software billed at $99 a year ($8.25 a month once normalized). The monthly total is $67.23 and the annual total is $806.76 - the same money, stated two ways.",
+      "Sorted by annual cost, the gym is the largest single line at $480, about 59% of the total. Cancelling it cuts the annual figure to $326.76; cancelling the streaming service instead cuts it to $614.88. Seeing those two numbers side by side is usually the moment the decision makes itself.",
+    ],
+  },
+  {
     heading: "Important Considerations",
     paragraphs: [
       "The tool records what you enter — it does not connect to your accounts or verify prices. Accuracy depends on your transcription.",

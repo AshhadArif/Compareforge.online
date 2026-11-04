@@ -34,6 +34,13 @@ const sections = [
     ],
   },
   {
+    heading: "Worked Example",
+    paragraphs: [
+      "Put the Apple iPhone 15 and Samsung Galaxy S25 on the grid: a 6.1-inch 60Hz OLED against a 6.2-inch 120Hz AMOLED, 3,349 mAh against 4,000 mAh, 6 GB against 12 GB of RAM, and a 48MP f/1.6 main camera against 50MP f/1.8 with a 10MP telephoto alongside. Identical rows - $799, IP68, 15W wireless charging - are marked as the same.",
+      "The difference labels do the reading for you: higher, lower, larger, smaller or same, with significance attached. Where a specification is not published for one of the phones, the row stays blank and is labelled as missing rather than scored - which is why the rows that do compare can be trusted.",
+    ],
+  },
+  {
     heading: "Adding Your Own Specifications",
     paragraphs: [
       "The category templates are a starting point, not a limit. Add any row you need — port selection, warranty length, included accessories — and it joins the comparison with the same difference labelling.",

@@ -31,6 +31,14 @@ const sections = [
     ],
   },
   {
+    heading: "Worked Example",
+    paragraphs: [
+      "Three phones at the same $799 price, four criteria: battery of at least 4,500 mAh (weight 4), a 120Hz display (weight 3), weight at or below 170 g (weight 3), and price at or below $799 (weight 2).",
+      "Scores out of 5: Apple iPhone 15 (3,349 mAh, 60Hz, 171 g) gets 1, 1, 1, 5 = 20. Samsung Galaxy S25 (4,000 mAh, 120Hz, 162 g) gets 1, 5, 5, 5 = 44. Google Pixel 9 (4,700 mAh, 120Hz, 198 g) gets 5, 5, 1, 5 = 48. Against a maximum of 60, the fit scores are 33%, 73% and 80%.",
+      "The Pixel 9 leads by 4 points - a marginal result. It wins because battery was weighted highest; re-weight weight and refresh rate and the Galaxy S25 closes the gap. That is the correct reading: the output reflects your weights, not an objective ranking of the phones.",
+    ],
+  },
+  {
     heading: "Important Considerations",
     paragraphs: [
       "Garbage in, garbage out: the matrix is only as good as your scores. Where possible, replace opinion scores with facts (measured size, listed price) before scoring.",

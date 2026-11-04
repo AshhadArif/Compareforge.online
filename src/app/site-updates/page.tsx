@@ -19,6 +19,12 @@ interface Update {
 
 const updates: Update[] = [
   {
+    date: "4 November 2026",
+    title: "Deeper guides, five new explainer articles and worked examples on tools",
+    body:
+      "Expanded six existing guides with new sections - common mistakes, worked examples, comparison-against-a-group methods and pre-purchase checklists - and published five new articles on panel types, refresh rate, IP ratings, phone storage and camera specifications. Each new article is built on numbers from our own database rather than general claims. Ten tool pages gained a worked example with real figures, and guide pages now link their related tools and products as well as their related comparisons.",
+  },
+  {
     date: "25 October 2026",
     title: "Advertising disclosure, ads.txt and publisher identity",
     body:
@@ -86,6 +92,19 @@ export default function SiteUpdatesPage() {
           </Link>
           .
         </p>
+
+        <h2 className="text-xl font-semibold text-text pt-2">November 2026</h2>
+        <ul className="space-y-5">
+          {updates
+            .filter((u) => u.date.includes("November"))
+            .map((u) => (
+              <li key={u.date + u.title} className="border-l-2 border-border pl-4">
+                <p className="text-xs uppercase tracking-wide text-text-light">{u.date}</p>
+                <h3 className="text-base font-semibold text-text mt-1">{u.title}</h3>
+                <p className="mt-1">{u.body}</p>
+              </li>
+            ))}
+        </ul>
 
         <h2 className="text-xl font-semibold text-text pt-2">October 2026</h2>
         <ul className="space-y-5">

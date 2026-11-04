@@ -30,6 +30,13 @@ const sections = [
     ],
   },
   {
+    heading: "Worked Example",
+    paragraphs: [
+      "Two tiers for the same service: $9.99 per month, or $89 per year. Normalized, the annual plan costs $7.42 a month - about 26% less than paying monthly - and the tool shows both figures side by side with the annual totals ($119.88 against $89) so the saving is visible in both directions.",
+      "Add a third option that gates the features you need behind a higher tier and the comparison changes character: the cheapest normalized price only wins if it passes your feature gates. The tool keeps price and features in the same view so a cheaper plan that lacks a requirement is eliminated on features rather than celebrated on price.",
+    ],
+  },
+  {
     heading: "Important Considerations",
     paragraphs: [
       "Prices you enter are assumed accurate and current. We do not store or verify them — always confirm on the provider’s site before purchase.",

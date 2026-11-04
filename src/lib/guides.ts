@@ -12,6 +12,11 @@ import dimensionsGuide from "@/data/guides/understanding-product-dimensions.json
 import subscriptionPlansGuide from "@/data/guides/how-to-compare-subscription-plans.json";
 import decisionMatrixGuide from "@/data/guides/building-a-decision-matrix.json";
 import repairReplaceGuide from "@/data/guides/repair-or-replace-factors.json";
+import displayPanelGuide from "@/data/guides/oled-vs-mini-led-vs-qled.json";
+import refreshRateGuide from "@/data/guides/refresh-rate-explained.json";
+import ipRatingGuide from "@/data/guides/ip-ratings-explained.json";
+import storageGuide from "@/data/guides/phone-storage-guide.json";
+import cameraSpecsGuide from "@/data/guides/camera-specs-explained.json";
 
 export const guides: Guide[] = [
   foldableGuide as Guide,
@@ -26,6 +31,11 @@ export const guides: Guide[] = [
   subscriptionPlansGuide as Guide,
   decisionMatrixGuide as Guide,
   repairReplaceGuide as Guide,
+  displayPanelGuide as Guide,
+  refreshRateGuide as Guide,
+  ipRatingGuide as Guide,
+  storageGuide as Guide,
+  cameraSpecsGuide as Guide,
 ];
 
 export function getGuideBySlug(slug: string): Guide | undefined {

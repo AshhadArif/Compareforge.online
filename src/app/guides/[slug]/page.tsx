@@ -4,6 +4,8 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { guides, getGuideBySlug } from "@/lib/guides";
 import { getComparisonBySlug } from "@/lib/comparisons";
+import { getProductBySlug } from "@/lib/products";
+import { getToolByRoute } from "@/lib/tools";
 
 interface GuidePageProps {
   params: Promise<{ slug: string }>;
@@ -48,6 +50,16 @@ export default async function GuidePage({ params }: GuidePageProps) {
   const relatedComparisons = guide.relatedComparisonSlugs
     .map((s) => getComparisonBySlug(s))
     .filter((c): c is NonNullable<typeof c> => Boolean(c))
+    .slice(0, 4);
+
+  const relatedProducts = guide.relatedProductSlugs
+    .map((s) => getProductBySlug(s))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p))
+    .slice(0, 4);
+
+  const relatedTools = (guide.relatedToolRoutes ?? [])
+    .map((r) => getToolByRoute(r))
+    .filter((t): t is NonNullable<typeof t> => Boolean(t))
     .slice(0, 4);
 
   return (
@@ -128,7 +140,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
                 </div>
               );
             }
-            if (block.startsWith("- **")) {
+            if (block.startsWith("- ")) {
               const items = block.split("\n").filter((l) => l.startsWith("- "));
               return (
                 <ul key={i} className="my-4 space-y-2">
@@ -176,8 +188,8 @@ export default async function GuidePage({ params }: GuidePageProps) {
             headline: guide.title,
             description: guide.description,
             url: `https://compareforge.online/guides/${guide.slug}`,
-            datePublished: "2026-09-22",
-            dateModified: "2026-09-22",
+            datePublished: guide.publishedDate ?? "2026-09-22",
+            dateModified: guide.lastUpdated,
             publisher: {
               "@type": "Organization",
               name: "CompareForge",
@@ -202,6 +214,50 @@ export default async function GuidePage({ params }: GuidePageProps) {
                   {c.category}
                 </span>
                 <h3 className="font-semibold text-text mt-2 text-sm">{c.title}</h3>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Related Tools */}
+      {relatedTools.length > 0 && (
+        <section className="mt-10 pt-8 border-t border-border">
+          <h2 className="text-xl font-bold text-text mb-4">Related Tools</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {relatedTools.map((t) => (
+              <Link
+                key={t.tool_id}
+                href={t.route.replace(/\/$/, "")}
+                className="block bg-white border border-border rounded-xl p-4 hover:shadow-md transition-shadow"
+              >
+                <span className="text-xs font-medium text-accent bg-accent-light px-2 py-0.5 rounded-full">
+                  {t.type} tool
+                </span>
+                <h3 className="font-semibold text-text mt-2 text-sm">{t.name}</h3>
+                <p className="text-text-secondary text-xs mt-1 line-clamp-2">{t.problem}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Related Products */}
+      {relatedProducts.length > 0 && (
+        <section className="mt-10 pt-8 border-t border-border">
+          <h2 className="text-xl font-bold text-text mb-4">Related Products</h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {relatedProducts.map((p) => (
+              <Link
+                key={p.slug}
+                href={`/products/${p.slug}`}
+                className="block bg-white border border-border rounded-xl p-4 hover:shadow-md transition-shadow"
+              >
+                <span className="text-xs font-medium text-primary bg-primary-light px-2 py-0.5 rounded-full">
+                  {p.category}
+                </span>
+                <h3 className="font-semibold text-text mt-2 text-sm">{p.fullName}</h3>
+                <p className="text-text-secondary text-xs mt-1 line-clamp-2">{p.summary}</p>
               </Link>
             ))}
           </div>

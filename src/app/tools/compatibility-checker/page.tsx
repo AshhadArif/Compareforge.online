@@ -30,6 +30,13 @@ const sections = [
     ],
   },
   {
+    heading: "Worked Example",
+    paragraphs: [
+      "Question: does the Google Pixel 9 support eSIM? Its connectivity record lists \"Nano-SIM + eSIM\", so the verdict is Yes - with the reason quoted straight from the specification and a source note, not an opinion.",
+      "Question: does the Samsung Galaxy A16 5G support wireless charging? Its battery record carries no wireless charging figure, so the tool returns Not documented rather than guessing. That distinction matters: a blank means the specification was never published for that model, and treating it as \"no\" would be as wrong as treating it as \"yes\".",
+    ],
+  },
+  {
     heading: "Important Considerations",
     paragraphs: [
       "Compatibility here means specification-level support — it does not guarantee performance (a phone may support 45W charging yet ship without a 45W charger) or regional availability of services like eSIM from a particular carrier.",

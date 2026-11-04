@@ -30,6 +30,13 @@ const sections = [
     ],
   },
   {
+    heading: "Worked Example",
+    paragraphs: [
+      "Samsung Galaxy S25 at 146.9 x 70.5 x 7.2 mm and 162 g against OnePlus 13 at 162.9 x 76.5 x 8.5 mm and 213 g. The tool draws both outlines to scale and reports the gaps: 16 mm taller (about 11%), 6 mm wider (about 8.5%), 1.3 mm thicker (about 18%) and 51 g heavier (about 31%).",
+      "Scaled side by side, the width difference reads as a hairline while the weight difference does not - which is the point. The Galaxy fits pockets and one-handed reach that the OnePlus does not, and no single figure on either spec sheet says so until the two are placed next to each other.",
+    ],
+  },
+  {
     heading: "Important Considerations",
     paragraphs: [
       "Phone dimensions come from manufacturer specification records (sources and verification dates on each product page). Custom dimensions are yours — measure at the widest points.",

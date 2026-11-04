@@ -205,6 +205,10 @@ export interface Guide {
   tags: string[];
   relatedComparisonSlugs: string[];
   relatedProductSlugs: string[];
+  /** Tool routes (e.g. "/tools/unit-price-calculator") shown in the guide's Related Tools block. */
+  relatedToolRoutes?: string[];
+  /** Original publication date (YYYY-MM-DD). Falls back to the site's first publish date. */
+  publishedDate?: string;
   lastUpdated: string;
 }
 
