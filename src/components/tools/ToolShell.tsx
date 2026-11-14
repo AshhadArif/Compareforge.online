@@ -2,6 +2,8 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import RelatedTools from "@/components/tools/RelatedTools";
 import DynamicNoIndex from "@/components/tools/DynamicNoIndex";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import { ToolRegistryEntry } from "@/lib/tools";
 import { getGuideBySlug } from "@/lib/guides";
 
@@ -55,6 +57,9 @@ export default function ToolShell({
         </p>
         <h1 className="text-3xl sm:text-4xl font-bold text-text">{tool.name}</h1>
         <p className="mt-3 text-lg text-text-secondary">{intro}</p>
+        <div className="mt-4">
+          <AuthorByline kind="Tool" />
+        </div>
       </div>
 
       <div id="tool-ui" className="mb-10">
@@ -87,6 +92,8 @@ export default function ToolShell({
       </section>
 
       <RelatedTools currentToolId={tool.tool_id} />
+
+      <TrustNote variant="tool" />
 
       {relatedGuides.length > 0 ? (
         <section className="mt-10 max-w-3xl">

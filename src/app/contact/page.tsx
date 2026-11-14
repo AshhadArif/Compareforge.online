@@ -105,6 +105,103 @@ export default function ContactPage() {
             </div>
           </dl>
         </div>
+
+        <div>
+          <h2 className="text-xl font-bold text-text mb-4">What to Expect After Writing</h2>
+          <div className="space-y-4 text-sm text-text-secondary">
+            <p>
+              Email reaches the same person who maintains the site — there is no support desk
+              and no automated reply. We aim to respond within five business days; error reports
+              that include a working page URL are usually checked sooner, because the URL points
+              straight at the record and its source list.
+            </p>
+            <p>
+              If a report results in a correction, the affected record is updated, its
+              last-verified date is refreshed once the whole page has been re-checked, and the
+              change is logged publicly on the{" "}
+              <a href="/site-updates" className="text-primary hover:underline">
+                Site Updates
+              </a>{" "}
+              page. If we decide not to change something, we will say why — usually because the
+              value is already sourced correctly, or because the request would mean inventing
+              data the methodology forbids us from inventing.
+            </p>
+            <p>
+              For privacy questions, the{" "}
+              <a href="/privacy-policy" className="text-primary hover:underline">
+                Privacy Policy
+              </a>{" "}
+              explains what email correspondence is kept and for how long. For questions about
+              how a number got on a page, the{" "}
+              <a href="/methodology" className="text-primary hover:underline">
+                Methodology
+              </a>{" "}
+              page documents the sourcing rules; if a specific value is unclear, quote the page
+              URL and we will walk through the source with you.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-bold text-text mb-4">Other Ways to Reach the Site</h2>
+          <dl className="space-y-4">
+            <div>
+              <dt className="font-semibold text-text">Wrong data on a product or comparison page</dt>
+              <dd className="text-sm text-text-secondary mt-1">
+                Use the dedicated{" "}
+                <a href="/report-an-error" className="text-primary hover:underline">
+                  Report an Error
+                </a>{" "}
+                channel — it collects the page URL, the field, and the corrective source in one
+                message, which is faster than a general enquiry.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-text">A tool returned a result you think is wrong</dt>
+              <dd className="text-sm text-text-secondary mt-1">
+                Include the tool URL and every input you entered. Each tool page publishes its
+                formula in the Methodology section, so a mismatch between your hand calculation
+                and the tool can usually be reproduced and fixed in one pass.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-text">Legal or rights questions</dt>
+              <dd className="text-sm text-text-secondary mt-1">
+                Write with “Legal” in the subject line. Trademark and copyright questions are
+                handled against the terms on the{" "}
+                <a href="/terms" className="text-primary hover:underline">
+                  Terms of Service
+                </a>{" "}
+                page; advertising and privacy questions are covered by the{" "}
+                <a href="/privacy-policy" className="text-primary hover:underline">
+                  Privacy Policy
+                </a>
+                .
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+        <div className="bg-bg-secondary rounded-xl p-6">
+          <h2 className="font-semibold text-text mb-3">What We Do Not Answer</h2>
+          <ul className="text-sm text-text-secondary space-y-2">
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-0.5">•</span>
+              “Which phone should I buy?” — we do not give personal recommendations; use the
+              Product Finder or Decision Matrix tools with your own weights instead.
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-0.5">•</span>
+              Requests to change a specification to something we cannot source — missing values
+              stay missing rather than being filled with estimates.
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-0.5">•</span>
+              Paid placements, guest posts, sponsored comparisons, or link exchanges — see the
+              About page for the funding policy.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

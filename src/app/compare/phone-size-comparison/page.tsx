@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import DimensionComparison from "@/components/tools/DimensionComparison";
 import ProductCard from "@/components/ProductCard";
 import CompareHubLinks from "@/components/CompareHubLinks";
@@ -86,6 +88,9 @@ export default function PhoneSizeComparisonPage() {
           Compare the physical size of any two phones — height, width, thickness and
           weight — with a to-scale drawing and the percentage difference on every axis.
         </p>
+        <div className="mt-4">
+          <AuthorByline kind="Size comparison" />
+        </div>
       </div>
 
       <section className="mb-12">
@@ -246,6 +251,8 @@ export default function PhoneSizeComparisonPage() {
           for the full process.
         </p>
       </section>
+
+      <TrustNote variant="comparison" />
 
       <script
         type="application/ld+json"

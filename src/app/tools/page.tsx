@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import ToolsDirectory from "@/components/tools/ToolsDirectory";
 import {
   getBuiltTools,
@@ -83,6 +85,9 @@ export default function ToolsHubPage() {
           fit and compatibility, and decide with clarity — backed by sourced data and
           plain-language explanations.
         </p>
+        <div className="mt-4 flex justify-center">
+          <AuthorByline kind="Tools index" />
+        </div>
       </div>
 
       <div className="mb-12">
@@ -169,6 +174,8 @@ export default function ToolsHubPage() {
           ))}
         </div>
       </section>
+
+      <TrustNote variant="tool" />
 
       <script
         type="application/ld+json"

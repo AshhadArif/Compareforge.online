@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import GuideCard from "@/components/GuideCard";
 import { guides } from "@/lib/guides";
 
@@ -44,6 +46,23 @@ export default function GuidesPage() {
           that applies the idea to real products — so you can move from “what does this spec mean?”
           to “which of these two is the better buy” without leaving the site.
         </p>
+        <p className="mt-2 text-sm text-text-secondary max-w-3xl">
+          All guides are written and reviewed by{" "}
+          <a href="/about" className="text-primary hover:underline">
+            Fahad
+          </a>
+          , CompareForge&apos;s founder and editor. Where a guide uses numbers, they come from
+          records in our own database with published sources — not manufacturer marketing copy.
+          We do not run lab tests; we structure and explain verified specifications, and we say
+          so. The sourcing rules are on the{" "}
+          <a href="/methodology" className="text-primary hover:underline">
+            Methodology page
+          </a>
+          .
+        </p>
+        <div className="mt-4">
+          <AuthorByline kind="Guides index" />
+        </div>
       </div>
 
       <h2 className="text-xl font-bold text-text mb-4">All Research Guides</h2>
@@ -58,6 +77,8 @@ export default function GuidesPage() {
           />
         ))}
       </div>
+
+      <TrustNote variant="guide" />
     </div>
   );
 }

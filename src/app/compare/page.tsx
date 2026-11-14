@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import ComparisonCard from "@/components/ComparisonCard";
 import SpecComparison from "@/components/tools/SpecComparison";
 import CompareHubLinks from "@/components/CompareHubLinks";
@@ -85,6 +87,9 @@ export default function CompareHubPage() {
           purchase — two at a time, with every difference labelled and no verdict handed
           down.
         </p>
+        <div className="mt-4">
+          <AuthorByline kind="Comparison hub" />
+        </div>
         <p className="mt-3 text-text-secondary">
           Use the tool below for any category, or go straight to a category that has
           published records:{" "}
@@ -401,6 +406,8 @@ export default function CompareHubPage() {
           ))}
         </div>
       </section>
+
+      <TrustNote variant="comparison" />
 
       <script
         type="application/ld+json"

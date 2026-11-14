@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import ProductCard from "@/components/ProductCard";
 import { products, brands } from "@/lib/products";
 import Link from "next/link";
@@ -44,6 +46,9 @@ export default function ProductsPage() {
           product page links into the comparison and calculation tools so a spec turns into a
           decision.
         </p>
+        <div className="mt-4">
+          <AuthorByline kind="Database index" />
+        </div>
       </div>
 
       {/* Brand filter */}
@@ -121,6 +126,8 @@ export default function ProductsPage() {
           </Link>
         </div>
       </div>
+
+      <TrustNote variant="product" />
     </div>
   );
 }

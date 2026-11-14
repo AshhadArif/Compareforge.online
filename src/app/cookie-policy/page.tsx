@@ -104,6 +104,50 @@ export default function CookiePolicyPage() {
             comparison tools work — they keep functioning exactly the same way, because none of
             their calculations depend on cookies.
           </p>
+          <p className="mt-2">
+            Because CompareForge itself sets no first-party cookies, clearing cookies for this site
+            removes only whatever third-party advertising cookies your browser accepted. Clearing
+            them will not sign you out of anything (there is no account), will not reset saved
+            tool inputs (there are none — tool state lives in the page URL only when you choose to
+            share it), and will not affect how specifications or comparisons load.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-lg font-semibold text-text mb-2">Cookies Set by Advertising</h2>
+          <p>
+            When Google AdSense serves an advertisement on this page, Google may set or read
+            cookies on your device to select which ad to show, cap how often the same ad appears,
+            and measure whether an ad was displayed or clicked. These cookies are Google&apos;s, not
+            ours: CompareForge does not receive the contents of those cookies, does not combine
+            them with anything you entered into a tool, and cannot use them to identify you across
+            sites.
+          </p>
+          <p className="mt-2">
+            Google&apos;s advertising cookies fall into two broad groups — personalised advertising
+            (based on prior visits to this and other sites) and non-personalised (based on the
+            page you are currently viewing, without building a profile). Your choice in Google
+            Ads Settings and the industry opt-out pages linked above controls which group applies
+            to you. Opting out of personalised advertising does not remove ads; it removes the
+            profile that selects them.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-lg font-semibold text-text mb-2">Cookies and This Policy</h2>
+          <p>
+            This policy covers cookies set on compareforge.online. It does not cover destinations
+            you reach by following an external link — manufacturer pages, retailers, Google
+            Ads Settings and the opt-out sites each run their own cookie practices under their
+            own policies. Once you leave this site, our policy no longer describes what happens
+            in your browser.
+          </p>
+          <p className="mt-2">
+            If our own practices change — for example, if the site ever sets a first-party
+            preference cookie — this page will be updated and the date below revised, and the
+            change will also be recorded on the Site Updates page so returning visitors can see
+            it without re-reading this document.
+          </p>
         </div>
 
         <div>

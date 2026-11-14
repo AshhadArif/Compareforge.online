@@ -57,6 +57,58 @@ export default function AboutPage() {
         </div>
 
         <div>
+          <h2 className="text-xl font-semibold text-text mb-3">The Experience Behind the Data</h2>
+          <p>
+            CompareForge is not a copy of a spec aggregator: it is a database someone maintains by
+            hand. Every record on this site was entered, cross-checked against a manufacturer page
+            or a named independent source, and given a verification date — and when a later check
+            disagrees with an earlier one, the record is corrected and the change is logged on the
+            Site Updates page.
+          </p>
+          <p className="mt-2">
+            That ongoing work shows up in the content itself. Product pages compare each model
+            against medians of the phones we actually publish, so a “large battery” claim is
+            tested against our own table rather than repeated from a press release. Tool pages carry
+            worked examples built from those same records. Guides that mention numbers use figures
+            you can open and verify from a link on the same page.
+          </p>
+          <p className="mt-2">
+            We also know the limits of that experience from the inside: spec sheets contain errors,
+            prices move between checks, and a field that looked complete last month can turn out to
+            be an estimate at the source. The reporting channel and the correction log exist
+            because we have had to fix those things ourselves.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold text-text mb-3">How Expertise Shows Up Here</h2>
+          <p>
+            Expertise on CompareForge means knowing which numbers can be compared and which cannot —
+            and publishing the rule when the answer is “cannot”. Concretely:
+          </p>
+          <ul className="list-disc list-inside mt-2 space-y-1">
+            <li>
+              Every calculator publishes its exact formula so the result can be reproduced by hand
+            </li>
+            <li>
+              Rankings state their weights; a close score is reported as close rather than forced
+              into a winner
+            </li>
+            <li>
+              Missing values stay missing — “not verified” is a published state, not a failure to
+              fill a cell
+            </li>
+            <li>
+              Median and “closest phone” statements are scoped to this database, not dressed up as
+              market research
+            </li>
+            <li>
+              The Methodology page documents sourcing, verification and correction rules in full
+            </li>
+          </ul>
+        </div>
+
+        <div>
           <h2 className="text-xl font-semibold text-text mb-3">How CompareForge Is Funded</h2>
           <p>
             CompareForge is funded by display advertising served through Google AdSense. That is
@@ -127,6 +179,46 @@ export default function AboutPage() {
             </a>{" "}
             page. We review corrections promptly and update content when errors are
             found.
+          </p>
+          <p className="mt-2">
+            Confirmed corrections are logged publicly on the{" "}
+            <a href="/site-updates" className="text-primary hover:underline">
+              Site Updates
+            </a>{" "}
+            page, which records what changed and when. We do not silently edit published
+            figures: when a specification, price or status moves, the record&apos;s
+            last-verified date is refreshed only after the whole page has been re-checked
+            against its sources — not because a single field changed.
+          </p>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold text-text mb-3">What Is on This Site</h2>
+          <p>
+            CompareForge publishes three kinds of pages, all built on the same sourced
+            records:
+          </p>
+          <ul className="list-disc list-inside mt-2 space-y-1">
+            <li>
+              <strong className="text-text">Product records</strong> — full specification
+              pages with sources, verification dates, pricing variants, and a median
+              table showing where the model sits among the phones we publish
+            </li>
+            <li>
+              <strong className="text-text">Side-by-side comparisons</strong> — aligned
+              fields from two or more records, with the difference and its significance
+              marked, and “Not verified” where a source does not confirm a value
+            </li>
+            <li>
+              <strong className="text-text">Tools and guides</strong> — calculators with
+              published formulas, rule-based checkers with stated thresholds, and
+              explainer articles whose examples use numbers from our own database
+            </li>
+          </ul>
+          <p className="mt-2">
+            The Methodology page documents how each of those is sourced and verified; the
+            Disclaimer states what the data is not (live pricing, lab test results,
+            professional advice).
           </p>
         </div>
 

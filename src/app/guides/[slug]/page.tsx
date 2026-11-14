@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import { guides, getGuideBySlug } from "@/lib/guides";
 import { getComparisonBySlug } from "@/lib/comparisons";
 import { getProductBySlug } from "@/lib/products";
 import { getToolByRoute } from "@/lib/tools";
+import { generateArticleSchema } from "@/lib/schema";
 
 interface GuidePageProps {
   params: Promise<{ slug: string }>;
@@ -80,6 +83,13 @@ export default async function GuidePage({ params }: GuidePageProps) {
             {guide.title}
           </h1>
           <p className="mt-3 text-text-secondary">{guide.description}</p>
+          <div className="mt-4">
+            <AuthorByline
+              kind="Guide"
+              published={guide.publishedDate ?? "2026-09-22"}
+              modified={guide.lastUpdated}
+            />
+          </div>
         </header>
 
         <div className="prose prose-gray max-w-none">
@@ -176,26 +186,23 @@ export default async function GuidePage({ params }: GuidePageProps) {
             return null;
           })}
         </div>
+
+        <TrustNote variant="guide" updated={guide.lastUpdated} />
       </article>
 
-      {/* Article structured data */}
+      {/* Article structured data — with named author and reviewer */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: guide.title,
-            description: guide.description,
-            url: `https://compareforge.online/guides/${guide.slug}`,
-            datePublished: guide.publishedDate ?? "2026-09-22",
-            dateModified: guide.lastUpdated,
-            publisher: {
-              "@type": "Organization",
-              name: "CompareForge",
-              url: "https://compareforge.online",
-            },
-          }),
+          __html: JSON.stringify(
+            generateArticleSchema({
+              title: guide.title,
+              description: guide.description,
+              url: `/guides/${guide.slug}`,
+              datePublished: guide.publishedDate ?? "2026-09-22",
+              dateModified: guide.lastUpdated,
+            })
+          ),
         }}
       />
 

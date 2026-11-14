@@ -357,8 +357,59 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Trust strip — E-E-A-T signals on the landing page */}
+      <section className="py-12 bg-bg-secondary border-t border-border" aria-label="How CompareForge works">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div>
+              <h2 className="font-semibold text-text mb-2">Edited by a named person</h2>
+              <p className="text-sm text-text-secondary">
+                Every guide, comparison and product record carries a byline for{" "}
+                <Link href="/about" className="text-primary hover:underline">
+                  Fahad
+                </Link>
+                , founder and editor — not an anonymous content farm.
+              </p>
+            </div>
+            <div>
+              <h2 className="font-semibold text-text mb-2">Sources you can open</h2>
+              <p className="text-sm text-text-secondary">
+                Product pages list the manufacturer or independent page each figure came from,
+                with an access date and a confidence flag.{" "}
+                <Link href="/methodology" className="text-primary hover:underline">
+                  Our methodology
+                </Link>{" "}
+                states the rules.
+              </p>
+            </div>
+            <div>
+              <h2 className="font-semibold text-text mb-2">No invented numbers</h2>
+              <p className="text-sm text-text-secondary">
+                We do not run lab tests, assign star ratings, or fill missing specs with
+                estimates. Unverified values show as “Not verified” — an honest blank beats a
+                confident guess.
+              </p>
+            </div>
+            <div>
+              <h2 className="font-semibold text-text mb-2">Corrections in public</h2>
+              <p className="text-sm text-text-secondary">
+                Found a wrong figure?{" "}
+                <Link href="/report-an-error" className="text-primary hover:underline">
+                  Report it
+                </Link>
+                . Confirmed fixes are logged on{" "}
+                <Link href="/site-updates" className="text-primary hover:underline">
+                  Site Updates
+                </Link>{" "}
+                with the date they went live.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="py-16 bg-bg-secondary">
+      <section className="py-16 bg-bg-secondary border-t border-border">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-text text-center mb-10">
             Frequently Asked Questions

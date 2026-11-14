@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import ComparisonTable from "@/components/ComparisonTable";
 import ComparisonCard from "@/components/ComparisonCard";
 import ProductSelectorSection from "@/components/ProductSelectorSection";
@@ -98,6 +100,9 @@ export default function BrandVsBrandPage({ config }: { config: BrandVsBrandConfi
         <h1 className="text-3xl sm:text-4xl font-bold text-text">{config.h1}</h1>
         <p className="mt-3 text-lg text-text-secondary">{config.intro}</p>
         <p className="mt-2 text-sm text-text-secondary">{config.aliasNote}</p>
+        <div className="mt-4">
+          <AuthorByline kind="Brand comparison" />
+        </div>
       </div>
 
       <section className="mb-12">
@@ -303,6 +308,8 @@ export default function BrandVsBrandPage({ config }: { config: BrandVsBrandConfi
           .
         </p>
       </section>
+
+      <TrustNote variant="comparison" />
 
       <script
         type="application/ld+json"

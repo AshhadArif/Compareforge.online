@@ -1,4 +1,5 @@
 import { Smartphone } from "@/data/types";
+import { editorPersonSchema, organizationSchema } from "@/lib/editorial";
 
 export interface ProductSchema {
   "@context": string;
@@ -37,7 +38,16 @@ export function generateProductSchema(product: Smartphone): ProductSchema {
             : "https://schema.org/OutOfStock",
     };
   }
-  return schema;
+  // Editorial responsibility: who assembled and verified this record.
+  return {
+    ...schema,
+    author: editorPersonSchema(),
+    publisher: organizationSchema(),
+    dateModified: product.lastUpdated,
+    ...(product.lastVerified
+      ? { datePublished: product.lastVerified }
+      : {}),
+  } as ProductSchema;
 }
 
 export function generateBreadcrumbSchema(
@@ -74,6 +84,7 @@ export function generateArticleSchema(input: {
   description: string;
   url: string;
   dateModified: string;
+  datePublished?: string;
 }): object {
   return {
     "@context": "https://schema.org",
@@ -82,11 +93,31 @@ export function generateArticleSchema(input: {
     description: input.description,
     url: `https://compareforge.online${input.url}`,
     dateModified: input.dateModified,
-    publisher: {
-      "@type": "Organization",
-      name: "CompareForge",
-      url: "https://compareforge.online",
-    },
+    ...(input.datePublished ? { datePublished: input.datePublished } : {}),
+    author: editorPersonSchema(),
+    publisher: organizationSchema(),
+    // Explicit review signal: the named editor is responsible for accuracy.
+    reviewedBy: editorPersonSchema(),
+  };
+}
+
+/** Organization + WebSite schema for the site-wide head injection. */
+export function generateSiteSchema(): object {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      organizationSchema(),
+      {
+        "@type": "WebSite",
+        name: "CompareForge",
+        url: "https://compareforge.online",
+        description:
+          "Interactive comparison and decision tools with sourced data and plain-language explanations.",
+        publisher: organizationSchema(),
+        inLanguage: "en",
+      },
+      editorPersonSchema(),
+    ],
   };
 }
 

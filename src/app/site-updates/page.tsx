@@ -19,6 +19,18 @@ interface Update {
 
 const updates: Update[] = [
   {
+    date: "14 November 2026",
+    title: "E-E-A-T pass: named bylines, trust notes and editorial schema on every content page",
+    body:
+      "Added a visible byline (written and reviewed by Fahad, founder and editor) to guides, product records, comparisons and tools, with published/updated dates and links to the methodology and error-report pages. Each content type gained a trust note explaining how the page is assembled from sourced records — first-hand experience of maintaining the database, not a claim of hands-on testing. Article and Product structured data now carry author, publisher and reviewedBy fields; the site head publishes Organization, WebSite and Person schema sitewide. The About page gained Experience and Expertise sections, the Methodology page defines what experience means here, and the homepage now shows a four-point trust strip.",
+  },
+  {
+    date: "14 November 2026",
+    title: "Full low-value-content pass: product editorial, utility pages and guide depth",
+    body:
+      "After a second policy review, audited every generated page for thin and near-duplicate content. Each of the 47 product pages gained a unique Overview plus Display, Performance, Camera, Battery, Software, Design, Storage and Trade-offs sections built only from that record's own fields and medians of our database, a price-ladder commentary, a category position note, and a Closest phones section linking three neighbouring records with real deltas. Product pages now average about 1,250 words (previously about 500) with no page under 800. Expanded Report an Error, Disclaimer, Contact, Terms and Cookie Policy with process detail and scope statements, and added new data-anchored sections to six guides (spec glossary, unit pricing, compatibility checks, repair-or-replace, use-case selection and spec comparison method).",
+  },
+  {
     date: "4 November 2026",
     title: "Deeper guides, five new explainer articles and worked examples on tools",
     body:

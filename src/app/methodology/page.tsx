@@ -67,6 +67,14 @@ const principles = [
     heading: "Corrections are part of the process",
     paragraphs: [
       "Spec sheets contain errors and phones get revised quietly. If you spot a value that disagrees with the manufacturer’s page, use the report link on any product page — corrections are verified against the source before the record is updated.",
+      "Confirmed corrections are listed on the Site Updates page with the date they went live. We do not silently rewrite published figures: the changelog is the public trail, and a record’s verification date only moves forward when the whole page has been re-checked — not because a single cell changed.",
+    ],
+  },
+  {
+    heading: "What first-hand experience means on this site",
+    paragraphs: [
+      "We do not claim hands-on testing we have not done. The first-hand experience here is the work of maintaining the database itself: entering records, re-checking them against sources, running every tool against the same records readers see, and discovering through the correction process where published specs disagree with each other.",
+      "That is why examples on tool pages use figures from our own tables, why median statements are scoped to “our database” rather than the market, and why every guide that mentions a number links back to a page where you can verify it. The experience is in the curation — and it is visible in the dates, sources and changelog on every page.",
     ],
   },
 ];
@@ -113,8 +121,13 @@ export default function MethodologyPage() {
           and the rules that keep our tools honest.
         </p>
         <p className="mt-3 text-text-secondary">
-          CompareForge is published and edited by Fahad, who reviews each source and signs off
-          on every record and tool page published on this site.
+          CompareForge is published and edited by{" "}
+          <a href="/about" className="text-primary font-medium hover:underline">
+            Fahad
+          </a>
+          , who reviews each source and signs off on every record and tool page published on
+          this site. Every page carries his byline and a link back here, so you can check the
+          rules behind any number without leaving the content you are reading.
         </p>
       </div>
 

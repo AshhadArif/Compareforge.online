@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import ComparisonCard from "@/components/ComparisonCard";
 import UseCaseComparison from "@/components/tools/UseCaseComparison";
 import ProductSelectorSection from "@/components/ProductSelectorSection";
@@ -147,6 +149,9 @@ export default function BestPhonesPage() {
           weighted tool that shows its own criteria, or read a roundup with the method
           stated up front.
         </p>
+        <div className="mt-4">
+          <AuthorByline kind="Rankings" />
+        </div>
         <div className="mt-4 flex flex-wrap gap-4 text-sm font-medium">
           <a href="#rank" className="text-primary hover:underline">
             Rank by specification ↓
@@ -292,6 +297,8 @@ export default function BestPhonesPage() {
           ))}
         </div>
       </section>
+
+      <TrustNote variant="comparison" />
 
       <script
         type="application/ld+json"

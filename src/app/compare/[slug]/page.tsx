@@ -5,6 +5,8 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ComparisonTable from "@/components/ComparisonTable";
 import ProductCard from "@/components/ProductCard";
 import ComparisonCard from "@/components/ComparisonCard";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import { comparisons, getComparisonBySlug, getRelatedComparisons } from "@/lib/comparisons";
 import { getProductById } from "@/lib/products";
 import { getGuideBySlug } from "@/lib/guides";
@@ -88,7 +90,9 @@ export default async function ComparePage({ params }: ComparePageProps) {
       />
 
       <h1 className="text-3xl sm:text-4xl font-bold text-text mb-4">{comparison.title}</h1>
-      <p className="text-text-secondary mb-8 max-w-3xl">{comparison.intro}</p>
+      <p className="text-text-secondary mb-4 max-w-3xl">{comparison.intro}</p>
+      <AuthorByline kind="Comparison" modified={comparison.lastUpdated} />
+      <div className="mb-8" />
 
       {/* Product cards */}
       {comparisonProducts.length >= 2 && (
@@ -283,6 +287,8 @@ export default async function ComparePage({ params }: ComparePageProps) {
           </div>
         </section>
       )}
+
+      <TrustNote variant="comparison" updated={comparison.lastUpdated} />
 
       {/* Structured data */}
       <script

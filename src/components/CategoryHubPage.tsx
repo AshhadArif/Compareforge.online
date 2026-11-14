@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import DynamicNoIndex from "@/components/tools/DynamicNoIndex";
 import SpecComparison from "@/components/tools/SpecComparison";
 import CategoryComparisonTool from "@/components/tools/CategoryComparisonTool";
@@ -27,6 +29,9 @@ export default function CategoryHubPage({ hub }: { hub: CategoryHubConfig }) {
       <div className="max-w-3xl mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold text-text">{hub.h1}</h1>
         <p className="mt-3 text-lg text-text-secondary">{hub.intro}</p>
+        <div className="mt-4">
+          <AuthorByline kind="Category comparison" />
+        </div>
       </div>
 
       <section className="mb-12">
@@ -206,6 +211,8 @@ export default function CategoryHubPage({ hub }: { hub: CategoryHubConfig }) {
           </Link>
         </p>
       </section>
+
+      <TrustNote variant="comparison" />
 
       <script
         type="application/ld+json"

@@ -3,11 +3,28 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ComparisonCard from "@/components/ComparisonCard";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import { products, getProductBySlug } from "@/lib/products";
 import { getProductContext } from "@/lib/product-stats";
+import { getProductEditorial } from "@/lib/product-editorial";
 import { comparisons } from "@/lib/comparisons";
 import { generateProductSEO, formatReleaseDate } from "@/lib/seo";
 import { generateProductSchema } from "@/lib/schema";
+
+function EditorialBlock({ title, paragraphs }: { title: string; paragraphs: string[] }) {
+  if (paragraphs.length === 0) return null;
+  return (
+    <div>
+      <h3 className="font-semibold text-text mb-2">{title}</h3>
+      {paragraphs.map((p, i) => (
+        <p key={i} className="text-sm text-text-secondary leading-relaxed mb-2 last:mb-0">
+          {p}
+        </p>
+      ))}
+    </div>
+  );
+}
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
@@ -72,6 +89,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
     .slice(0, 4);
 
   const productSchema = generateProductSchema(product);
+  const editorial = getProductEditorial(product);
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -103,6 +121,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-text">{product.fullName}</h1>
           <p className="mt-2 text-text-secondary">{product.summary}</p>
+          <div className="mt-3">
+            <AuthorByline
+              kind="Specification record"
+              modified={product.lastUpdated}
+            />
+          </div>
         </div>
         <div className="text-right">
           <div className="text-2xl font-bold text-text">
@@ -113,6 +137,38 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
         </div>
       </div>
+
+      {/* Editorial overview — unique prose built from this record only */}
+      <section className="mb-10 space-y-6">
+        <div>
+          <h2 className="text-xl font-bold text-text mb-3">Overview</h2>
+          <div className="space-y-3">
+            {editorial.overview.map((p, i) => (
+              <p key={i} className="text-text-secondary leading-relaxed">
+                {p}
+              </p>
+            ))}
+          </div>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white border border-border rounded-xl p-5 space-y-5">
+            <EditorialBlock title="Display" paragraphs={editorial.display} />
+            <EditorialBlock title="Performance" paragraphs={editorial.performance} />
+          </div>
+          <div className="bg-white border border-border rounded-xl p-5 space-y-5">
+            <EditorialBlock title="Camera system" paragraphs={editorial.camera} />
+            <EditorialBlock title="Battery & charging" paragraphs={editorial.battery} />
+          </div>
+          <div className="bg-white border border-border rounded-xl p-5 space-y-5">
+            <EditorialBlock title="Software" paragraphs={editorial.software} />
+            <EditorialBlock title="Design & build" paragraphs={editorial.design} />
+          </div>
+          <div className="bg-white border border-border rounded-xl p-5 space-y-5">
+            <EditorialBlock title="Storage & connectivity" paragraphs={editorial.storage} />
+            <EditorialBlock title="Trade-offs to weigh" paragraphs={editorial.limitations} />
+          </div>
+        </div>
+      </section>
 
       {/* Storage variants */}
       {product.pricing.variants.length > 0 && (
@@ -140,6 +196,15 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </tbody>
             </table>
           </div>
+          {editorial.priceLadder.length > 0 && (
+            <div className="mt-3 space-y-2">
+              {editorial.priceLadder.map((p, i) => (
+                <p key={i} className="text-sm text-text-secondary">
+                  {p}
+                </p>
+              ))}
+            </div>
+          )}
         </section>
       )}
 
@@ -189,9 +254,52 @@ export default async function ProductPage({ params }: ProductPageProps) {
               larger battery — but it tells you where this model sits among the records on this
               site before you read the specification table.
             </p>
+            {editorial.positionInCategory.length > 0 && (
+              <div className="mt-3 space-y-2">
+                {editorial.positionInCategory.map((p, i) => (
+                  <p key={i} className="text-sm text-text-secondary">
+                    {p}
+                  </p>
+                ))}
+              </div>
+            )}
           </section>
         );
       })()}
+
+      {/* Nearest phones in our database */}
+      {editorial.nearest.length > 0 && (
+        <section className="mb-12">
+          <h2 className="text-xl font-bold text-text mb-2">Closest phones in this database</h2>
+          <p className="text-sm text-text-secondary mb-4">
+            These three records sit nearest to {product.fullName} by price, with brand and category
+            affinity breaking ties. Each card links to the full specification page so you can
+            verify the differences yourself — we do not pick a “winner” here.
+          </p>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {editorial.nearest.map((n) => (
+              <Link
+                key={n.product.slug}
+                href={`/products/${n.product.slug}`}
+                className="block bg-white border border-border rounded-xl p-4 hover:border-primary transition-colors"
+              >
+                <div className="text-xs font-medium text-primary mb-1">{n.product.brand}</div>
+                <div className="font-semibold text-text text-sm mb-1">{n.product.fullName}</div>
+                <div className="text-sm text-text mb-2">
+                  {n.product.pricing.msrp ? `$${n.product.pricing.msrp.toLocaleString()}` : "TBA"}
+                </div>
+                <ul className="space-y-1">
+                  {n.deltaNotes.slice(0, 3).map((note, i) => (
+                    <li key={i} className="text-xs text-text-secondary">
+                      {note}
+                    </li>
+                  ))}
+                </ul>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Specifications */}
       <section className="mb-12">
@@ -346,6 +454,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
           Start a Comparison
         </Link>
       </div>
+
+      <TrustNote
+        variant="product"
+        sourceCount={product.sources.length}
+        verified={product.lastVerified}
+      />
 
       {/* Structured data */}
       <script

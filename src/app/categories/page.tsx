@@ -42,9 +42,19 @@ export default function CategoriesPage() {
       <p className="text-text-secondary mb-2">
         Browse product comparisons by category.
       </p>
-      <p className="text-sm text-text-secondary mb-8 max-w-3xl">
+      <p className="text-sm text-text-secondary mb-4 max-w-3xl">
         Each category groups related product comparisons together, making it easy to
         find the comparison you need.
+      </p>
+      <p className="text-sm text-text-secondary mb-8 max-w-3xl">
+        Smartphone categories also carry the product records behind them — the same
+        sourced specification pages that feed every side-by-side comparison and every
+        calculator on this site. Category pages and product pages share one database:
+        a figure corrected on a product record is corrected everywhere it appears.
+        Non-phone hubs (laptops, monitors, cameras, headphones and the rest below)
+        run on published specification sources with a verification date beside each
+        table, and mark any value that could not be confirmed as “Not verified”
+        rather than estimating it.
       </p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

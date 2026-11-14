@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import AuthorByline from "@/components/AuthorByline";
+import TrustNote from "@/components/TrustNote";
 import DynamicNoIndex from "@/components/tools/DynamicNoIndex";
 import ProductSelectorSection from "@/components/ProductSelectorSection";
 import InteractiveComparison from "@/components/InteractiveComparison";
@@ -133,6 +135,9 @@ export default function PhoneComparisonPage() {
           processor, camera, battery, dimensions, connectivity and software, with every
           difference highlighted and rated by significance.
         </p>
+        <div className="mt-4">
+          <AuthorByline kind="Phone comparison" />
+        </div>
         <p className="mt-3 text-sm text-text-secondary">
           {products.length} phones are currently published with sourced specifications.
           Prefer to read first? Jump to{" "}
@@ -506,6 +511,8 @@ export default function PhoneComparisonPage() {
           .
         </p>
       </section>
+
+      <TrustNote variant="comparison" />
 
       <script
         type="application/ld+json"
